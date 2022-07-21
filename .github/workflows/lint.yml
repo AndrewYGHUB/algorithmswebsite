@@ -20,5 +20,7 @@ jobs:
         run: yarn fetch-algorithms
       - name: Lint
         run: yarn lint
+#      - name: vccrun
+#        run: yarn dev
       - name: vccrun
-        run: yarn dev
+        run: yarn export
