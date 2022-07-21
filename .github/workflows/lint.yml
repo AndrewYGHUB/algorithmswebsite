@@ -22,6 +22,7 @@ jobs:
         run: yarn lint
 #      - name: vccrun
 #        run: yarn dev
+
       - name: vccrun
         run: yarn export
        - name: Deploy
