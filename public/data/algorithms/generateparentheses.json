@@ -1,0 +1,23 @@
+{
+  "slug": "generateparentheses",
+  "name": "Generateparentheses",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "strings/generateparentheses/generateparentheses.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/strings/generateparentheses/generateparentheses.go",
+      "code": "<span class=\"hljs-comment\">// generateparenthesesgo</span>\n<span class=\"hljs-comment\">// description: Generate Parentheses</span>\n<span class=\"hljs-comment\">// details:</span>\n<span class=\"hljs-comment\">// Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.</span>\n<span class=\"hljs-comment\">// author(s) [red_byte](https://github.com/i-redbyte)</span>\n<span class=\"hljs-comment\">// see generateparentheses_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> generateparentheses\n\n<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">&quot;strings&quot;</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">GenerateParenthesis</span><span class=\"hljs-params\">(n <span class=\"hljs-type\">int</span>)</span></span> []<span class=\"hljs-type\">string</span> {\n\tresult := <span class=\"hljs-built_in\">make</span>([]<span class=\"hljs-type\">string</span>, <span class=\"hljs-number\">0</span>)\n\tmaxLen := <span class=\"hljs-number\">2</span> * n\n\t<span class=\"hljs-keyword\">var</span> recursiveComputation <span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span><span class=\"hljs-params\">(s []<span class=\"hljs-type\">string</span>, left <span class=\"hljs-type\">int</span>, right <span class=\"hljs-type\">int</span>)</span></span>\n\trecursiveComputation = <span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span><span class=\"hljs-params\">(s []<span class=\"hljs-type\">string</span>, left <span class=\"hljs-type\">int</span>, right <span class=\"hljs-type\">int</span>)</span></span> {\n\t\t<span class=\"hljs-keyword\">if</span> <span class=\"hljs-built_in\">len</span>(s) == maxLen {\n\t\t\tresult = <span class=\"hljs-built_in\">append</span>(result, strings.Join(s, <span class=\"hljs-string\">&quot;&quot;</span>))\n\t\t\t<span class=\"hljs-keyword\">return</span>\n\t\t}\n\t\t<span class=\"hljs-keyword\">if</span> left &lt; n {\n\t\t\ts = <span class=\"hljs-built_in\">append</span>(s, <span class=\"hljs-string\">&quot;(&quot;</span>)\n\t\t\trecursiveComputation(s, left+<span class=\"hljs-number\">1</span>, right)\n\t\t\ts = s[:<span class=\"hljs-built_in\">len</span>(s)<span class=\"hljs-number\">-1</span>]\n\t\t}\n\t\t<span class=\"hljs-keyword\">if</span> right &lt; left {\n\t\t\ts = <span class=\"hljs-built_in\">append</span>(s, <span class=\"hljs-string\">&quot;)&quot;</span>)\n\t\t\trecursiveComputation(s, left, right+<span class=\"hljs-number\">1</span>)\n\t\t\t_ = s[:<span class=\"hljs-built_in\">len</span>(s)<span class=\"hljs-number\">-1</span>]\n\t\t}\n\t}\n\trecursiveComputation(<span class=\"hljs-built_in\">make</span>([]<span class=\"hljs-type\">string</span>, <span class=\"hljs-number\">0</span>), <span class=\"hljs-number\">0</span>, <span class=\"hljs-number\">0</span>)\n\t<span class=\"hljs-keyword\">return</span> result\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

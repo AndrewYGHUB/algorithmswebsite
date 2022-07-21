@@ -1,0 +1,19 @@
+{
+  "slug": "parametric-re-lu",
+  "name": "Parametric Re LU",
+  "categories": [
+    "machinelearning",
+    "activationfunctions"
+  ],
+  "implementations": {
+    "matlab-octave": ""
+  },
+  "contributors": [
+    {
+      "name": "Yukti Khosla",
+      "email": "44090430+Yukti-09@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

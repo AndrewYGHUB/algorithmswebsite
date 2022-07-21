@@ -1,0 +1,12 @@
+{
+  "slug": "shuffle",
+  "name": "Shuffle",
+  "categories": [
+    "random"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

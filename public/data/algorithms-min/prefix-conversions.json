@@ -1,0 +1,28 @@
+{
+  "slug": "prefix-conversions",
+  "name": "Prefix Conversions",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "lance-pyles",
+      "email": "36748284+lance-pyles@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

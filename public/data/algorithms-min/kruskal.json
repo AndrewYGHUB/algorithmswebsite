@@ -1,0 +1,82 @@
+{
+  "slug": "kruskal",
+  "name": "Kruskal",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "java": "",
+    "c": "",
+    "go": "",
+    "swift": ""
+  },
+  "contributors": [
+    {
+      "name": "Sven Weidauer",
+      "email": "sven@5sw.de",
+      "commits": 1
+    },
+    {
+      "name": "stepfencurryxiao",
+      "email": "stepfencurryxiao@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "flamespirit919",
+      "email": "mikelsworld@comcast.net",
+      "commits": 1
+    },
+    {
+      "name": "Vivek Nathani",
+      "email": "52988856+viveknathani@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ttuanho",
+      "email": "hhoanhtuann@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "SangeetaNB",
+      "email": "43605580+SangeetaNB@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "ayaankhan98",
+      "email": "ayaankhan98@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Madhav",
+      "email": "madhavgaba2@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "MarcosVillacanas",
+      "email": "marcosvillacanas@icloud.com",
+      "commits": 3
+    },
+    {
+      "name": "Filip Hlasek",
+      "email": "fhlasek@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

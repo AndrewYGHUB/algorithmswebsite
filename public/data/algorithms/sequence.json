@@ -1,0 +1,29 @@
+{
+  "slug": "sequence",
+  "name": "Sequence",
+  "categories": [
+    "math",
+    "moserdebruijnsequence"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "math/moserdebruijnsequence/sequence.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/moserdebruijnsequence/sequence.go",
+      "code": "<span class=\"hljs-comment\">// The Moser-de Bruijn sequence is the sequence obtained by</span>\n<span class=\"hljs-comment\">// adding up the distinct powers of the number 4 (For example 1, 4, 16, 64, etc).</span>\n<span class=\"hljs-comment\">// You can get more details on https://en.wikipedia.org/wiki/Moser%E2%80%93de_Bruijn_sequence.</span>\n\n<span class=\"hljs-keyword\">package</span> moserdebruijnsequence\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">MoserDeBruijnSequence</span><span class=\"hljs-params\">(number <span class=\"hljs-type\">int</span>)</span></span> []<span class=\"hljs-type\">int</span> {\n\tsequence := []<span class=\"hljs-type\">int</span>{}\n\n\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-number\">0</span>; i &lt; number; i++ {\n\t\tres := generateNthTerm(i)\n\t\tsequence = <span class=\"hljs-built_in\">append</span>(sequence, res)\n\t}\n\n\t<span class=\"hljs-keyword\">return</span> sequence\n}\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">generateNthTerm</span><span class=\"hljs-params\">(num <span class=\"hljs-type\">int</span>)</span></span> <span class=\"hljs-type\">int</span> {\n\t<span class=\"hljs-keyword\">if</span> num == <span class=\"hljs-number\">0</span> || num == <span class=\"hljs-number\">1</span> {\n\t\t<span class=\"hljs-keyword\">return</span> num\n\t}\n\n\t<span class=\"hljs-comment\">//number is even</span>\n\t<span class=\"hljs-keyword\">if</span> num%<span class=\"hljs-number\">2</span> == <span class=\"hljs-number\">0</span> {\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">4</span> * generateNthTerm(num/<span class=\"hljs-number\">2</span>)\n\t}\n\n\t<span class=\"hljs-comment\">//number is odd</span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">4</span>*generateNthTerm(num/<span class=\"hljs-number\">2</span>) + <span class=\"hljs-number\">1</span>\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Iván Valdés",
+      "email": "iv@nvald.es",
+      "commits": 1
+    },
+    {
+      "name": "Sumita Canopas",
+      "email": "69897605+cp-sumi-k@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

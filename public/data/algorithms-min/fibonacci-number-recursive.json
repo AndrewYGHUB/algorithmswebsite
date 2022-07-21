@@ -1,0 +1,33 @@
+{
+  "slug": "fibonacci-number-recursive",
+  "name": "Fibonacci Number Recursive",
+  "categories": [
+    "recursive"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "illegalcall",
+      "email": "44542765+illegalcall@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

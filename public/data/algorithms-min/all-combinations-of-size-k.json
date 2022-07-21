@@ -1,0 +1,28 @@
+{
+  "slug": "all-combinations-of-size-k",
+  "name": "All Combinations Of Size K",
+  "categories": [
+    "backtracking"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Chiranjeev",
+      "email": "6258860@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "climbing-stairs",
+  "name": "Climbing Stairs",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Brett Smith",
+      "email": "hello@thebrettsmith.com",
+      "commits": 1
+    },
+    {
+      "name": "illegalcall",
+      "email": "44542765+illegalcall@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "CarsonHam",
+      "email": "carson.ham@utexas.edu",
+      "commits": 1
+    },
+    {
+      "name": "Sanders Lin",
+      "email": "45224617+SandersLin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "sidaksohi",
+      "email": "31377210+sidaksohi@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

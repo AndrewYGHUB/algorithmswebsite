@@ -1,0 +1,18 @@
+{
+  "slug": "linear-diophantine-equations-solver",
+  "name": "Linear Diophantine Equations Solver",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Rahul Chhabra",
+      "email": "rahul29112002@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

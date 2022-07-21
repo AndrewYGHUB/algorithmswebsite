@@ -1,0 +1,28 @@
+{
+  "slug": "roman-numeral-util",
+  "name": "Roman Numeral Util",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/RomanNumeralUtil.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/RomanNumeralUtil.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-comment\">/**\n * Translates numbers into the Roman Numeral System.\n *\n * <span class=\"hljs-doctag\">@see</span> &lt;a href=&quot;https://en.wikipedia.org/wiki/Roman_numerals&quot;&gt;Roman\n * numerals&lt;/a&gt;\n * <span class=\"hljs-doctag\">@author</span> Sokratis Fotkatzikis\n * <span class=\"hljs-doctag\">@version</span> 1.0\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">RomanNumeralUtil</span> {\n\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">final</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">MIN_VALUE</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>;\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">final</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">MAX_VALUE</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">5999</span>;\n    <span class=\"hljs-comment\">//1000-5999</span>\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">final</span> String[] RN_M = {<span class=\"hljs-string\">&quot;&quot;</span>, <span class=\"hljs-string\">&quot;M&quot;</span>, <span class=\"hljs-string\">&quot;MM&quot;</span>, <span class=\"hljs-string\">&quot;MMM&quot;</span>, <span class=\"hljs-string\">&quot;MMMM&quot;</span>, <span class=\"hljs-string\">&quot;MMMMM&quot;</span>};\n    <span class=\"hljs-comment\">//100-900</span>\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">final</span> String[] RN_C = {<span class=\"hljs-string\">&quot;&quot;</span>, <span class=\"hljs-string\">&quot;C&quot;</span>, <span class=\"hljs-string\">&quot;CC&quot;</span>, <span class=\"hljs-string\">&quot;CCC&quot;</span>, <span class=\"hljs-string\">&quot;CD&quot;</span>, <span class=\"hljs-string\">&quot;D&quot;</span>, <span class=\"hljs-string\">&quot;DC&quot;</span>, <span class=\"hljs-string\">&quot;DCC&quot;</span>, <span class=\"hljs-string\">&quot;DCCC&quot;</span>, <span class=\"hljs-string\">&quot;CM&quot;</span>};\n    <span class=\"hljs-comment\">//10-90</span>\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">final</span> String[] RN_X = {<span class=\"hljs-string\">&quot;&quot;</span>, <span class=\"hljs-string\">&quot;X&quot;</span>, <span class=\"hljs-string\">&quot;XX&quot;</span>, <span class=\"hljs-string\">&quot;XXX&quot;</span>, <span class=\"hljs-string\">&quot;XL&quot;</span>, <span class=\"hljs-string\">&quot;L&quot;</span>, <span class=\"hljs-string\">&quot;LX&quot;</span>, <span class=\"hljs-string\">&quot;LXX&quot;</span>, <span class=\"hljs-string\">&quot;LXXX&quot;</span>, <span class=\"hljs-string\">&quot;XC&quot;</span>};\n    <span class=\"hljs-comment\">//1-9</span>\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">final</span> String[] RN_I = {<span class=\"hljs-string\">&quot;&quot;</span>, <span class=\"hljs-string\">&quot;I&quot;</span>, <span class=\"hljs-string\">&quot;II&quot;</span>, <span class=\"hljs-string\">&quot;III&quot;</span>, <span class=\"hljs-string\">&quot;IV&quot;</span>, <span class=\"hljs-string\">&quot;V&quot;</span>, <span class=\"hljs-string\">&quot;VI&quot;</span>, <span class=\"hljs-string\">&quot;VII&quot;</span>, <span class=\"hljs-string\">&quot;VIII&quot;</span>, <span class=\"hljs-string\">&quot;IX&quot;</span>};\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> String <span class=\"hljs-title function_\">generate</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> number)</span> {\n        <span class=\"hljs-keyword\">if</span> (number &lt; MIN_VALUE || number &gt; MAX_VALUE) {\n            <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">IllegalArgumentException</span>(\n                    String.format(\n                            <span class=\"hljs-string\">&quot;The number must be in the range [%d, %d]&quot;</span>,\n                            MIN_VALUE,\n                            MAX_VALUE\n                    )\n            );\n        }\n\n        <span class=\"hljs-keyword\">return</span> RN_M[number / <span class=\"hljs-number\">1000</span>]\n                + RN_C[number % <span class=\"hljs-number\">1000</span> / <span class=\"hljs-number\">100</span>]\n                + RN_X[number % <span class=\"hljs-number\">100</span> / <span class=\"hljs-number\">10</span>]\n                + RN_I[number % <span class=\"hljs-number\">10</span>];\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sokratis Fotkatzikis",
+      "email": "sokratis12GR@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "currency-converter",
+  "name": "Currency Converter",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Michael Currin",
+      "email": "18750745+MichaelCurrin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Niranjan Hegde",
+      "email": "hegdeniranjan144@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "partitions",
+  "name": "Partitions",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "julia": {
+      "dir": "src/math/partitions.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/math/partitions.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    partitions_recursive(n)\n\nFinds partitions of an integer using recursion.\n\nA partition of a positive integer n, also called an integer partition,\nis a way of writing n as a sum of positive integers.\n\nThere are 7 partitions of 5:\n5\n4 + 1\n3 + 2\n3 + 1 + 1\n2 + 2 + 1\n2 + 1 + 1 + 1\n1 + 1 + 1 + 1 + 1\n\nPartitions of n is equal to the sum of partitions of n with k parts.\n\n``P \\\\left ( n \\\\right ) = \\\\sum_{k=1}^{n} P_{k} \\\\left ( n \\\\right )``\n\nPartitions of n with k parts is the sum of\npartitions of n-1 with k-1 parts and,\npartitions of n-k with k parts.\n\n``P_{k}\\\\left ( n \\\\right ) = \nP_{k-1}\\\\left ( n - 1 \\\\right ) + P_{k}\\\\left ( n - k \\\\right )``\n\n# Example\n```julia\npartitions_recursive(0)      # returns 1\npartitions_recursive(1)      # returns 1\npartitions_recursive(10)     # returns 42\npartitions_recursive(-1)     # returns DomainError\n```\n# References\n- Partitions of a positive integer -- https://en.wikipedia.org/wiki/Partition_function_(number_theory)\n- Partitions of a positive integer -- https://www.whitman.edu/mathematics/cgt_online/book/section03.03.html\n\n# Contributor\n- [Vaishakh C R](https://github.com/Whiteshark-314)\n&quot;&quot;&quot;</span>\n<span class=\"hljs-keyword\">function</span> partitions_recursive(n::N)::<span class=\"hljs-built_in\">BigInt</span> <span class=\"hljs-keyword\">where</span> {N&lt;:<span class=\"hljs-built_in\">Integer</span>}\n    n &lt; <span class=\"hljs-number\">0</span> &amp;&amp; throw(\n        <span class=\"hljs-built_in\">DomainError</span>(\n            <span class=\"hljs-string\">&quot;partitions_recursive() only accepts positive integral values&quot;</span>,\n        ),\n    )\n    <span class=\"hljs-keyword\">if</span> n == <span class=\"hljs-number\">0</span>\n        <span class=\"hljs-keyword\">return</span> one(<span class=\"hljs-built_in\">BigInt</span>)\n    <span class=\"hljs-keyword\">end</span>\n    k = collect(<span class=\"hljs-number\">1</span>:n)\n    <span class=\"hljs-keyword\">return</span> sum(partitions_k_parts.(n, k))\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-keyword\">function</span> partitions_k_parts(n, k)\n    n &lt; <span class=\"hljs-number\">0</span> ||\n        k &lt; <span class=\"hljs-number\">0</span> &amp;&amp; throw(\n            <span class=\"hljs-built_in\">DomainError</span>(\n                <span class=\"hljs-string\">&quot;partitions_k_parts() only accepts positive integral values&quot;</span>,\n            ),\n        )\n    <span class=\"hljs-keyword\">if</span> (n == <span class=\"hljs-number\">0</span> &amp;&amp; k == <span class=\"hljs-number\">0</span>) || (n &gt; <span class=\"hljs-number\">0</span> &amp;&amp; k == <span class=\"hljs-number\">1</span>) || n == k\n        <span class=\"hljs-keyword\">return</span> one(<span class=\"hljs-built_in\">BigInt</span>)\n    <span class=\"hljs-keyword\">elseif</span> k == <span class=\"hljs-number\">0</span> || k &gt; n\n        <span class=\"hljs-keyword\">return</span> zero(<span class=\"hljs-built_in\">BigInt</span>)\n    <span class=\"hljs-keyword\">end</span>\n    <span class=\"hljs-keyword\">return</span> partitions_k_parts(n - <span class=\"hljs-number\">1</span>, k - <span class=\"hljs-number\">1</span>) + partitions_k_parts(n - k, k)\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "socvirnyl.estela@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Vaishakh C R",
+      "email": "scientistyshock@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

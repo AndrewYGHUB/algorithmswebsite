@@ -1,0 +1,19 @@
+{
+  "slug": "ispangram",
+  "name": "Ispangram",
+  "categories": [
+    "strings",
+    "pangram"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "kavithajm",
+      "email": "91771245+kavithajm@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

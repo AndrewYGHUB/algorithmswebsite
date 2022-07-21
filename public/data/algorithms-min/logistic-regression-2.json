@@ -1,0 +1,18 @@
+{
+  "slug": "logistic-regression-2",
+  "name": "Logistic Regression 2",
+  "categories": [
+    "regressionalgorithms"
+  ],
+  "implementations": {
+    "r": ""
+  },
+  "contributors": [
+    {
+      "name": "Erez Shomron",
+      "email": "48328872+eshom@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

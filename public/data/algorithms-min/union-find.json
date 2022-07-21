@@ -1,0 +1,42 @@
+{
+  "slug": "union-find",
+  "name": "Union Find",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "javascript": "",
+    "java": "",
+    "c": "",
+    "rust": "",
+    "swift": ""
+  },
+  "contributors": [
+    {
+      "name": "Sven Weidauer",
+      "email": "sven@5sw.de",
+      "commits": 1
+    },
+    {
+      "name": "fffzlfk",
+      "email": "44939690+fffzlfk@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "AlexDvorak",
+      "email": "opti.jawsome@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Gilberto Alexandre dos Santos",
+      "email": "gilberto.alexsantos@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Philip Schikora",
+      "email": "pschikora87@googlemail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

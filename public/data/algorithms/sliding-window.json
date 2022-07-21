@@ -1,0 +1,23 @@
+{
+  "slug": "sliding-window",
+  "name": "Sliding Window",
+  "categories": [
+    "searches"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Search/SlidingWindow.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Search/SlidingWindow.js",
+      "code": "<span class=\"hljs-comment\">/**\n* Sliding Window:\n* This pattern involve creating a window which can either be\n* an array or numbers from one position to another.\n*\n* Depending on a certain condition, the window either increases\n* or closes (and a new window is created).\n*\n* Very useful for keeping track of a subset of data in an\n* array/string etc.\n*\n* Time Complexity: Best - O(n);\n*\n* Examples:\n* maxSubarraySum([1,2,5,2,8,1,5],2) // returns 10\n* maxSubarraySum([1,2,5,2,8,1,5],15) // returns null\n* maxSubarraySum([5,2,6,9],3) // returns 17\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">[Int]</span>} <span class=\"hljs-variable\">arr</span> - An array of integers on which we will perform the test.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Int</span>} <span class=\"hljs-variable\">num</span> - An integer that displays the size of the window you want to check.\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">Int / Null</span>} - Returns a total of N consecutive numbers or null\n */</span>\n\n<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">slidingWindow</span> (arr, num) {\n  <span class=\"hljs-comment\">// Edge Case:</span>\n  <span class=\"hljs-comment\">// If the length of the array shorter than the window size (num) return null.</span>\n  <span class=\"hljs-keyword\">if</span> (arr.<span class=\"hljs-property\">length</span> &lt; num) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">null</span>\n  <span class=\"hljs-comment\">// The highest amount of consecutive numbers</span>\n  <span class=\"hljs-keyword\">let</span> maxSum = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-comment\">// Temp amount of consecutive numbers - For comparative purposes</span>\n  <span class=\"hljs-keyword\">let</span> tempSum = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-comment\">// loop over the array {num} times and save their total amount in {maxSum}</span>\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; num; i++) {\n    maxSum += arr[i]\n  }\n  <span class=\"hljs-comment\">// initialize {tempSum} to {maxSum}.</span>\n  tempSum = maxSum\n  <span class=\"hljs-comment\">// loop over the array n times</span>\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = num; i &lt; arr.<span class=\"hljs-property\">length</span>; i++) {\n    <span class=\"hljs-comment\">// Add the next num in the array and remove the first one</span>\n    tempSum = tempSum - arr[i - num] + arr[i]\n    <span class=\"hljs-comment\">// save the largest number between {maxNum} and {tempNum} in maxSum.</span>\n    maxSum = <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">max</span>(maxSum, tempSum)\n  }\n  <span class=\"hljs-keyword\">return</span> maxSum\n}\n\n<span class=\"hljs-keyword\">export</span> { slidingWindow }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Mor Mordechai Ben",
+      "email": "31767946+morMBen@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "search-algorithm",
+  "name": "Search Algorithm",
+  "categories": [
+    "devutils",
+    "searches"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "nik",
+      "email": "nikitap4.92@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

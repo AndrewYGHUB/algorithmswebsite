@@ -1,0 +1,88 @@
+{
+  "slug": "reverse-words",
+  "name": "Reverse Words",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "strings/reverse_words.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/strings/reverse_words.py",
+      "code": "<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">reverse_words</span>(<span class=\"hljs-params\">input_str: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Reverses words in a given string\n    &gt;&gt;&gt; reverse_words(&quot;I love Python&quot;)\n    &#x27;Python love I&#x27;\n    &gt;&gt;&gt; reverse_words(&quot;I     Love          Python&quot;)\n    &#x27;Python Love I&#x27;\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&quot; &quot;</span>.join(input_str.split()[::-<span class=\"hljs-number\">1</span>])\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n"
+    },
+    "javascript": {
+      "dir": "String/ReverseWords.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/ReverseWords.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">reverseWords</span>\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">str</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">string</span>} - reverse string\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">reverseWords</span> = (<span class=\"hljs-params\">str</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> str !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;The given value is not a string&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">return</span> str\n    .<span class=\"hljs-title function_\">split</span>(<span class=\"hljs-regexp\">/\\s+/</span>) <span class=\"hljs-comment\">// create an array with each word in string</span>\n    .<span class=\"hljs-title function_\">reduceRight</span>(<span class=\"hljs-function\">(<span class=\"hljs-params\">reverseStr, word</span>) =&gt;</span> <span class=\"hljs-string\">`<span class=\"hljs-subst\">${reverseStr}</span> <span class=\"hljs-subst\">${word}</span>`</span>, <span class=\"hljs-string\">&#x27;&#x27;</span>) <span class=\"hljs-comment\">// traverse the array from last &amp; create an string</span>\n    .<span class=\"hljs-title function_\">trim</span>() <span class=\"hljs-comment\">// remove the first useless space</span>\n}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> reverseWords\n"
+    },
+    "f-sharp": {
+      "dir": "Algorithms/Strings/ReverseWords.fs",
+      "url": "https://github.com/TheAlgorithms/f-sharp/tree/master/Algorithms/Strings/ReverseWords.fs",
+      "code": "﻿<span class=\"hljs-keyword\">namespace</span> Algorithms.Strings\r\n\r\n<span class=\"hljs-keyword\">module</span> ReverseWords <span class=\"hljs-operator\">=</span>\r\n    <span class=\"hljs-comment\">/// &lt;summary&gt;</span>\r\n    <span class=\"hljs-comment\">/// Reverses words in a given string</span>\r\n    <span class=\"hljs-comment\">/// &lt;/summary&gt;</span>\r\n    <span class=\"hljs-comment\">/// &lt;param name=&quot;input&quot;&gt;String to reverse.&lt;/param&gt;</span>\r\n    <span class=\"hljs-comment\">/// &lt;returns&gt;Reversed string&lt;/returns&gt;</span>\r\n    <span class=\"hljs-keyword\">let</span> reverseWords (input<span class=\"hljs-operator\">:</span> <span class=\"hljs-type\">string</span>)<span class=\"hljs-operator\">:</span> <span class=\"hljs-type\">string</span> <span class=\"hljs-operator\">=</span>\r\n        input.Split() <span class=\"hljs-operator\">|&gt;</span> Seq.rev <span class=\"hljs-operator\">|&gt;</span> String.concat <span class=\"hljs-string\">&quot; &quot;</span>\r\n"
+    },
+    "php": {
+      "dir": "String/ReverseWords.php",
+      "url": "https://github.com/TheAlgorithms/php/tree/master/String/ReverseWords.php",
+      "code": "<span class=\"hljs-meta\">&lt;?php</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">reverse_words</span>(<span class=\"hljs-params\"><span class=\"hljs-keyword\">string</span> <span class=\"hljs-variable\">$text</span></span>)\n</span>{\n    <span class=\"hljs-variable\">$text</span>          = <span class=\"hljs-title function_ invoke__\">trim</span>(<span class=\"hljs-variable\">$text</span>);\n    <span class=\"hljs-variable\">$words</span>         = <span class=\"hljs-title function_ invoke__\">explode</span>(<span class=\"hljs-string\">&#x27; &#x27;</span>, <span class=\"hljs-variable\">$text</span>);\n    <span class=\"hljs-variable\">$reversedWords</span> = [];\n    <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-variable\">$i</span> = (<span class=\"hljs-title function_ invoke__\">count</span>(<span class=\"hljs-variable\">$words</span>) - <span class=\"hljs-number\">1</span>); <span class=\"hljs-variable\">$i</span> &gt;= <span class=\"hljs-number\">0</span>; <span class=\"hljs-variable\">$i</span>--) {\n        <span class=\"hljs-variable\">$reversedWords</span>[] = <span class=\"hljs-variable\">$words</span>[<span class=\"hljs-variable\">$i</span>];\n    }\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title function_ invoke__\">implode</span>(<span class=\"hljs-string\">&#x27; &#x27;</span>, <span class=\"hljs-variable\">$reversedWords</span>);\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Cristian Lupu",
+      "email": "khez@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Abhi Ramani",
+      "email": "abhiramani3@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "farnswj1",
+      "email": "54967482+farnswj1@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sarath Kaul",
+      "email": "sarath.kaul@searce.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "Akshay Khale",
+      "email": "khaleakshay@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Roland Hummel",
+      "email": "roland.hummel@qaware.de",
+      "commits": 2
+    },
+    {
+      "name": "Alexandre Xavier",
+      "email": "ale.bxsantos@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Allister Isaiah Harvey",
+      "email": "41553768+powpow58@users.noreply.github.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

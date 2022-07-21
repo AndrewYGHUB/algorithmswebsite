@@ -1,0 +1,29 @@
+{
+  "slug": "queue-using-2-stacks",
+  "name": "Queue Using 2 Stacks",
+  "categories": [
+    "datastructures",
+    "queues"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Data-Structures/Queue/QueueUsing2Stacks.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Data-Structures/Queue/QueueUsing2Stacks.js",
+      "code": "<span class=\"hljs-comment\">// implementation of Queue using 2 stacks</span>\n<span class=\"hljs-comment\">// contribution made by hamza chabchoub for a university project</span>\n\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Queue</span> {\n  <span class=\"hljs-title function_\">constructor</span> () {\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">inputStack</span> = []\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">outputStack</span> = []\n  }\n\n  <span class=\"hljs-comment\">// Push item into the inputstack</span>\n  enqueue (item) {\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">inputStack</span>.<span class=\"hljs-title function_\">push</span>(item)\n  }\n\n  dequeue () {\n    <span class=\"hljs-comment\">// push all items to outputstack</span>\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">outputStack</span> = []\n    <span class=\"hljs-keyword\">while</span> (<span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">inputStack</span>.<span class=\"hljs-property\">length</span> &gt; <span class=\"hljs-number\">0</span>) {\n      <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">outputStack</span>.<span class=\"hljs-title function_\">push</span>(<span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">inputStack</span>.<span class=\"hljs-title function_\">pop</span>())\n    }\n    <span class=\"hljs-comment\">// return the top element of the outputstack if any</span>\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">outputStack</span>.<span class=\"hljs-property\">length</span> &gt; <span class=\"hljs-number\">0</span>) {\n      <span class=\"hljs-keyword\">const</span> top = <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">outputStack</span>.<span class=\"hljs-title function_\">pop</span>()\n      <span class=\"hljs-comment\">// repush all the items to the inputstack</span>\n      <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">inputStack</span> = []\n      <span class=\"hljs-keyword\">while</span> (<span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">outputStack</span>.<span class=\"hljs-property\">length</span> &gt; <span class=\"hljs-number\">0</span>) {\n        <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">inputStack</span>.<span class=\"hljs-title function_\">push</span>(<span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">outputStack</span>.<span class=\"hljs-title function_\">pop</span>())\n      }\n      <span class=\"hljs-keyword\">return</span> top\n    }\n  }\n\n  <span class=\"hljs-comment\">// display elements of the inputstack</span>\n  listIn (output = <span class=\"hljs-function\"><span class=\"hljs-params\">value</span> =&gt;</span> <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(value)) {\n    <span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">while</span> (i &lt; <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">inputStack</span>.<span class=\"hljs-property\">length</span>) {\n      <span class=\"hljs-title function_\">output</span>(<span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">inputStack</span>[i])\n      i++\n    }\n  }\n\n  <span class=\"hljs-comment\">// display element of the outputstack</span>\n  listOut (output = <span class=\"hljs-function\"><span class=\"hljs-params\">value</span> =&gt;</span> <span class=\"hljs-variable language_\">console</span>.<span class=\"hljs-title function_\">log</span>(value)) {\n    <span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">while</span> (i &lt; <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">outputStack</span>.<span class=\"hljs-property\">length</span>) {\n      <span class=\"hljs-title function_\">output</span>(<span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">outputStack</span>[i])\n      i++\n    }\n  }\n}\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">Queue</span> }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "hmizz",
+      "email": "60817898+hmizz@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

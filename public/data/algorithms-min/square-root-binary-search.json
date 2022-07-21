@@ -1,0 +1,18 @@
+{
+  "slug": "square-root-binary-search",
+  "name": "Square Root Binary Search",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "sahil-13399",
+      "email": "46062089+sahil-13399@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

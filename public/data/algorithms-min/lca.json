@@ -1,0 +1,64 @@
+{
+  "slug": "lca",
+  "name": "LCA",
+  "categories": [
+    "datastructures",
+    "tree"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "stepfencurryxiao",
+      "email": "stepfencurryxiao@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ayaankhan98",
+      "email": "ayaankhan98@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Filip Hlasek",
+      "email": "fhlasek@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "rohan",
+      "email": "rgkbitw@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Panwar",
+      "email": "60705641+dhruvinfo28@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Reshad Hasan",
+      "email": "reshadhasan555@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "John Law",
+      "email": "johnlaw.po@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

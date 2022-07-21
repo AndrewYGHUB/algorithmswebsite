@@ -1,0 +1,29 @@
+{
+  "slug": "floor",
+  "name": "Floor",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

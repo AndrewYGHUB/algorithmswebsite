@@ -1,0 +1,61 @@
+{
+  "slug": "upper",
+  "name": "Upper",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "java": "",
+    "f-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "acbin",
+      "email": "44314231+acbin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sethu",
+      "email": "rssankar@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Cole Mollica",
+      "email": "30614241+coleman2246@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Allister Isaiah Harvey",
+      "email": "41553768+powpow58@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

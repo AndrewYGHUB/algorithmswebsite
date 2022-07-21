@@ -1,0 +1,60 @@
+{
+  "slug": "node",
+  "name": "Node",
+  "categories": [
+    "datastructures",
+    "disjointset"
+  ],
+  "implementations": {
+    "java": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Nicholas",
+      "email": "88036449+mime8@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Nimrod Rak",
+      "email": "nimrod.rak@mail.huji.ac.il",
+      "commits": 1
+    },
+    {
+      "name": "Tim Akermann",
+      "email": "ti.akermann@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "shivg7706",
+      "email": "shivamgupta7706@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "NimrodRak",
+      "email": "68863114+NimrodRak@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 4
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "meter-to-feet-conversion",
+  "name": "Meter To Feet Conversion",
+  "categories": [
+    "conversions"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Conversions/MeterToFeetConversion.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Conversions/MeterToFeetConversion.js",
+      "code": "<span class=\"hljs-comment\">// Foot: https://en.wikipedia.org/wiki/Foot_(unit)</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">feetToMeter</span> = (<span class=\"hljs-params\">feet</span>) =&gt; {\n  <span class=\"hljs-keyword\">return</span> feet * <span class=\"hljs-number\">0.3048</span>\n}\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">meterToFeet</span> = (<span class=\"hljs-params\">meter</span>) =&gt; {\n  <span class=\"hljs-keyword\">return</span> meter / <span class=\"hljs-number\">0.3048</span>\n}\n\n<span class=\"hljs-keyword\">export</span> { feetToMeter, meterToFeet }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Gustavo Seiji Kamihara",
+      "email": "gustavo.kamihara@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "VinWare",
+      "email": "28603906+VinWare@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

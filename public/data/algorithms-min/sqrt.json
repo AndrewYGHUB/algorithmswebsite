@@ -1,0 +1,19 @@
+{
+  "slug": "sqrt",
+  "name": "Sqrt",
+  "categories": [
+    "math",
+    "binary"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

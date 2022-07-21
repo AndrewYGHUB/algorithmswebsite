@@ -1,0 +1,12 @@
+{
+  "slug": "a000578-cubes",
+  "name": "A000578 Cubes",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

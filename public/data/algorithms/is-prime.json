@@ -1,0 +1,38 @@
+{
+  "slug": "is-prime",
+  "name": "Is Prime",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "body": {},
+  "implementations": {
+    "kotlin": {
+      "dir": "src/main/kotlin/dynamicProgramming/isPrime.kt",
+      "url": "https://github.com/TheAlgorithms/kotlin/tree/master/src/main/kotlin/dynamicProgramming/isPrime.kt",
+      "code": "<span class=\"hljs-keyword\">package</span> dynamicProgramming\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">fun</span> <span class=\"hljs-built_in\">Int</span>.<span class=\"hljs-title\">isPrime</span><span class=\"hljs-params\">()</span></span> = <span class=\"hljs-keyword\">this</span> &gt; <span class=\"hljs-number\">1</span> &amp;&amp; (<span class=\"hljs-number\">2.</span>.(<span class=\"hljs-keyword\">this</span> / <span class=\"hljs-number\">2</span>)).all { <span class=\"hljs-keyword\">this</span> % it != <span class=\"hljs-number\">0</span> }"
+    },
+    "lua": {
+      "dir": "src/math/prime/is_prime.lua",
+      "url": "https://github.com/TheAlgorithms/lua/tree/master/src/math/prime/is_prime.lua",
+      "code": "<span class=\"hljs-comment\">-- Simple primality test that runs in O(sqrt n) time</span>\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(\n\tn <span class=\"hljs-comment\">-- number</span>\n)</span></span>\n\t<span class=\"hljs-keyword\">if</span> n == <span class=\"hljs-number\">1</span> <span class=\"hljs-keyword\">then</span>\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span> <span class=\"hljs-comment\">-- if n is 1</span>\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-keyword\">if</span> n % <span class=\"hljs-number\">2</span> == <span class=\"hljs-number\">0</span> <span class=\"hljs-keyword\">then</span>\n\t\t<span class=\"hljs-keyword\">return</span> n == <span class=\"hljs-number\">2</span>\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-keyword\">for</span> factor = <span class=\"hljs-number\">3</span>, n ^ <span class=\"hljs-number\">0.5</span>, <span class=\"hljs-number\">2</span> <span class=\"hljs-keyword\">do</span> <span class=\"hljs-comment\">-- iterate odd factors up to sqrt(n)</span>\n\t\t<span class=\"hljs-keyword\">if</span> n % factor == <span class=\"hljs-number\">0</span> <span class=\"hljs-keyword\">then</span>\n\t\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span> <span class=\"hljs-comment\">-- if n is a composite number</span>\n\t\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span> <span class=\"hljs-comment\">-- if n is a prime</span>\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    },
+    {
+      "name": "Caio Fernando",
+      "email": "caio.fernandooficial35@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

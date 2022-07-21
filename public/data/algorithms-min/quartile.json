@@ -1,0 +1,12 @@
+{
+  "slug": "quartile",
+  "name": "Quartile",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

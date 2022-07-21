@@ -1,0 +1,18 @@
+{
+  "slug": "arithmetic-geometric-mean",
+  "name": "Arithmetic Geometric Mean",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Ricardo Fernández Serrata",
+      "email": "76864299+Rudxain@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

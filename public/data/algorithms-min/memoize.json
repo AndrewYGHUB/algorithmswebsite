@@ -1,0 +1,23 @@
+{
+  "slug": "memoize",
+  "name": "Memoize",
+  "categories": [
+    "cache"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 5
+    },
+    {
+      "name": "Damien Chazoule",
+      "email": "damien.chazoule@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

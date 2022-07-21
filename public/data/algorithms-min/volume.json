@@ -1,0 +1,72 @@
+{
+  "slug": "volume",
+  "name": "Volume",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Shuangchi He",
+      "email": "34329208+Yulv-git@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Snimerjot Singh",
+      "email": "snimersingh1729@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Matteo Messmer",
+      "email": "40521259+matteomessmer@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Yurii",
+      "email": "33547678+yuriimchg@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Vɪɴᴀʏᴀᴋ Pᴀɴᴅᴇʏ",
+      "email": "87496159+Harpia-Vieillot@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 3
+    },
+    {
+      "name": "ErikQQY",
+      "email": "2283984853@qq.com",
+      "commits": 7
+    },
+    {
+      "name": "leeyan44",
+      "email": "86589062+leeyan44@users.noreply.github.com",
+      "commits": 11
+    }
+  ],
+  "explanationUrl": {}
+}

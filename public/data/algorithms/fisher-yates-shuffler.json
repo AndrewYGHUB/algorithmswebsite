@@ -1,0 +1,28 @@
+{
+  "slug": "fisher-yates-shuffler",
+  "name": "Fisher-Yates Shuffler",
+  "categories": [
+    "shufflers"
+  ],
+  "body": {},
+  "implementations": {
+    "c-sharp": {
+      "dir": "./Algorithms/Shufflers/FisherYatesShuffler.cs",
+      "url": "https:/github.com/TheAlgorithms/C-Sharp/tree/master/Algorithms/Shufflers/FisherYatesShuffler.cs",
+      "code": "<span class=\"hljs-keyword\">using</span> System;\n\n<span class=\"hljs-keyword\">namespace</span> <span class=\"hljs-title\">Algorithms.Shufflers</span>\n{\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;summary&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     Fisher-Yates shuffle is a simple shuffling algorithm,</span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     which is usually used to shuffle a deck of cards.</span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;/summary&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;typeparam name=&quot;T&quot;&gt;</span>Type array input.<span class=\"hljs-doctag\">&lt;/typeparam&gt;</span></span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title\">FisherYatesShuffler</span>&lt;<span class=\"hljs-title\">T</span>&gt; : <span class=\"hljs-title\">IShuffler</span>&lt;<span class=\"hljs-title\">T</span>&gt;\n    {\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;summary&gt;</span></span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     Shuffles input array using Fisher-Yates algorithm.</span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     The algorithm starts shuffling from the last element</span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     and swap elements one by one. We use random index to</span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     choose element we use in swap operation.</span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;/summary&gt;</span></span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;param name=&quot;array&quot;&gt;</span>Array to shuffle.<span class=\"hljs-doctag\">&lt;/param&gt;</span></span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;param name=&quot;seed&quot;&gt;</span>Random generator seed. Used to repeat the shuffle.<span class=\"hljs-doctag\">&lt;/param&gt;</span></span>\n        <span class=\"hljs-function\"><span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title\">Shuffle</span>(<span class=\"hljs-params\">T[] array, <span class=\"hljs-built_in\">int</span>? seed = <span class=\"hljs-literal\">null</span></span>)</span>\n        {\n            <span class=\"hljs-keyword\">var</span> random = seed <span class=\"hljs-keyword\">is</span> <span class=\"hljs-literal\">null</span> ? <span class=\"hljs-keyword\">new</span> Random() : <span class=\"hljs-keyword\">new</span> Random(seed.Value);\n\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">var</span> i = array.Length - <span class=\"hljs-number\">1</span>; i &gt; <span class=\"hljs-number\">0</span>; i--)\n            {\n                <span class=\"hljs-keyword\">var</span> j = random.Next(<span class=\"hljs-number\">0</span>, i + <span class=\"hljs-number\">1</span>);\n\n                (array[i], array[j]) = (array[j], array[i]);\n            }\n        }\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Diego Delgado",
+      "email": "105917468+dideldev@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dima1247",
+      "email": "palamarchuk1247@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

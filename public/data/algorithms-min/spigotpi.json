@@ -1,0 +1,19 @@
+{
+  "slug": "spigotpi",
+  "name": "Spigotpi",
+  "categories": [
+    "math",
+    "pi"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "graham-scan-algorithm",
+  "name": "Graham Scan Algorithm",
+  "categories": [
+    "geometry"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Lajat5",
+      "email": "64376519+Lazeeez@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

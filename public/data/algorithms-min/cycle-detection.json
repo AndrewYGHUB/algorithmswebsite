@@ -1,0 +1,24 @@
+{
+  "slug": "cycle-detection",
+  "name": "Cycle Detection",
+  "categories": [
+    "datastructures",
+    "linkedlist"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Omkarnath Parida",
+      "email": "pomkarnath98@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

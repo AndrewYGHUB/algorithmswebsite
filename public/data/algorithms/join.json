@@ -1,0 +1,23 @@
+{
+  "slug": "join",
+  "name": "Join",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "strings/join.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/strings/join.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\nProgram to join a list of strings with a given separator\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">join</span>(<span class=\"hljs-params\">separator: <span class=\"hljs-built_in\">str</span>, separated: <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">str</span>]</span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    &gt;&gt;&gt; join(&quot;&quot;, [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;])\n    &#x27;abcd&#x27;\n    &gt;&gt;&gt; join(&quot;#&quot;, [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;])\n    &#x27;a#b#c#d&#x27;\n    &gt;&gt;&gt; join(&quot;#&quot;, &quot;a&quot;)\n    &#x27;a&#x27;\n    &gt;&gt;&gt; join(&quot; &quot;, [&quot;You&quot;, &quot;are&quot;, &quot;amazing!&quot;])\n    &#x27;You are amazing!&#x27;\n    &gt;&gt;&gt; join(&quot;#&quot;, [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, 1])\n    Traceback (most recent call last):\n    ...\n    Exception: join() accepts only strings to be joined\n    &quot;&quot;&quot;</span>\n    joined = <span class=\"hljs-string\">&quot;&quot;</span>\n    <span class=\"hljs-keyword\">for</span> word_or_phrase <span class=\"hljs-keyword\">in</span> separated:\n        <span class=\"hljs-keyword\">if</span> <span class=\"hljs-keyword\">not</span> <span class=\"hljs-built_in\">isinstance</span>(word_or_phrase, <span class=\"hljs-built_in\">str</span>):\n            <span class=\"hljs-keyword\">raise</span> Exception(<span class=\"hljs-string\">&quot;join() accepts only strings to be joined&quot;</span>)\n        joined += word_or_phrase + separator\n    <span class=\"hljs-keyword\">return</span> joined.strip(separator)\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">from</span> doctest <span class=\"hljs-keyword\">import</span> testmod\n\n    testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "89947037+Rohanrbharadwaj@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

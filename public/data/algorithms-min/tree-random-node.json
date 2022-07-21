@@ -1,0 +1,24 @@
+{
+  "slug": "tree-random-node",
+  "name": "Tree Random Node",
+  "categories": [
+    "datastructures",
+    "tree"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Suraj Kumar",
+      "email": "76468931+skmodi649@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

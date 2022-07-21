@@ -1,0 +1,29 @@
+{
+  "slug": "bisection-method",
+  "name": "Bisection Method",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": "",
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "ggkogkou",
+      "email": "76820848+ggkogkou@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

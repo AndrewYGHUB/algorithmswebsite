@@ -1,0 +1,93 @@
+{
+  "slug": "min-heap",
+  "name": "Min Heap",
+  "categories": [
+    "datastructures",
+    "heap"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "java": "",
+    "c": "",
+    "dart": ""
+  },
+  "contributors": [
+    {
+      "name": "Kaustav Bhattacharya",
+      "email": "kaustavbhattacharya07@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Jainam Kothari",
+      "email": "87520388+Jainam1401@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "gkgaurav31",
+      "email": "gkgaurav31@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Maria Lungeanu",
+      "email": "Maria.Lungeanu@anritsu.com",
+      "commits": 1
+    },
+    {
+      "name": "khalil2535",
+      "email": "khalil2535@localhost",
+      "commits": 1
+    },
+    {
+      "name": "Palash Sharma",
+      "email": "54630543+palashsharma891@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Raj",
+      "email": "raj1998211@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Stepfen Shawn",
+      "email": "m18824909883@163.com",
+      "commits": 2
+    },
+    {
+      "name": "stepfencurryxiao",
+      "email": "stepfencurryxiao@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "tina tae",
+      "email": "48943736+tinatae@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "zacharyjones123",
+      "email": "zrjones@ncsu.edu",
+      "commits": 2
+    },
+    {
+      "name": "Nicolas Renard",
+      "email": "nicolas.renard.76@outlook.fr",
+      "commits": 2
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 4
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

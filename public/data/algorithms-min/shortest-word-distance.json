@@ -1,0 +1,19 @@
+{
+  "slug": "shortest-word-distance",
+  "name": "Shortest Word Distance",
+  "categories": [
+    "datastructures",
+    "array"
+  ],
+  "implementations": {
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Leo",
+      "email": "leandrofrancarj@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

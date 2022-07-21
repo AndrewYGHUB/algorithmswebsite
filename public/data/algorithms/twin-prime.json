@@ -1,0 +1,23 @@
+{
+  "slug": "twin-prime",
+  "name": "Twin Prime",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/TwinPrime.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/TwinPrime.js",
+      "code": "<span class=\"hljs-keyword\">import</span> { <span class=\"hljs-title class_\">PrimeCheck</span> } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&#x27;./PrimeCheck&#x27;</span>\n\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">twinPrime</span>\n * Gets the &#x27;twin prime&#x27; of a prime number.\n *\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Integer</span>} n The number to find the twin prime of.\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">Integer</span>} Either the twin, or -1 if n or n + 2 is not prime.\n *\n * <span class=\"hljs-doctag\">@see</span> https://en.wikipedia.org/wiki/Twin_prime\n *\n * <span class=\"hljs-doctag\">@example</span> twinPrime(5) = 7\n * <span class=\"hljs-doctag\">@example</span> twinPrime(4) = -1\n*/</span>\n<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">twinPrime</span> (n) {\n  <span class=\"hljs-keyword\">const</span> prime = <span class=\"hljs-title class_\">PrimeCheck</span>(n)\n\n  <span class=\"hljs-keyword\">if</span> (!prime) {\n    <span class=\"hljs-keyword\">return</span> -<span class=\"hljs-number\">1</span>\n  }\n\n  <span class=\"hljs-keyword\">if</span> (!<span class=\"hljs-title class_\">PrimeCheck</span>(n + <span class=\"hljs-number\">2</span>)) {\n    <span class=\"hljs-keyword\">return</span> -<span class=\"hljs-number\">1</span>\n  }\n\n  <span class=\"hljs-keyword\">return</span> n + <span class=\"hljs-number\">2</span>\n}\n\n<span class=\"hljs-keyword\">export</span> { twinPrime }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Exortions",
+      "email": "75327059+Exortions@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

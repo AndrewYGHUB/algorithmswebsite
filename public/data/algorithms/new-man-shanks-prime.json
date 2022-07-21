@@ -1,0 +1,23 @@
+{
+  "slug": "new-man-shanks-prime",
+  "name": "New Man Shanks Prime",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/dynamicprogramming/NewManShanksPrime.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/dynamicprogramming/NewManShanksPrime.java",
+      "code": "<span class=\"hljs-comment\">/** Author : Siddhant Swarup Mallick\n * Github : https://github.com/siddhant2002\n */</span>\n\n\n<span class=\"hljs-comment\">/** Program description - To find the New Man Shanks Prime. */</span>\n<span class=\"hljs-comment\">/** Wikipedia Link - https://en.wikipedia.org/wiki/Newman%E2%80%93Shanks%E2%80%93Williams_prime */</span>\n\n<span class=\"hljs-keyword\">package</span> com.thealgorithms.dynamicprogramming;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">NewManShanksPrime</span> {\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">nthManShanksPrime</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> n , <span class=\"hljs-type\">int</span> expected_answer)</span>\n    {\n        <span class=\"hljs-type\">int</span> a[] = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[n+<span class=\"hljs-number\">1</span>];\n        <span class=\"hljs-comment\">// array of n+1 size is initialized</span>\n        a[<span class=\"hljs-number\">0</span>] = a[<span class=\"hljs-number\">1</span>] = <span class=\"hljs-number\">1</span>;\n        <span class=\"hljs-comment\">// The 0th and 1st index position values are fixed. They are initialized as 1</span>\n        <span class=\"hljs-keyword\">for</span>(<span class=\"hljs-type\">int</span> i=<span class=\"hljs-number\">2</span>;i&lt;=n;i++)\n        {\n            a[i]=<span class=\"hljs-number\">2</span>*a[i-<span class=\"hljs-number\">1</span>]+a[i-<span class=\"hljs-number\">2</span>];\n        }\n        <span class=\"hljs-comment\">// The loop is continued till n</span>\n        <span class=\"hljs-keyword\">return</span> a[n]==expected_answer;\n        <span class=\"hljs-comment\">// returns true if calculated answer matches with expected answer</span>\n    }\n}"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Siddhant Swarup Mallick",
+      "email": "78552027+siddhant2002@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

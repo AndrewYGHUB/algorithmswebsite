@@ -1,0 +1,28 @@
+{
+  "slug": "temparature-conversion",
+  "name": "Temparature Conversion",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rratic",
+      "email": "Rratic@163.com",
+      "commits": 1
+    },
+    {
+      "name": "Ashwani Rathee",
+      "email": "ab669522@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

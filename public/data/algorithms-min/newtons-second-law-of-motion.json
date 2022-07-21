@@ -1,0 +1,18 @@
+{
+  "slug": "newtons-second-law-of-motion",
+  "name": "Newtons Second Law of Motion",
+  "categories": [
+    "physics"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Divyesh Vishwakarma",
+      "email": "divyesh1099@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

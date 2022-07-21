@@ -1,0 +1,48 @@
+{
+  "slug": "bfs-shortest-path",
+  "name": "Bfs Shortest Path",
+  "categories": [
+    "graphs"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "graphs/bfs_shortest_path.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/graphs/bfs_shortest_path.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;Breadth-first search shortest path implementations.\n    doctest:\n    python -m doctest -v bfs_shortest_path.py\n    Manual test:\n    python bfs_shortest_path.py\n&quot;&quot;&quot;</span>\ndemo_graph = {\n    <span class=\"hljs-string\">&quot;A&quot;</span>: [<span class=\"hljs-string\">&quot;B&quot;</span>, <span class=\"hljs-string\">&quot;C&quot;</span>, <span class=\"hljs-string\">&quot;E&quot;</span>],\n    <span class=\"hljs-string\">&quot;B&quot;</span>: [<span class=\"hljs-string\">&quot;A&quot;</span>, <span class=\"hljs-string\">&quot;D&quot;</span>, <span class=\"hljs-string\">&quot;E&quot;</span>],\n    <span class=\"hljs-string\">&quot;C&quot;</span>: [<span class=\"hljs-string\">&quot;A&quot;</span>, <span class=\"hljs-string\">&quot;F&quot;</span>, <span class=\"hljs-string\">&quot;G&quot;</span>],\n    <span class=\"hljs-string\">&quot;D&quot;</span>: [<span class=\"hljs-string\">&quot;B&quot;</span>],\n    <span class=\"hljs-string\">&quot;E&quot;</span>: [<span class=\"hljs-string\">&quot;A&quot;</span>, <span class=\"hljs-string\">&quot;B&quot;</span>, <span class=\"hljs-string\">&quot;D&quot;</span>],\n    <span class=\"hljs-string\">&quot;F&quot;</span>: [<span class=\"hljs-string\">&quot;C&quot;</span>],\n    <span class=\"hljs-string\">&quot;G&quot;</span>: [<span class=\"hljs-string\">&quot;C&quot;</span>],\n}\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">bfs_shortest_path</span>(<span class=\"hljs-params\">graph: <span class=\"hljs-built_in\">dict</span>, start, goal</span>) -&gt; <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">str</span>]:\n    <span class=\"hljs-string\">&quot;&quot;&quot;Find shortest path between `start` and `goal` nodes.\n    Args:\n        graph (dict): node/list of neighboring nodes key/value pairs.\n        start: start node.\n        goal: target node.\n    Returns:\n        Shortest path between `start` and `goal` nodes as a string of nodes.\n        &#x27;Not found&#x27; string if no path found.\n    Example:\n        &gt;&gt;&gt; bfs_shortest_path(demo_graph, &quot;G&quot;, &quot;D&quot;)\n        [&#x27;G&#x27;, &#x27;C&#x27;, &#x27;A&#x27;, &#x27;B&#x27;, &#x27;D&#x27;]\n        &gt;&gt;&gt; bfs_shortest_path(demo_graph, &quot;G&quot;, &quot;G&quot;)\n        [&#x27;G&#x27;]\n        &gt;&gt;&gt; bfs_shortest_path(demo_graph, &quot;G&quot;, &quot;Unknown&quot;)\n        []\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-comment\"># keep track of explored nodes</span>\n    explored = <span class=\"hljs-built_in\">set</span>()\n    <span class=\"hljs-comment\"># keep track of all the paths to be checked</span>\n    queue = [[start]]\n\n    <span class=\"hljs-comment\"># return path if start is goal</span>\n    <span class=\"hljs-keyword\">if</span> start == goal:\n        <span class=\"hljs-keyword\">return</span> [start]\n\n    <span class=\"hljs-comment\"># keeps looping until all possible paths have been checked</span>\n    <span class=\"hljs-keyword\">while</span> queue:\n        <span class=\"hljs-comment\"># pop the first path from the queue</span>\n        path = queue.pop(<span class=\"hljs-number\">0</span>)\n        <span class=\"hljs-comment\"># get the last node from the path</span>\n        node = path[-<span class=\"hljs-number\">1</span>]\n        <span class=\"hljs-keyword\">if</span> node <span class=\"hljs-keyword\">not</span> <span class=\"hljs-keyword\">in</span> explored:\n            neighbours = graph[node]\n            <span class=\"hljs-comment\"># go through all neighbour nodes, construct a new path and</span>\n            <span class=\"hljs-comment\"># push it into the queue</span>\n            <span class=\"hljs-keyword\">for</span> neighbour <span class=\"hljs-keyword\">in</span> neighbours:\n                new_path = <span class=\"hljs-built_in\">list</span>(path)\n                new_path.append(neighbour)\n                queue.append(new_path)\n                <span class=\"hljs-comment\"># return path if neighbour is goal</span>\n                <span class=\"hljs-keyword\">if</span> neighbour == goal:\n                    <span class=\"hljs-keyword\">return</span> new_path\n\n            <span class=\"hljs-comment\"># mark node as explored</span>\n            explored.add(node)\n\n    <span class=\"hljs-comment\"># in case there&#x27;s no path between the 2 nodes</span>\n    <span class=\"hljs-keyword\">return</span> []\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">bfs_shortest_path_distance</span>(<span class=\"hljs-params\">graph: <span class=\"hljs-built_in\">dict</span>, start, target</span>) -&gt; <span class=\"hljs-built_in\">int</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;Find shortest path distance between `start` and `target` nodes.\n    Args:\n        graph: node/list of neighboring nodes key/value pairs.\n        start: node to start search from.\n        target: node to search for.\n    Returns:\n        Number of edges in shortest path between `start` and `target` nodes.\n        -1 if no path exists.\n    Example:\n        &gt;&gt;&gt; bfs_shortest_path_distance(demo_graph, &quot;G&quot;, &quot;D&quot;)\n        4\n        &gt;&gt;&gt; bfs_shortest_path_distance(demo_graph, &quot;A&quot;, &quot;A&quot;)\n        0\n        &gt;&gt;&gt; bfs_shortest_path_distance(demo_graph, &quot;A&quot;, &quot;Unknown&quot;)\n        -1\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">if</span> <span class=\"hljs-keyword\">not</span> graph <span class=\"hljs-keyword\">or</span> start <span class=\"hljs-keyword\">not</span> <span class=\"hljs-keyword\">in</span> graph <span class=\"hljs-keyword\">or</span> target <span class=\"hljs-keyword\">not</span> <span class=\"hljs-keyword\">in</span> graph:\n        <span class=\"hljs-keyword\">return</span> -<span class=\"hljs-number\">1</span>\n    <span class=\"hljs-keyword\">if</span> start == target:\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>\n    queue = [start]\n    visited = <span class=\"hljs-built_in\">set</span>(start)\n    <span class=\"hljs-comment\"># Keep tab on distances from `start` node.</span>\n    dist = {start: <span class=\"hljs-number\">0</span>, target: -<span class=\"hljs-number\">1</span>}\n    <span class=\"hljs-keyword\">while</span> queue:\n        node = queue.pop(<span class=\"hljs-number\">0</span>)\n        <span class=\"hljs-keyword\">if</span> node == target:\n            dist[target] = (\n                dist[node] <span class=\"hljs-keyword\">if</span> dist[target] == -<span class=\"hljs-number\">1</span> <span class=\"hljs-keyword\">else</span> <span class=\"hljs-built_in\">min</span>(dist[target], dist[node])\n            )\n        <span class=\"hljs-keyword\">for</span> adjacent <span class=\"hljs-keyword\">in</span> graph[node]:\n            <span class=\"hljs-keyword\">if</span> adjacent <span class=\"hljs-keyword\">not</span> <span class=\"hljs-keyword\">in</span> visited:\n                visited.add(adjacent)\n                queue.append(adjacent)\n                dist[adjacent] = dist[node] + <span class=\"hljs-number\">1</span>\n    <span class=\"hljs-keyword\">return</span> dist[target]\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-built_in\">print</span>(bfs_shortest_path(demo_graph, <span class=\"hljs-string\">&quot;G&quot;</span>, <span class=\"hljs-string\">&quot;D&quot;</span>))  <span class=\"hljs-comment\"># returns [&#x27;G&#x27;, &#x27;C&#x27;, &#x27;A&#x27;, &#x27;B&#x27;, &#x27;D&#x27;]</span>\n    <span class=\"hljs-built_in\">print</span>(bfs_shortest_path_distance(demo_graph, <span class=\"hljs-string\">&quot;G&quot;</span>, <span class=\"hljs-string\">&quot;D&quot;</span>))  <span class=\"hljs-comment\"># returns 4</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Akash G Krishnan",
+      "email": "krishnanag1996@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "hasan",
+      "email": "hasanuli10@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Kyle",
+      "email": "40903431+kylepw@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sarvesh Dubey",
+      "email": "38752758+dubesar@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

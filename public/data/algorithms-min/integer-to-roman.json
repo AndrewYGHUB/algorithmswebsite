@@ -1,0 +1,55 @@
+{
+  "slug": "integer-to-roman",
+  "name": "Integer To Roman",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "java": "",
+    "go": "",
+    "dart": ""
+  },
+  "contributors": [
+    {
+      "name": "Stepfen Shawn",
+      "email": "m18824909883@163.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Branden",
+      "email": "37084158+brandenc40@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Manan-Rathi",
+      "email": "76519771+Manan-Rathi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Arogon1",
+      "email": "40372809+Arogon1@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "xemjas",
+      "email": "51793139+xemjas@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

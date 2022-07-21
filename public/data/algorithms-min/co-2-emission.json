@@ -1,0 +1,18 @@
+{
+  "slug": "co-2-emission",
+  "name": "Co 2 Emission",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Jr Miranda",
+      "email": "sjrmiranda@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

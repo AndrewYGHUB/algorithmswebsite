@@ -1,0 +1,55 @@
+{
+  "slug": "check-anagrams",
+  "name": "Check Anagrams",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": "",
+    "java": "",
+    "f-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ITAY VENTURA",
+      "email": "39849952+Itayventura@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Morteza",
+      "email": "mortezasaki91@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Toki345",
+      "email": "91814435+Toki345@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Kushagra Bansal",
+      "email": "kushagrabansalajmer@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Allister Isaiah Harvey",
+      "email": "41553768+powpow58@users.noreply.github.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "simplist-radical-form",
+  "name": "Simplist Radical Form",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

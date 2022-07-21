@@ -1,0 +1,18 @@
+{
+  "slug": "knights-tour",
+  "name": "Knights Tour",
+  "categories": [
+    "backtracking"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Limbad Yash",
+      "email": "56826569+limbad-YK@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

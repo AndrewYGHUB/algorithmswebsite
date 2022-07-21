@@ -1,0 +1,24 @@
+{
+  "slug": "bitwisemax",
+  "name": "Bitwisemax",
+  "categories": [
+    "math",
+    "max"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "math/max/bitwisemax.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/max/bitwisemax.go",
+      "code": "<span class=\"hljs-comment\">// bitwiseMax.go</span>\n<span class=\"hljs-comment\">// description: Gives max of two integers</span>\n<span class=\"hljs-comment\">// details:</span>\n<span class=\"hljs-comment\">// implementation of finding the maximum of two numbers using only binary operations without using conditions</span>\n<span class=\"hljs-comment\">// author(s) [red_byte](https://github.com/i-redbyte)</span>\n<span class=\"hljs-comment\">// see bitwiseMax_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> max\n\n<span class=\"hljs-comment\">// Bitwise computes using bitwise operator the maximum of all the integer input and returns it</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Bitwise</span><span class=\"hljs-params\">(a <span class=\"hljs-type\">int</span>, b <span class=\"hljs-type\">int</span>, base <span class=\"hljs-type\">int</span>)</span></span> <span class=\"hljs-type\">int</span> {\n\tz := a - b\n\ti := (z &gt;&gt; base) &amp; <span class=\"hljs-number\">1</span>\n\t<span class=\"hljs-keyword\">return</span> a - (i * z)\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

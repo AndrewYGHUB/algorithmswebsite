@@ -1,0 +1,12 @@
+{
+  "slug": "a000142-factorial",
+  "name": "A000142 Factorial",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "complex-numbers",
+  "name": "Complex Numbers",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

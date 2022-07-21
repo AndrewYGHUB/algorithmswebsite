@@ -1,0 +1,24 @@
+{
+  "slug": "common-characters",
+  "name": "Common Characters",
+  "categories": [
+    "datastructures",
+    "hashtable"
+  ],
+  "implementations": {
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Jessica Kwok",
+      "email": "jessicatckwok@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

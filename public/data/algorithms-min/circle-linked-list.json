@@ -1,0 +1,79 @@
+{
+  "slug": "circle-linked-list",
+  "name": "Circle Linked List",
+  "categories": [
+    "datastructures",
+    "list"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 1
+    },
+    {
+      "name": "Shuangchi He",
+      "email": "34329208+Yulv-git@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "tuca",
+      "email": "108655157+tucawang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Speecker",
+      "email": "jan.speecker.mayer@googlemail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "DEBADRIBASAK",
+      "email": "32904247+DEBADRIBASAK@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Maria Lungeanu",
+      "email": "Maria.Lungeanu@anritsu.com",
+      "commits": 1
+    },
+    {
+      "name": "khalil2535",
+      "email": "khalil2535@localhost",
+      "commits": 1
+    },
+    {
+      "name": "teerapat1739",
+      "email": "teerapat12345678@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Moro-Code",
+      "email": "onasr013@uottawa.ca",
+      "commits": 2
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 3
+    },
+    {
+      "name": "Khwanchanok Srimool",
+      "email": "khwanchanok.sri@ascendcorp.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

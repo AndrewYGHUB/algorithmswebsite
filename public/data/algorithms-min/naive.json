@@ -1,0 +1,13 @@
+{
+  "slug": "naive",
+  "name": "Naive",
+  "categories": [
+    "strings",
+    "searches"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

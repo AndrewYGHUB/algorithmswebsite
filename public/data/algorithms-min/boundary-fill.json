@@ -1,0 +1,18 @@
+{
+  "slug": "boundary-fill",
+  "name": "Boundary Fill",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Akshay Dubey",
+      "email": "38462415+itsAkshayDubey@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

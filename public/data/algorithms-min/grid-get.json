@@ -1,0 +1,23 @@
+{
+  "slug": "grid-get",
+  "name": "Grid Get",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rob Hicks",
+      "email": "darclan28@yahoo.com",
+      "commits": 1
+    },
+    {
+      "name": "Ephraim Atta-Duncan",
+      "email": "55143799+dephraiim@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

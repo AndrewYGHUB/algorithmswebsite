@@ -1,0 +1,18 @@
+{
+  "slug": "manacher-algorithm",
+  "name": "Manacher Algorithm",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Riti Kumari",
+      "email": "ritikumariupadhyay24@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

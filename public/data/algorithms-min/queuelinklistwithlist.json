@@ -1,0 +1,29 @@
+{
+  "slug": "queuelinklistwithlist",
+  "name": "Queuelinklistwithlist",
+  "categories": [
+    "structure",
+    "queues"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ritik Bhandari",
+      "email": "ritikbhandari68@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Milad",
+      "email": "14594374+Miraddo@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

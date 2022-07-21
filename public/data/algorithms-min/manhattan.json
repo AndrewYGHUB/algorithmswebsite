@@ -1,0 +1,19 @@
+{
+  "slug": "manhattan",
+  "name": "Manhattan",
+  "categories": [
+    "linearalgebra",
+    "distances"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Diego Delgado",
+      "email": "105917468+dideldev@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

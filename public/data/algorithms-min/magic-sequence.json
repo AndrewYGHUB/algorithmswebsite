@@ -1,0 +1,18 @@
+{
+  "slug": "magic-sequence",
+  "name": "Magic Sequence",
+  "categories": [
+    "backtracking"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Jxtopher",
+      "email": "39927513+Jxtopher@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

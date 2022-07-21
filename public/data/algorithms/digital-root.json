@@ -1,0 +1,28 @@
+{
+  "slug": "digital-root",
+  "name": "Digital Root",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/DigitalRoot.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/DigitalRoot.java",
+      "code": "<span class=\"hljs-comment\">/** Author : Suraj Kumar Modi\n * https://github.com/skmodi649\n */</span>\n<span class=\"hljs-comment\">/** You are given a number n. You need to find the digital root of n.\n * DigitalRoot of a number is the recursive sum of its digits until we get a single digit number.\n *\n * Test Case 1:\n * Input:\n * n = 1\n * Output:  1\n * Explanation: Digital root of 1 is 1\n *\n * Test Case 2:\n * Input:\n * n = 99999\n * Output: 9\n * Explanation: Sum of digits of 99999 is 45\n * which is not a single digit number, hence\n * sum of digit of 45 is 9 which is a single\n * digit number.\n */</span>\n<span class=\"hljs-comment\">/** Algorithm :\n * Step 1 : Define a method digitalRoot(int n)\n * Step 2 : Define another method single(int n)\n * Step 3 : digitalRoot(int n) method takes output of single(int n) as input\n * if(single(int n) &lt;= 9)\n * return single(n)\n * else\n * return digitalRoot(single(n))\n * Step 4 : single(int n) calculates the sum of digits of number n recursively\n * if(n&lt;=9)\n * return n;\n * else\n * return (n%10) + (n/10)\n * Step 5 : In main method simply take n as input and then call digitalRoot(int n) function and print the result\n */</span>\n<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-keyword\">import</span> java.util.*;\n\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">DigitalRoot</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">digitalRoot</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> n)</span> {\n        <span class=\"hljs-keyword\">if</span> (single(n) &lt;= <span class=\"hljs-number\">9</span>) <span class=\"hljs-comment\">// If n is already single digit than simply call single method and return the value</span>\n        {\n            <span class=\"hljs-keyword\">return</span> single(n);\n        } <span class=\"hljs-keyword\">else</span> {\n            <span class=\"hljs-keyword\">return</span> digitalRoot(single(n));\n        }\n    }\n\n    <span class=\"hljs-comment\">// This function is used for finding the sum of digits of number</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">single</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> n)</span> {\n        <span class=\"hljs-keyword\">if</span> (n &lt;= <span class=\"hljs-number\">9</span>) <span class=\"hljs-comment\">// if n becomes less than 10 than return n</span>\n        {\n            <span class=\"hljs-keyword\">return</span> n;\n        } <span class=\"hljs-keyword\">else</span> {\n            <span class=\"hljs-keyword\">return</span> (n % <span class=\"hljs-number\">10</span>) + single(n / <span class=\"hljs-number\">10</span>);                     <span class=\"hljs-comment\">// n % 10 for extracting digits one by one</span>\n        }\n    }                                                             <span class=\"hljs-comment\">// n / 10 is the number obtainded after removing the digit one by one  </span>\n    <span class=\"hljs-comment\">// Sum of digits is stored in the Stack memory and then finally returned</span>\n\n}\n\n<span class=\"hljs-comment\">/**\n * Time Complexity : O((Number of Digits)^2) Auxiliary Space Complexity :\n * O(Number of Digits) Constraints : 1 &lt;= n &lt;= 10^7\n */</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Suraj Kumar",
+      "email": "76468931+skmodi649@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

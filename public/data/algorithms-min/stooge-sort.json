@@ -1,0 +1,68 @@
+{
+  "slug": "stooge-sort",
+  "name": "Stooge Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "java": "",
+    "c": "",
+    "rust": "",
+    "r": ""
+  },
+  "contributors": [
+    {
+      "name": "Jerrit Gläsker",
+      "email": "50867655+cherrysrc@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aruj Sharma",
+      "email": "aruj123sharma@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "krishna.vedala@ieee.org",
+      "commits": 1
+    },
+    {
+      "name": "Amir",
+      "email": "43786077+ahsNT@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Marcos Vinicius",
+      "email": "mvhb@cin.ufpe.br",
+      "commits": 1
+    },
+    {
+      "name": "Phyllipe Bezerra",
+      "email": "32442929+pmba@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Charitoc",
+      "email": "37042130+Charitoc@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Erez Shomron",
+      "email": "48328872+eshom@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Madiena",
+      "email": "95379618+Madiena@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

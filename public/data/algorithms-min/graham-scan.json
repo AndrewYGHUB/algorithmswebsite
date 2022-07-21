@@ -1,0 +1,23 @@
+{
+  "slug": "graham-scan",
+  "name": "Graham Scan",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "ulwlu",
+      "email": "ooulwluoo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrew Grangaard",
+      "email": "andrew.grangaard@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "merge-two-lists",
+  "name": "Merge Two Lists",
+  "categories": [
+    "datastructures",
+    "linkedlist"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Maliha",
+      "email": "maliha_786@hotmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

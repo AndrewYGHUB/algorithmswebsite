@@ -1,0 +1,39 @@
+{
+  "slug": "word-occurrence",
+  "name": "Word Occurrence",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": "",
+    "f-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "imp",
+      "email": "imp07@qq.com",
+      "commits": 1
+    },
+    {
+      "name": "Ikko Ashimine",
+      "email": "eltociear@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Arkadip Bhattacharya",
+      "email": "in2arkadipb13@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Allister Isaiah Harvey",
+      "email": "41553768+powpow58@users.noreply.github.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

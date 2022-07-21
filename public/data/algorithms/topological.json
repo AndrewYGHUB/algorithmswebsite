@@ -1,0 +1,28 @@
+{
+  "slug": "topological",
+  "name": "Topological",
+  "categories": [
+    "graphs"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "graph/topological.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/graph/topological.go",
+      "code": "<span class=\"hljs-keyword\">package</span> graph\n\n<span class=\"hljs-comment\">// Assumes that graph given is valid and possible to</span>\n<span class=\"hljs-comment\">// get a topo ordering.</span>\n<span class=\"hljs-comment\">// constraints are array of []int{a, b}, representing</span>\n<span class=\"hljs-comment\">// an edge going from a to b</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Topological</span><span class=\"hljs-params\">(N <span class=\"hljs-type\">int</span>, constraints [][]<span class=\"hljs-type\">int</span>)</span></span> []<span class=\"hljs-type\">int</span> {\n\tdependencies := <span class=\"hljs-built_in\">make</span>([]<span class=\"hljs-type\">int</span>, N)\n\tnodes := <span class=\"hljs-built_in\">make</span>([]<span class=\"hljs-type\">int</span>, N)\n\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-keyword\">range</span> nodes {\n\t\tnodes[i] = i\n\t}\n\tedges := <span class=\"hljs-built_in\">make</span>([][]<span class=\"hljs-type\">bool</span>, N)\n\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-keyword\">range</span> edges {\n\t\tedges[i] = <span class=\"hljs-built_in\">make</span>([]<span class=\"hljs-type\">bool</span>, N)\n\t}\n\n\t<span class=\"hljs-keyword\">for</span> _, c := <span class=\"hljs-keyword\">range</span> constraints {\n\t\ta := c[<span class=\"hljs-number\">0</span>]\n\t\tb := c[<span class=\"hljs-number\">1</span>]\n\t\tdependencies[b]++\n\t\tedges[a][b] = <span class=\"hljs-literal\">true</span>\n\t}\n\n\tanswer := []<span class=\"hljs-type\">int</span>{}\n\t<span class=\"hljs-keyword\">for</span> s := <span class=\"hljs-number\">0</span>; s &lt; N; s++ {\n\t\t<span class=\"hljs-comment\">// Only start walking from top level nodes</span>\n\t\t<span class=\"hljs-keyword\">if</span> dependencies[s] == <span class=\"hljs-number\">0</span> {\n\t\t\troute, _ := DepthFirstSearchHelper(s, N, nodes, edges, <span class=\"hljs-literal\">true</span>)\n\t\t\tanswer = <span class=\"hljs-built_in\">append</span>(answer, route...)\n\t\t}\n\t}\n\n\t<span class=\"hljs-keyword\">return</span> answer\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Metta Ong",
+      "email": "ongspxm@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

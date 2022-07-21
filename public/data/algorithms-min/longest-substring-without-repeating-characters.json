@@ -1,0 +1,19 @@
+{
+  "slug": "longest-substring-without-repeating-characters",
+  "name": "Longest Substring Without Repeating Characters",
+  "categories": [
+    "dynamicprogramming",
+    "slidingwindow"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Aditya Parmar",
+      "email": "58773630+Aditya1942@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

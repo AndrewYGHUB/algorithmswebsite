@@ -1,0 +1,23 @@
+{
+  "slug": "min",
+  "name": "Min",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Michele Caci",
+      "email": "michele.caci@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Meet Valani",
+      "email": "40715819+meetvalani@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

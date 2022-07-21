@@ -1,0 +1,18 @@
+{
+  "slug": "persistence",
+  "name": "Persistence",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Bartechnika",
+      "email": "48760796+Bartechnika@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

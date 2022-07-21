@@ -1,0 +1,23 @@
+{
+  "slug": "table-stack",
+  "name": "Table Stack",
+  "categories": [
+    "datastructures"
+  ],
+  "body": {},
+  "implementations": {
+    "lua": {
+      "dir": "src/data_structures/table_stack.lua",
+      "url": "https://github.com/TheAlgorithms/lua/tree/master/src/data_structures/table_stack.lua",
+      "code": "<span class=\"hljs-comment\">-- Table (implementation-dependant, in practice array list) based stack</span>\n<span class=\"hljs-comment\">-- Worst-case linear time for basic operations, in practice amortized constant time and significantly less overhead</span>\n<span class=\"hljs-comment\">-- Merely a OOP wrapper for Lua&#x27;s table library</span>\n<span class=\"hljs-keyword\">local</span> table_stack = {}\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">table_stack.new</span><span class=\"hljs-params\">()</span></span>\n\t<span class=\"hljs-keyword\">return</span> {}\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">table_stack:empty</span><span class=\"hljs-params\">()</span></span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">self</span>[<span class=\"hljs-number\">1</span>] == <span class=\"hljs-literal\">nil</span>\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">table_stack:push</span><span class=\"hljs-params\">(value)</span></span>\n\t<span class=\"hljs-built_in\">table</span>.<span class=\"hljs-built_in\">insert</span>(<span class=\"hljs-built_in\">self</span>, value)\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">table_stack:top</span><span class=\"hljs-params\">()</span></span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">self</span>[#<span class=\"hljs-built_in\">self</span>]\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">table_stack:pop</span><span class=\"hljs-params\">()</span></span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">table</span>.<span class=\"hljs-built_in\">remove</span>(<span class=\"hljs-built_in\">self</span>)\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">require</span>(<span class=\"hljs-string\">&quot;class&quot;</span>)(table_stack)\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

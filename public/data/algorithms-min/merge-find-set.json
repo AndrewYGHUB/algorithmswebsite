@@ -1,0 +1,18 @@
+{
+  "slug": "merge-find-set",
+  "name": "Merge Find Set",
+  "categories": [
+    "specializedstructure"
+  ],
+  "implementations": {
+    "haskell": ""
+  },
+  "contributors": [
+    {
+      "name": "Niccolò Marcon",
+      "email": "marcon.niccolo@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

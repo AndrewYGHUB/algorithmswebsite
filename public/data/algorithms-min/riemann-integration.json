@@ -1,0 +1,18 @@
+{
+  "slug": "riemann-integration",
+  "name": "Riemann Integration",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

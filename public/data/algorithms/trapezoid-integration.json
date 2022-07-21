@@ -1,0 +1,28 @@
+{
+  "slug": "trapezoid-integration",
+  "name": "Trapezoid Integration",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "julia": {
+      "dir": "src/math/trapezoid_integration.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/math/trapezoid_integration.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    trapezoid_integration(f::Function, a::Real, b::Real, n::Int)\n\nThe trapezoidal rule works by approximating the region under the graph of the function f(x) as a trapezoid and calculating its area.\n\n# Arguments\n- `f`: the function to integrate. (at the momment only single variable is suported)\n- `a`: Start of the integration limit.\n- `b`: End of the integration limit.\n- `n`: Number of points to sample. (as n increase, error decrease)\n\n# Examples/Test\n```julia\njulia&gt; trapezoid_integration(x -&gt; 4 / (1 + x^2), 0, 1, 100_000)\n3.1415926535731526\njulia&gt; trapezoid_integration(x -&gt; 4 / (1 + x^2), 0, 1, 100_000) ≈ pi\ntrue\n```\n# References:\n-https://personal.math.ubc.ca/~pwalls/math-python/integration/trapezoid-rule/\n-https://en.wikipedia.org/wiki/Trapezoidal_rule\n\n# Contributed By:- [AugustoCL](https://github.com/AugustoCL)\n&quot;&quot;&quot;</span>\n<span class=\"hljs-keyword\">function</span> trapezoid_integration(f::<span class=\"hljs-built_in\">Function</span>, a::<span class=\"hljs-built_in\">Real</span>, b::<span class=\"hljs-built_in\">Real</span>, n::<span class=\"hljs-built_in\">Int</span>)\n    <span class=\"hljs-comment\"># width of the trapezoids</span>\n    Δₓ = (b - a) / n\n\n    <span class=\"hljs-comment\"># sum of the height of the trapezoids</span>\n    Σ = <span class=\"hljs-number\">0.5</span> * f(a) + sum(f(i) <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> (a+Δₓ):Δₓ:(b-Δₓ)) + <span class=\"hljs-number\">0.5</span> * f(b)\n\n    <span class=\"hljs-comment\"># approximate integral of f</span>\n    <span class=\"hljs-keyword\">return</span> Δₓ * Σ\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Augusto C. Leal",
+      "email": "leal.augusto@unifesp.br",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

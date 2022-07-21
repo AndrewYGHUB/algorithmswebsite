@@ -1,0 +1,30 @@
+{
+  "slug": "prime",
+  "name": "Prime",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c": "",
+    "f-sharp": "",
+    "r": ""
+  },
+  "contributors": [
+    {
+      "name": "i1e0",
+      "email": "96235137+i1e0@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Erez Shomron",
+      "email": "48328872+eshom@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Alex Garland",
+      "email": "alex@numinar.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

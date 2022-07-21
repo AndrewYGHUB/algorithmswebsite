@@ -1,0 +1,23 @@
+{
+  "slug": "median-heap",
+  "name": "Median Heap",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Müller",
+      "email": "34514239+appgurueu@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

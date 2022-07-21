@@ -1,0 +1,19 @@
+{
+  "slug": "ga-ns-py-torch",
+  "name": "GA Ns Py Torch",
+  "categories": [
+    "neuralnetwork",
+    "ganspytorchvanillalsdc"
+  ],
+  "implementations": {
+    "jupyter": ""
+  },
+  "contributors": [
+    {
+      "name": "KARAN",
+      "email": "im.karan23@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "turkish-to-latin-conversion",
+  "name": "Turkish To Latin Conversion",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "zgnmgg",
+      "email": "goksenliozgun@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

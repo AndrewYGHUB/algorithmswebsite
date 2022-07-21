@@ -1,0 +1,62 @@
+{
+  "slug": "euler-method",
+  "name": "Euler Method",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "java": "",
+    "julia": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Azzaare",
+      "email": "jf@baffier.fr",
+      "commits": 1
+    },
+    {
+      "name": "Carlos Rafael",
+      "email": "carlosk2gunn@hotmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "poloso",
+      "email": "osoriopabl@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Roland Hummel",
+      "email": "roland.hummel@qaware.de",
+      "commits": 3
+    },
+    {
+      "name": "algobytewise",
+      "email": "algobytewise@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

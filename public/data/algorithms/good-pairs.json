@@ -1,0 +1,29 @@
+{
+  "slug": "good-pairs",
+  "name": "Good Pairs",
+  "categories": [
+    "datastructures",
+    "hashtable"
+  ],
+  "body": {},
+  "implementations": {
+    "ruby": {
+      "dir": "data_structures/arrays/good_pairs.rb",
+      "url": "https://github.com/TheAlgorithms/ruby/tree/master/data_structures/arrays/good_pairs.rb",
+      "code": "<span class=\"hljs-comment\"># Challenge name: Number of good pairs</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Given an array of integers nums.</span>\n<span class=\"hljs-comment\"># A pair (i,j) is called good if nums[i] == nums[j] and i &lt; j.</span>\n<span class=\"hljs-comment\"># Return the number of good pairs.</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># <span class=\"hljs-doctag\">@param</span> {Integer[]} nums</span>\n<span class=\"hljs-comment\"># <span class=\"hljs-doctag\">@return</span> {Integer}</span>\n<span class=\"hljs-comment\">#</span>\n\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Approach 1: Brute Force</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Time Complexity: O(n^2)</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">num_identical_pairs</span>(<span class=\"hljs-params\">nums</span>)\n  count = <span class=\"hljs-number\">0</span>\n  nums.each_with_index <span class=\"hljs-keyword\">do</span> |<span class=\"hljs-params\">num, i</span>|\n    target = num\n    nums.each_with_index <span class=\"hljs-keyword\">do</span> |<span class=\"hljs-params\">num, j</span>|\n      <span class=\"hljs-keyword\">next</span> <span class=\"hljs-keyword\">if</span> i &gt;= j\n\n      count += <span class=\"hljs-number\">1</span> <span class=\"hljs-keyword\">if</span> num == target\n    <span class=\"hljs-keyword\">end</span>\n  <span class=\"hljs-keyword\">end</span>\n  count\n<span class=\"hljs-keyword\">end</span>\n\nnums = [<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">3</span>]\nputs(num_identical_pairs(nums))\n<span class=\"hljs-comment\"># Output: 4</span>\n<span class=\"hljs-comment\"># Explanation: There are 4 good pairs (0,3), (0,4), (3,4), (2,5) 0-indexed.</span>\n\nnums = [<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">1</span>]\nputs(num_identical_pairs(nums))\n<span class=\"hljs-comment\"># Output: 6</span>\n<span class=\"hljs-comment\"># Explanation: Each pair in the array are good.</span>\n\nnums = [<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">3</span>]\nputs(num_identical_pairs(nums))\n<span class=\"hljs-comment\"># Output: 0</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Jessica Kwok",
+      "email": "jessicatckwok@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

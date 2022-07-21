@@ -1,0 +1,23 @@
+{
+  "slug": "distance-formula",
+  "name": "Distance Formula",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/DistanceFormula.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/DistanceFormula.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">DistanceFormula</span> {\n\t<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">double</span> <span class=\"hljs-title function_\">distance</span><span class=\"hljs-params\">(<span class=\"hljs-type\">double</span> x1, <span class=\"hljs-type\">double</span> y1, <span class=\"hljs-type\">double</span> x2, <span class=\"hljs-type\">double</span> y2)</span>\n\t{\n\t\t<span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">dX</span> <span class=\"hljs-operator\">=</span> Math.pow(x2-x1, <span class=\"hljs-number\">2</span>);\n\t\t<span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">dY</span> <span class=\"hljs-operator\">=</span> Math.pow(y2-x1, <span class=\"hljs-number\">2</span>);\n\t\t<span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">d</span> <span class=\"hljs-operator\">=</span> Math.sqrt(dX+dY);\n\t\t<span class=\"hljs-keyword\">return</span> d;\n\t}\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Raghav Taneja",
+      "email": "97575679+RaghavTaneja@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

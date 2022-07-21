@@ -1,0 +1,23 @@
+{
+  "slug": "download-images-from-google-query",
+  "name": "Download Images From Google Query",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Appledora",
+      "email": "nazia89@student.sust.edu",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

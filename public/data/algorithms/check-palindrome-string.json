@@ -1,0 +1,17 @@
+{
+  "slug": "check-palindrome-string",
+  "name": "Check Palindrome String",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "php": {
+      "dir": "String/CheckPalindromeString.php",
+      "url": "https://github.com/TheAlgorithms/php/tree/master/String/CheckPalindromeString.php",
+      "code": "<span class=\"hljs-meta\">&lt;?php</span>\n\n<span class=\"hljs-comment\">/**\n * This is a simple way to check palindrome string \n * using php strrev() function \n * make it simple\n */</span>\n\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@param</span> string $string\n * <span class=\"hljs-doctag\">@param</span> bool $caseInsensitive\n */</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">checkPalindromeString</span>(<span class=\"hljs-params\"><span class=\"hljs-keyword\">string</span> <span class=\"hljs-variable\">$string</span>, <span class=\"hljs-keyword\">bool</span> <span class=\"hljs-variable\">$caseInsensitive</span> = <span class=\"hljs-literal\">true</span></span>): <span class=\"hljs-title\">String</span>\n</span>{\n    <span class=\"hljs-comment\">//removing spaces</span>\n    <span class=\"hljs-variable\">$string</span> = <span class=\"hljs-title function_ invoke__\">trim</span>(<span class=\"hljs-variable\">$string</span>);\n\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">empty</span>(<span class=\"hljs-variable\">$string</span>)) {\n        <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">\\Exception</span>(<span class=\"hljs-string\">&#x27;You are given empty string. Please give a non-empty string value&#x27;</span>);\n    }\n\n    <span class=\"hljs-comment\">/**\n     * for case-insensitive \n     * lowercase string conversion\n     */</span>\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-variable\">$caseInsensitive</span>) {\n        <span class=\"hljs-variable\">$string</span> = <span class=\"hljs-title function_ invoke__\">strtolower</span>(<span class=\"hljs-variable\">$string</span>);\n    }\n\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-variable\">$string</span> !== <span class=\"hljs-title function_ invoke__\">strrev</span>(<span class=\"hljs-variable\">$string</span>)) {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-variable\">$string</span> . <span class=\"hljs-string\">&quot; - not a palindrome string.&quot;</span> . PHP_EOL;\n    }\n\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-variable\">$string</span> . <span class=\"hljs-string\">&quot; - a palindrome string.&quot;</span> . PHP_EOL;\n}\n\n<span class=\"hljs-comment\">// example</span>\n<span class=\"hljs-keyword\">echo</span> <span class=\"hljs-title function_ invoke__\">checkPalindromeString</span>(<span class=\"hljs-string\">&#x27;131&#x27;</span>);\n<span class=\"hljs-keyword\">echo</span> <span class=\"hljs-title function_ invoke__\">checkPalindromeString</span>(<span class=\"hljs-string\">&#x27;roman&#x27;</span>);\n<span class=\"hljs-keyword\">echo</span> <span class=\"hljs-title function_ invoke__\">checkPalindromeString</span>(<span class=\"hljs-string\">&#x27;Level&#x27;</span>);\n<span class=\"hljs-keyword\">echo</span> <span class=\"hljs-title function_ invoke__\">checkPalindromeString</span>(<span class=\"hljs-string\">&#x27;palindrome&#x27;</span>);\n"
+    }
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

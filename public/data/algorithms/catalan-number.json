@@ -1,0 +1,33 @@
+{
+  "slug": "catalan-number",
+  "name": "Catalan Number",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/dynamicprogramming/CatalanNumber.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/dynamicprogramming/CatalanNumber.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.dynamicprogramming;\n\n<span class=\"hljs-comment\">/**\n * This file contains an implementation of finding the nth CATALAN NUMBER using\n * dynamic programming Wikipedia: https://en.wikipedia.org/wiki/Catalan_number\n *\n * Time Complexity: O(n^2) Space Complexity: O(n)\n *\n * <span class=\"hljs-doctag\">@author</span> AMRITESH ANAND (https://github.com/amritesh19)\n */</span>\n<span class=\"hljs-keyword\">import</span> java.util.Scanner;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">CatalanNumber</span> {\n\n    <span class=\"hljs-comment\">/**\n     * This method finds the nth Catalan number\n     *\n     * <span class=\"hljs-doctag\">@param</span> n input n which determines the nth Catalan number n should be less\n     * than equal to 50 as 50th Catalan number is 6,533,841,209,031,609,592 for\n     * n &gt; 50, BigInteger class should be used instead long\n     *\n     * <span class=\"hljs-doctag\">@return</span> catalanArray[n] the nth Catalan number\n     */</span>\n    <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">long</span> <span class=\"hljs-title function_\">findNthCatalan</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> n)</span> {\n\n        <span class=\"hljs-comment\">// Array to store the results of subproblems i.e Catalan numbers from [1...n-1]</span>\n        <span class=\"hljs-type\">long</span> catalanArray[] = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">long</span>[n + <span class=\"hljs-number\">1</span>];\n\n        <span class=\"hljs-comment\">// Initialising C₀ = 1 and C₁ = 1 </span>\n        catalanArray[<span class=\"hljs-number\">0</span>] = <span class=\"hljs-number\">1</span>;\n        catalanArray[<span class=\"hljs-number\">1</span>] = <span class=\"hljs-number\">1</span>;\n\n        <span class=\"hljs-comment\">/**\n         * The Catalan numbers satisfy the recurrence relation C₀=1 and Cn = Σ\n         * (Ci * Cn-1-i), i = 0 to n-1 , n &gt; 0\n         */</span>\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">2</span>; i &lt;= n; i++) {\n            catalanArray[i] = <span class=\"hljs-number\">0</span>;\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">j</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; j &lt; i; j++) {\n                catalanArray[i] += catalanArray[j] * catalanArray[i - j - <span class=\"hljs-number\">1</span>];\n            }\n        }\n\n        <span class=\"hljs-keyword\">return</span> catalanArray[n];\n    }\n\n    <span class=\"hljs-comment\">// Main method</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span> {\n        <span class=\"hljs-type\">Scanner</span> <span class=\"hljs-variable\">sc</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Scanner</span>(System.in);\n\n        System.out.println(<span class=\"hljs-string\">&quot;Enter the number n to find nth Catalan number (n &lt;= 50)&quot;</span>);\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">n</span> <span class=\"hljs-operator\">=</span> sc.nextInt();\n        System.out.println(n + <span class=\"hljs-string\">&quot;th Catalan number is &quot;</span> + findNthCatalan(n));\n\n        sc.close();\n    }\n}\n"
+    },
+    "go": {
+      "dir": "math/catalan/catalannumber.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/catalan/catalannumber.go",
+      "code": "<span class=\"hljs-comment\">// catalannumber.go</span>\n<span class=\"hljs-comment\">// description: Returns the Catalan number</span>\n<span class=\"hljs-comment\">// details:</span>\n<span class=\"hljs-comment\">// In combinatorial mathematics, the Catalan numbers are a sequence of natural numbers that occur in various counting problems, often involving recursively defined objects. - [Catalan number](https://en.wikipedia.org/wiki/Catalan_number)</span>\n<span class=\"hljs-comment\">// The input is the number of the Catalan number n, at the output we get the value of the number</span>\n<span class=\"hljs-comment\">// author(s) [red_byte](https://github.com/i-redbyte)</span>\n<span class=\"hljs-comment\">// see catalannumber_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> catalan\n\n<span class=\"hljs-keyword\">import</span> (\n\tf <span class=\"hljs-string\">&quot;github.com/TheAlgorithms/Go/math/factorial&quot;</span>\n)\n\n<span class=\"hljs-comment\">// CatalanNumber This function returns the `nth` Catalan number</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">CatalanNumber</span><span class=\"hljs-params\">(n <span class=\"hljs-type\">int</span>)</span></span> <span class=\"hljs-type\">int</span> {\n\t<span class=\"hljs-keyword\">return</span> f.Iterative(n*<span class=\"hljs-number\">2</span>) / (f.Iterative(n) * f.Iterative(n+<span class=\"hljs-number\">1</span>))\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Amritesh Anand",
+      "email": "73696688+amritesh19@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "krishnamurthy-number",
+  "name": "Krishnamurthy Number",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "maths/krishnamurthy_number.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/maths/krishnamurthy_number.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n == Krishnamurthy Number ==\nIt is also known as Peterson Number\nA Krishnamurthy Number is a number whose sum of the\nfactorial of the digits equals to the original\nnumber itself.\n\nFor example: 145 = 1! + 4! + 5!\n    So, 145 is a Krishnamurthy Number\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">factorial</span>(<span class=\"hljs-params\">digit: <span class=\"hljs-built_in\">int</span></span>) -&gt; <span class=\"hljs-built_in\">int</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    &gt;&gt;&gt; factorial(3)\n    6\n    &gt;&gt;&gt; factorial(0)\n    1\n    &gt;&gt;&gt; factorial(5)\n    120\n    &quot;&quot;&quot;</span>\n\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">1</span> <span class=\"hljs-keyword\">if</span> digit <span class=\"hljs-keyword\">in</span> (<span class=\"hljs-number\">0</span>, <span class=\"hljs-number\">1</span>) <span class=\"hljs-keyword\">else</span> (digit * factorial(digit - <span class=\"hljs-number\">1</span>))\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">krishnamurthy</span>(<span class=\"hljs-params\">number: <span class=\"hljs-built_in\">int</span></span>) -&gt; <span class=\"hljs-built_in\">bool</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    &gt;&gt;&gt; krishnamurthy(145)\n    True\n    &gt;&gt;&gt; krishnamurthy(240)\n    False\n    &gt;&gt;&gt; krishnamurthy(1)\n    True\n    &quot;&quot;&quot;</span>\n\n    factSum = <span class=\"hljs-number\">0</span>\n    duplicate = number\n    <span class=\"hljs-keyword\">while</span> duplicate &gt; <span class=\"hljs-number\">0</span>:\n        duplicate, digit = <span class=\"hljs-built_in\">divmod</span>(duplicate, <span class=\"hljs-number\">10</span>)\n        factSum += factorial(digit)\n    <span class=\"hljs-keyword\">return</span> factSum == number\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;Program to check whether a number is a Krisnamurthy Number or not.&quot;</span>)\n    number = <span class=\"hljs-built_in\">int</span>(<span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&quot;Enter number: &quot;</span>).strip())\n    <span class=\"hljs-built_in\">print</span>(\n        <span class=\"hljs-string\">f&quot;<span class=\"hljs-subst\">{number}</span> is <span class=\"hljs-subst\">{<span class=\"hljs-string\">&#x27;&#x27;</span> <span class=\"hljs-keyword\">if</span> krishnamurthy(number) <span class=\"hljs-keyword\">else</span> <span class=\"hljs-string\">&#x27;not &#x27;</span>}</span>a Krishnamurthy Number.&quot;</span>\n    )\n"
+    },
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/KrishnamurthyNumber.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/KrishnamurthyNumber.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-comment\">/* This is a program to check if a number is a Krishnamurthy number or not.\nA number is a Krishnamurthy number if the sum of the factorials of the digits of the number is equal to the number itself.\nFor example, 1, 2 and 145 are Krishnamurthy numbers.\nKrishnamurthy number is also referred to as a Strong number.\n */</span>\n<span class=\"hljs-keyword\">import</span> java.io.*;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">KrishnamurthyNumber</span> {\n    <span class=\"hljs-comment\">//returns True if the number is a Krishnamurthy number and False if it is not.</span>\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">isKMurthy</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> n)</span> {\n        <span class=\"hljs-comment\">//initialising the variable s that will store the sum of the factorials of the digits to 0</span>\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">s</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>;\n        <span class=\"hljs-comment\">//storing the number n in a temporary variable tmp</span>\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">tmp</span> <span class=\"hljs-operator\">=</span> n;\n\n        <span class=\"hljs-comment\">//Krishnamurthy numbers are positive</span>\n        <span class=\"hljs-keyword\">if</span> (n &lt;= <span class=\"hljs-number\">0</span>) {\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n        } <span class=\"hljs-comment\">//checking if the number is a Krishnamurthy number</span>\n        <span class=\"hljs-keyword\">else</span> {\n            <span class=\"hljs-keyword\">while</span> (n != <span class=\"hljs-number\">0</span>) {\n                <span class=\"hljs-comment\">//initialising the variable fact that will store the factorials of the digits</span>\n                <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">fact</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>;\n                <span class=\"hljs-comment\">//computing factorial of each digit</span>\n                <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>; i &lt;= n % <span class=\"hljs-number\">10</span>; i++) {\n                    fact = fact * i;\n                }\n                <span class=\"hljs-comment\">//computing the sum of the factorials</span>\n                s = s + fact;\n                <span class=\"hljs-comment\">//discarding the digit for which factorial has been calculated</span>\n                n = n / <span class=\"hljs-number\">10</span>;\n            }\n\n            <span class=\"hljs-comment\">//evaluating if sum of the factorials of the digits equals the number itself</span>\n            <span class=\"hljs-keyword\">if</span> (tmp == s) {\n                <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>;\n            } <span class=\"hljs-keyword\">else</span> {\n                <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n            }\n        }\n    }\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String args[])</span> <span class=\"hljs-keyword\">throws</span> IOException {\n        <span class=\"hljs-type\">BufferedReader</span> <span class=\"hljs-variable\">br</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">BufferedReader</span>(<span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">InputStreamReader</span>(System.in));\n        System.out.println(<span class=\"hljs-string\">&quot;Enter a number to check if it is a Krishnamurthy number: &quot;</span>);\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">n</span> <span class=\"hljs-operator\">=</span> Integer.parseInt(br.readLine());\n        <span class=\"hljs-keyword\">if</span> (isKMurthy(n)) {\n            System.out.println(n + <span class=\"hljs-string\">&quot; is a Krishnamurthy number.&quot;</span>);\n        } <span class=\"hljs-keyword\">else</span> {\n            System.out.println(n + <span class=\"hljs-string\">&quot; is NOT a Krishnamurthy number.&quot;</span>);\n        }\n    }\n}\n"
+    },
+    "julia": {
+      "dir": "src/math/krishnamurthy_number.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/math/krishnamurthy_number.jl",
+      "code": "include(<span class=\"hljs-string\">&quot;factorial.jl&quot;</span>)\n\n<span class=\"hljs-string\">&quot;&quot;&quot;\n    krishnamurthy(number)\n\nCheck if a number is a Krishnamurthy number or not\n\n# Details\n\nIt is also known as Peterson Number. \n\nA Krishnamurthy Number is a number whose sum of the\nfactorial of the digits equals to the original\nnumber itself.\n\nFor example: 145 = 1! + 4! + 5!\n    So, 145 is a Krishnamurthy Number\n\n# Example\n\n```julia\nkrishnamurthy(145) # returns true\nkrishnamurthy(240) # returns false\nkrishnamurthy(1)   # returns true \n```\n\nContributed By:- [Ashwani Rathee](https://github.com/ashwani-rathee)\n&quot;&quot;&quot;</span>\n<span class=\"hljs-keyword\">function</span> krishnamurthy(number)\n    <span class=\"hljs-keyword\">if</span> number != trunc(number) || number &lt; <span class=\"hljs-number\">0</span>\n        throw(\n            error(<span class=\"hljs-string\">&quot;krishnamurthy() only accepts non-negative integral values&quot;</span>),\n        )\n    <span class=\"hljs-keyword\">end</span>\n    total = <span class=\"hljs-number\">0</span>\n    temp = number\n    <span class=\"hljs-keyword\">while</span> temp &gt; <span class=\"hljs-number\">0</span>\n        temp, digit = divrem(temp, <span class=\"hljs-number\">10</span>)\n        total += factorial_iterative(digit)\n    <span class=\"hljs-keyword\">end</span>\n    <span class=\"hljs-keyword\">return</span> total == number\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ashwani Rathee",
+      "email": "ab669522@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "OceanicBlue730",
+      "email": "87030526+OceanicBlue730@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Utsav1999",
+      "email": "utsavakash123@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

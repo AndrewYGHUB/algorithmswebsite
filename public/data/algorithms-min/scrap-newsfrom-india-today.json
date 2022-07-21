@@ -1,0 +1,18 @@
+{
+  "slug": "scrap-newsfrom-india-today",
+  "name": "Scrap Newsfrom India Today",
+  "categories": [
+    "automaton"
+  ],
+  "implementations": {
+    "jupyter": ""
+  },
+  "contributors": [
+    {
+      "name": "Gaurav Kumar",
+      "email": "57063469+GrayFlash@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

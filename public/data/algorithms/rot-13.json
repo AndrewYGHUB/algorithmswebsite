@@ -1,0 +1,103 @@
+{
+  "slug": "rot-13",
+  "name": "Rot 13",
+  "categories": [
+    "ciphers"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "ciphers/rot13.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/ciphers/rot13.py",
+      "code": "<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">dencrypt</span>(<span class=\"hljs-params\">s: <span class=\"hljs-built_in\">str</span>, n: <span class=\"hljs-built_in\">int</span> = <span class=\"hljs-number\">13</span></span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    https://en.wikipedia.org/wiki/ROT13\n\n    &gt;&gt;&gt; msg = &quot;My secret bank account number is 173-52946 so don&#x27;t tell anyone!!&quot;\n    &gt;&gt;&gt; s = dencrypt(msg)\n    &gt;&gt;&gt; s\n    &quot;Zl frperg onax nppbhag ahzore vf 173-52946 fb qba&#x27;g gryy nalbar!!&quot;\n    &gt;&gt;&gt; dencrypt(s) == msg\n    True\n    &quot;&quot;&quot;</span>\n    out = <span class=\"hljs-string\">&quot;&quot;</span>\n    <span class=\"hljs-keyword\">for</span> c <span class=\"hljs-keyword\">in</span> s:\n        <span class=\"hljs-keyword\">if</span> <span class=\"hljs-string\">&quot;A&quot;</span> &lt;= c &lt;= <span class=\"hljs-string\">&quot;Z&quot;</span>:\n            out += <span class=\"hljs-built_in\">chr</span>(<span class=\"hljs-built_in\">ord</span>(<span class=\"hljs-string\">&quot;A&quot;</span>) + (<span class=\"hljs-built_in\">ord</span>(c) - <span class=\"hljs-built_in\">ord</span>(<span class=\"hljs-string\">&quot;A&quot;</span>) + n) % <span class=\"hljs-number\">26</span>)\n        <span class=\"hljs-keyword\">elif</span> <span class=\"hljs-string\">&quot;a&quot;</span> &lt;= c &lt;= <span class=\"hljs-string\">&quot;z&quot;</span>:\n            out += <span class=\"hljs-built_in\">chr</span>(<span class=\"hljs-built_in\">ord</span>(<span class=\"hljs-string\">&quot;a&quot;</span>) + (<span class=\"hljs-built_in\">ord</span>(c) - <span class=\"hljs-built_in\">ord</span>(<span class=\"hljs-string\">&quot;a&quot;</span>) + n) % <span class=\"hljs-number\">26</span>)\n        <span class=\"hljs-keyword\">else</span>:\n            out += c\n    <span class=\"hljs-keyword\">return</span> out\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">main</span>() -&gt; <span class=\"hljs-literal\">None</span>:\n    s0 = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&quot;Enter message: &quot;</span>)\n\n    s1 = dencrypt(s0, <span class=\"hljs-number\">13</span>)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;Encryption:&quot;</span>, s1)\n\n    s2 = dencrypt(s1, <span class=\"hljs-number\">13</span>)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;Decryption: &quot;</span>, s2)\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n    main()\n"
+    },
+    "javascript": {
+      "dir": "Ciphers/ROT13.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Ciphers/ROT13.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">ROT13</span>\n * <span class=\"hljs-doctag\">@description</span> - ROT13 (&quot;rotate by 13 places&quot;, sometimes hyphenated ROT-13) is a simple letter substitution cipher that replaces a letter with the 13th letter after it in the alphabet. ROT13 is a special case of the Caesar cipher which was developed in ancient Rome. Because there are 26 letters (2×13) in the basic Latin alphabet, ROT13 is its own inverse; that is, to undo ROT13, the same algorithm is applied, so the same action can be used for encoding and decoding. The algorithm provides virtually no cryptographic security, and is often cited as a canonical example of weak encryption.\n * <span class=\"hljs-doctag\">@see</span> - [wiki](https://en.wikipedia.org/wiki/ROT13)\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">String</span>} <span class=\"hljs-variable\">str</span> - string to be decrypted\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">String</span>} decrypted string\n */</span>\n<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">ROT13</span> (str) {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> str !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Argument should be string&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">return</span> str.<span class=\"hljs-title function_\">replace</span>(<span class=\"hljs-regexp\">/[a-z]/gi</span>, <span class=\"hljs-function\">(<span class=\"hljs-params\">char</span>) =&gt;</span> {\n    <span class=\"hljs-keyword\">const</span> charCode = char.<span class=\"hljs-title function_\">charCodeAt</span>()\n\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-regexp\">/[n-z]/i</span>.<span class=\"hljs-title function_\">test</span>(char)) {\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title class_\">String</span>.<span class=\"hljs-title function_\">fromCharCode</span>(charCode - <span class=\"hljs-number\">13</span>)\n    }\n\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title class_\">String</span>.<span class=\"hljs-title function_\">fromCharCode</span>(charCode + <span class=\"hljs-number\">13</span>)\n  })\n}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> <span class=\"hljs-title class_\">ROT13</span>\n"
+    },
+    "go": {
+      "dir": "cipher/rot13/rot13.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/cipher/rot13/rot13.go",
+      "code": "<span class=\"hljs-comment\">// Package rot13 is a simple letter substitution cipher that replaces a letter with the 13th letter after it in the alphabet.</span>\n<span class=\"hljs-comment\">// ref: https://en.wikipedia.org/wiki/ROT13</span>\n<span class=\"hljs-keyword\">package</span> rot13\n\n<span class=\"hljs-keyword\">import</span> (\n\t<span class=\"hljs-string\">&quot;github.com/TheAlgorithms/Go/cipher/caesar&quot;</span>\n)\n\n<span class=\"hljs-comment\">// rot13 is a special case, which is fixed the shift of 13, of the Caesar cipher</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">rot13</span><span class=\"hljs-params\">(input <span class=\"hljs-type\">string</span>)</span></span> <span class=\"hljs-type\">string</span> {\n\t<span class=\"hljs-keyword\">return</span> caesar.Encrypt(input, <span class=\"hljs-number\">13</span>)\n}\n"
+    },
+    "rust": {
+      "dir": "src/ciphers/rot13.rs",
+      "url": "https://github.com/TheAlgorithms/rust/tree/master/src/ciphers/rot13.rs",
+      "code": "<span class=\"hljs-keyword\">pub</span> <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">rot13</span>(text: &amp;<span class=\"hljs-type\">str</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">String</span> {\n    <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">to_enc</span> = text.<span class=\"hljs-title function_ invoke__\">to_uppercase</span>();\n    to_enc\n        .<span class=\"hljs-title function_ invoke__\">chars</span>()\n        .<span class=\"hljs-title function_ invoke__\">map</span>(|c| <span class=\"hljs-keyword\">match</span> c {\n            <span class=\"hljs-string\">&#x27;A&#x27;</span>..=<span class=\"hljs-string\">&#x27;M&#x27;</span> =&gt; ((c <span class=\"hljs-keyword\">as</span> <span class=\"hljs-type\">u8</span>) + <span class=\"hljs-number\">13</span>) <span class=\"hljs-keyword\">as</span> <span class=\"hljs-type\">char</span>,\n            <span class=\"hljs-string\">&#x27;N&#x27;</span>..=<span class=\"hljs-string\">&#x27;Z&#x27;</span> =&gt; ((c <span class=\"hljs-keyword\">as</span> <span class=\"hljs-type\">u8</span>) - <span class=\"hljs-number\">13</span>) <span class=\"hljs-keyword\">as</span> <span class=\"hljs-type\">char</span>,\n            _ =&gt; c,\n        })\n        .<span class=\"hljs-title function_ invoke__\">collect</span>()\n}\n\n<span class=\"hljs-meta\">#[cfg(test)]</span>\n<span class=\"hljs-keyword\">mod</span> test {\n    <span class=\"hljs-keyword\">use</span> super::*;\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_single_letter</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-string\">&quot;N&quot;</span>, <span class=\"hljs-title function_ invoke__\">rot13</span>(<span class=\"hljs-string\">&quot;A&quot;</span>));\n    }\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_bunch_of_letters</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-string\">&quot;NOP&quot;</span>, <span class=\"hljs-title function_ invoke__\">rot13</span>(<span class=\"hljs-string\">&quot;ABC&quot;</span>));\n    }\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_non_ascii</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-string\">&quot;😀NO&quot;</span>, <span class=\"hljs-title function_ invoke__\">rot13</span>(<span class=\"hljs-string\">&quot;😀AB&quot;</span>));\n    }\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_twice</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-string\">&quot;ABCD&quot;</span>, <span class=\"hljs-title function_ invoke__\">rot13</span>(&amp;<span class=\"hljs-title function_ invoke__\">rot13</span>(<span class=\"hljs-string\">&quot;ABCD&quot;</span>)));\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Sutthinart Khunvadhana",
+      "email": "iakgoog@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Carlo Federico Vescovo",
+      "email": "vescovocarlofederico@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Brayo",
+      "email": "vukubrian@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "task4233",
+      "email": "tks.m1205@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Jenia Dysin",
+      "email": "jenia90@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aakash Dinkar",
+      "email": "35952953+aakashdinkar@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "cclauss",
+      "email": "cclauss@bluewin.ch",
+      "commits": 1
+    },
+    {
+      "name": "Pedro Tôrres",
+      "email": "t0rr3sp3dr0@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

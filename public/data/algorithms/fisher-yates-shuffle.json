@@ -1,0 +1,43 @@
+{
+  "slug": "fisher-yates-shuffle",
+  "name": "Fisher Yates Shuffle",
+  "categories": [
+    "sorts"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Sorts/FisherYatesShuffle.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Sorts/FisherYatesShuffle.js",
+      "code": "<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">shuffle</span> = (<span class=\"hljs-params\">array</span>) =&gt; {\n  <span class=\"hljs-keyword\">let</span> maxLength = array.<span class=\"hljs-property\">length</span>\n  <span class=\"hljs-keyword\">let</span> temp\n  <span class=\"hljs-keyword\">let</span> idx\n\n  <span class=\"hljs-comment\">// While there remain elements to shuffle...</span>\n  <span class=\"hljs-keyword\">while</span> (maxLength) {\n    <span class=\"hljs-comment\">// Pick a remaining element...</span>\n    idx = <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">floor</span>(<span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">random</span>() * maxLength--)\n\n    <span class=\"hljs-comment\">// And swap it with the current element</span>\n    temp = array[maxLength]\n    array[maxLength] = array[idx]\n    array[idx] = temp\n  }\n\n  <span class=\"hljs-keyword\">return</span> array\n}\n"
+    },
+    "dart": {
+      "dir": "other/fisher_yates_shuffle.dart",
+      "url": "https://github.com/TheAlgorithms/dart/tree/master/other/fisher_yates_shuffle.dart",
+      "code": "<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">&#x27;dart:math&#x27;</span>;\n\nRandom rng = <span class=\"hljs-keyword\">new</span> Random();\n\n<span class=\"hljs-comment\">/// <span class=\"language-markdown\">Swap given [index1] and [index2] in given [collection]</span></span>\n<span class=\"hljs-keyword\">void</span> swap&lt;T&gt;(<span class=\"hljs-built_in\">List</span>&lt;T&gt; collection, <span class=\"hljs-built_in\">int</span> index1, <span class=\"hljs-built_in\">int</span> index2) {\n  T temp = collection[index1];\n  collection[index1] = collection[index2];\n  collection[index2] = temp;\n}\n\n<span class=\"hljs-comment\">/// <span class=\"language-markdown\">Randomly shuffle given [collection] (inplace)</span></span>\n<span class=\"hljs-keyword\">void</span> shuffle&lt;T&gt;(<span class=\"hljs-built_in\">List</span>&lt;T&gt; collection) {\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-built_in\">int</span> i = collection.length - <span class=\"hljs-number\">1</span>; i &gt; <span class=\"hljs-number\">1</span>; i--) {\n    swap(collection, i, rng.nextInt(i - <span class=\"hljs-number\">1</span>));\n  }\n}\n\nmain() {\n  <span class=\"hljs-built_in\">List</span>&lt;<span class=\"hljs-built_in\">double</span>&gt; someList = [<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">5</span>];\n  <span class=\"hljs-built_in\">print</span>(someList);\n  shuffle(someList);\n  <span class=\"hljs-built_in\">print</span>(someList);\n  shuffle(someList);\n  <span class=\"hljs-built_in\">print</span>(someList);\n  shuffle(someList);\n  <span class=\"hljs-built_in\">print</span>(someList);\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    },
+    {
+      "name": "Damien Chazoule",
+      "email": "damien.chazoule@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Parowicz",
+      "email": "arturparowicz@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Omkarnath Parida",
+      "email": "pomkarnath98@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

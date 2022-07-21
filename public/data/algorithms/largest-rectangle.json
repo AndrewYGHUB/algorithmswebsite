@@ -1,0 +1,24 @@
+{
+  "slug": "largest-rectangle",
+  "name": "Largest Rectangle",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/datastructures/stacks/LargestRectangle.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/datastructures/stacks/LargestRectangle.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.datastructures.stacks;\r\n\r\n<span class=\"hljs-keyword\">import</span> java.util.Stack;\r\n\r\n<span class=\"hljs-comment\">/**\r\n *\r\n * <span class=\"hljs-doctag\">@author</span> mohd rameez github.com/rameez471\r\n */</span>\r\n\r\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">LargestRectangle</span> {\r\n\t<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span>  String <span class=\"hljs-title function_\">largestRectanglehistogram</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span>[] heights)</span> {\r\n\t\t<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">n</span> <span class=\"hljs-operator\">=</span> heights.length, maxArea = <span class=\"hljs-number\">0</span>;\r\n\t\tStack&lt;<span class=\"hljs-type\">int</span>[]&gt; st = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Stack</span>&lt;&gt;();\r\n\t\t<span class=\"hljs-keyword\">for</span>(<span class=\"hljs-type\">int</span> i=<span class=\"hljs-number\">0</span>;i&lt;n;i++) {\r\n\t\t\t<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">start</span> <span class=\"hljs-operator\">=</span> i;\r\n\t\t\t<span class=\"hljs-keyword\">while</span>(!st.isEmpty() &amp;&amp; st.peek()[<span class=\"hljs-number\">1</span>] &gt; heights[i]) {\r\n\t\t\t\t<span class=\"hljs-type\">int</span>[] tmp = st.pop();\r\n\t\t\t\tmaxArea = Math.max(maxArea, tmp[<span class=\"hljs-number\">1</span>]*(i - tmp[<span class=\"hljs-number\">0</span>]));\r\n\t\t\t\tstart = tmp[<span class=\"hljs-number\">0</span>];\r\n\t\t\t}\r\n\t\t\tst.push(<span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[]{start, heights[i]});\r\n\t\t}\r\n\t\t<span class=\"hljs-keyword\">while</span>(!st.isEmpty()) {\r\n\t\t\t<span class=\"hljs-type\">int</span>[] tmp = st.pop();\r\n\t\t\tmaxArea = Math.max(maxArea, tmp[<span class=\"hljs-number\">1</span>]*(n-tmp[<span class=\"hljs-number\">0</span>]));\r\n\t\t}\r\n\t\t<span class=\"hljs-keyword\">return</span> Integer.toString(maxArea);\r\n\t}\r\n\t<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span> {\r\n        <span class=\"hljs-keyword\">assert</span> <span class=\"hljs-title function_\">largestRectanglehistogram</span><span class=\"hljs-params\">(new <span class=\"hljs-type\">int</span>[]{<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">5</span>, <span class=\"hljs-number\">6</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">3</span>})</span>.equals(<span class=\"hljs-string\">&quot;10&quot;</span>);\r\n        <span class=\"hljs-keyword\">assert</span> <span class=\"hljs-title function_\">largestRectanglehistogram</span><span class=\"hljs-params\">(new <span class=\"hljs-type\">int</span>[]{<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">4</span>})</span>.equals(<span class=\"hljs-string\">&quot;4&quot;</span>);\r\n    }\r\n}\r\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "rameez471",
+      "email": "41578444+rameez471@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

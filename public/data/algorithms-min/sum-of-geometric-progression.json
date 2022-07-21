@@ -1,0 +1,45 @@
+{
+  "slug": "sum-of-geometric-progression",
+  "name": "Sum of Geometric Progression",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ashwani Rathee",
+      "email": "ab669522@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Advik Kulkarni",
+      "email": "56193714+AxSmasher44@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dumby",
+      "email": "71999854+SpiderMath@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,89 @@
+{
+  "slug": "tim-sort",
+  "name": "Tim Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "rust": "",
+    "dart": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Hemanth",
+      "email": "hemanth.kotagiri43@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Hossein Dindar",
+      "email": "72156162+hosseind88@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "stepfencurryxiao",
+      "email": "stepfencurryxiao@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "DarkWarrior703",
+      "email": "56077342+DarkWarrior703@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "sandeeproy99",
+      "email": "33170898+sandeeproy99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sahil Parekh",
+      "email": "35810976+Sahil3198@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "FrogBattle",
+      "email": "44649323+FrogBattle@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "cclauss",
+      "email": "cclauss@bluewin.ch",
+      "commits": 1
+    },
+    {
+      "name": "97arushisharma",
+      "email": "97arushisharma@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "James Mc Dermott",
+      "email": "james.mcdermott89@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

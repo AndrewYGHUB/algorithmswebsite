@@ -1,0 +1,23 @@
+{
+  "slug": "weighted-choice",
+  "name": "Weighted Choice",
+  "categories": [
+    "random"
+  ],
+  "body": {},
+  "implementations": {
+    "lua": {
+      "dir": "src/random/weighted_choice.lua",
+      "url": "https://github.com/TheAlgorithms/lua/tree/master/src/random/weighted_choice.lua",
+      "code": "<span class=\"hljs-keyword\">local</span> binary_search = <span class=\"hljs-built_in\">require</span>(<span class=\"hljs-string\">&quot;searches.binary_search&quot;</span>)\n\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(\n\tweights <span class=\"hljs-comment\">-- list of weights</span>\n)</span></span>\n\t<span class=\"hljs-comment\">-- Linear time preparation</span>\n\t<span class=\"hljs-keyword\">local</span> val_upper_bounds = {} <span class=\"hljs-comment\">-- Scaled upper bounds of random value (distribution)</span>\n\t<span class=\"hljs-keyword\">local</span> sum = <span class=\"hljs-number\">0</span>\n\t<span class=\"hljs-keyword\">for</span> index, weight <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">pairs</span>(weights) <span class=\"hljs-keyword\">do</span>\n\t\tsum = sum + weight\n\t\tval_upper_bounds[index] = sum\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-comment\">-- Scale to 1</span>\n\t<span class=\"hljs-keyword\">for</span> index, val_upper_bound <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">pairs</span>(val_upper_bounds) <span class=\"hljs-keyword\">do</span>\n\t\tval_upper_bounds[index] = val_upper_bound / sum\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-comment\">-- Performs the weighted choice, returns the index of the chosen element</span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">()</span></span>\n\t\t<span class=\"hljs-comment\">-- Logarithmic time weighted choice</span>\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">math</span>.<span class=\"hljs-built_in\">abs</span>(binary_search(val_upper_bounds, <span class=\"hljs-built_in\">math</span>.<span class=\"hljs-built_in\">random</span>()))\n\t<span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

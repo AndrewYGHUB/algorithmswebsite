@@ -1,0 +1,18 @@
+{
+  "slug": "horizontal-projectile-motion",
+  "name": "Horizontal Projectile Motion",
+  "categories": [
+    "physics"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Aviv Faraj",
+      "email": "73610201+avivfaraj@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

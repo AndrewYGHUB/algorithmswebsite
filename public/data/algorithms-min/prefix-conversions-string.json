@@ -1,0 +1,23 @@
+{
+  "slug": "prefix-conversions-string",
+  "name": "Prefix Conversions String",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "John Law",
+      "email": "johnlaw.po@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Manuel Di Lullo",
+      "email": "39048927+manueldilullo@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

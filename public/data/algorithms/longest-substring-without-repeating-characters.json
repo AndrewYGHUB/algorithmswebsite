@@ -1,0 +1,24 @@
+{
+  "slug": "longest-substring-without-repeating-characters",
+  "name": "Longest Substring Without Repeating Characters",
+  "categories": [
+    "dynamicprogramming",
+    "slidingwindow"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Dynamic-Programming/Sliding-Window/LongestSubstringWithoutRepeatingCharacters.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Dynamic-Programming/Sliding-Window/LongestSubstringWithoutRepeatingCharacters.js",
+      "code": "<span class=\"hljs-comment\">/**\n *  <span class=\"hljs-doctag\">@name</span> <span class=\"hljs-variable\">The</span>-Sliding-Window Algorithm is primarily used for the problems dealing with linear data structures like Arrays, Lists, Strings etc.\n *  These problems can easily be solved using Brute Force techniques which result in quadratic or exponential time complexity.\n *  Sliding window technique reduces the required time to linear O(n).\n *  <span class=\"hljs-doctag\">@see</span> [The-Sliding-Window](https://www.geeksforgeeks.org/window-sliding-technique/)\n */</span>\n\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">LongestSubstringWithoutRepeatingCharacters</span>\n * <span class=\"hljs-doctag\">@description</span> Get the length of the longest substring without repeating characters\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">String</span>} <span class=\"hljs-variable\">s</span> - The input string\n */</span>\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">LongestSubstringWithoutRepeatingCharacters</span> (s) {\n  <span class=\"hljs-keyword\">let</span> maxLength = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">let</span> start = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">let</span> end = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">const</span> map = {}\n  <span class=\"hljs-keyword\">while</span> (end &lt; s.<span class=\"hljs-property\">length</span>) {\n    <span class=\"hljs-keyword\">if</span> (map[s[end]] === <span class=\"hljs-literal\">undefined</span>) {\n      map[s[end]] = <span class=\"hljs-number\">1</span>\n      maxLength = <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">max</span>(maxLength, end - start + <span class=\"hljs-number\">1</span>)\n      end++\n    } <span class=\"hljs-keyword\">else</span> {\n      <span class=\"hljs-keyword\">while</span> (s[start] !== s[end]) {\n        <span class=\"hljs-keyword\">delete</span> map[s[start]]\n        start++\n      }\n      <span class=\"hljs-keyword\">delete</span> map[s[start]]\n      start++\n    }\n  }\n  <span class=\"hljs-keyword\">return</span> maxLength\n}\n\n<span class=\"hljs-comment\">// Example 1:</span>\n<span class=\"hljs-comment\">// Input: s = &quot;abcabcbb&quot;</span>\n<span class=\"hljs-comment\">// Output: 3</span>\n<span class=\"hljs-comment\">// Explanation: The answer is &quot;abc&quot;, with the length of 3.</span>\n\n<span class=\"hljs-comment\">// Example 2:</span>\n<span class=\"hljs-comment\">// Input: s = &quot;bbbbb&quot;</span>\n<span class=\"hljs-comment\">// Output: 1</span>\n<span class=\"hljs-comment\">// Explanation: The answer is &quot;b&quot;, with the length of 1.</span>\n\n<span class=\"hljs-comment\">// Example 3:</span>\n<span class=\"hljs-comment\">// Input: s = &quot;pwwkew&quot;</span>\n<span class=\"hljs-comment\">// Output: 3</span>\n<span class=\"hljs-comment\">// Explanation: The answer is &quot;wke&quot;, with the length of 3.</span>\n<span class=\"hljs-comment\">// Notice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Aditya Parmar",
+      "email": "58773630+Aditya1942@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

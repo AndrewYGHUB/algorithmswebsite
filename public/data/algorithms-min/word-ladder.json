@@ -1,0 +1,23 @@
+{
+  "slug": "word-ladder",
+  "name": "Word Ladder",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Parundeep Singh",
+      "email": "52928589+ParundeepSingh@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

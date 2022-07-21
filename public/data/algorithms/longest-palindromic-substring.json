@@ -1,0 +1,38 @@
+{
+  "slug": "longest-palindromic-substring",
+  "name": "Longest Palindromic Substring",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/dynamicprogramming/LongestPalindromicSubstring.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/dynamicprogramming/LongestPalindromicSubstring.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.dynamicprogramming;\n\n<span class=\"hljs-comment\">/*\n * Algorithm explanation https://leetcode.com/problems/longest-palindromic-substring/\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">LongestPalindromicSubstring</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span> {\n        <span class=\"hljs-type\">String</span> <span class=\"hljs-variable\">a</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">&quot;babad&quot;</span>;\n        <span class=\"hljs-type\">String</span> <span class=\"hljs-variable\">b</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">&quot;cbbd&quot;</span>;\n\n        <span class=\"hljs-type\">String</span> <span class=\"hljs-variable\">aLPS</span> <span class=\"hljs-operator\">=</span> LPS(a);\n        <span class=\"hljs-type\">String</span> <span class=\"hljs-variable\">bLPS</span> <span class=\"hljs-operator\">=</span> LPS(b);\n\n        System.out.println(a + <span class=\"hljs-string\">&quot; =&gt; &quot;</span> + aLPS);\n        System.out.println(b + <span class=\"hljs-string\">&quot; =&gt; &quot;</span> + bLPS);\n    }\n\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> String <span class=\"hljs-title function_\">LPS</span><span class=\"hljs-params\">(String input)</span> {\n        <span class=\"hljs-keyword\">if</span> (input == <span class=\"hljs-literal\">null</span> || input.length() == <span class=\"hljs-number\">0</span>) {\n            <span class=\"hljs-keyword\">return</span> input;\n        }\n        <span class=\"hljs-type\">boolean</span> arr[][] = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">boolean</span>[input.length()][input.length()];\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">start</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>, end = <span class=\"hljs-number\">0</span>;\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">g</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; g &lt; input.length(); g++) {\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>, j = g; j &lt; input.length(); i++, j++) {\n\n                <span class=\"hljs-keyword\">if</span> (g == <span class=\"hljs-number\">0</span>) {\n                    arr[i][j] = <span class=\"hljs-literal\">true</span>;\n                } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (g == <span class=\"hljs-number\">1</span>) {\n                    <span class=\"hljs-keyword\">if</span> (input.charAt(i) == input.charAt(j)) {\n                        arr[i][j] = <span class=\"hljs-literal\">true</span>;\n                    } <span class=\"hljs-keyword\">else</span> {\n                        arr[i][j] = <span class=\"hljs-literal\">false</span>;\n                    }\n                } <span class=\"hljs-keyword\">else</span> {\n\n                    <span class=\"hljs-keyword\">if</span> (input.charAt(i) == input.charAt(j) &amp;&amp; arr[i + <span class=\"hljs-number\">1</span>][j - <span class=\"hljs-number\">1</span>]) {\n                        arr[i][j] = <span class=\"hljs-literal\">true</span>;\n                    } <span class=\"hljs-keyword\">else</span> {\n                        arr[i][j] = <span class=\"hljs-literal\">false</span>;\n                    }\n                }\n\n                <span class=\"hljs-keyword\">if</span> (arr[i][j]) {\n                    start = i;\n                    end = j;\n                }\n            }\n        }\n        <span class=\"hljs-keyword\">return</span> input.substring(start, end + <span class=\"hljs-number\">1</span>);\n    }\n\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Kabir",
+      "email": "44284877+kabir0x17@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Kush Sharma",
+      "email": "kushsharma1001@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Sagar Monga",
+      "email": "50130301+sagar-monga@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

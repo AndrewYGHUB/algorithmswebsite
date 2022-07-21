@@ -1,0 +1,38 @@
+{
+  "slug": "key-finder",
+  "name": "Key Finder",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Juliano Nunes",
+      "email": "julianomarquesnunes@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Wan Cheuk Lun",
+      "email": "winsonrich@gmail.com",
+      "commits": 9
+    }
+  ],
+  "explanationUrl": {}
+}

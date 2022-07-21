@@ -1,0 +1,23 @@
+{
+  "slug": "local-weighted-learning",
+  "name": "Local Weighted Learning",
+  "categories": [
+    "machinelearning"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Venkatesh Tantravahi",
+      "email": "64308188+venkateshtantravahi@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "logarithm",
+  "name": "Logarithm",
+  "categories": [
+    "math",
+    "binary"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "math/binary/logarithm.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/binary/logarithm.go",
+      "code": "<span class=\"hljs-comment\">// author(s) [red_byte](https://github.com/i-redbyte)</span>\n<span class=\"hljs-comment\">// see logarithm_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> binary\n\n<span class=\"hljs-comment\">// LogBase2 Finding the exponent of n = 2**x using bitwise operations (logarithm in base 2 of n) [See more](https://en.wikipedia.org/wiki/Logarithm)</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">LogBase2</span><span class=\"hljs-params\">(n <span class=\"hljs-type\">uint32</span>)</span></span> <span class=\"hljs-type\">uint32</span> {\n\tbase := [<span class=\"hljs-number\">5</span>]<span class=\"hljs-type\">uint32</span>{<span class=\"hljs-number\">0x2</span>, <span class=\"hljs-number\">0xC</span>, <span class=\"hljs-number\">0xF0</span>, <span class=\"hljs-number\">0xFF00</span>, <span class=\"hljs-number\">0xFFFF0000</span>}\n\texponents := [<span class=\"hljs-number\">5</span>]<span class=\"hljs-type\">uint32</span>{<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">8</span>, <span class=\"hljs-number\">16</span>}\n\t<span class=\"hljs-keyword\">var</span> result <span class=\"hljs-type\">uint32</span>\n\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-number\">4</span>; i &gt;= <span class=\"hljs-number\">0</span>; i-- {\n\t\t<span class=\"hljs-keyword\">if</span> n&amp;base[i] != <span class=\"hljs-number\">0</span> {\n\t\t\tn &gt;&gt;= exponents[i]\n\t\t\tresult |= exponents[i]\n\t\t}\n\t}\n\t<span class=\"hljs-keyword\">return</span> result\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

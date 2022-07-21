@@ -1,0 +1,12 @@
+{
+  "slug": "a001462-golombs",
+  "name": "A001462 Golomb's",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

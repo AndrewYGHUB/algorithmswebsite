@@ -1,0 +1,19 @@
+{
+  "slug": "linear-regression-using-pandas",
+  "name": "Linear Regression Using Pandas",
+  "categories": [
+    "machinelearning",
+    "linearregression"
+  ],
+  "implementations": {
+    "jupyter": ""
+  },
+  "contributors": [
+    {
+      "name": "Raj",
+      "email": "rajpansuriya40@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "jump",
+  "name": "Jump",
+  "categories": [
+    "searches"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "search/jump.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/search/jump.go",
+      "code": "<span class=\"hljs-comment\">// jump.go</span>\n<span class=\"hljs-comment\">// description: Implementation of jump search</span>\n<span class=\"hljs-comment\">// details:</span>\n<span class=\"hljs-comment\">// A search algorithm for ordered list that jump through the list to narrow down the range</span>\n<span class=\"hljs-comment\">// before performing a linear search</span>\n<span class=\"hljs-comment\">// reference: https://en.wikipedia.org/wiki/Jump_search</span>\n<span class=\"hljs-comment\">// see jump_test.go for a test implementation, test function TestJump</span>\n\n<span class=\"hljs-keyword\">package</span> search\n\n<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">&quot;math&quot;</span>\n\n<span class=\"hljs-comment\">// Jump search works by jumping multiple steps ahead in sorted list until it find an item larger than target,</span>\n<span class=\"hljs-comment\">// then create a sublist of item from the last searched item up to the current item and perform a linear search.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Jump</span><span class=\"hljs-params\">(array []<span class=\"hljs-type\">int</span>, target <span class=\"hljs-type\">int</span>)</span></span> (<span class=\"hljs-type\">int</span>, <span class=\"hljs-type\">error</span>) {\n\tn := <span class=\"hljs-built_in\">len</span>(array)\n\t<span class=\"hljs-keyword\">if</span> n == <span class=\"hljs-number\">0</span> {\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">-1</span>, ErrNotFound\n\t}\n\n\t<span class=\"hljs-comment\">// the optimal value of step is square root of the length of list</span>\n\tstep := <span class=\"hljs-type\">int</span>(math.Round(math.Sqrt(<span class=\"hljs-type\">float64</span>(n))))\n\n\tprev := <span class=\"hljs-number\">0</span>    <span class=\"hljs-comment\">// previous index</span>\n\tcurr := step <span class=\"hljs-comment\">// current index</span>\n\t<span class=\"hljs-keyword\">for</span> array[curr<span class=\"hljs-number\">-1</span>] &lt; target {\n\t\tprev = curr\n\t\t<span class=\"hljs-keyword\">if</span> prev &gt;= <span class=\"hljs-built_in\">len</span>(array) {\n\t\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">-1</span>, ErrNotFound\n\t\t}\n\n\t\tcurr += step\n\n\t\t<span class=\"hljs-comment\">// prevent jumping over list range</span>\n\t\t<span class=\"hljs-keyword\">if</span> curr &gt; n {\n\t\t\tcurr = n\n\t\t}\n\t}\n\n\t<span class=\"hljs-comment\">// perform linear search from index prev to index curr</span>\n\t<span class=\"hljs-keyword\">for</span> array[prev] &lt; target {\n\t\tprev++\n\n\t\t<span class=\"hljs-comment\">// if reach end of range, indicate target not found</span>\n\t\t<span class=\"hljs-keyword\">if</span> prev == curr {\n\t\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">-1</span>, ErrNotFound\n\t\t}\n\t}\n\t<span class=\"hljs-keyword\">if</span> array[prev] == target {\n\t\t<span class=\"hljs-keyword\">return</span> prev, <span class=\"hljs-literal\">nil</span>\n\t}\n\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">-1</span>, ErrNotFound\n\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "FuXiang Shu",
+      "email": "6470547+Crazy3lf@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "dutch-national-flag-sort",
+  "name": "Dutch National Flag Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "python": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "BranAndSceolan",
+      "email": "98578040+BranAndSceolan@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Kiran Hipparagi",
+      "email": "49370990+KiranHipparagi@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

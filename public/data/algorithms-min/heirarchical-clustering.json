@@ -1,0 +1,18 @@
+{
+  "slug": "heirarchical-clustering",
+  "name": "Heirarchical Clustering",
+  "categories": [
+    "clusteringalgorithms"
+  ],
+  "implementations": {
+    "r": ""
+  },
+  "contributors": [
+    {
+      "name": "Erez Shomron",
+      "email": "48328872+eshom@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

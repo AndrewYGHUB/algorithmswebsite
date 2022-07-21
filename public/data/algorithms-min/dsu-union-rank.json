@@ -1,0 +1,18 @@
+{
+  "slug": "dsu-union-rank",
+  "name": "Dsu Union Rank",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Aayush Vyas",
+      "email": "1830002@kiit.ac.in",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

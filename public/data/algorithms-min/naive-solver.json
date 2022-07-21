@@ -1,0 +1,12 @@
+{
+  "slug": "naive-solver",
+  "name": "Naive solver",
+  "categories": [
+    "knapsack"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

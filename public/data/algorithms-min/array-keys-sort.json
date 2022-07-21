@@ -1,0 +1,18 @@
+{
+  "slug": "array-keys-sort",
+  "name": "Array Keys Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "php": ""
+  },
+  "contributors": [
+    {
+      "name": "Alejandro",
+      "email": "47539231+ale94lko@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

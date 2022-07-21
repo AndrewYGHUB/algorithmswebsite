@@ -1,0 +1,33 @@
+{
+  "slug": "fetch-github-info",
+  "name": "Fetch Github Info",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "lawric1",
+      "email": "67882089+lawric1@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ocivo",
+      "email": "57896941+ocivo@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sarath Kaul",
+      "email": "sarath.kaul@searce.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

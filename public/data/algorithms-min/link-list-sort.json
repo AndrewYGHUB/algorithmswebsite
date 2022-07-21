@@ -1,0 +1,18 @@
+{
+  "slug": "link-list-sort",
+  "name": "Link List Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Siddhant Swarup Mallick",
+      "email": "78552027+siddhant2002@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

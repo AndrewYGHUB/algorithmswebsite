@@ -1,0 +1,33 @@
+{
+  "slug": "skyline-problem",
+  "name": "Skyline Problem",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "rmakynen",
+      "email": "rmakynen@W10-178.student.yo.oulu.fi",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    },
+    {
+      "name": "sangjun2",
+      "email": "sj27294626@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "prime-seive",
+  "name": "Prime Seive",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

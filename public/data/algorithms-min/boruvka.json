@@ -1,0 +1,33 @@
+{
+  "slug": "boruvka",
+  "name": "Boruvka",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Dylan Buchi",
+      "email": "devybuchi@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Meysam",
+      "email": "MeysamAzad81@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Shiva Rama Krishna",
+      "email": "45482631+srkchowdary2000@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "get-euclid-gcd",
+  "name": "Get Euclid GCD",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "pwygab",
+      "email": "88221256+merelymyself@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

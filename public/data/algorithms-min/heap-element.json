@@ -1,0 +1,39 @@
+{
+  "slug": "heap-element",
+  "name": "Heap Element",
+  "categories": [
+    "datastructures",
+    "heaps"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Maria Lungeanu",
+      "email": "Maria.Lungeanu@anritsu.com",
+      "commits": 1
+    },
+    {
+      "name": "khalil2535",
+      "email": "khalil2535@localhost",
+      "commits": 1
+    },
+    {
+      "name": "Nicolas Renard",
+      "email": "nicolas.renard.76@outlook.fr",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

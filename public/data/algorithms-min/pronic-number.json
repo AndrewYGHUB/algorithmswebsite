@@ -1,0 +1,18 @@
+{
+  "slug": "pronic-number",
+  "name": "Pronic Number",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Akshay Dubey",
+      "email": "38462415+itsAkshayDubey@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

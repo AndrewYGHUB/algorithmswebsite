@@ -1,0 +1,29 @@
+{
+  "slug": "wavelet-tree",
+  "name": "Wavelet Tree",
+  "categories": [
+    "datastructures",
+    "binarytree"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Aniruddha Bhattacharjee",
+      "email": "aniruddha97bhatt@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Dylan Buchi",
+      "email": "devybuchi@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

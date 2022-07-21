@@ -1,0 +1,19 @@
+{
+  "slug": "calculate-max-of-min",
+  "name": "Calculate Max Of Min",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Siddhant Swarup Mallick",
+      "email": "78552027+siddhant2002@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

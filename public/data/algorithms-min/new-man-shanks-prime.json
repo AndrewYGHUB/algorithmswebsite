@@ -1,0 +1,18 @@
+{
+  "slug": "new-man-shanks-prime",
+  "name": "New Man Shanks Prime",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Siddhant Swarup Mallick",
+      "email": "78552027+siddhant2002@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

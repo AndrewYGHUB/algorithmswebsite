@@ -1,0 +1,24 @@
+{
+  "slug": "duplicate-brackets",
+  "name": "Duplicate Brackets",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "RishabhSrivastava1423",
+      "email": "65828863+RishabhSrivastava1423@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shardul Negi",
+      "email": "shardulnegi12@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

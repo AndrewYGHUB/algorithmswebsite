@@ -1,0 +1,18 @@
+{
+  "slug": "baconian-cipher",
+  "name": "Baconian Cipher",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "89947037+Rohanrbharadwaj@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

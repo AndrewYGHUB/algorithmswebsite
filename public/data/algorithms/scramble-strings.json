@@ -1,0 +1,28 @@
+{
+  "slug": "scramble-strings",
+  "name": "Scramble Strings",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/ScrambleStrings.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/ScrambleStrings.js",
+      "code": "<span class=\"hljs-comment\">// Problem Statement and Explanation: https://leetcode.com/problems/scramble-string/</span>\n\n<span class=\"hljs-comment\">/**\n * Given two strings s1 and s2 of the same length, return true if s2 is a scrambled string of s1, otherwise, return false.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">s1</span>\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">s2</span>\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">boolean</span>}\n */</span>\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">isScramble</span> = (<span class=\"hljs-params\">s1, s2</span>) =&gt; {\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title function_\">helper</span>({}, s1, s2)\n}\n\n<span class=\"hljs-keyword\">const</span> helper = <span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">dp, s1, s2</span>) {\n  <span class=\"hljs-keyword\">const</span> map = {}\n\n  <span class=\"hljs-keyword\">if</span> (dp[s1 + s2] !== <span class=\"hljs-literal\">undefined</span>) <span class=\"hljs-keyword\">return</span> dp[s1 + s2]\n  <span class=\"hljs-keyword\">if</span> (s1 === s2) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> j = <span class=\"hljs-number\">0</span>; j &lt; s1.<span class=\"hljs-property\">length</span>; j++) {\n    <span class=\"hljs-keyword\">if</span> (map[s1[j]] === <span class=\"hljs-literal\">undefined</span>) map[s1[j]] = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">if</span> (map[s2[j]] === <span class=\"hljs-literal\">undefined</span>) map[s2[j]] = <span class=\"hljs-number\">0</span>\n    map[s1[j]]++\n    map[s2[j]]--\n  }\n\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">const</span> key <span class=\"hljs-keyword\">in</span> map) {\n    <span class=\"hljs-keyword\">if</span> (map[key] !== <span class=\"hljs-number\">0</span>) {\n      dp[s1 + s2] = <span class=\"hljs-literal\">false</span>\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n    }\n  }\n\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">1</span>; i &lt; s1.<span class=\"hljs-property\">length</span>; i++) {\n    <span class=\"hljs-keyword\">if</span> (\n      (<span class=\"hljs-title function_\">helper</span>(dp, s1.<span class=\"hljs-title function_\">substr</span>(<span class=\"hljs-number\">0</span>, i), s2.<span class=\"hljs-title function_\">substr</span>(<span class=\"hljs-number\">0</span>, i)) &amp;&amp;\n        <span class=\"hljs-title function_\">helper</span>(dp, s1.<span class=\"hljs-title function_\">substr</span>(i), s2.<span class=\"hljs-title function_\">substr</span>(i))) ||\n      (<span class=\"hljs-title function_\">helper</span>(dp, s1.<span class=\"hljs-title function_\">substr</span>(<span class=\"hljs-number\">0</span>, i), s2.<span class=\"hljs-title function_\">substr</span>(s2.<span class=\"hljs-property\">length</span> - i)) &amp;&amp;\n        <span class=\"hljs-title function_\">helper</span>(dp, s1.<span class=\"hljs-title function_\">substr</span>(i), s2.<span class=\"hljs-title function_\">substr</span>(<span class=\"hljs-number\">0</span>, s2.<span class=\"hljs-property\">length</span> - i)))\n    ) {\n      dp[s1 + s2] = <span class=\"hljs-literal\">true</span>\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n    }\n  }\n\n  dp[s1 + s2] = <span class=\"hljs-literal\">false</span>\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n}\n\n<span class=\"hljs-keyword\">export</span> { isScramble }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Koddi Evangelista",
+      "email": "70675656+Koddi-Evangelista@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Omkarnath Parida",
+      "email": "omkarnath.parida@yocket.in",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

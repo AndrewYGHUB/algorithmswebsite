@@ -1,0 +1,25 @@
+{
+  "slug": "arithmetic-mean",
+  "name": "Arithmetic Mean",
+  "categories": [
+    "math",
+    "series"
+  ],
+  "implementations": {
+    "python": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ayush Bisht",
+      "email": "61404154+ayushbisht2001@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

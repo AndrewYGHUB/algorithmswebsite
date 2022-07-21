@@ -1,0 +1,24 @@
+{
+  "slug": "ceil-in-binary-search-tree",
+  "name": "Ceil In Binary Search Tree",
+  "categories": [
+    "datastructures",
+    "tree"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Amit Kumar",
+      "email": "kumanoit@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "kadanes-3",
+  "name": "Kadanes 3",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Abhijeet Tiwari",
+      "email": "85331806+thisabhijeet@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

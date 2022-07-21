@@ -1,0 +1,18 @@
+{
+  "slug": "multi-level-feedback-queue",
+  "name": "Multi Level Feedback Queue",
+  "categories": [
+    "scheduling"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "DongJoon Cha",
+      "email": "81581204+dongjji@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

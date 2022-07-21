@@ -1,0 +1,29 @@
+{
+  "slug": "transposition",
+  "name": "Transposition",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "go": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Bello mahmud",
+      "email": "75342173+mahmudsudo@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "James Nash",
+      "email": "37304960+NashJames@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

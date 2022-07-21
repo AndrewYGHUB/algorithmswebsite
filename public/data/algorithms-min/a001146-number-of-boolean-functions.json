@@ -1,0 +1,12 @@
+{
+  "slug": "a001146-number-of-boolean-functions",
+  "name": "A001146 Number of Boolean Functions",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "bfs-zero-one-shortest-path",
+  "name": "Bfs Zero One Shortest Path",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "hasan",
+      "email": "hasanuli10@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Phil Bazun",
+      "email": "Phil9lne@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

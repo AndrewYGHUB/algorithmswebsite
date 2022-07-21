@@ -1,0 +1,18 @@
+{
+  "slug": "tea",
+  "name": "Tea",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "skdltmxn",
+      "email": "supershop@naver.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

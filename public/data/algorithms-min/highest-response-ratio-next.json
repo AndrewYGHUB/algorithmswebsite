@@ -1,0 +1,18 @@
+{
+  "slug": "highest-response-ratio-next",
+  "name": "Highest Response Ratio Next",
+  "categories": [
+    "scheduling"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "yulmam",
+      "email": "70622601+yulmam@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

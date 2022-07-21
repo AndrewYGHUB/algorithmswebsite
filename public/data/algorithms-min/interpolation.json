@@ -1,0 +1,24 @@
+{
+  "slug": "interpolation",
+  "name": "Interpolation",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "go": "",
+    "aarch64_assembly": ""
+  },
+  "contributors": [
+    {
+      "name": "Mertcan Davulcu",
+      "email": "54983926+mertcandav@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "FuXiang Shu",
+      "email": "6470547+Crazy3lf@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

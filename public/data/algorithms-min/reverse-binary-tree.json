@@ -1,0 +1,18 @@
+{
+  "slug": "reverse-binary-tree",
+  "name": "Reverse Binary Tree",
+  "categories": [
+    "operationsondatastructures"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Alvin Philips",
+      "email": "alvinphilips257@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

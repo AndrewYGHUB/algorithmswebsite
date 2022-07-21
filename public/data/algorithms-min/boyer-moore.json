@@ -1,0 +1,46 @@
+{
+  "slug": "boyer-moore",
+  "name": "Boyer Moore",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": "",
+    "java": "",
+    "go": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Antony",
+      "email": "45163503+DuckNrOne@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Metta Ong",
+      "email": "ongspxm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ayoade David",
+      "email": "adewoleayoade057@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shraddha",
+      "email": "42699578+shraddhavp@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

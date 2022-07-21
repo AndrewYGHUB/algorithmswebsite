@@ -1,0 +1,12 @@
+{
+  "slug": "longest-continuous-increasing-subsequence",
+  "name": "Longest Continuous Increasing Subsequence",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

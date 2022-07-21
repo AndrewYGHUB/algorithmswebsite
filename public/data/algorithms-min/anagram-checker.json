@@ -1,0 +1,24 @@
+{
+  "slug": "anagram-checker",
+  "name": "Anagram Checker",
+  "categories": [
+    "datastructures",
+    "hashtable"
+  ],
+  "implementations": {
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Jessica Kwok",
+      "email": "jessicatckwok@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 11
+    }
+  ],
+  "explanationUrl": {}
+}

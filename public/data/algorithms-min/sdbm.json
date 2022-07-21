@@ -1,0 +1,35 @@
+{
+  "slug": "sdbm",
+  "name": "SDBM",
+  "categories": [
+    "hashing"
+  ],
+  "implementations": {
+    "python": "",
+    "c": "",
+    "matlab-octave": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 1
+    },
+    {
+      "name": "algobytewise",
+      "email": "algobytewise@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "bnMikheili",
+      "email": "39998190+bnMikheili@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

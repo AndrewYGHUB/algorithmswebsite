@@ -1,0 +1,38 @@
+{
+  "slug": "figurate-number",
+  "name": "Figurate Number",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/FigurateNumber.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/FigurateNumber.js",
+      "code": "<span class=\"hljs-comment\">/**\n Problem Statement and Explanation :\n Triangular  =&gt; https://en.wikipedia.org/wiki/Triangular_number\n Tetrahedral =&gt; https://en.wikipedia.org/wiki/Tetrahedral_number\n Pentatope   =&gt; https://en.wikipedia.org/wiki/Pentatope_number\n\n Example:\n Triangular  =&gt; (0, 1, 3, 6, 10, 15, 21, 28, 36, 45)\n Tetrahedral =&gt; (1, 4, 10, 20, 35, 56, 84, 120, 165,)\n Pentatope   =&gt; (1, 5, 15, 35, 70, 126, 210, 330, 495)\n */</span>\n\n<span class=\"hljs-comment\">/**\n *\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">*</span>} <span class=\"hljs-variable\">number</span>\n * <span class=\"hljs-doctag\">@returns</span>\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">isTriangular</span> = (<span class=\"hljs-params\">number</span>) =&gt; {\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt;= number; i++) {\n    <span class=\"hljs-keyword\">if</span> ((i * (i + <span class=\"hljs-number\">1</span>)) / <span class=\"hljs-number\">2</span> === number) {\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n    } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> ((i * (i + <span class=\"hljs-number\">1</span>)) / <span class=\"hljs-number\">2</span> &gt; number) {\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n    }\n  }\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n}\n\n<span class=\"hljs-comment\">/**\n *\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">*</span>} <span class=\"hljs-variable\">number</span>\n * <span class=\"hljs-doctag\">@returns</span>\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">isTetrahedral</span> = (<span class=\"hljs-params\">number</span>) =&gt; {\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">1</span>; i &lt;= number; i++) {\n    <span class=\"hljs-keyword\">if</span> ((i * (i + <span class=\"hljs-number\">1</span>) * (i + <span class=\"hljs-number\">2</span>)) / <span class=\"hljs-number\">6</span> === number) {\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n    } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> ((i * (i + <span class=\"hljs-number\">1</span>) * (i + <span class=\"hljs-number\">2</span>)) / <span class=\"hljs-number\">6</span> &gt; number) {\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n    }\n  }\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n}\n<span class=\"hljs-comment\">/**\n *\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">*</span>} <span class=\"hljs-variable\">number</span>\n * <span class=\"hljs-doctag\">@returns</span>\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">isPentatope</span> = (<span class=\"hljs-params\">number</span>) =&gt; {\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">1</span>; i &lt;= number; i++) {\n    <span class=\"hljs-keyword\">if</span> ((i * (i + <span class=\"hljs-number\">1</span>) * (i + <span class=\"hljs-number\">2</span>) * (i + <span class=\"hljs-number\">3</span>)) / <span class=\"hljs-number\">24</span> === number) {\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n    } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> ((i * (i + <span class=\"hljs-number\">1</span>) * (i + <span class=\"hljs-number\">2</span>) * (i + <span class=\"hljs-number\">3</span>)) / <span class=\"hljs-number\">24</span> &gt; number) {\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n    }\n  }\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n}\n\n<span class=\"hljs-comment\">/**\n *\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">*</span>} <span class=\"hljs-variable\">number</span>\n * <span class=\"hljs-doctag\">@returns</span>\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">checkAll</span> = (<span class=\"hljs-params\">number</span>) =&gt; {\n  <span class=\"hljs-keyword\">return</span> {\n    <span class=\"hljs-attr\">isTriangular</span>: <span class=\"hljs-title function_\">isTriangular</span>(number),\n    <span class=\"hljs-attr\">isTetrahedral</span>: <span class=\"hljs-title function_\">isTetrahedral</span>(number),\n    <span class=\"hljs-attr\">isPentatope</span>: <span class=\"hljs-title function_\">isPentatope</span>(number)\n  }\n}\n<span class=\"hljs-keyword\">export</span> { isTriangular }\n<span class=\"hljs-keyword\">export</span> { isTetrahedral }\n<span class=\"hljs-keyword\">export</span> { isPentatope }\n<span class=\"hljs-keyword\">export</span> { checkAll }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Badhusha",
+      "email": "37366257+Badhusha-Akhthaar@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "VinWare",
+      "email": "28603906+VinWare@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Badhusha-Akhthaar",
+      "email": "aashiquemd2212@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

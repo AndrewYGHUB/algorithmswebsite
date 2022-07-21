@@ -1,0 +1,38 @@
+{
+  "slug": "power-of-two-or-not",
+  "name": "Power Of Two Or Not",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Hassan",
+      "email": "hassan.elseoudy@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Rachana040",
+      "email": "rachanasoma99@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

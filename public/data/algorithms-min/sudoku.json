@@ -1,0 +1,71 @@
+{
+  "slug": "sudoku",
+  "name": "Sudoku",
+  "categories": [
+    "backtracking"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "java": "",
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "RITWEEK RAJ",
+      "email": "67289913+ritweekraj2802@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "GDWR",
+      "email": "57012020+GDWR@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "adith bharadwaj",
+      "email": "adithbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "Tapajyoti Bose",
+      "email": "44058757+ruppysuppy@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Jessica Kwok",
+      "email": "jessicatckwok@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Roland Hummel",
+      "email": "roland.hummel@qaware.de",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

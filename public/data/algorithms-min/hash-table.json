@@ -1,0 +1,44 @@
+{
+  "slug": "hash-table",
+  "name": "Hash Table",
+  "categories": [
+    "datastructures",
+    "hashing"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "gabriel",
+      "email": "gabriel.goncalves@trilogo.com.br",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "KDH",
+      "email": "ehdgua01@naver.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "linear",
+  "name": "Linear",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "FuXiang Shu",
+      "email": "6470547+Crazy3lf@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

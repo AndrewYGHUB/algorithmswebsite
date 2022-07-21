@@ -1,0 +1,18 @@
+{
+  "slug": "rnn",
+  "name": "Rnn",
+  "categories": [
+    "neuralnetwork"
+  ],
+  "implementations": {
+    "jupyter": ""
+  },
+  "contributors": [
+    {
+      "name": "Harshit Agarwal",
+      "email": "43147421+9harshit@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

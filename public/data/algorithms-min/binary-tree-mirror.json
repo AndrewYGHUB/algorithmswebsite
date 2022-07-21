@@ -1,0 +1,24 @@
+{
+  "slug": "binary-tree-mirror",
+  "name": "Binary Tree Mirror",
+  "categories": [
+    "datastructures",
+    "binarytree"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Alvin Philips",
+      "email": "alvinphilips257@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Susmith98",
+      "email": "33018940+susmith98@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

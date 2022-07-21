@@ -1,0 +1,18 @@
+{
+  "slug": "another-rot-13",
+  "name": "Another Rot 13",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Sutthinart Khunvadhana",
+      "email": "iakgoog@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

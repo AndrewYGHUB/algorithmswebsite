@@ -1,0 +1,18 @@
+{
+  "slug": "disjoint-set-union",
+  "name": "Disjoint Set Union",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

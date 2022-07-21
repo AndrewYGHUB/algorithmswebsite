@@ -1,0 +1,28 @@
+{
+  "slug": "harris-corner",
+  "name": "Harris Corner",
+  "categories": [
+    "computervision"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Erwin Junge",
+      "email": "erwin@junge.nl",
+      "commits": 1
+    },
+    {
+      "name": "Jeffin Francis",
+      "email": "francisjeffin07@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

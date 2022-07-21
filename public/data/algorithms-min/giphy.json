@@ -1,0 +1,18 @@
+{
+  "slug": "giphy",
+  "name": "Giphy",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Jaydeep Das",
+      "email": "jaydeepjd.1125@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

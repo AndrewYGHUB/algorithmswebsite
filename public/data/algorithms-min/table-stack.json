@@ -1,0 +1,18 @@
+{
+  "slug": "table-stack",
+  "name": "Table Stack",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

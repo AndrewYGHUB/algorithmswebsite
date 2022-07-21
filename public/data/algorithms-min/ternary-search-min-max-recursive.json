@@ -1,0 +1,18 @@
+{
+  "slug": "ternary-search-min-max-recursive",
+  "name": "Ternary Search Min Max Recursive",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Nicholas",
+      "email": "88036449+mime8@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

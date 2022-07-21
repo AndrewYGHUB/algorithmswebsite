@@ -1,0 +1,19 @@
+{
+  "slug": "millerrabintest",
+  "name": "Millerrabintest",
+  "categories": [
+    "math",
+    "prime"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

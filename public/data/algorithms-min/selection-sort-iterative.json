@@ -1,0 +1,18 @@
+{
+  "slug": "selection-sort-iterative",
+  "name": "Selection Sort Iterative",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Lajat5",
+      "email": "64376519+Lazeeez@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

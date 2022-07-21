@@ -1,0 +1,12 @@
+{
+  "slug": "longest-consecutive-character",
+  "name": "Longest Consecutive Character",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

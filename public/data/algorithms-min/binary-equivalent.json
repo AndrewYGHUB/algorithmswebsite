@@ -1,0 +1,23 @@
+{
+  "slug": "binary-equivalent",
+  "name": "Binary Equivalent",
+  "categories": [
+    "recursive"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Chiranjeev",
+      "email": "6258860@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

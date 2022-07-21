@@ -1,0 +1,38 @@
+{
+  "slug": "dijkstra-smallest-path",
+  "name": "Dijkstra Smallest Path",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aayush2011",
+      "email": "72185339+Aayush2011@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Nur69",
+      "email": "60115902+Nur69@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

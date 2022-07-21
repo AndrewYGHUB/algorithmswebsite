@@ -1,0 +1,18 @@
+{
+  "slug": "simplified-wiggle-sort",
+  "name": "Simplified Wiggle Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "BranAndSceolan",
+      "email": "98578040+BranAndSceolan@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "thin-singular-vector-decomposition",
+  "name": "Thin Singular Vector Decomposition",
+  "categories": [
+    "numeric",
+    "decomposition"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

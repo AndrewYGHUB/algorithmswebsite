@@ -1,0 +1,24 @@
+{
+  "slug": "generic-heap",
+  "name": "Generic Heap",
+  "categories": [
+    "datastructures",
+    "heaps"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Ritik2604",
+      "email": "49342895+Ritik2604@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shikhar Tyagi",
+      "email": "shikhart98@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

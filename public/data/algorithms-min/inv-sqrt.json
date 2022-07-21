@@ -1,0 +1,12 @@
+{
+  "slug": "inv-sqrt",
+  "name": "Inv Sqrt",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

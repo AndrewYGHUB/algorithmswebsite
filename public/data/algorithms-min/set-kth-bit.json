@@ -1,0 +1,18 @@
+{
+  "slug": "set-kth-bit",
+  "name": "Set Kth Bit",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Aman Raj",
+      "email": "66414882+aman2000raj@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

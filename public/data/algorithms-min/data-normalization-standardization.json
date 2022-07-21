@@ -1,0 +1,23 @@
+{
+  "slug": "data-normalization-standardization",
+  "name": "Data Normalization Standardization",
+  "categories": [
+    "datapreprocessing"
+  ],
+  "implementations": {
+    "r": ""
+  },
+  "contributors": [
+    {
+      "name": "Ron Lee",
+      "email": "ronlee12355@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "Erez Shomron",
+      "email": "48328872+eshom@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

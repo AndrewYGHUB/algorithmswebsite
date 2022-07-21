@@ -1,0 +1,19 @@
+{
+  "slug": "random-node",
+  "name": "Random Node",
+  "categories": [
+    "datastructures",
+    "list"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Suraj Kumar",
+      "email": "76468931+skmodi649@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "next-power-of-two",
+  "name": "Next Power Of Two",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Bit-Manipulation/NextPowerOfTwo.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Bit-Manipulation/NextPowerOfTwo.js",
+      "code": "<span class=\"hljs-comment\">/**\n *\n *  This script will find next power of two\n *    of given number.\n *  More about it:\n *   https://www.techiedelight.com/round-next-highest-power-2/\n *\n */</span>\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">nextPowerOfTwo</span> = (<span class=\"hljs-params\">n</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (n &gt; <span class=\"hljs-number\">0</span> &amp;&amp; (n &amp; (n - <span class=\"hljs-number\">1</span>)) === <span class=\"hljs-number\">0</span>) <span class=\"hljs-keyword\">return</span> n\n  <span class=\"hljs-keyword\">let</span> result = <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">while</span> (n &gt; <span class=\"hljs-number\">0</span>) {\n    result = result &lt;&lt; <span class=\"hljs-number\">1</span>\n    n = n &gt;&gt; <span class=\"hljs-number\">1</span>\n  }\n  <span class=\"hljs-keyword\">return</span> result\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Indre Maksimovaite",
+      "email": "imaksimovaite@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

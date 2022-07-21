@@ -1,0 +1,28 @@
+{
+  "slug": "binary-pow",
+  "name": "Binary Pow",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "lakhan_nad",
+      "email": "lakhannad1999@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "gauss-jordan-elim",
+  "name": "Gauss Jordan Elim",
+  "categories": [
+    "matrix"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "socvirnyl.estela@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "eliascarv",
+      "email": "73039601+eliascarv@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Augusto C. Leal",
+      "email": "leal.augusto@unifesp.br",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

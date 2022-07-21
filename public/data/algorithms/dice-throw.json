@@ -1,0 +1,28 @@
+{
+  "slug": "dice-throw",
+  "name": "Dice Throw",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/dynamicprogramming/DiceThrow.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/dynamicprogramming/DiceThrow.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.dynamicprogramming;\n\n<span class=\"hljs-comment\">// Given N dice each with M faces, numbered from 1 to M, find the number of ways to get sum X.</span>\n<span class=\"hljs-comment\">// X is the summation of values on each face when all the dice are thrown.</span>\n\n<span class=\"hljs-comment\">/* The Naive approach is to find all the possible combinations of values from n dice and\nkeep on counting the results that sum to X. This can be done using recursion. */</span>\n<span class=\"hljs-comment\">// The above recursion solution exhibits overlapping subproblems.</span>\n\n<span class=\"hljs-comment\">/* Hence, storing the results of the solved sub-problems saves time.\nAnd it can be done using Dynamic Programming(DP).\nFollowing is implementation of Dynamic Programming approach. */</span>\n<span class=\"hljs-comment\">// Code ----&gt;</span>\n<span class=\"hljs-comment\">// Java program to find number of ways to get sum &#x27;x&#x27; with &#x27;n&#x27; </span>\n<span class=\"hljs-comment\">// dice where every dice has &#x27;m&#x27; faces </span>\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">DP</span> {\n\n    <span class=\"hljs-comment\">/* The main function that returns the number of ways to get sum &#x27;x&#x27; with &#x27;n&#x27; dice and &#x27;m&#x27; with m faces. */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">long</span> <span class=\"hljs-title function_\">findWays</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> m, <span class=\"hljs-type\">int</span> n, <span class=\"hljs-type\">int</span> x)</span> {\n\n        <span class=\"hljs-comment\">/* Create a table to store the results of subproblems. \n    One extra row and column are used for simplicity \n    (Number of dice is directly used as row index and sum is directly used as column index). \n    The entries in 0th row and 0th column are never used. */</span>\n        <span class=\"hljs-type\">long</span>[][] table = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">long</span>[n + <span class=\"hljs-number\">1</span>][x + <span class=\"hljs-number\">1</span>];\n\n        <span class=\"hljs-comment\">/* Table entries for only one dice */</span>\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">j</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>; j &lt;= m &amp;&amp; j &lt;= x; j++) {\n            table[<span class=\"hljs-number\">1</span>][j] = <span class=\"hljs-number\">1</span>;\n        }\n\n        <span class=\"hljs-comment\">/* Fill rest of the entries in table using recursive relation \n    i: number of dice, j: sum */</span>\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">2</span>; i &lt;= n; i++) {\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">j</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>; j &lt;= x; j++) {\n                <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">k</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>; k &lt; j &amp;&amp; k &lt;= m; k++) {\n                    table[i][j] += table[i - <span class=\"hljs-number\">1</span>][j - k];\n                }\n            }\n        }\n\n        <span class=\"hljs-keyword\">return</span> table[n][x];\n    }\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span> {\n        System.out.println(findWays(<span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">1</span>));\n        System.out.println(findWays(<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">3</span>));\n        System.out.println(findWays(<span class=\"hljs-number\">6</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">8</span>));\n        System.out.println(findWays(<span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">5</span>));\n        System.out.println(findWays(<span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">5</span>));\n    }\n}\n\n<span class=\"hljs-comment\">/*\nOUTPUT:\n0\n2\n21\n4\n6\n */</span>\n<span class=\"hljs-comment\">// Time Complexity: O(m * n * x) where m is number of faces, n is number of dice and x is given sum.</span>\n\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sahil Tagala",
+      "email": "60920150+sahiltagala@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

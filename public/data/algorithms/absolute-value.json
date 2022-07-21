@@ -1,0 +1,48 @@
+{
+  "slug": "absolute-value",
+  "name": "Absolute Value",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/AbsoluteValue.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/AbsoluteValue.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">AbsoluteValue</span> {\n\n    <span class=\"hljs-comment\">/**\n     * Returns the absolute value of a number.\n     *\n     * <span class=\"hljs-doctag\">@param</span> number The number to be transformed\n     * <span class=\"hljs-doctag\">@return</span> The absolute value of the {<span class=\"hljs-doctag\">@code</span> number}\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">getAbsValue</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> number)</span> {\n        <span class=\"hljs-keyword\">return</span> number &lt; <span class=\"hljs-number\">0</span> ? -number : number;\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Yang Libin",
+      "email": "contact@yanglibin.info",
+      "commits": 1
+    },
+    {
+      "name": "Cristiano Jesus",
+      "email": "crist.borges05@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ray",
+      "email": "rbshealy@live.unc.edu",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

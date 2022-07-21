@@ -1,0 +1,88 @@
+{
+  "slug": "circular-queue",
+  "name": "Circular Queue",
+  "categories": [
+    "datastructures",
+    "queues"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "java": "",
+    "dart": "",
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Parowicz",
+      "email": "arturparowicz@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Vijay Siva",
+      "email": "vijay.sivasubramaniam@instacart.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sandeepan-Das",
+      "email": "sandeepandas2000@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "FyZhu97",
+      "email": "73351452+FyZhu97@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Paridhi Jain",
+      "email": "83594113+Paridhicodes@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Himanshu Bhatnagar",
+      "email": "33115688+Himan10@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Kunal Jain",
+      "email": "30985312+kjain1810@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "kjain1810",
+      "email": "kunaljain.2000@yahoo.in",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

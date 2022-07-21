@@ -1,0 +1,18 @@
+{
+  "slug": "butterworth-filter",
+  "name": "Butterworth Filter",
+  "categories": [
+    "audiofilters"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Martmists",
+      "email": "mail@martmists.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

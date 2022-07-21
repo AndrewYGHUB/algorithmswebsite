@@ -1,0 +1,39 @@
+{
+  "slug": "kadane-algorithm",
+  "name": "Kadane Algorithm",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "java": "",
+    "haskell": ""
+  },
+  "contributors": [
+    {
+      "name": "shashank152k",
+      "email": "shashank152k@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Siddhant Swarup Mallick",
+      "email": "78552027+siddhant2002@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    },
+    {
+      "name": "Nishita Aggarwal",
+      "email": "naggarwal97@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

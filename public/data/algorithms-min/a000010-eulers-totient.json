@@ -1,0 +1,12 @@
+{
+  "slug": "a000010-eulers-totient",
+  "name": "A000010 Euler's Totient",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

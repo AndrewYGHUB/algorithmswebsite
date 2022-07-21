@@ -1,0 +1,12 @@
+{
+  "slug": "cantor-set",
+  "name": "Cantor Set",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

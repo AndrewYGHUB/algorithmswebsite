@@ -1,0 +1,19 @@
+{
+  "slug": "powvialogarithm",
+  "name": "Powvialogarithm",
+  "categories": [
+    "math",
+    "power"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

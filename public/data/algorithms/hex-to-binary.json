@@ -1,0 +1,28 @@
+{
+  "slug": "hex-to-binary",
+  "name": "Hex To Binary",
+  "categories": [
+    "conversions"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Conversions/HexToBinary.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Conversions/HexToBinary.js",
+      "code": "<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">binLookup</span> = (<span class=\"hljs-params\">key</span>) =&gt; ({\n  <span class=\"hljs-number\">0</span>: <span class=\"hljs-string\">&#x27;0000&#x27;</span>,\n  <span class=\"hljs-number\">1</span>: <span class=\"hljs-string\">&#x27;0001&#x27;</span>,\n  <span class=\"hljs-number\">2</span>: <span class=\"hljs-string\">&#x27;0010&#x27;</span>,\n  <span class=\"hljs-number\">3</span>: <span class=\"hljs-string\">&#x27;0011&#x27;</span>,\n  <span class=\"hljs-number\">4</span>: <span class=\"hljs-string\">&#x27;0100&#x27;</span>,\n  <span class=\"hljs-number\">5</span>: <span class=\"hljs-string\">&#x27;0101&#x27;</span>,\n  <span class=\"hljs-number\">6</span>: <span class=\"hljs-string\">&#x27;0110&#x27;</span>,\n  <span class=\"hljs-number\">7</span>: <span class=\"hljs-string\">&#x27;0111&#x27;</span>,\n  <span class=\"hljs-number\">8</span>: <span class=\"hljs-string\">&#x27;1000&#x27;</span>,\n  <span class=\"hljs-number\">9</span>: <span class=\"hljs-string\">&#x27;1001&#x27;</span>,\n  <span class=\"hljs-attr\">a</span>: <span class=\"hljs-string\">&#x27;1010&#x27;</span>,\n  <span class=\"hljs-attr\">b</span>: <span class=\"hljs-string\">&#x27;1011&#x27;</span>,\n  <span class=\"hljs-attr\">c</span>: <span class=\"hljs-string\">&#x27;1100&#x27;</span>,\n  <span class=\"hljs-attr\">d</span>: <span class=\"hljs-string\">&#x27;1101&#x27;</span>,\n  <span class=\"hljs-attr\">e</span>: <span class=\"hljs-string\">&#x27;1110&#x27;</span>,\n  <span class=\"hljs-attr\">f</span>: <span class=\"hljs-string\">&#x27;1111&#x27;</span>\n}[key.<span class=\"hljs-title function_\">toLowerCase</span>()]) <span class=\"hljs-comment\">// select the binary number by valid hex key with the help javascript object</span>\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">hexToBinary</span> = (<span class=\"hljs-params\">hexString</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> hexString !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Argument is not a string type&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-regexp\">/[^\\da-f]/gi</span>.<span class=\"hljs-title function_\">test</span>(hexString)) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Error</span>(<span class=\"hljs-string\">&#x27;Argument is not a valid HEX code!&#x27;</span>)\n  }\n  <span class=\"hljs-comment\">/*\n    Function for converting Hex to Binary\n\n    1. We convert every hexadecimal bit to 4 binary bits\n    2. Conversion goes by searching in the lookup table\n  */</span>\n\n  <span class=\"hljs-keyword\">return</span> hexString.<span class=\"hljs-title function_\">replace</span>(\n    <span class=\"hljs-regexp\">/[0-9a-f]/gi</span>,\n    <span class=\"hljs-function\"><span class=\"hljs-params\">lexeme</span> =&gt;</span> <span class=\"hljs-title function_\">binLookup</span>(lexeme)\n  )\n}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> hexToBinary\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Dhana D",
+      "email": "39583785+ddhira123@users.noreply.github.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

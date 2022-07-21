@@ -1,0 +1,18 @@
+{
+  "slug": "alpha-numerical-sort",
+  "name": "Alpha Numerical Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Mirzoev Ruslan",
+      "email": "48970799+RuSaG0@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "determinant-of-matrix",
+  "name": "Determinant Of Matrix",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Ojasva Jain",
+      "email": "44553464+ojasva@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

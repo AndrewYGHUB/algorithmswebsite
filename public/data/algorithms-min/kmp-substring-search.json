@@ -1,0 +1,28 @@
+{
+  "slug": "kmp-substring-search",
+  "name": "Kmp Substring Search",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "PoolOfDeath20",
+      "email": "53143214+GervinFung@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "PoolOfDeath20",
+      "email": "gervinfungdaxuen@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "hash-xor-8",
+  "name": "Hash Xor 8",
+  "categories": [
+    "hashing"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

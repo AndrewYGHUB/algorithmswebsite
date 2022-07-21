@@ -1,0 +1,23 @@
+{
+  "slug": "proth-number",
+  "name": "Proth Number",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Jordan Rinder",
+      "email": "jrinder42@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

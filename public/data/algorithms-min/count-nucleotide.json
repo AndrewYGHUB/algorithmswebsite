@@ -1,0 +1,33 @@
+{
+  "slug": "count-nucleotide",
+  "name": "Count Nucleotide",
+  "categories": [
+    "projectrosalind"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Nikola Mircic",
+      "email": "nikola123mircic@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Azzaare",
+      "email": "jf@baffier.fr",
+      "commits": 1
+    },
+    {
+      "name": "Ved Mahajan",
+      "email": "74182892+Ved-Mahajan@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

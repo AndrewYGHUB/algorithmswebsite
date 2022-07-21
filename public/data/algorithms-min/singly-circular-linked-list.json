@@ -1,0 +1,19 @@
+{
+  "slug": "singly-circular-linked-list",
+  "name": "Singly Circular Linked List",
+  "categories": [
+    "datastructures",
+    "linkedlist"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rahul Raj",
+      "email": "43320722+rraj798@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

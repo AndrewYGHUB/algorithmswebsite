@@ -1,0 +1,24 @@
+{
+  "slug": "permutationin-string",
+  "name": "Permutationin String",
+  "categories": [
+    "dynamicprogramming",
+    "slidingwindow"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Leo Toff",
+      "email": "lev.taydakov@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aditya Parmar",
+      "email": "58773630+Aditya1942@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

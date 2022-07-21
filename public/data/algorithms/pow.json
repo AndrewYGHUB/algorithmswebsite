@@ -1,0 +1,68 @@
+{
+  "slug": "pow",
+  "name": "Pow",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/Pow.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/Pow.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">powLinear</span>\n * <span class=\"hljs-doctag\">@description</span> - The powLinear function is a power function with Linear O(n) complexity\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} <span class=\"hljs-variable\">base</span>\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} <span class=\"hljs-variable\">exponent</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">number</span>}\n * <span class=\"hljs-doctag\">@example</span> - powLinear(2, 2) =&gt; 4 --&gt; 2 * 2\n * <span class=\"hljs-doctag\">@example</span> - powLinear(3, 3) =&gt; 27 --&gt; 3 * 3 * 3\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">powLinear</span> = (<span class=\"hljs-params\">base, exponent</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (exponent &lt; <span class=\"hljs-number\">0</span>) {\n    base = <span class=\"hljs-number\">1</span> / base\n    exponent = -exponent\n  }\n\n  <span class=\"hljs-keyword\">let</span> result = <span class=\"hljs-number\">1</span>\n\n  <span class=\"hljs-keyword\">while</span> (exponent--) { <span class=\"hljs-comment\">// Break the execution while the exponent will 0</span>\n    result *= base\n  }\n\n  <span class=\"hljs-keyword\">return</span> result\n}\n\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">powFaster</span>\n * <span class=\"hljs-doctag\">@description</span> - The powFaster function is a power function with O(logN) complexity\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} <span class=\"hljs-variable\">base</span>\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} <span class=\"hljs-variable\">exponent</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">number</span>}\n * <span class=\"hljs-doctag\">@example</span> - powFaster(2, 2) =&gt; 4 --&gt; 2 * 2\n * <span class=\"hljs-doctag\">@example</span> - powFaster(3, 3) =&gt; 27 --&gt; 3 * 3 * 3\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">powFaster</span> = (<span class=\"hljs-params\">base, exponent</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (exponent &lt; <span class=\"hljs-number\">2</span>) { <span class=\"hljs-comment\">// explanation below - 1</span>\n    <span class=\"hljs-keyword\">return</span> base &amp;&amp; ([<span class=\"hljs-number\">1</span>, base][exponent] || <span class=\"hljs-title function_\">powFaster</span>(<span class=\"hljs-number\">1</span> / base, -exponent))\n  }\n\n  <span class=\"hljs-keyword\">if</span> (exponent &amp; <span class=\"hljs-number\">1</span>) { <span class=\"hljs-comment\">// if the existing exponent is odd</span>\n    <span class=\"hljs-keyword\">return</span> base * <span class=\"hljs-title function_\">powFaster</span>(base * base, exponent &gt;&gt; <span class=\"hljs-number\">1</span>) <span class=\"hljs-comment\">// explanation below - 2</span>\n  }\n\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title function_\">powFaster</span>(base * base, exponent / <span class=\"hljs-number\">2</span>)\n}\n\n<span class=\"hljs-comment\">/**\n * 1 - Magic of short circuit evaluation (&amp;&amp;, ||)\n * if the base is 0 then it returns 0 cause 0 is falsy\n * if the base is not 0 then it&#x27;s must be truthy. after that, it will be executed the right portion of the &amp;&amp; (AND) operator\n * Now it checks the exponent by the help array index, is it 0 or 1.\n * if the exponent is not 0 or 1 it&#x27;s definitely less than 0, and a negative number is not a valid index number so it returns &quot;undefined&quot;\n * if the expression is undefined mean -&gt; falsy, the || (OR) operator evaluates the right portion that is a recursive function.\n */</span>\n\n<span class=\"hljs-comment\">/**\n * 2 - Play with right shift bitwise operator (&gt;&gt;)\n * right shift with any odd numbers it returns the floor number instead of float.\n * E.g. if the number is 5, after right shifting with 1 it&#x27;s will give us 2, not 2.5\n * cause the right shift formula is --&gt; x &gt;&gt; y = |x| / 2^y\n */</span>\n\n<span class=\"hljs-keyword\">export</span> { powLinear, powFaster }\n"
+    },
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/Pow.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/Pow.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-comment\">// POWER (exponentials) Examples (a^b)</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Pow</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span> {\n        <span class=\"hljs-keyword\">assert</span> <span class=\"hljs-title function_\">pow</span><span class=\"hljs-params\">(<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">0</span>)</span> == Math.pow(<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">0</span>); <span class=\"hljs-comment\">// == 1</span>\n        <span class=\"hljs-keyword\">assert</span> <span class=\"hljs-title function_\">pow</span><span class=\"hljs-params\">(<span class=\"hljs-number\">0</span>, <span class=\"hljs-number\">2</span>)</span> == Math.pow(<span class=\"hljs-number\">0</span>, <span class=\"hljs-number\">2</span>); <span class=\"hljs-comment\">// == 0</span>\n        <span class=\"hljs-keyword\">assert</span> <span class=\"hljs-title function_\">pow</span><span class=\"hljs-params\">(<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">10</span>)</span> == Math.pow(<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">10</span>); <span class=\"hljs-comment\">// == 1024</span>\n        <span class=\"hljs-keyword\">assert</span> <span class=\"hljs-title function_\">pow</span><span class=\"hljs-params\">(<span class=\"hljs-number\">10</span>, <span class=\"hljs-number\">2</span>)</span> == Math.pow(<span class=\"hljs-number\">10</span>, <span class=\"hljs-number\">2</span>); <span class=\"hljs-comment\">// == 100</span>\n    }\n\n    <span class=\"hljs-comment\">/**\n     * Returns the value of the first argument raised to the power of the second\n     * argument\n     *\n     * <span class=\"hljs-doctag\">@param</span> a the base.\n     * <span class=\"hljs-doctag\">@param</span> b the exponent.\n     * <span class=\"hljs-doctag\">@return</span> the value {<span class=\"hljs-doctag\">@code</span> a}&lt;sup&gt;{<span class=\"hljs-doctag\">@code</span> b}&lt;/sup&gt;.\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">long</span> <span class=\"hljs-title function_\">pow</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> a, <span class=\"hljs-type\">int</span> b)</span> {\n        <span class=\"hljs-type\">long</span> <span class=\"hljs-variable\">result</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>;\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>; i &lt;= b; i++) {\n            result *= a;\n        }\n        <span class=\"hljs-keyword\">return</span> result;\n    }\n}\n"
+    },
+    "dart": {
+      "dir": "maths/pow.dart",
+      "url": "https://github.com/TheAlgorithms/dart/tree/master/maths/pow.dart",
+      "code": "<span class=\"hljs-keyword\">void</span> main() {\n  <span class=\"hljs-built_in\">print</span>(pow(<span class=\"hljs-number\">10</span>, <span class=\"hljs-number\">2</span>)); <span class=\"hljs-comment\">// 100</span>\n  <span class=\"hljs-built_in\">print</span>(pow(<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">0</span>)); <span class=\"hljs-comment\">// 1</span>\n  <span class=\"hljs-built_in\">print</span>(pow(<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">10</span>)); <span class=\"hljs-comment\">// 1024</span>\n}\n\n<span class=\"hljs-built_in\">double</span> pow(<span class=\"hljs-built_in\">int</span> a, <span class=\"hljs-built_in\">int</span> b) {\n  <span class=\"hljs-built_in\">double</span> result = <span class=\"hljs-number\">1</span>;\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-built_in\">int</span> i = <span class=\"hljs-number\">1</span>; i &lt;= b; i++) {\n    result *= a;\n  }\n  <span class=\"hljs-keyword\">return</span> result;\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Stepfen Shawn",
+      "email": "m18824909883@163.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Hassan",
+      "email": "hassan.elseoudy@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Arogon1",
+      "email": "40372809+Arogon1@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Cristian Baciu",
+      "email": "icristianbaciu@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

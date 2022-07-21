@@ -1,0 +1,23 @@
+{
+  "slug": "knn",
+  "name": "KNN",
+  "categories": [
+    "classificationalgorithms"
+  ],
+  "implementations": {
+    "r": ""
+  },
+  "contributors": [
+    {
+      "name": "Thomas",
+      "email": "thomas.lentali@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Erez Shomron",
+      "email": "48328872+eshom@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

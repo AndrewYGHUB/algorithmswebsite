@@ -1,0 +1,78 @@
+{
+  "slug": "anagrams",
+  "name": "Anagrams",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "strings/anagrams.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/strings/anagrams.py",
+      "code": "<span class=\"hljs-keyword\">from</span> __future__ <span class=\"hljs-keyword\">import</span> annotations\n\n<span class=\"hljs-keyword\">import</span> collections\n<span class=\"hljs-keyword\">import</span> pprint\n<span class=\"hljs-keyword\">from</span> pathlib <span class=\"hljs-keyword\">import</span> Path\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">signature</span>(<span class=\"hljs-params\">word: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;Return a word sorted\n    &gt;&gt;&gt; signature(&quot;test&quot;)\n    &#x27;estt&#x27;\n    &gt;&gt;&gt; signature(&quot;this is a test&quot;)\n    &#x27;   aehiisssttt&#x27;\n    &gt;&gt;&gt; signature(&quot;finaltest&quot;)\n    &#x27;aefilnstt&#x27;\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&quot;&quot;</span>.join(<span class=\"hljs-built_in\">sorted</span>(word))\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">anagram</span>(<span class=\"hljs-params\">my_word: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">str</span>]:\n    <span class=\"hljs-string\">&quot;&quot;&quot;Return every anagram of the given word\n    &gt;&gt;&gt; anagram(&#x27;test&#x27;)\n    [&#x27;sett&#x27;, &#x27;stet&#x27;, &#x27;test&#x27;]\n    &gt;&gt;&gt; anagram(&#x27;this is a test&#x27;)\n    []\n    &gt;&gt;&gt; anagram(&#x27;final&#x27;)\n    [&#x27;final&#x27;]\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">return</span> word_bysig[signature(my_word)]\n\n\ndata: <span class=\"hljs-built_in\">str</span> = Path(__file__).parent.joinpath(<span class=\"hljs-string\">&quot;words.txt&quot;</span>).read_text(encoding=<span class=\"hljs-string\">&quot;utf-8&quot;</span>)\nword_list = <span class=\"hljs-built_in\">sorted</span>({word.strip().lower() <span class=\"hljs-keyword\">for</span> word <span class=\"hljs-keyword\">in</span> data.splitlines()})\n\nword_bysig = collections.defaultdict(<span class=\"hljs-built_in\">list</span>)\n<span class=\"hljs-keyword\">for</span> word <span class=\"hljs-keyword\">in</span> word_list:\n    word_bysig[signature(word)].append(word)\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    all_anagrams = {word: anagram(word) <span class=\"hljs-keyword\">for</span> word <span class=\"hljs-keyword\">in</span> word_list <span class=\"hljs-keyword\">if</span> <span class=\"hljs-built_in\">len</span>(anagram(word)) &gt; <span class=\"hljs-number\">1</span>}\n\n    <span class=\"hljs-keyword\">with</span> <span class=\"hljs-built_in\">open</span>(<span class=\"hljs-string\">&quot;anagrams.txt&quot;</span>, <span class=\"hljs-string\">&quot;w&quot;</span>) <span class=\"hljs-keyword\">as</span> file:\n        file.write(<span class=\"hljs-string\">&quot;all_anagrams = \\n &quot;</span>)\n        file.write(pprint.pformat(all_anagrams))\n"
+    },
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/strings/Anagrams.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/strings/Anagrams.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.strings;\n\n<span class=\"hljs-keyword\">import</span> java.util.Arrays;\n<span class=\"hljs-keyword\">import</span> java.util.HashMap;\n\n\n<span class=\"hljs-comment\">/**\n * An anagram is a word or phrase formed by rearranging the letters of a different word or phrase,\n * typically using all the original letters exactly once.[1]\n * For example, the word anagram itself can be rearranged into nag a ram,\n * also the word binary into brainy and the word adobe into abode.\n * Reference from https://en.wikipedia.org/wiki/Anagram\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Anagrams</span> {\n    <span class=\"hljs-comment\">// 4 approaches are provided for anagram checking. approach 2 and approach 3 are similar but differ in running time.</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span> {\n        <span class=\"hljs-type\">String</span> <span class=\"hljs-variable\">first</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">&quot;deal&quot;</span>;\n        <span class=\"hljs-type\">String</span> <span class=\"hljs-variable\">second</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">&quot;lead&quot;</span>;\n        <span class=\"hljs-comment\">// All the below methods takes input but doesn&#x27;t return any output to the main method.</span>\n        <span class=\"hljs-type\">Anagrams</span> <span class=\"hljs-variable\">nm</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Anagrams</span>();\n        System.out.println(nm.approach2(first, second));  <span class=\"hljs-comment\">/* To activate methods for different approaches*/</span>\n        System.out.println(nm.approach1(first, second));  <span class=\"hljs-comment\">/* To activate methods for different approaches*/</span>\n        System.out.println(nm.approach3(first, second));  <span class=\"hljs-comment\">/* To activate methods for different approaches*/</span>\n        System.out.println(nm.approach4(first, second));  <span class=\"hljs-comment\">/* To activate methods for different approaches*/</span>\n\n        <span class=\"hljs-comment\">/**\n         * OUTPUT :\n         * first string =&quot;deal&quot; second string =&quot;lead&quot;\n         * Output: Anagram\n         * Input and output is constant for all four approaches\n         * 1st approach Time Complexity : O(n logn)\n         * Auxiliary Space Complexity : O(1)\n         * 2nd approach Time Complexity : O(n)\n         * Auxiliary Space Complexity : O(1)\n         * 3rd approach Time Complexity : O(n)\n         * Auxiliary Space Complexity : O(1)\n         * 4th approach Time Complexity : O(n)\n         * Auxiliary Space Complexity : O(n)\n         */</span>\n    }\n\n    <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">approach1</span><span class=\"hljs-params\">(String s, String t)</span> {\n        <span class=\"hljs-keyword\">if</span> (s.length() != t.length()) {\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n        } <span class=\"hljs-keyword\">else</span> {\n            <span class=\"hljs-type\">char</span> c[] = s.toCharArray();\n            <span class=\"hljs-type\">char</span> d[] = t.toCharArray();\n            Arrays.sort(c);\n            Arrays.sort(d);    <span class=\"hljs-comment\">/* In this approach the strings are stored in the character arrays and both the arrays are sorted. After that both the arrays are compared for checking anangram */</span>\n            <span class=\"hljs-keyword\">if</span> (Arrays.equals(c, d)) {\n                <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>;\n            } <span class=\"hljs-keyword\">else</span> {\n                <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n            }\n        }\n    }\n\n    <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">approach2</span><span class=\"hljs-params\">(String a, String b)</span> {\n        <span class=\"hljs-keyword\">if</span> (a.length() != b.length()) {\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n        } <span class=\"hljs-keyword\">else</span> {\n            <span class=\"hljs-type\">int</span> m[] = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[<span class=\"hljs-number\">26</span>];\n            <span class=\"hljs-type\">int</span> n[] = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[<span class=\"hljs-number\">26</span>];\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">char</span> c : a.toCharArray()) {\n                m[c - <span class=\"hljs-string\">&#x27;a&#x27;</span>]++;\n            }\n            <span class=\"hljs-comment\">// In this approach the frequency of both the strings are stored and after that the frequencies are iterated from 0 to 26(from &#x27;a&#x27; to &#x27;z&#x27; ). If the frequencies match then anagram message is displayed in the form of boolean format</span>\n            <span class=\"hljs-comment\">// Running time and space complexity of this algo is less as compared to others</span>\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">char</span> c : b.toCharArray()) {\n                n[c - <span class=\"hljs-string\">&#x27;a&#x27;</span>]++;\n            }\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; <span class=\"hljs-number\">26</span>; i++) {\n                <span class=\"hljs-keyword\">if</span> (m[i] != n[i]) {\n                    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n                }\n            }\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>;\n        }\n    }\n\n    <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">approach3</span><span class=\"hljs-params\">(String s, String t)</span> {\n        <span class=\"hljs-keyword\">if</span> (s.length() != t.length()) {\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n        }\n        <span class=\"hljs-comment\">// this is similar to approach number 2 but here the string is not converted to character array</span>\n        <span class=\"hljs-keyword\">else</span> {\n            <span class=\"hljs-type\">int</span> a[] = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[<span class=\"hljs-number\">26</span>];\n            <span class=\"hljs-type\">int</span> b[] = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[<span class=\"hljs-number\">26</span>];\n            <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">k</span> <span class=\"hljs-operator\">=</span> s.length();\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; k; i++) {\n                a[s.charAt(i) - <span class=\"hljs-string\">&#x27;a&#x27;</span>]++;\n                b[t.charAt(i) - <span class=\"hljs-string\">&#x27;a&#x27;</span>]++;\n            }\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; <span class=\"hljs-number\">26</span>; i++) {\n                <span class=\"hljs-keyword\">if</span> (a[i] != b[i])\n                    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n            }\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>;\n        }\n    }\n\n    <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">approach4</span><span class=\"hljs-params\">(String s, String t)</span> {\n        <span class=\"hljs-keyword\">if</span> (s.length() != t.length()) {\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n        }\n        <span class=\"hljs-comment\">// This approach is done using hashmap where frequencies are stored and checked iteratively and if all the frequencies of first string match with the second string then anagram message is displayed in boolean format</span>\n        <span class=\"hljs-keyword\">else</span> {\n            HashMap&lt;Character, Integer&gt; nm = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">HashMap</span>&lt;&gt;();\n            HashMap&lt;Character, Integer&gt; kk = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">HashMap</span>&lt;&gt;();\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">char</span> c : s.toCharArray()) {\n                nm.put(c, nm.getOrDefault(c, <span class=\"hljs-number\">0</span>) + <span class=\"hljs-number\">1</span>);\n            }\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">char</span> c : t.toCharArray()) {\n\n                kk.put(c, kk.getOrDefault(c, <span class=\"hljs-number\">0</span>) + <span class=\"hljs-number\">1</span>);\n            }\n            <span class=\"hljs-comment\">// It checks for equal frequencies</span>\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">char</span> c : nm.keySet()) {\n                <span class=\"hljs-keyword\">if</span> (!nm.get(c).equals(kk.get(c))) {\n                    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n                }\n            }\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>;\n        }\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Harshil Darji",
+      "email": "darjiharshil2994@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Siddhant Swarup Mallick",
+      "email": "78552027+siddhant2002@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aldo Telese",
+      "email": "63289653+aldotele@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "",
+      "email": "shyam.thiagarajan@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "matkosoric",
+      "email": "soric.matko@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Mickaël Schoentgen",
+      "email": "contact@tiger-222.fr",
+      "commits": 1
+    },
+    {
+      "name": "cclauss",
+      "email": "cclauss@bluewin.ch",
+      "commits": 1
+    },
+    {
+      "name": "97arushisharma",
+      "email": "97arushisharma@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Leoriem-code",
+      "email": "73761711+Leoriem-code@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

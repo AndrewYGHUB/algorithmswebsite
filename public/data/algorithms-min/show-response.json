@@ -1,0 +1,18 @@
+{
+  "slug": "show-response",
+  "name": "Show Response",
+  "categories": [
+    "audiofilters"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Martmists",
+      "email": "mail@martmists.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

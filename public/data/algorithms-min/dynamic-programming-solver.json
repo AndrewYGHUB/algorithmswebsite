@@ -1,0 +1,12 @@
+{
+  "slug": "dynamic-programming-solver",
+  "name": "Dynamic Programming solver",
+  "categories": [
+    "knapsack"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "subset-sum",
+  "name": "Subset Sum",
+  "categories": [
+    "backtracking"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "java": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Calebe Oliveira",
+      "email": "30943380+calebeof@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Swastika Gupta",
+      "email": "64654203+Swastyy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Jesse Adams",
+      "email": "jda170001@utdallas.edu",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

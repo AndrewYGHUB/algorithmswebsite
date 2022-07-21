@@ -1,0 +1,18 @@
+{
+  "slug": "heap-sort-2",
+  "name": "Heap Sort 2",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Dhruv Pasricha",
+      "email": "78498002+DhruvPasricha@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

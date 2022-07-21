@@ -1,0 +1,19 @@
+{
+  "slug": "postfix-to-infix",
+  "name": "Postfix To Infix",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Nikhil Bisht",
+      "email": "90137914+nikslyon19@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

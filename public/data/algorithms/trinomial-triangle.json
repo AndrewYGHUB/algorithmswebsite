@@ -1,0 +1,23 @@
+{
+  "slug": "trinomial-triangle",
+  "name": "Trinomial Triangle",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/TrinomialTriangle.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/TrinomialTriangle.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-comment\">/**\n * The trinomial triangle is a variation of Pascal’s triangle. The difference\n * between the two is that an entry in the trinomial triangle is the sum of the\n * three (rather than the two in Pasacal’s triangle) entries above it\n *\n * Example Input: n = 4 Output 1 1 1 1 1 2 3 2 1 1 3 6 7 6 3 1\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">TrinomialTriangle</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">TrinomialValue</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> n, <span class=\"hljs-type\">int</span> k)</span> {\n        <span class=\"hljs-keyword\">if</span> (n == <span class=\"hljs-number\">0</span> &amp;&amp; k == <span class=\"hljs-number\">0</span>) {\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">1</span>;\n        }\n\n        <span class=\"hljs-keyword\">if</span> (k &lt; -n || k &gt; n) {\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>;\n        }\n\n        <span class=\"hljs-keyword\">return</span> TrinomialValue(n - <span class=\"hljs-number\">1</span>, k - <span class=\"hljs-number\">1</span>) + TrinomialValue(n - <span class=\"hljs-number\">1</span>, k) + TrinomialValue(n - <span class=\"hljs-number\">1</span>, k + <span class=\"hljs-number\">1</span>);\n    }\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">printTrinomial</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> n)</span> {\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; n; i++) {\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">j</span> <span class=\"hljs-operator\">=</span> -i; j &lt;= <span class=\"hljs-number\">0</span>; j++) {\n                System.out.print(TrinomialValue(i, j) + <span class=\"hljs-string\">&quot; &quot;</span>);\n            }\n\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">j</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>; j &lt;= i; j++) {\n                System.out.print(TrinomialValue(i, j) + <span class=\"hljs-string\">&quot; &quot;</span>);\n            }\n\n            System.out.println();\n        }\n    }\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String argc[])</span> {\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">n</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">6</span>;\n        printTrinomial(n);\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Florian",
+      "email": "38241786+Flonator3000@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

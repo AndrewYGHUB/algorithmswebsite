@@ -1,0 +1,28 @@
+{
+  "slug": "list",
+  "name": "List",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Anup Kumar Panwar",
+      "email": "mylnext@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Santo",
+      "email": "sancn@live.com",
+      "commits": 2
+    },
+    {
+      "name": "hai dang",
+      "email": "haihoangdang91@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

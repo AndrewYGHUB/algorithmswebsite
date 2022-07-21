@@ -1,0 +1,12 @@
+{
+  "slug": "factorial-large-number",
+  "name": "Factorial Large Number",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

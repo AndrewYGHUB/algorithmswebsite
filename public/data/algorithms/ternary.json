@@ -1,0 +1,28 @@
+{
+  "slug": "ternary",
+  "name": "Ternary",
+  "categories": [
+    "searches"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "search/ternary.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/search/ternary.go",
+      "code": "<span class=\"hljs-keyword\">package</span> search\n\n<span class=\"hljs-keyword\">import</span> (\n\t<span class=\"hljs-string\">&quot;fmt&quot;</span>\n\t<span class=\"hljs-string\">&quot;math&quot;</span>\n)\n\n<span class=\"hljs-comment\">// TernaryMax is a function to search for maximum value of a uni-modal function `f`</span>\n<span class=\"hljs-comment\">// in the interval [a, b]. a and b should be finit numbers</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">TernaryMax</span><span class=\"hljs-params\">(a, b, epsilon <span class=\"hljs-type\">float64</span>, f <span class=\"hljs-keyword\">func</span>(x <span class=\"hljs-type\">float64</span>)</span></span> <span class=\"hljs-type\">float64</span>) (<span class=\"hljs-type\">float64</span>, <span class=\"hljs-type\">error</span>) {\n\t<span class=\"hljs-keyword\">if</span> a == math.Inf(<span class=\"hljs-number\">-1</span>) || b == math.Inf(<span class=\"hljs-number\">1</span>) {\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">-1</span>, fmt.Errorf(<span class=\"hljs-string\">&quot;interval boundaries should be finite numbers&quot;</span>)\n\t}\n\t<span class=\"hljs-keyword\">if</span> math.Abs(a-b) &lt;= epsilon {\n\t\t<span class=\"hljs-keyword\">return</span> f((a + b) / <span class=\"hljs-number\">2</span>), <span class=\"hljs-literal\">nil</span>\n\t}\n\tleft := (<span class=\"hljs-number\">2</span>*a + b) / <span class=\"hljs-number\">3</span>\n\tright := (a + <span class=\"hljs-number\">2</span>*b) / <span class=\"hljs-number\">3</span>\n\t<span class=\"hljs-keyword\">if</span> f(left) &lt; f(right) {\n\t\t<span class=\"hljs-keyword\">return</span> TernaryMax(left, b, epsilon, f)\n\t}\n\t<span class=\"hljs-keyword\">return</span> TernaryMax(a, right, epsilon, f)\n}\n\n<span class=\"hljs-comment\">// TernaryMin is a function to search for minimum value of a uni-modal function `f`</span>\n<span class=\"hljs-comment\">// in the interval [a, b]. a and b should be finit numbers.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">TernaryMin</span><span class=\"hljs-params\">(a, b, epsilon <span class=\"hljs-type\">float64</span>, f <span class=\"hljs-keyword\">func</span>(x <span class=\"hljs-type\">float64</span>)</span></span> <span class=\"hljs-type\">float64</span>) (<span class=\"hljs-type\">float64</span>, <span class=\"hljs-type\">error</span>) {\n\t<span class=\"hljs-keyword\">if</span> a == math.Inf(<span class=\"hljs-number\">-1</span>) || b == math.Inf(<span class=\"hljs-number\">1</span>) {\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">-1</span>, fmt.Errorf(<span class=\"hljs-string\">&quot;interval boundaries should be finite numbers&quot;</span>)\n\t}\n\t<span class=\"hljs-keyword\">if</span> math.Abs(a-b) &lt;= epsilon {\n\t\t<span class=\"hljs-keyword\">return</span> f((a + b) / <span class=\"hljs-number\">2</span>), <span class=\"hljs-literal\">nil</span>\n\t}\n\tleft := (<span class=\"hljs-number\">2</span>*a + b) / <span class=\"hljs-number\">3</span>\n\tright := (a + <span class=\"hljs-number\">2</span>*b) / <span class=\"hljs-number\">3</span>\n\t<span class=\"hljs-keyword\">if</span> f(left) &gt; f(right) {\n\t\t<span class=\"hljs-keyword\">return</span> TernaryMin(left, b, epsilon, f)\n\t}\n\t<span class=\"hljs-keyword\">return</span> TernaryMin(a, right, epsilon, f)\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ayoub Chegraoui",
+      "email": "ayoubch807@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

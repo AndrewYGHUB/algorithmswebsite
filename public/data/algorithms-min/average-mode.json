@@ -1,0 +1,44 @@
+{
+  "slug": "average-mode",
+  "name": "Average Mode",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Azzaare",
+      "email": "jf@baffier.fr",
+      "commits": 1
+    },
+    {
+      "name": "Ashwani Rathee",
+      "email": "ab669522@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Grigoriy Hanin",
+      "email": "43445998+haningrisha@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "matkosoric",
+      "email": "soric.matko@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "LokiUvaraj",
+      "email": "54948079+LokiUvaraj@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

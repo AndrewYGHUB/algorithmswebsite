@@ -1,0 +1,12 @@
+{
+  "slug": "dijkstra-shortest-path",
+  "name": "Dijkstra Shortest Path",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

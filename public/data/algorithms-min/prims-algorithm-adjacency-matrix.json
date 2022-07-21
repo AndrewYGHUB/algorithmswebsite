@@ -1,0 +1,13 @@
+{
+  "slug": "prims-algorithm-adjacency-matrix",
+  "name": "Prim's Algorithm (Adjacency Matrix)",
+  "categories": [
+    "graphs",
+    "minimumspanningtree"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

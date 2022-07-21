@@ -1,0 +1,13 @@
+{
+  "slug": "dynamic",
+  "name": "Dynamic",
+  "categories": [
+    "problems",
+    "dynamiccoinchange"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

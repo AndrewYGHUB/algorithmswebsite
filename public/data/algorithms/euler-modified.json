@@ -1,0 +1,33 @@
+{
+  "slug": "euler-modified",
+  "name": "Euler Modified",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "maths/euler_modified.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/maths/euler_modified.py",
+      "code": "<span class=\"hljs-keyword\">from</span> collections.abc <span class=\"hljs-keyword\">import</span> <span class=\"hljs-type\">Callable</span>\n\n<span class=\"hljs-keyword\">import</span> numpy <span class=\"hljs-keyword\">as</span> np\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">euler_modified</span>(<span class=\"hljs-params\">\n    ode_func: <span class=\"hljs-type\">Callable</span>, y0: <span class=\"hljs-built_in\">float</span>, x0: <span class=\"hljs-built_in\">float</span>, step_size: <span class=\"hljs-built_in\">float</span>, x_end: <span class=\"hljs-built_in\">float</span>\n</span>) -&gt; np.array:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Calculate solution at each step to an ODE using Euler&#x27;s Modified Method\n    The Euler Method is straightforward to implement, but can&#x27;t give accurate solutions.\n    So, some changes were proposed to improve accuracy.\n\n    https://en.wikipedia.org/wiki/Euler_method\n\n    Arguments:\n    ode_func -- The ode as a function of x and y\n    y0 -- the initial value for y\n    x0 -- the initial value for x\n    stepsize -- the increment value for x\n    x_end -- the end value for x\n\n    &gt;&gt;&gt; # the exact solution is math.exp(x)\n    &gt;&gt;&gt; def f1(x, y):\n    ...     return -2*x*(y**2)\n    &gt;&gt;&gt; y = euler_modified(f1, 1.0, 0.0, 0.2, 1.0)\n    &gt;&gt;&gt; y[-1]\n    0.503338255442106\n    &gt;&gt;&gt; import math\n    &gt;&gt;&gt; def f2(x, y):\n    ...     return -2*y + (x**3)*math.exp(-2*x)\n    &gt;&gt;&gt; y = euler_modified(f2, 1.0, 0.0, 0.1, 0.3)\n    &gt;&gt;&gt; y[-1]\n    0.5525976431951775\n    &quot;&quot;&quot;</span>\n    N = <span class=\"hljs-built_in\">int</span>(np.ceil((x_end - x0) / step_size))\n    y = np.zeros((N + <span class=\"hljs-number\">1</span>,))\n    y[<span class=\"hljs-number\">0</span>] = y0\n    x = x0\n\n    <span class=\"hljs-keyword\">for</span> k <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(N):\n        y_get = y[k] + step_size * ode_func(x, y[k])\n        y[k + <span class=\"hljs-number\">1</span>] = y[k] + (\n            (step_size / <span class=\"hljs-number\">2</span>) * (ode_func(x, y[k]) + ode_func(x + step_size, y_get))\n        )\n        x += step_size\n\n    <span class=\"hljs-keyword\">return</span> y\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "89947037+Rohanrbharadwaj@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aman kanojiya",
+      "email": "50018596+AMANKANOJIYA@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

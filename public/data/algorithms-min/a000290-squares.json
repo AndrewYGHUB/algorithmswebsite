@@ -1,0 +1,12 @@
+{
+  "slug": "a000290-squares",
+  "name": "A000290 Squares",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

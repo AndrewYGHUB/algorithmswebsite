@@ -1,0 +1,33 @@
+{
+  "slug": "figurate-number",
+  "name": "Figurate Number",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Badhusha",
+      "email": "37366257+Badhusha-Akhthaar@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "VinWare",
+      "email": "28603906+VinWare@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Badhusha-Akhthaar",
+      "email": "aashiquemd2212@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

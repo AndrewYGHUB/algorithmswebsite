@@ -1,0 +1,18 @@
+{
+  "slug": "sequence-labelling-with-a-bi-lstm-in-py-torch",
+  "name": "Sequence Labelling with a Bi LSTM in Py Torch",
+  "categories": [
+    "neuralnetwork"
+  ],
+  "implementations": {
+    "jupyter": ""
+  },
+  "contributors": [
+    {
+      "name": "Krishna Pal Deora",
+      "email": "47516664+krishnapalS@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

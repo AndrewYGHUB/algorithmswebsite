@@ -1,0 +1,23 @@
+{
+  "slug": "check-cycle",
+  "name": "Check Cycle",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Atishaye Jain",
+      "email": "64211411+atishaye@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "is-armstrong",
+  "name": "Is Armstrong",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c": "",
+    "go": "",
+    "matlab-octave": ""
+  },
+  "contributors": [
+    {
+      "name": "kNOzone",
+      "email": "72206118+kNOzone@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "kavithajm",
+      "email": "91771245+kavithajm@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

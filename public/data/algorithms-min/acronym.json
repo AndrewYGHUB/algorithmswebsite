@@ -1,0 +1,23 @@
+{
+  "slug": "acronym",
+  "name": "Acronym",
+  "categories": [
+    "exercism"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "random-pivot",
+  "name": "Random pivot",
+  "categories": [
+    "sorts",
+    "comparison"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

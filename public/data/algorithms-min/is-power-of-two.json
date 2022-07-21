@@ -1,0 +1,33 @@
+{
+  "slug": "is-power-of-two",
+  "name": "Is Power Of Two",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "ddhira123",
+      "email": "dhana_dhira@apps.ipb.ac.id",
+      "commits": 1
+    },
+    {
+      "name": "Indre Maksimovaite",
+      "email": "imaksimovaite@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 3
+    },
+    {
+      "name": "Aayushi-Mittal",
+      "email": "aayushimittal088@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

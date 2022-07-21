@@ -1,0 +1,18 @@
+{
+  "slug": "happy-numbers-seq",
+  "name": "Happy Numbers Seq",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Louve Le bronec",
+      "email": "lebroneclo@cy-tech.fr",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

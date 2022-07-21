@@ -1,0 +1,12 @@
+{
+  "slug": "feistel",
+  "name": "Feistel",
+  "categories": [
+    "encoders"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

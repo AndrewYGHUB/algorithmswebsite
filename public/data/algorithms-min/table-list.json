@@ -1,0 +1,18 @@
+{
+  "slug": "table-list",
+  "name": "Table List",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

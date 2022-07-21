@@ -1,0 +1,18 @@
+{
+  "slug": "matching-min-vertex-cover",
+  "name": "Matching Min Vertex Cover",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Manuel Di Lullo",
+      "email": "39048927+manueldilullo@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

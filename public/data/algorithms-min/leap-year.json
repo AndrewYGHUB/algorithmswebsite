@@ -1,0 +1,23 @@
+{
+  "slug": "leap-year",
+  "name": "Leap Year",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Utsav Meena",
+      "email": "95152531+utsav0@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sajeeb Ahamed",
+      "email": "sajeeb07ahamed@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

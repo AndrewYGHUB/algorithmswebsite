@@ -1,0 +1,18 @@
+{
+  "slug": "depth-first-search-tic-tac-toe",
+  "name": "Depth First Search Tic Tac Toe",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "David Makray",
+      "email": "dmakray@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

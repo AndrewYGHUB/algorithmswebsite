@@ -1,0 +1,56 @@
+{
+  "slug": "linked-queue",
+  "name": "Linked Queue",
+  "categories": [
+    "datastructures",
+    "queues"
+  ],
+  "implementations": {
+    "python": "",
+    "java": "",
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Abhinandan Padmakar Pandey",
+      "email": "53622998+AbhinandanPadmakarPandey@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Hassan",
+      "email": "hassan.elseoudy@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Dylan Buchi",
+      "email": "devybuchi@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Mariusz Skoneczko",
+      "email": "mariusz@skoneczko.com",
+      "commits": 1
+    },
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 2
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

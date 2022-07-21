@@ -1,0 +1,18 @@
+{
+  "slug": "is-subsequence",
+  "name": "Is Subsequence",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "duy quang",
+      "email": "hyouka266@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

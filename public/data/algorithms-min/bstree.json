@@ -1,0 +1,13 @@
+{
+  "slug": "bstree",
+  "name": "Bstree",
+  "categories": [
+    "structure",
+    "binarysearchtree"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

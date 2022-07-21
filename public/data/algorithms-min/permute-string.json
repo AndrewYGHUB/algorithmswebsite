@@ -1,0 +1,18 @@
+{
+  "slug": "permute-string",
+  "name": "Permute String",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Abhinav Rajput",
+      "email": "80591258+AbhinavRajputEXE@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "tcp-half-duplex-server",
+  "name": "Tcp Half Duplex Server",
+  "categories": [
+    "clientserver"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Nikhill Vombatkere",
+      "email": "63743496+NVombat@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

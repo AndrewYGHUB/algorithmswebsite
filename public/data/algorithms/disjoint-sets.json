@@ -1,0 +1,38 @@
+{
+  "slug": "disjoint-sets",
+  "name": "Disjoint Sets",
+  "categories": [
+    "datastructures"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/datastructures/disjointsets/DisjointSets.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/datastructures/disjointsets/DisjointSets.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.datastructures.disjointsets;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">DisjointSets</span>&lt;T&gt; {\n\n    <span class=\"hljs-keyword\">public</span> Node&lt;T&gt; <span class=\"hljs-title function_\">MakeSet</span><span class=\"hljs-params\">(T x)</span> {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Node</span>&lt;T&gt;(x);\n    }\n\n    ;\n\n    <span class=\"hljs-keyword\">public</span> Node&lt;T&gt; <span class=\"hljs-title function_\">FindSet</span><span class=\"hljs-params\">(Node&lt;T&gt; node)</span> {\n        <span class=\"hljs-keyword\">if</span> (node != node.parent) {\n            node.parent = FindSet(node.parent);\n        }\n\n        <span class=\"hljs-keyword\">return</span> node.parent;\n    }\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">UnionSet</span><span class=\"hljs-params\">(Node&lt;T&gt; x, Node&lt;T&gt; y)</span> {\n        Node&lt;T&gt; nx = FindSet(x);\n        Node&lt;T&gt; ny = FindSet(y);\n\n        <span class=\"hljs-keyword\">if</span> (nx == ny) {\n            <span class=\"hljs-keyword\">return</span>;\n        }\n        <span class=\"hljs-keyword\">if</span> (nx.rank &gt; ny.rank) {\n            ny.parent = nx;\n        } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (ny.rank &gt; nx.rank) {\n            nx.parent = ny;\n        } <span class=\"hljs-keyword\">else</span> {\n            nx.parent = ny;\n            ny.rank++;\n        }\n    }\n}\n"
+    },
+    "ruby": {
+      "dir": "data_structures/disjoint_sets/disjoint_sets.rb",
+      "url": "https://github.com/TheAlgorithms/ruby/tree/master/data_structures/disjoint_sets/disjoint_sets.rb",
+      "code": "<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Node</span>\n  <span class=\"hljs-keyword\">attr_accessor</span> <span class=\"hljs-symbol\">:data</span>, <span class=\"hljs-symbol\">:parent</span>, <span class=\"hljs-symbol\">:rank</span>, <span class=\"hljs-symbol\">:parent</span>, <span class=\"hljs-symbol\">:rank</span>\n\n  <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">initialize</span>(<span class=\"hljs-params\">data</span>)\n    <span class=\"hljs-variable\">@data</span> = data\n    <span class=\"hljs-variable\">@parent</span> = <span class=\"hljs-variable language_\">self</span>\n    <span class=\"hljs-variable\">@rank</span> = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">DisjointSets</span>\n  <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">make_set</span>(<span class=\"hljs-params\">d</span>)\n    <span class=\"hljs-title class_\">Node</span>.new(d)\n  <span class=\"hljs-keyword\">end</span>\n\n  <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">find_set</span>(<span class=\"hljs-params\">x</span>)\n    raise ArgumentError <span class=\"hljs-keyword\">unless</span> x.<span class=\"hljs-keyword\">class</span> &lt;= Node\n\n    x.parent = (find_set(x.parent)) <span class=\"hljs-keyword\">unless</span> x.parent == x\n    x.parent\n  <span class=\"hljs-keyword\">end</span>\n\n  <span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">union_set</span>(<span class=\"hljs-params\">x, y</span>)\n    px = find_set(x)\n    py = find_set(y)\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-keyword\">if</span> px == py\n\n    <span class=\"hljs-keyword\">if</span> px.rank &gt; py.rank\n      py.parent = px\n    <span class=\"hljs-keyword\">elsif</span> py.rank &gt; px.rank\n      px.parent = py\n    <span class=\"hljs-keyword\">else</span>\n      px.parent = py\n      py.rank += <span class=\"hljs-number\">1</span>\n    <span class=\"hljs-keyword\">end</span>\n  <span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n\nds = DisjointSets.new\none = ds.make_set(<span class=\"hljs-number\">1</span>)\ntwo = ds.make_set(<span class=\"hljs-number\">2</span>)\nthree = ds.make_set(<span class=\"hljs-number\">3</span>)\nds.union_set(one, two)\nputs ds.find_set(one) == ds.find_set(two) <span class=\"hljs-comment\"># should be true</span>\nds.union_set(one, three)\nputs ds.find_set(two) == ds.find_set(three) <span class=\"hljs-comment\"># should be true</span>\nputs one.rank + two.rank + three.rank == <span class=\"hljs-number\">1</span> <span class=\"hljs-comment\"># should be true</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "NimrodRak",
+      "email": "68863114+NimrodRak@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Nimrod Rak",
+      "email": "nimrod.rak@mail.huji.ac.il",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

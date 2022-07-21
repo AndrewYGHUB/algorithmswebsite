@@ -1,0 +1,29 @@
+{
+  "slug": "burrows-wheeler-transform",
+  "name": "Burrows Wheeler Transform",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "rust": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Jerrit Gläsker",
+      "email": "50867655+cherrysrc@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Valdas",
+      "email": "valdemar.silcenko@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

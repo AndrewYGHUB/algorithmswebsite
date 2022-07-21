@@ -1,0 +1,18 @@
+{
+  "slug": "all-construct",
+  "name": "All Construct",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Sailesh Shrestha",
+      "email": "34860977+werewolf-65@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

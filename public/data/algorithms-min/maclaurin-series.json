@@ -1,0 +1,13 @@
+{
+  "slug": "maclaurin-series",
+  "name": "Maclaurin Series",
+  "categories": [
+    "numeric",
+    "series"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

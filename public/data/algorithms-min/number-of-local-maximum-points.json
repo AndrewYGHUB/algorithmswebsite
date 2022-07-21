@@ -1,0 +1,24 @@
+{
+  "slug": "number-of-local-maximum-points",
+  "name": "Number Of Local Maximum Points",
+  "categories": [
+    "datastructures",
+    "array"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "jhonDoe15",
+      "email": "62393042+jhonDoe15@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "cyclic",
+  "name": "Cyclic",
+  "categories": [
+    "structure",
+    "linkedlist"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ritik Bhandari",
+      "email": "ritikbhandari68@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

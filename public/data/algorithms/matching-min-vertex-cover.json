@@ -1,0 +1,23 @@
+{
+  "slug": "matching-min-vertex-cover",
+  "name": "Matching Min Vertex Cover",
+  "categories": [
+    "graphs"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "graphs/matching_min_vertex_cover.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/graphs/matching_min_vertex_cover.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n* Author: Manuel Di Lullo (https://github.com/manueldilullo)\n* Description: Approximization algorithm for minimum vertex cover problem.\n               Matching Approach. Uses graphs represented with an adjacency list\n\nURL: https://mathworld.wolfram.com/MinimumVertexCover.html\nURL: https://www.princeton.edu/~aaa/Public/Teaching/ORF523/ORF523_Lec6.pdf\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">matching_min_vertex_cover</span>(<span class=\"hljs-params\">graph: <span class=\"hljs-built_in\">dict</span></span>) -&gt; <span class=\"hljs-built_in\">set</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    APX Algorithm for min Vertex Cover using Matching Approach\n    @input: graph (graph stored in an adjacency list where each vertex\n            is represented as an integer)\n    @example:\n    &gt;&gt;&gt; graph = {0: [1, 3], 1: [0, 3], 2: [0, 3, 4], 3: [0, 1, 2], 4: [2, 3]}\n    &gt;&gt;&gt; matching_min_vertex_cover(graph)\n    {0, 1, 2, 4}\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-comment\"># chosen_vertices = set of chosen vertices</span>\n    chosen_vertices = <span class=\"hljs-built_in\">set</span>()\n    <span class=\"hljs-comment\"># edges = list of graph&#x27;s edges</span>\n    edges = get_edges(graph)\n\n    <span class=\"hljs-comment\"># While there are still elements in edges list, take an arbitrary edge</span>\n    <span class=\"hljs-comment\"># (from_node, to_node) and add his extremity to chosen_vertices and then</span>\n    <span class=\"hljs-comment\"># remove all arcs adjacent to the from_node and to_node</span>\n    <span class=\"hljs-keyword\">while</span> edges:\n        from_node, to_node = edges.pop()\n        chosen_vertices.add(from_node)\n        chosen_vertices.add(to_node)\n        <span class=\"hljs-keyword\">for</span> edge <span class=\"hljs-keyword\">in</span> edges.copy():\n            <span class=\"hljs-keyword\">if</span> from_node <span class=\"hljs-keyword\">in</span> edge <span class=\"hljs-keyword\">or</span> to_node <span class=\"hljs-keyword\">in</span> edge:\n                edges.discard(edge)\n    <span class=\"hljs-keyword\">return</span> chosen_vertices\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">get_edges</span>(<span class=\"hljs-params\">graph: <span class=\"hljs-built_in\">dict</span></span>) -&gt; <span class=\"hljs-built_in\">set</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Return a set of couples that represents all of the edges.\n    @input: graph (graph stored in an adjacency list where each vertex is\n            represented as an integer)\n    @example:\n    &gt;&gt;&gt; graph = {0: [1, 3], 1: [0, 3], 2: [0, 3], 3: [0, 1, 2]}\n    &gt;&gt;&gt; get_edges(graph)\n    {(0, 1), (3, 1), (0, 3), (2, 0), (3, 0), (2, 3), (1, 0), (3, 2), (1, 3)}\n    &quot;&quot;&quot;</span>\n    edges = <span class=\"hljs-built_in\">set</span>()\n    <span class=\"hljs-keyword\">for</span> from_node, to_nodes <span class=\"hljs-keyword\">in</span> graph.items():\n        <span class=\"hljs-keyword\">for</span> to_node <span class=\"hljs-keyword\">in</span> to_nodes:\n            edges.add((from_node, to_node))\n    <span class=\"hljs-keyword\">return</span> edges\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n\n    <span class=\"hljs-comment\"># graph = {0: [1, 3], 1: [0, 3], 2: [0, 3, 4], 3: [0, 1, 2], 4: [2, 3]}</span>\n    <span class=\"hljs-comment\"># print(f&quot;Matching vertex cover:\\n{matching_min_vertex_cover(graph)}&quot;)</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Manuel Di Lullo",
+      "email": "39048927+manueldilullo@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

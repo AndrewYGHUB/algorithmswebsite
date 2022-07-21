@@ -1,0 +1,28 @@
+{
+  "slug": "turkish-to-latin-conversion",
+  "name": "Turkish To Latin Conversion",
+  "categories": [
+    "conversions"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/conversions/TurkishToLatinConversion.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/conversions/TurkishToLatinConversion.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.conversions;\n\n<span class=\"hljs-keyword\">import</span> java.util.Scanner;\n\n<span class=\"hljs-comment\">/**\n * Converts turkish character to latin character\n *\n * <span class=\"hljs-doctag\">@author</span> Özgün Gökşenli\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">TurkishToLatinConversion</span> {\n\n    <span class=\"hljs-comment\">/**\n     * Main method\n     *\n     * <span class=\"hljs-doctag\">@param</span> args Command line arguments\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String args[])</span> {\n        <span class=\"hljs-type\">Scanner</span> <span class=\"hljs-variable\">sc</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Scanner</span>(System.in);\n        System.out.println(<span class=\"hljs-string\">&quot;Input the string: &quot;</span>);\n        <span class=\"hljs-type\">String</span> <span class=\"hljs-variable\">b</span> <span class=\"hljs-operator\">=</span> sc.next();\n        System.out.println(<span class=\"hljs-string\">&quot;Converted: &quot;</span> + convertTurkishToLatin(b));\n        sc.close();\n    }\n\n    <span class=\"hljs-comment\">/**\n     * This method converts a turkish character to latin character.\n     *\n     * <span class=\"hljs-doctag\">@param</span> param String paramter\n     * <span class=\"hljs-doctag\">@return</span> String\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> String <span class=\"hljs-title function_\">convertTurkishToLatin</span><span class=\"hljs-params\">(String param)</span> {\n        <span class=\"hljs-type\">char</span>[] turkishChars\n                = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">char</span>[]{<span class=\"hljs-number\">0x131</span>, <span class=\"hljs-number\">0x130</span>, <span class=\"hljs-number\">0xFC</span>, <span class=\"hljs-number\">0xDC</span>, <span class=\"hljs-number\">0xF6</span>, <span class=\"hljs-number\">0xD6</span>, <span class=\"hljs-number\">0x15F</span>, <span class=\"hljs-number\">0x15E</span>, <span class=\"hljs-number\">0xE7</span>, <span class=\"hljs-number\">0xC7</span>, <span class=\"hljs-number\">0x11F</span>, <span class=\"hljs-number\">0x11E</span>};\n        <span class=\"hljs-type\">char</span>[] latinChars = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">char</span>[]{<span class=\"hljs-string\">&#x27;i&#x27;</span>, <span class=\"hljs-string\">&#x27;I&#x27;</span>, <span class=\"hljs-string\">&#x27;u&#x27;</span>, <span class=\"hljs-string\">&#x27;U&#x27;</span>, <span class=\"hljs-string\">&#x27;o&#x27;</span>, <span class=\"hljs-string\">&#x27;O&#x27;</span>, <span class=\"hljs-string\">&#x27;s&#x27;</span>, <span class=\"hljs-string\">&#x27;S&#x27;</span>, <span class=\"hljs-string\">&#x27;c&#x27;</span>, <span class=\"hljs-string\">&#x27;C&#x27;</span>, <span class=\"hljs-string\">&#x27;g&#x27;</span>, <span class=\"hljs-string\">&#x27;G&#x27;</span>};\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; turkishChars.length; i++) {\n            param\n                    = param.replaceAll(\n                            <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">String</span>(<span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">char</span>[]{turkishChars[i]}), <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">String</span>(<span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">char</span>[]{latinChars[i]}));\n        }\n        <span class=\"hljs-keyword\">return</span> param;\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "zgnmgg",
+      "email": "goksenliozgun@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

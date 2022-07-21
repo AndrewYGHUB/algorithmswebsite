@@ -1,0 +1,12 @@
+{
+  "slug": "cos",
+  "name": "Cos",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

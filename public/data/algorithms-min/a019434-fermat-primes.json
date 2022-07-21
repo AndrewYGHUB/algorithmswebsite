@@ -1,0 +1,12 @@
+{
+  "slug": "a019434-fermat-primes",
+  "name": "A019434 Fermat Primes",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

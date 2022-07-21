@@ -1,0 +1,12 @@
+{
+  "slug": "modular-inverse-simple",
+  "name": "Modular Inverse Simple",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

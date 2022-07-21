@@ -1,0 +1,17 @@
+{
+  "slug": "eulertotient",
+  "name": "Eulertotient",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "math/eulertotient.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/eulertotient.go",
+      "code": "<span class=\"hljs-keyword\">package</span> math\n\n<span class=\"hljs-comment\">// Phi is the Euler totient function.</span>\n<span class=\"hljs-comment\">// This function computes the number of numbers less then n that are coprime with n.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Phi</span><span class=\"hljs-params\">(n <span class=\"hljs-type\">int64</span>)</span></span> <span class=\"hljs-type\">int64</span> {\n\tresult := n\n\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-type\">int64</span>(<span class=\"hljs-number\">2</span>); i*i &lt;= n; i += <span class=\"hljs-number\">1</span> {\n\t\t<span class=\"hljs-keyword\">if</span> n%i == <span class=\"hljs-number\">0</span> {\n\t\t\t<span class=\"hljs-keyword\">for</span> {\n\t\t\t\t<span class=\"hljs-keyword\">if</span> n%i != <span class=\"hljs-number\">0</span> {\n\t\t\t\t\t<span class=\"hljs-keyword\">break</span>\n\t\t\t\t}\n\t\t\t\tn /= i\n\t\t\t}\n\t\t\tresult -= result / i\n\t\t}\n\t}\n\n\t<span class=\"hljs-keyword\">if</span> n &gt; <span class=\"hljs-number\">1</span> {\n\t\tresult -= result / n\n\t}\n\t<span class=\"hljs-keyword\">return</span> result\n}\n"
+    }
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

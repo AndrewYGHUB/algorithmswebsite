@@ -1,0 +1,18 @@
+{
+  "slug": "gray-code-sequence",
+  "name": "Gray Code Sequence",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "krishchopra02",
+      "email": "77331421+krishchopra02@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

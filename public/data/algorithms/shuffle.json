@@ -1,0 +1,17 @@
+{
+  "slug": "shuffle",
+  "name": "Shuffle",
+  "categories": [
+    "random"
+  ],
+  "body": {},
+  "implementations": {
+    "lua": {
+      "dir": "src/random/shuffle.lua",
+      "url": "https://github.com/TheAlgorithms/lua/tree/master/src/random/shuffle.lua",
+      "code": "<span class=\"hljs-comment\">-- Fisher-Yates shuffle</span>\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(\n\tlist <span class=\"hljs-comment\">-- list to be shuffled in-place</span>\n)</span></span>\n\t<span class=\"hljs-keyword\">for</span> index = <span class=\"hljs-number\">1</span>, #list - <span class=\"hljs-number\">1</span> <span class=\"hljs-keyword\">do</span>\n\t\t<span class=\"hljs-keyword\">local</span> index_2 = <span class=\"hljs-built_in\">math</span>.<span class=\"hljs-built_in\">random</span>(index, #list)\n\t\tlist[index], list[index_2] = list[index_2], list[index]\n\t<span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

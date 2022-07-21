@@ -1,0 +1,28 @@
+{
+  "slug": "breadth-first-shortest-path",
+  "name": "Breadth First Shortest Path",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Tapajyoti Bose",
+      "email": "44058757+ruppysuppy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "algobytewise",
+      "email": "algobytewise@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Roland Hummel",
+      "email": "roland.hummel@qaware.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

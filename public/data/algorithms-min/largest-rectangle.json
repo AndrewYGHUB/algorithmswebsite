@@ -1,0 +1,19 @@
+{
+  "slug": "largest-rectangle",
+  "name": "Largest Rectangle",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "rameez471",
+      "email": "41578444+rameez471@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

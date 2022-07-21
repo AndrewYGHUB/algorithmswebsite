@@ -1,0 +1,96 @@
+{
+  "slug": "average-median",
+  "name": "Average Median",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "ruby": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "imp",
+      "email": "imp07@qq.com",
+      "commits": 1
+    },
+    {
+      "name": "Sahil Afrid Farookhi",
+      "email": "msafarookhi@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Azzaare",
+      "email": "jf@baffier.fr",
+      "commits": 1
+    },
+    {
+      "name": "Ashwani Rathee",
+      "email": "ab669522@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Mirzoev Ruslan",
+      "email": "48970799+RuSaG0@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Roland Hummel",
+      "email": "roland.hummel@qaware.de",
+      "commits": 1
+    },
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Grigoriy Hanin",
+      "email": "43445998+haningrisha@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sanders Lin",
+      "email": "45224617+SandersLin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rratic",
+      "email": "Rratic@163.com",
+      "commits": 2
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "qingwen23",
+      "email": "qingwen232@gmail.com",
+      "commits": 7
+    }
+  ],
+  "explanationUrl": {}
+}

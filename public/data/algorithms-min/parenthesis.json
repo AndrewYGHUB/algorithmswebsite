@@ -1,0 +1,25 @@
+{
+  "slug": "parenthesis",
+  "name": "Parenthesis",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "c": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Yassin Achengli",
+      "email": "79287426+89453728@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

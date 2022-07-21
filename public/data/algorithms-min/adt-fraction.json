@@ -1,0 +1,28 @@
+{
+  "slug": "adt-fraction",
+  "name": "ADT Fraction",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Cristiano Jesus",
+      "email": "crist.borges05@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Thisaru Dilshan",
+      "email": "49381898+ThisaruD@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

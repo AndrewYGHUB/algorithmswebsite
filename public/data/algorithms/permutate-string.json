@@ -1,0 +1,28 @@
+{
+  "slug": "permutate-string",
+  "name": "Permutate String",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/PermutateString.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/PermutateString.js",
+      "code": "<span class=\"hljs-meta\">&#x27;use strict&#x27;</span>\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">permutate</span> = (<span class=\"hljs-params\">aString</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> aString !== <span class=\"hljs-string\">&#x27;string&#x27;</span> || !aString) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Error</span>(<span class=\"hljs-string\">&#x27;The arg must be a valid, non empty string&#x27;</span>)\n  }\n  <span class=\"hljs-keyword\">const</span> characters = aString.<span class=\"hljs-title function_\">split</span>(<span class=\"hljs-string\">&#x27;&#x27;</span>)\n  <span class=\"hljs-keyword\">let</span> permutations = [[characters.<span class=\"hljs-title function_\">shift</span>()]]\n  <span class=\"hljs-keyword\">while</span> (characters.<span class=\"hljs-property\">length</span>) {\n    <span class=\"hljs-keyword\">const</span> currentCharacter = characters.<span class=\"hljs-title function_\">shift</span>()\n    permutations = <span class=\"hljs-title function_\">calculateCurrentCharacterPermutation</span>(permutations, currentCharacter)\n  }\n  <span class=\"hljs-keyword\">return</span> permutations\n    .<span class=\"hljs-title function_\">map</span>(<span class=\"hljs-function\"><span class=\"hljs-params\">character</span> =&gt;</span> character.<span class=\"hljs-title function_\">join</span>(<span class=\"hljs-string\">&#x27;&#x27;</span>))\n    .<span class=\"hljs-title function_\">filter</span>(<span class=\"hljs-function\">(<span class=\"hljs-params\">item, index, self</span>) =&gt;</span> (self.<span class=\"hljs-title function_\">indexOf</span>(item) === index))\n    .<span class=\"hljs-title function_\">sort</span>()\n}\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">calculateCurrentCharacterPermutation</span> = (<span class=\"hljs-params\">allPermutations, currentCharacter</span>) =&gt; {\n  <span class=\"hljs-keyword\">const</span> currentPermutations = []\n  allPermutations.<span class=\"hljs-title function_\">forEach</span>(<span class=\"hljs-function\"><span class=\"hljs-params\">permutation</span> =&gt;</span> {\n    <span class=\"hljs-keyword\">let</span> index = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">while</span> (index &lt;= permutation.<span class=\"hljs-property\">length</span>) {\n      <span class=\"hljs-keyword\">const</span> tmp = [...permutation]\n      tmp.<span class=\"hljs-title function_\">splice</span>(index, <span class=\"hljs-number\">0</span>, currentCharacter)\n      currentPermutations.<span class=\"hljs-title function_\">push</span>(tmp)\n      index++\n    }\n  })\n  <span class=\"hljs-keyword\">return</span> currentPermutations\n}\n\n<span class=\"hljs-keyword\">export</span> { permutate }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "68542775+raklaptudirm@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "piemme",
+      "email": "paolomanca@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

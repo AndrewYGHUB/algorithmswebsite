@@ -1,0 +1,18 @@
+{
+  "slug": "nagel-schrekenberg",
+  "name": "Nagel Schrekenberg",
+  "categories": [
+    "cellularautomata"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Leoriem-code",
+      "email": "73761711+Leoriem-code@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

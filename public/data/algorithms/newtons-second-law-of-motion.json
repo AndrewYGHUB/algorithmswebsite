@@ -1,0 +1,23 @@
+{
+  "slug": "newtons-second-law-of-motion",
+  "name": "Newtons Second Law of Motion",
+  "categories": [
+    "physics"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "physics/newtons_second_law_of_motion.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/physics/newtons_second_law_of_motion.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\nDescription :\nNewton&#x27;s second law of motion pertains to the behavior of objects for which\nall existing forces are not balanced.\nThe second law states that the acceleration of an object is dependent upon two variables\n- the net force acting upon the object and the mass of the object.\nThe acceleration of an object depends directly\nupon the net force acting upon the object,\nand inversely upon the mass of the object.\nAs the force acting upon an object is increased,\nthe acceleration of the object is increased.\nAs the mass of an object is increased, the acceleration of the object is decreased.\nSource: https://www.physicsclassroom.com/class/newtlaws/Lesson-3/Newton-s-Second-Law\nFormulation: Fnet = m • a\nDiagrammatic Explanation:\n              Forces are unbalanced\n                        |\n                        |\n                        |\n                        V\n               There is acceleration\n                        /\\\n                       /  \\\n                      /    \\\n                     /      \\\n                    /        \\\n                   /          \\\n                  /            \\\n        __________________   ____ ________________\n        |The acceleration |  |The acceleration   |\n        |depends directly |  |depends inversely  |\n        |on the net Force |  |upon the object&#x27;s  |\n        |_________________|  |mass_______________|\nUnits:\n1 Newton = 1 kg X meters / (seconds^2)\nHow to use?\nInputs:\n    ___________________________________________________\n   |Name         | Units                   | Type      |\n   |-------------|-------------------------|-----------|\n   |mass         | (in kgs)                | float     |\n   |-------------|-------------------------|-----------|\n   |acceleration | (in meters/(seconds^2)) | float     |\n   |_____________|_________________________|___________|\n\nOutput:\n    ___________________________________________________\n   |Name         | Units                   | Type      |\n   |-------------|-------------------------|-----------|\n   |force        | (in Newtons)            | float     |\n   |_____________|_________________________|___________|\n\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">newtons_second_law_of_motion</span>(<span class=\"hljs-params\">mass: <span class=\"hljs-built_in\">float</span>, acceleration: <span class=\"hljs-built_in\">float</span></span>) -&gt; <span class=\"hljs-built_in\">float</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    &gt;&gt;&gt; newtons_second_law_of_motion(10, 10)\n    100\n    &gt;&gt;&gt; newtons_second_law_of_motion(2.0, 1)\n    2.0\n    &quot;&quot;&quot;</span>\n    force = <span class=\"hljs-built_in\">float</span>()\n    <span class=\"hljs-keyword\">try</span>:\n        force = mass * acceleration\n    <span class=\"hljs-keyword\">except</span> Exception:\n        <span class=\"hljs-keyword\">return</span> -<span class=\"hljs-number\">0.0</span>\n    <span class=\"hljs-keyword\">return</span> force\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    <span class=\"hljs-comment\"># run doctest</span>\n    doctest.testmod()\n\n    <span class=\"hljs-comment\"># demo</span>\n    mass = <span class=\"hljs-number\">12.5</span>\n    acceleration = <span class=\"hljs-number\">10</span>\n    force = newtons_second_law_of_motion(mass, acceleration)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;The force is &quot;</span>, force, <span class=\"hljs-string\">&quot;N&quot;</span>)\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Divyesh Vishwakarma",
+      "email": "divyesh1099@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

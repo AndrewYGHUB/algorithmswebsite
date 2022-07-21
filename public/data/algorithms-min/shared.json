@@ -1,0 +1,29 @@
+{
+  "slug": "shared",
+  "name": "Shared",
+  "categories": [
+    "strings",
+    "ahocorasick"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ritik Bhandari",
+      "email": "ritikbhandari68@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

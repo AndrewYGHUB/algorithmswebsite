@@ -1,0 +1,24 @@
+{
+  "slug": "geometric-series",
+  "name": "Geometric Series",
+  "categories": [
+    "math",
+    "series"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Muhammad Ibtihaj Naeem",
+      "email": "i.ibtihajnaeem@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

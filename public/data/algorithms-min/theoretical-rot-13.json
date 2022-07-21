@@ -1,0 +1,18 @@
+{
+  "slug": "theoretical-rot-13",
+  "name": "Theoretical Rot 13",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Bello mahmud",
+      "email": "75342173+mahmudsudo@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

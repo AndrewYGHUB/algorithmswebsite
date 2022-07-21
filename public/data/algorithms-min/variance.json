@@ -1,0 +1,34 @@
+{
+  "slug": "variance",
+  "name": "Variance",
+  "categories": [
+    "numericalmethods"
+  ],
+  "implementations": {
+    "c": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Azzaare",
+      "email": "jf@baffier.fr",
+      "commits": 1
+    },
+    {
+      "name": "Aru Bhardwaj",
+      "email": "aru.bhardwaj01@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "66054069+ReneganRonin@users.noreply.github.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

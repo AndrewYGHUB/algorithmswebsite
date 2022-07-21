@@ -1,0 +1,23 @@
+{
+  "slug": "pronic-number",
+  "name": "Pronic Number",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/PronicNumber.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/PronicNumber.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-comment\">/*\n * Java program for Pronic Number\n * Pronic Number: A number n is a pronic number if\n * it is equal to product of two consecutive numbers m and m+1.\n * Wikipedia: https://en.wikipedia.org/wiki/Pronic_number\n * \n * Author: Akshay Dubey (https://github.com/itsAkshayDubey)\n * \n * */</span>\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">PronicNumber</span> {\n\n\t<span class=\"hljs-comment\">/**\n     * This method checks if the given number is pronic number or non-pronic number\n     *\n     * <span class=\"hljs-doctag\">@param</span> input_number Integer value which is to be checked if is a pronic number or not \n     * <span class=\"hljs-doctag\">@return</span> true if input number is a pronic number, false otherwise\n     */</span>\n\t<span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">isPronic</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> input_number)</span> {\n\t\t\n\t\t<span class=\"hljs-comment\">//Iterating from 0 to input_number</span>\n\t\t<span class=\"hljs-keyword\">for</span>(<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt;= input_number; i++) {\n\t\t\t\n\t\t\t<span class=\"hljs-comment\">//Checking if product of i and (i+1) is equals input_number</span>\n\t\t\t<span class=\"hljs-keyword\">if</span>(i * (i+<span class=\"hljs-number\">1</span>) == input_number &amp;&amp; i != input_number) {\n\t\t\t\t\n\t\t\t\t<span class=\"hljs-comment\">//return true if product of i and (i+1) is equals input_number</span>\n\t\t\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>;\n\t\t\t}\n\t\t\t\n\t\t}\n\t\t\n\t\t<span class=\"hljs-comment\">//return false if product of i and (i+1) for all values from 0 to input_number is not equals input_number</span>\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n\t}\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Akshay Dubey",
+      "email": "38462415+itsAkshayDubey@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

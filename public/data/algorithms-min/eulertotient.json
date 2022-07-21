@@ -1,0 +1,12 @@
+{
+  "slug": "eulertotient",
+  "name": "Eulertotient",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

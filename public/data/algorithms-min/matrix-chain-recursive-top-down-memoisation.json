@@ -1,0 +1,18 @@
+{
+  "slug": "matrix-chain-recursive-top-down-memoisation",
+  "name": "Matrix Chain Recursive Top Down Memoisation",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Karuna Sharma",
+      "email": "79369446+Karunasharma09@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

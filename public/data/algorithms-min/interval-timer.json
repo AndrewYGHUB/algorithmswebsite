@@ -1,0 +1,23 @@
+{
+  "slug": "interval-timer",
+  "name": "Interval Timer",
+  "categories": [
+    "timingfunctions"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Nandan V",
+      "email": "nvpotti.mec@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

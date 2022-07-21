@@ -1,0 +1,18 @@
+{
+  "slug": "count-bits-flip",
+  "name": "Count Bits Flip",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Yash Raj Singh",
+      "email": "66232462+yashrajyash@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

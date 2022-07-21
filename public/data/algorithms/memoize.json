@@ -1,0 +1,28 @@
+{
+  "slug": "memoize",
+  "name": "Memoize",
+  "categories": [
+    "cache"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Cache/Memoize.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Cache/Memoize.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">memoize</span>\n * <span class=\"hljs-doctag\">@description</span> -&gt;\n * From [Wikipedia](https://en.wikipedia.org/wiki/Memoization),\n * memoization is an optimization technique\n * used primarily to speed up computer programs,\n * by storing the results of expensive function calls\n * and returning the cached result when the same inputs occur again\n * This function is a first class objects,\n * which lets us use it as [Higher-Order Function](https://eloquentjavascript.net/05_higher_order.html)\n * and return another function\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Function</span>} func Original function\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Map</span>} <span class=\"hljs-variable\">cache</span> - it&#x27;s receive any cache DS which have get, set &amp; has method\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">Function</span>} Memoized function\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">memoize</span> = (<span class=\"hljs-params\">func, cache = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-built_in\">Map</span>()</span>) =&gt; {\n  <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">jsonReplacer</span> = (<span class=\"hljs-params\">_, value</span>) =&gt; {\n    <span class=\"hljs-keyword\">if</span> (value <span class=\"hljs-keyword\">instanceof</span> <span class=\"hljs-title class_\">Set</span>) { <span class=\"hljs-comment\">// if the value is Set it&#x27;s converted to Array cause JSON.stringify can&#x27;t convert Set</span>\n      <span class=\"hljs-keyword\">return</span> [...value]\n    }\n\n    <span class=\"hljs-keyword\">if</span> (value <span class=\"hljs-keyword\">instanceof</span> <span class=\"hljs-title class_\">Map</span>) { <span class=\"hljs-comment\">// if the value is Map it&#x27;s converted to Object cause JSON.stringify can&#x27;t convert Map</span>\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title class_\">Object</span>.<span class=\"hljs-title function_\">fromEntries</span>(value)\n    }\n\n    <span class=\"hljs-keyword\">return</span> value\n  }\n\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\">(<span class=\"hljs-params\">...args</span>) =&gt;</span> {\n    <span class=\"hljs-comment\">/**\n     * Arguments converted to JSON string for use as a key of Map - it&#x27;s easy to detect collections like -&gt; Object and Array\n     * If the args input is -&gt; [new Set([1, 2, 3, 4]), {name: &#x27;myName&#x27;, age: 23}]\n     * Then the agrsKey generate to -&gt; &#x27;[[1,2,3,4],{&quot;name&quot;:&quot;myName&quot;,&quot;age&quot;:23}]&#x27; which is JSON mean string\n     * Now it&#x27;s ready to be a perfect key for Map\n     */</span>\n    <span class=\"hljs-keyword\">const</span> argsKey = <span class=\"hljs-title class_\">JSON</span>.<span class=\"hljs-title function_\">stringify</span>(args, jsonReplacer)\n\n    <span class=\"hljs-comment\">/**\n     * Checks if the argument is already present in the cache,\n     * then return the associated value / result\n     */</span>\n    <span class=\"hljs-keyword\">if</span> (cache.<span class=\"hljs-title function_\">has</span>(argsKey)) {\n      <span class=\"hljs-keyword\">return</span> cache.<span class=\"hljs-title function_\">get</span>(argsKey)\n    }\n\n    <span class=\"hljs-comment\">/**\n     * If the argument is not yet present in the cache,\n     * execute original function and save its value / result in cache,\n     * finally return it\n     */</span>\n    <span class=\"hljs-keyword\">const</span> result = <span class=\"hljs-title function_\">func</span>(...args) <span class=\"hljs-comment\">// spread all args</span>\n    cache.<span class=\"hljs-title function_\">set</span>(argsKey, result)\n\n    <span class=\"hljs-keyword\">return</span> result\n  }\n}\n\n<span class=\"hljs-keyword\">export</span> { memoize }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 5
+    },
+    {
+      "name": "Damien Chazoule",
+      "email": "damien.chazoule@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

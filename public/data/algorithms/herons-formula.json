@@ -1,0 +1,23 @@
+{
+  "slug": "herons-formula",
+  "name": "Herons Formula",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/HeronsFormula.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/HeronsFormula.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-comment\">/**\n * Find the area of a triangle using only side lengths\n */</span>\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">HeronsFormula</span> {\n\t\n\t<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">double</span> <span class=\"hljs-title function_\">Herons</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> s1, <span class=\"hljs-type\">int</span> s2, <span class=\"hljs-type\">int</span> s3)</span>\n\t{\n\t\t<span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">a</span> <span class=\"hljs-operator\">=</span> s1;\n\t\t<span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">b</span> <span class=\"hljs-operator\">=</span> s2;\n\t\t<span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">c</span> <span class=\"hljs-operator\">=</span> s3;\n\t\t<span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">s</span> <span class=\"hljs-operator\">=</span> (a + b + c)/<span class=\"hljs-number\">2.0</span>;\n\t\t<span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">area</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>;\n\t\tarea = Math.sqrt((s)*(s-a)*(s-b)*(s-c));\n\t\t<span class=\"hljs-keyword\">return</span> area;\n\t}\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Raghav Taneja",
+      "email": "97575679+RaghavTaneja@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

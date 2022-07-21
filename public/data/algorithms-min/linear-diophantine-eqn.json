@@ -1,0 +1,24 @@
+{
+  "slug": "linear-diophantine-eqn",
+  "name": "Linear Diophantine Eqn",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "dart": "",
+    "matlab-octave": ""
+  },
+  "contributors": [
+    {
+      "name": "MaximSmolskiy",
+      "email": "mithridatus@mail.ru",
+      "commits": 1
+    },
+    {
+      "name": "KAUSHAL DEVRARI",
+      "email": "71590645+KaushalDevrari@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "binary-convert",
+  "name": "Binary Convert",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Arwy Syahputra Siregar",
+      "email": "55026697+arwysyah@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "reverse-long-words",
+  "name": "Reverse Long Words",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Mohammad Firmansyah",
+      "email": "76118762+dimasdh842@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

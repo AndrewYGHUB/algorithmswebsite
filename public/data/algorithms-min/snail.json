@@ -1,0 +1,18 @@
+{
+  "slug": "snail",
+  "name": "Snail",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "anwsonwsymous",
+      "email": "anwsonwsymous@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

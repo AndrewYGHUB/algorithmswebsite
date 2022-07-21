@@ -1,0 +1,28 @@
+{
+  "slug": "peak-signal-to-noise-ratio",
+  "name": "Peak Signal to Noise Ratio",
+  "categories": [
+    "compression"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Erwin Junge",
+      "email": "erwin@junge.nl",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

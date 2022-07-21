@@ -1,0 +1,34 @@
+{
+  "slug": "rb-tree",
+  "name": "Rb Tree",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "David Leal",
+      "email": "halfpacho@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Julian Tescher",
+      "email": "julian@tescher.me",
+      "commits": 1
+    },
+    {
+      "name": "Zelu Deng",
+      "email": "72188499+zeludeng@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "sinkyoungdeok",
+      "email": "tlsrudejr123@nate.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

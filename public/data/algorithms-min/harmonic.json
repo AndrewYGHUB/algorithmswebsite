@@ -1,0 +1,19 @@
+{
+  "slug": "harmonic",
+  "name": "Harmonic",
+  "categories": [
+    "math",
+    "series"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Atharva Deshpande",
+      "email": "atharva01.903@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "find-max-recursion",
+  "name": "Find Max Recursion",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "java": "",
+    "dart": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Lewis Tian",
+      "email": "taseikyo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Exortions",
+      "email": "75327059+Exortions@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

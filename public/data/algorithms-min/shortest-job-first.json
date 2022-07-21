@@ -1,0 +1,38 @@
+{
+  "slug": "shortest-job-first",
+  "name": "Shortest Job First",
+  "categories": [
+    "scheduling"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Vardhaman",
+      "email": "83634399+cyai@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Leoriem-code",
+      "email": "73761711+Leoriem-code@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shantanu Joshi",
+      "email": "42472191+shan7030@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Hasenn",
+      "email": "eliottarloveyrier@live.fr",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

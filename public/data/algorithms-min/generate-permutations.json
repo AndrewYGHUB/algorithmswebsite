@@ -1,0 +1,23 @@
+{
+  "slug": "generate-permutations",
+  "name": "Generate Permutations",
+  "categories": [
+    "backtracking"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Chiranjeev",
+      "email": "6258860@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

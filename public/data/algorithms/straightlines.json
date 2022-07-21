@@ -1,0 +1,34 @@
+{
+  "slug": "straightlines",
+  "name": "Straightlines",
+  "categories": [
+    "math",
+    "geometry"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "math/geometry/straightlines.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/geometry/straightlines.go",
+      "code": "<span class=\"hljs-comment\">// Package geometry contains geometric algorithms</span>\n<span class=\"hljs-keyword\">package</span> geometry\n\n<span class=\"hljs-keyword\">import</span> (\n\t<span class=\"hljs-string\">&quot;math&quot;</span>\n)\n\n<span class=\"hljs-comment\">// Point defines a point with x and y coordinates.</span>\n<span class=\"hljs-keyword\">type</span> Point <span class=\"hljs-keyword\">struct</span> {\n\tX, Y <span class=\"hljs-type\">float64</span>\n}\n\n<span class=\"hljs-keyword\">type</span> Line <span class=\"hljs-keyword\">struct</span> {\n\tP1, P2 Point\n}\n\n<span class=\"hljs-comment\">// Distance calculates the shortest distance between two points.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Distance</span><span class=\"hljs-params\">(a, b *Point)</span></span> <span class=\"hljs-type\">float64</span> {\n\t<span class=\"hljs-keyword\">return</span> math.Sqrt(math.Pow(a.X-b.X, <span class=\"hljs-number\">2</span>) + math.Pow(a.Y-b.Y, <span class=\"hljs-number\">2</span>))\n}\n\n<span class=\"hljs-comment\">// Section calculates the Point that divides a line in specific ratio.</span>\n<span class=\"hljs-comment\">// DO NOT specify the ratio in the form m:n, specify it as r, where r = m / n.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Section</span><span class=\"hljs-params\">(p1, p2 *Point, r <span class=\"hljs-type\">float64</span>)</span></span> Point {\n\t<span class=\"hljs-keyword\">var</span> point Point\n\tpoint.X = (r*p2.X + p1.X) / (r + <span class=\"hljs-number\">1</span>)\n\tpoint.Y = (r*p2.Y + p1.Y) / (r + <span class=\"hljs-number\">1</span>)\n\t<span class=\"hljs-keyword\">return</span> point\n}\n\n<span class=\"hljs-comment\">// Slope calculates the slope (gradient) of a line.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Slope</span><span class=\"hljs-params\">(l *Line)</span></span> <span class=\"hljs-type\">float64</span> {\n\t<span class=\"hljs-keyword\">return</span> (l.P2.Y - l.P1.Y) / (l.P2.X - l.P1.X)\n}\n\n<span class=\"hljs-comment\">// YIntercept calculates the Y-Intercept of a line from a specific Point.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">YIntercept</span><span class=\"hljs-params\">(p *Point, slope <span class=\"hljs-type\">float64</span>)</span></span> <span class=\"hljs-type\">float64</span> {\n\t<span class=\"hljs-keyword\">return</span> p.Y - (slope * p.X)\n}\n\n<span class=\"hljs-comment\">// IsParallel checks if two lines are parallel or not.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">IsParallel</span><span class=\"hljs-params\">(l1, l2 *Line)</span></span> <span class=\"hljs-type\">bool</span> {\n\t<span class=\"hljs-keyword\">return</span> Slope(l1) == Slope(l2)\n}\n\n<span class=\"hljs-comment\">// IsPerpendicular checks if two lines are perpendicular or not.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">IsPerpendicular</span><span class=\"hljs-params\">(l1, l2 *Line)</span></span> <span class=\"hljs-type\">bool</span> {\n\t<span class=\"hljs-keyword\">return</span> Slope(l1)*Slope(l2) == <span class=\"hljs-number\">-1</span>\n}\n\n<span class=\"hljs-comment\">// PointDistance calculates the distance of a given Point from a given line.</span>\n<span class=\"hljs-comment\">// The slice should contain the coefficiet of x, the coefficient of y and the constant in the respective order.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">PointDistance</span><span class=\"hljs-params\">(p *Point, equation [3]<span class=\"hljs-type\">float64</span>)</span></span> <span class=\"hljs-type\">float64</span> {\n\t<span class=\"hljs-keyword\">return</span> math.Abs(equation[<span class=\"hljs-number\">0</span>]*p.X+equation[<span class=\"hljs-number\">1</span>]*p.Y+equation[<span class=\"hljs-number\">2</span>]) / math.Sqrt(math.Pow(equation[<span class=\"hljs-number\">0</span>], <span class=\"hljs-number\">2</span>)+math.Pow(equation[<span class=\"hljs-number\">1</span>], <span class=\"hljs-number\">2</span>))\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Shreyas Sable",
+      "email": "43932047+KILLinefficiency@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "house-robber",
+  "name": "House Robber",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Swastika Gupta",
+      "email": "64654203+Swastyy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

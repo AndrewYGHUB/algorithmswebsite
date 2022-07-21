@@ -1,0 +1,36 @@
+{
+  "slug": "minimizing-lateness",
+  "name": "Minimizing Lateness",
+  "categories": [],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "EAlexa",
+      "email": "rubi_81@outlook.de",
+      "commits": 1
+    },
+    {
+      "name": "Hassan",
+      "email": "hassan.elseoudy@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "SeonJae",
+      "email": "dbtjswo4733@naver.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "reverse-stack",
+  "name": "Reverse Stack",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "ishika22",
+      "email": "ishuagarwal2210@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

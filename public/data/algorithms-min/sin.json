@@ -1,0 +1,19 @@
+{
+  "slug": "sin",
+  "name": "Sin",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "zer0-x",
+      "email": "65136727+zer0-x@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

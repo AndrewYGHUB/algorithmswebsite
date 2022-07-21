@@ -1,0 +1,28 @@
+{
+  "slug": "difference-arr",
+  "name": "Difference Arr",
+  "categories": [
+    "basic"
+  ],
+  "body": {},
+  "implementations": {
+    "julia": {
+      "dir": "src/basic/difference_arr.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/basic/difference_arr.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    Difference array\n\n# Brief:\n    For any array A with N numbers, we can create difference array D with N numbers also.\n    Every k-th element of D is equal to difference between A[k] and A[k-1]\n        D[k] = A[k-1] - A[k] \n\n# Complexity of some operations\n    - add some value x to the m consecutive elements of array - O(1)\n    - print array after any numbers of changes                - O(N)\n\n# Functions\n    - create_diff_arr(original::Array{T}) - Create difference array for array &#x27;original&#x27;\n    - calculate_arr(diff_arr::Array{T}) - Create a original array from the given difference array\n    - add_to_arr(diff_arr::Array{T}, l::Int, r::Int, x::Number) - Add x to all elements with index from [l, r]\n\n\n# Contributed by: [Nikola Mircic](https://github.com/Nikola-Mircic)\n&quot;&quot;&quot;</span>\n<span class=\"hljs-keyword\">module</span> DifferenceArray\n<span class=\"hljs-comment\"># Create difference array for array &#x27;original&#x27;</span>\n<span class=\"hljs-comment\"># Parameters:</span>\n<span class=\"hljs-comment\">#   - original - an array which is used for calculating the difference array</span>\n<span class=\"hljs-keyword\">function</span> create_diff_arr(original::<span class=\"hljs-built_in\">Array</span>{T}) <span class=\"hljs-keyword\">where</span> {T&lt;:<span class=\"hljs-built_in\">Number</span>}\n    n = length(original)\n\n    diff_arr = <span class=\"hljs-built_in\">Array</span>(original)\n\n    <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">2</span>:n\n        diff_arr[i] = original[i] - original[i-<span class=\"hljs-number\">1</span>]\n    <span class=\"hljs-keyword\">end</span>\n\n    <span class=\"hljs-keyword\">return</span> diff_arr\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-comment\"># Create a original array from the given difference array</span>\n<span class=\"hljs-comment\"># Parameters:</span>\n<span class=\"hljs-comment\">#   - diff_arr - an difference array which is used for calculating the original array</span>\n<span class=\"hljs-keyword\">function</span> calculate_arr(diff_arr::<span class=\"hljs-built_in\">Array</span>{T}) <span class=\"hljs-keyword\">where</span> {T&lt;:<span class=\"hljs-built_in\">Number</span>}\n    n = length(diff_arr)\n\n    arr = <span class=\"hljs-built_in\">Array</span>(diff_arr)\n\n    <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">2</span>:n\n        arr[i] = diff_arr[i] + arr[i-<span class=\"hljs-number\">1</span>]\n    <span class=\"hljs-keyword\">end</span>\n\n    <span class=\"hljs-keyword\">return</span> arr\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-comment\"># Add x to all elements with index from [l, r]</span>\n<span class=\"hljs-comment\"># Parameters:</span>\n<span class=\"hljs-comment\">#   - dif_arr - a difference array of the array you want to change</span>\n<span class=\"hljs-comment\">#   - l - leftmost index of the affected range</span>\n<span class=\"hljs-comment\">#   - r - rightmost index of the affected range</span>\n<span class=\"hljs-comment\">#   - x - a value to be added to all elements from a given range</span>\n<span class=\"hljs-keyword\">function</span> add_to_arr(\n    diff_arr::<span class=\"hljs-built_in\">Array</span>{T},\n    l::<span class=\"hljs-built_in\">Int</span>,\n    r::<span class=\"hljs-built_in\">Int</span>,\n    x::<span class=\"hljs-built_in\">Number</span>,\n) <span class=\"hljs-keyword\">where</span> {T&lt;:<span class=\"hljs-built_in\">Number</span>}\n    diff_arr[l] += x\n    <span class=\"hljs-keyword\">if</span> r &lt; length(diff_arr)\n        diff_arr[r+<span class=\"hljs-number\">1</span>] -= x\n    <span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Nikola Mircic",
+      "email": "nikola123mircic@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

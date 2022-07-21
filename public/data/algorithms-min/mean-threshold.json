@@ -1,0 +1,18 @@
+{
+  "slug": "mean-threshold",
+  "name": "Mean Threshold",
+  "categories": [
+    "computervision"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Tanay Karve",
+      "email": "tanaykarve@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

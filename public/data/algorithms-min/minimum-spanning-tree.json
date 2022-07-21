@@ -1,0 +1,23 @@
+{
+  "slug": "minimum-spanning-tree",
+  "name": "Minimum Spanning Tree",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Giovanni Dejan",
+      "email": "giovanni.dejan@binus.ac.id",
+      "commits": 1
+    },
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

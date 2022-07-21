@@ -1,0 +1,18 @@
+{
+  "slug": "wave",
+  "name": "Wave",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Margaret",
+      "email": "62753112+meg-1@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

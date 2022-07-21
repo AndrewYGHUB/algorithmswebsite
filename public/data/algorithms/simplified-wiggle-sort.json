@@ -1,0 +1,23 @@
+{
+  "slug": "simplified-wiggle-sort",
+  "name": "Simplified Wiggle Sort",
+  "categories": [
+    "sorts"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Sorts/SimplifiedWiggleSort.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Sorts/SimplifiedWiggleSort.js",
+      "code": "<span class=\"hljs-comment\">/*\n * Wiggle sort sorts the array into a wave like array.\n * An array ‘arr[0..n-1]’ is sorted in wave form if arr[0] &lt;= arr[1] &gt;= arr[2] &lt;= arr[3] &gt;= arr[4] &lt;= …..\n * KEEP IN MIND: there are also more strict definitions of wiggle sort which use\n * the rule arr[0] &lt; arr[1] &gt; arr[2] &lt; arr[3] &gt; arr[4] &lt; … but this function\n * allows for equality of values next to each other.\n */</span>\n<span class=\"hljs-keyword\">import</span> { quickSelectSearch } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&#x27;../Search/QuickSelectSearch.js&#x27;</span>\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> simplifiedWiggleSort = <span class=\"hljs-keyword\">function</span> (<span class=\"hljs-params\">arr</span>) {\n  <span class=\"hljs-comment\">// find Median using QuickSelect</span>\n  <span class=\"hljs-keyword\">let</span> median = <span class=\"hljs-title function_\">quickSelectSearch</span>(arr, <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">floor</span>(arr.<span class=\"hljs-property\">length</span> / <span class=\"hljs-number\">2.0</span>))\n  median = median[<span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">floor</span>(arr.<span class=\"hljs-property\">length</span> / <span class=\"hljs-number\">2.0</span>)]\n\n  <span class=\"hljs-keyword\">const</span> sorted = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Array</span>(arr.<span class=\"hljs-property\">length</span>)\n\n  <span class=\"hljs-keyword\">let</span> smallerThanMedianIndx = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">let</span> greaterThanMedianIndx = arr.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span> - (arr.<span class=\"hljs-property\">length</span> % <span class=\"hljs-number\">2</span>)\n\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; arr.<span class=\"hljs-property\">length</span>; i++) {\n    <span class=\"hljs-keyword\">if</span> (arr[i] &gt; median) {\n      sorted[greaterThanMedianIndx] = arr[i]\n      greaterThanMedianIndx -= <span class=\"hljs-number\">2</span>\n    } <span class=\"hljs-keyword\">else</span> {\n      <span class=\"hljs-keyword\">if</span> (smallerThanMedianIndx &lt; arr.<span class=\"hljs-property\">length</span>) {\n        sorted[smallerThanMedianIndx] = arr[i]\n        smallerThanMedianIndx += <span class=\"hljs-number\">2</span>\n      } <span class=\"hljs-keyword\">else</span> {\n        sorted[greaterThanMedianIndx] = arr[i]\n        greaterThanMedianIndx -= <span class=\"hljs-number\">2</span>\n      }\n    }\n  }\n\n  <span class=\"hljs-keyword\">return</span> sorted\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "BranAndSceolan",
+      "email": "98578040+BranAndSceolan@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "harshad-number",
+  "name": "Harshad Number",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Krish",
+      "email": "68506145+KrishAgarwal2811@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

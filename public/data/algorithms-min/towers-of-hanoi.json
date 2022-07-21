@@ -1,0 +1,18 @@
+{
+  "slug": "towers-of-hanoi",
+  "name": "Towers Of Hanoi",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "haskell": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian James Welly",
+      "email": "chrisjwelly@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

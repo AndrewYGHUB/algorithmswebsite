@@ -1,0 +1,53 @@
+{
+  "slug": "in-static-equilibrium",
+  "name": "In Static Equilibrium",
+  "categories": [
+    "numericalanalysis"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Harshit Agarwal",
+      "email": "43147421+9harshit@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "QuantumNovice",
+      "email": "43876848+QuantumNovice@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "algobytewise",
+      "email": "algobytewise@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "John Law",
+      "email": "johnlaw.po@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Leoriem-code",
+      "email": "73761711+Leoriem-code@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

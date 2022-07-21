@@ -1,0 +1,23 @@
+{
+  "slug": "check-snake-case",
+  "name": "Check Snake Case",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "alvux",
+      "email": "alexandre.vu@hotmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

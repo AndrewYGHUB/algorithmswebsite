@@ -1,0 +1,24 @@
+{
+  "slug": "kruskals-algorithm",
+  "name": "Kruskal's Algorithm",
+  "categories": [
+    "graphs",
+    "minimumspanningtree"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "khalil2535",
+      "email": "khalil2535@localhost",
+      "commits": 1
+    },
+    {
+      "name": "Mansi Mittal",
+      "email": "m16mittal@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

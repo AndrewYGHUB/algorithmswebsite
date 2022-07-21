@@ -1,0 +1,18 @@
+{
+  "slug": "interpolation-search-2",
+  "name": "Interpolation Search 2",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

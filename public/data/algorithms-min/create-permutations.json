@@ -1,0 +1,18 @@
+{
+  "slug": "create-permutations",
+  "name": "Create Permutations",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Thivagar Manickam",
+      "email": "thivagar200@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

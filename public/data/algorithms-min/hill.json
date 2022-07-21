@@ -1,0 +1,12 @@
+{
+  "slug": "hill",
+  "name": "Hill",
+  "categories": [
+    "encoders"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

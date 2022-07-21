@@ -1,0 +1,23 @@
+{
+  "slug": "check-word-occurrence",
+  "name": "Check Word Occurrence",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Carlos Carvalho",
+      "email": "jcarloss.carvalho@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

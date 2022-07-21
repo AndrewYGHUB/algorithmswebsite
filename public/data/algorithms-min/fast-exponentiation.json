@@ -1,0 +1,18 @@
+{
+  "slug": "fast-exponentiation",
+  "name": "Fast Exponentiation",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "php": ""
+  },
+  "contributors": [
+    {
+      "name": "Juan Martín Enríquez",
+      "email": "juan@flydreamers.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

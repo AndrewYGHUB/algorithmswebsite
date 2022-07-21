@@ -1,0 +1,24 @@
+{
+  "slug": "sqrt",
+  "name": "Sqrt",
+  "categories": [
+    "math",
+    "binary"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "math/binary/sqrt.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/binary/sqrt.go",
+      "code": "<span class=\"hljs-comment\">// sqrt.go</span>\n<span class=\"hljs-comment\">// description: Square root calculation</span>\n<span class=\"hljs-comment\">// details:</span>\n<span class=\"hljs-comment\">// Calculating the square root using binary operations and a magic number 0x5f3759df [See more](https://en.wikipedia.org/wiki/Fast_inverse_square_root)</span>\n<span class=\"hljs-comment\">// author(s) [red_byte](https://github.com/i-redbyte)</span>\n<span class=\"hljs-comment\">// see sqrt_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> binary\n\n<span class=\"hljs-keyword\">import</span> (\n\t<span class=\"hljs-string\">&quot;math&quot;</span>\n)\n\n<span class=\"hljs-keyword\">const</span> threeHalves = <span class=\"hljs-number\">1.5</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Sqrt</span><span class=\"hljs-params\">(number <span class=\"hljs-type\">float32</span>)</span></span> <span class=\"hljs-type\">float32</span> {\n\t<span class=\"hljs-keyword\">var</span> halfHumber, y <span class=\"hljs-type\">float32</span>\n\thalfHumber = number * <span class=\"hljs-number\">0.5</span>\n\tz := math.Float32bits(number)\n\tz = <span class=\"hljs-number\">0x5f3759df</span> - (z &gt;&gt; <span class=\"hljs-number\">1</span>) <span class=\"hljs-comment\">// floating point bit level hacking</span>\n\ty = math.Float32frombits(z)\n\ty = y * (threeHalves - (halfHumber * y * y)) <span class=\"hljs-comment\">// Newton&#x27;s approximation</span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">1</span> / y\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

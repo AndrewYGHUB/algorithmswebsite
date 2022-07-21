@@ -1,0 +1,23 @@
+{
+  "slug": "count-sentences",
+  "name": "Count Sentences",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "php": {
+      "dir": "String/CountSentences.php",
+      "url": "https://github.com/TheAlgorithms/php/tree/master/String/CountSentences.php",
+      "code": "<span class=\"hljs-meta\">&lt;?php</span>\n\n<span class=\"hljs-comment\">/**\n * This is a simple way to count sentence \n * using php preg_match_all() function \n * <span class=\"hljs-doctag\">@param</span> string $sentence\n */</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">countSentences</span>(<span class=\"hljs-params\"><span class=\"hljs-keyword\">string</span> <span class=\"hljs-variable\">$sentence</span></span>): <span class=\"hljs-title\">int</span>\n</span>{\n    <span class=\"hljs-variable\">$sentence</span> = <span class=\"hljs-title function_ invoke__\">trim</span>(<span class=\"hljs-variable\">$sentence</span>);\n\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title function_ invoke__\">preg_match_all</span>(<span class=\"hljs-string\">&#x27;/[^\\s|^\\...](\\.|\\!|\\?)(?!\\w)/&#x27;</span>, <span class=\"hljs-variable\">$sentence</span>);\n}\n\n\n<span class=\"hljs-comment\">// example</span>\n<span class=\"hljs-keyword\">echo</span> <span class=\"hljs-title function_ invoke__\">countSentences</span>(<span class=\"hljs-string\">&quot;Hi! Hello world.&quot;</span>); <span class=\"hljs-comment\">// returns 2</span>\n<span class=\"hljs-keyword\">echo</span> PHP_EOL;\n<span class=\"hljs-keyword\">echo</span> <span class=\"hljs-title function_ invoke__\">countSentences</span>(<span class=\"hljs-string\">&quot;i am testing. test....&quot;</span>); <span class=\"hljs-comment\">// returns 2</span>\n<span class=\"hljs-keyword\">echo</span> PHP_EOL;\n<span class=\"hljs-keyword\">echo</span> <span class=\"hljs-title function_ invoke__\">countSentences</span>(<span class=\"hljs-string\">&quot;How are you?&quot;</span>); <span class=\"hljs-comment\">// returns 1</span>\n<span class=\"hljs-keyword\">echo</span> PHP_EOL;\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Syed Nayeem Roman",
+      "email": "romansyed007@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

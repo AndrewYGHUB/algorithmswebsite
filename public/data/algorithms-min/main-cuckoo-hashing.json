@@ -1,0 +1,20 @@
+{
+  "slug": "main-cuckoo-hashing",
+  "name": "Main Cuckoo Hashing",
+  "categories": [
+    "datastructures",
+    "hashmap",
+    "hashing"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "haeshed",
+      "email": "63429078+haeshed@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

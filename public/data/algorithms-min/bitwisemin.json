@@ -1,0 +1,19 @@
+{
+  "slug": "bitwisemin",
+  "name": "Bitwisemin",
+  "categories": [
+    "math",
+    "min"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "credit-card-validator",
+  "name": "Credit Card Validator",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "@im_8055",
+      "email": "38890773+Bhargavishnu@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "midpoint-integral-method",
+  "name": "Midpoint Integral Method",
+  "categories": [
+    "numericalmethods"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "ggkogkou",
+      "email": "76820848+ggkogkou@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

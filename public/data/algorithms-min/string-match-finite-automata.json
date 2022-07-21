@@ -1,0 +1,23 @@
+{
+  "slug": "string-match-finite-automata",
+  "name": "String Match Finite Automata",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Prateek Kumar Oraon",
+      "email": "b170078@nitsikkim.ac.in",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

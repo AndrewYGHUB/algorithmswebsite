@@ -1,0 +1,18 @@
+{
+  "slug": "contraints",
+  "name": "Contraints",
+  "categories": [
+    "constraints"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

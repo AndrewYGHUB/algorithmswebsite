@@ -1,0 +1,23 @@
+{
+  "slug": "nasa-data",
+  "name": "Nasa Data",
+  "categories": [
+    "webprogramming"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "web_programming/nasa_data.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/web_programming/nasa_data.py",
+      "code": "<span class=\"hljs-keyword\">import</span> shutil\n\n<span class=\"hljs-keyword\">import</span> requests\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">get_apod_data</span>(<span class=\"hljs-params\">api_key: <span class=\"hljs-built_in\">str</span>, download: <span class=\"hljs-built_in\">bool</span> = <span class=\"hljs-literal\">False</span>, path: <span class=\"hljs-built_in\">str</span> = <span class=\"hljs-string\">&quot;.&quot;</span></span>) -&gt; <span class=\"hljs-built_in\">dict</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Get the APOD(Astronomical Picture of the day) data\n    Get your API Key from: https://api.nasa.gov/\n    &quot;&quot;&quot;</span>\n    url = <span class=\"hljs-string\">&quot;https://api.nasa.gov/planetary/apod&quot;</span>\n    <span class=\"hljs-keyword\">return</span> requests.get(url, params={<span class=\"hljs-string\">&quot;api_key&quot;</span>: api_key}).json()\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">save_apod</span>(<span class=\"hljs-params\">api_key: <span class=\"hljs-built_in\">str</span>, path: <span class=\"hljs-built_in\">str</span> = <span class=\"hljs-string\">&quot;.&quot;</span></span>) -&gt; <span class=\"hljs-built_in\">dict</span>:\n    apod_data = get_apod_data(api_key)\n    img_url = apod_data[<span class=\"hljs-string\">&quot;url&quot;</span>]\n    img_name = img_url.split(<span class=\"hljs-string\">&quot;/&quot;</span>)[-<span class=\"hljs-number\">1</span>]\n    response = requests.get(img_url, stream=<span class=\"hljs-literal\">True</span>)\n\n    <span class=\"hljs-keyword\">with</span> <span class=\"hljs-built_in\">open</span>(<span class=\"hljs-string\">f&quot;<span class=\"hljs-subst\">{path}</span>/<span class=\"hljs-subst\">{img_name}</span>&quot;</span>, <span class=\"hljs-string\">&quot;wb+&quot;</span>) <span class=\"hljs-keyword\">as</span> img_file:\n        shutil.copyfileobj(response.raw, img_file)\n    <span class=\"hljs-keyword\">del</span> response\n    <span class=\"hljs-keyword\">return</span> apod_data\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">get_archive_data</span>(<span class=\"hljs-params\">query: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">dict</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Get the data of a particular query from NASA archives\n    &quot;&quot;&quot;</span>\n    url = <span class=\"hljs-string\">&quot;https://images-api.nasa.gov/search&quot;</span>\n    <span class=\"hljs-keyword\">return</span> requests.get(url, params={<span class=\"hljs-string\">&quot;q&quot;</span>: query}).json()\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-built_in\">print</span>(save_apod(<span class=\"hljs-string\">&quot;YOUR API KEY&quot;</span>))\n    apollo_2011_items = get_archive_data(<span class=\"hljs-string\">&quot;apollo 2011&quot;</span>)[<span class=\"hljs-string\">&quot;collection&quot;</span>][<span class=\"hljs-string\">&quot;items&quot;</span>]\n    <span class=\"hljs-built_in\">print</span>(apollo_2011_items[<span class=\"hljs-number\">0</span>][<span class=\"hljs-string\">&quot;data&quot;</span>][<span class=\"hljs-number\">0</span>][<span class=\"hljs-string\">&quot;description&quot;</span>])\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Jaydeep Das",
+      "email": "jaydeepjd.8914@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

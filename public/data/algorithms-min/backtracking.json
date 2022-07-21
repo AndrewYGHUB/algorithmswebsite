@@ -1,0 +1,20 @@
+{
+  "slug": "backtracking",
+  "name": "Backtracking",
+  "categories": [
+    "graphs",
+    "coloring"
+  ],
+  "implementations": {
+    "go": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Shivam Rathore",
+      "email": "shivam.rathore010@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

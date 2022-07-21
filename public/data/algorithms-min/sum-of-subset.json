@@ -1,0 +1,60 @@
+{
+  "slug": "sum-of-subset",
+  "name": "Sum of Subset",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shubham-Singh-Rajput",
+      "email": "88304238+shubham-singh-748@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ankur Chattopadhyay",
+      "email": "39518771+chttrjeankr@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Jigyasa G",
+      "email": "jigsgandhi97@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Jigyasa G",
+      "email": "33327397+jpg-130@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Suaze9",
+      "email": "suazodaniel99@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

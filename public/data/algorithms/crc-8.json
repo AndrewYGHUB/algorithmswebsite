@@ -1,0 +1,23 @@
+{
+  "slug": "crc-8",
+  "name": "Crc 8",
+  "categories": [
+    "checksum"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "checksum/crc8.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/checksum/crc8.go",
+      "code": "<span class=\"hljs-comment\">// crc8.go</span>\n<span class=\"hljs-comment\">// description: Calculate CRC8</span>\n<span class=\"hljs-comment\">// details:</span>\n<span class=\"hljs-comment\">// A cyclic redundancy check (CRC) is an error-detecting code commonly used in digital networks</span>\n<span class=\"hljs-comment\">// and storage devices to detect accidental changes to raw data.</span>\n<span class=\"hljs-comment\">// See more [CRC](https://en.wikipedia.org/wiki/Cyclic_redundancy_check)</span>\n<span class=\"hljs-comment\">// author(s) [red_byte](https://github.com/i-redbyte)</span>\n<span class=\"hljs-comment\">// see crc8_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> checksum\n\n<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">&quot;math/bits&quot;</span>\n\n<span class=\"hljs-comment\">// CRCModel contains the necessary parameters for calculating the DRC algorithm</span>\n<span class=\"hljs-keyword\">type</span> CRCModel <span class=\"hljs-keyword\">struct</span> {\n\tPoly   <span class=\"hljs-type\">uint8</span>\n\tInit   <span class=\"hljs-type\">uint8</span>\n\tRefIn  <span class=\"hljs-type\">bool</span>\n\tRefOut <span class=\"hljs-type\">bool</span>\n\tXorOut <span class=\"hljs-type\">uint8</span>\n\tName   <span class=\"hljs-type\">string</span>\n}\n\n<span class=\"hljs-comment\">// CRC8 calculates CRC8 checksum of the given data.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">CRC8</span><span class=\"hljs-params\">(data []<span class=\"hljs-type\">byte</span>, model CRCModel)</span></span> <span class=\"hljs-type\">uint8</span> {\n\ttable := getTable(model)\n\tcrcResult := model.Init\n\tcrcResult = addBytes(data, model, crcResult, table)\n\t<span class=\"hljs-keyword\">if</span> model.RefOut {\n\t\tcrcResult = bits.Reverse8(crcResult)\n\t}\n\t<span class=\"hljs-keyword\">return</span> crcResult ^ model.XorOut\n}\n\n<span class=\"hljs-comment\">// This function get the result of adding the bytes in data to the crc</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">addBytes</span><span class=\"hljs-params\">(data []<span class=\"hljs-type\">byte</span>, model CRCModel, crcResult <span class=\"hljs-type\">uint8</span>, table []<span class=\"hljs-type\">uint8</span>)</span></span> <span class=\"hljs-type\">uint8</span> {\n\t<span class=\"hljs-keyword\">if</span> model.RefIn {\n\t\t<span class=\"hljs-keyword\">for</span> _, d := <span class=\"hljs-keyword\">range</span> data {\n\t\t\td = bits.Reverse8(d)\n\t\t\tcrcResult = table[crcResult^d]\n\t\t}\n\t\t<span class=\"hljs-keyword\">return</span> crcResult\n\t}\n\t<span class=\"hljs-keyword\">for</span> _, d := <span class=\"hljs-keyword\">range</span> data {\n\t\tcrcResult = table[crcResult^d]\n\t}\n\t<span class=\"hljs-keyword\">return</span> crcResult\n}\n\n<span class=\"hljs-comment\">// This function get 256-byte (256x8) table for efficient processing.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">getTable</span><span class=\"hljs-params\">(model CRCModel)</span></span> []<span class=\"hljs-type\">uint8</span> {\n\ttable := <span class=\"hljs-built_in\">make</span>([]<span class=\"hljs-type\">uint8</span>, <span class=\"hljs-number\">256</span>)\n\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-number\">0</span>; i &lt; <span class=\"hljs-number\">256</span>; i++ {\n\t\tcrc := <span class=\"hljs-type\">uint8</span>(i)\n\t\t<span class=\"hljs-keyword\">for</span> j := <span class=\"hljs-number\">0</span>; j &lt; <span class=\"hljs-number\">8</span>; j++ {\n\t\t\tisSetBit := (crc &amp; <span class=\"hljs-number\">0x80</span>) != <span class=\"hljs-number\">0</span>\n\t\t\tcrc &lt;&lt;= <span class=\"hljs-number\">1</span>\n\t\t\t<span class=\"hljs-keyword\">if</span> isSetBit {\n\t\t\t\tcrc ^= model.Poly\n\t\t\t}\n\t\t}\n\t\ttable[i] = crc\n\t}\n\t<span class=\"hljs-keyword\">return</span> table\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

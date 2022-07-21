@@ -1,0 +1,18 @@
+{
+  "slug": "tribonacci-number",
+  "name": "Tribonacci Number",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

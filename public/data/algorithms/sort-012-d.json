@@ -1,0 +1,23 @@
+{
+  "slug": "sort-012-d",
+  "name": "Sort 012 D",
+  "categories": [
+    "others"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/misc/Sort012D.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/misc/Sort012D.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.misc;\n\n<span class=\"hljs-keyword\">import</span> java.util.*;\n\n<span class=\"hljs-comment\">/**\n * The array is divided into four sections: a[1..Lo-1] zeroes a[Lo..Mid-1] ones\n * a[Mid..Hi] unknown a[Hi+1..N] twos If array [mid] =0, then swap array [mid]\n * with array [low] and increment both pointers once. If array [mid] = 1, then\n * no swapping is required. Increment mid pointer once. If array [mid] = 2, then\n * we swap array [mid] with array [high] and decrement the high pointer once.\n * For more information on the Dutch national flag algorithm refer\n * https://en.wikipedia.org/wiki/Dutch_national_flag_problem\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Sort012D</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String args[])</span> {\n        <span class=\"hljs-type\">Scanner</span> <span class=\"hljs-variable\">np</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Scanner</span>(System.in);\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">n</span> <span class=\"hljs-operator\">=</span> np.nextInt();\n        <span class=\"hljs-type\">int</span> a[] = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[n];\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; n; i++) {\n            a[i] = np.nextInt();\n        }\n        sort012(a);\n    }\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">sort012</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span>[] a)</span> {\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">l</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>;\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">h</span> <span class=\"hljs-operator\">=</span> a.length - <span class=\"hljs-number\">1</span>;\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">mid</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>;\n        <span class=\"hljs-type\">int</span> temp;\n        <span class=\"hljs-keyword\">while</span> (mid &lt;= h) {\n            <span class=\"hljs-keyword\">switch</span> (a[mid]) {\n                <span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">0</span>: {\n                    temp = a[l];\n                    a[l] = a[mid];\n                    a[mid] = temp;\n                    l++;\n                    mid++;\n                    <span class=\"hljs-keyword\">break</span>;\n                }\n                <span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">1</span>:\n                    mid++;\n                    <span class=\"hljs-keyword\">break</span>;\n                <span class=\"hljs-keyword\">case</span> <span class=\"hljs-number\">2</span>: {\n                    temp = a[mid];\n                    a[mid] = a[h];\n                    a[h] = temp;\n                    h--;\n                    <span class=\"hljs-keyword\">break</span>;\n                }\n            }\n        }\n        System.out.println(<span class=\"hljs-string\">&quot;the Sorted array is &quot;</span>);\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; a.length; i++) {\n            System.out.print(+a[i] + <span class=\"hljs-string\">&quot; &quot;</span>);\n        }\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

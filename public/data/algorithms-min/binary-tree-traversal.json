@@ -1,0 +1,24 @@
+{
+  "slug": "binary-tree-traversal",
+  "name": "Binary Tree Traversal",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "python": "",
+    "dart": ""
+  },
+  "contributors": [
+    {
+      "name": "Vardhaman",
+      "email": "83634399+cyai@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Akash G Krishnan",
+      "email": "krishnanag1996@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

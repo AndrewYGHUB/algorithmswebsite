@@ -1,0 +1,53 @@
+{
+  "slug": "check-vowels",
+  "name": "Check Vowels",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/strings/CheckVowels.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/strings/CheckVowels.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.strings;\n\n<span class=\"hljs-keyword\">import</span> java.util.Arrays;\n<span class=\"hljs-keyword\">import</span> java.util.HashSet;\n<span class=\"hljs-keyword\">import</span> java.util.Set;\n\n<span class=\"hljs-comment\">/**\n * Vowel Count is a system whereby character strings are placed in order based\n * on the position of the characters in the conventional ordering of an\n * alphabet. Wikipedia: https://en.wikipedia.org/wiki/Alphabetical_order\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">CheckVowels</span> {\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">final</span> Set&lt;Character&gt; VOWELS = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">HashSet</span>&lt;&gt;(Arrays.asList(<span class=\"hljs-string\">&#x27;a&#x27;</span>, <span class=\"hljs-string\">&#x27;e&#x27;</span>, <span class=\"hljs-string\">&#x27;i&#x27;</span>, <span class=\"hljs-string\">&#x27;o&#x27;</span>, <span class=\"hljs-string\">&#x27;u&#x27;</span>));\n\n    <span class=\"hljs-comment\">/**\n     * Check if a string is has vowels or not\n     *\n     * <span class=\"hljs-doctag\">@param</span> input a string\n     * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-doctag\">@code</span> true} if given string has vowels, otherwise {<span class=\"hljs-doctag\">@code</span> false}\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">hasVowels</span><span class=\"hljs-params\">(String input)</span> {\n        <span class=\"hljs-keyword\">if</span> (input == <span class=\"hljs-literal\">null</span>) {\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n        }\n        input = input.toLowerCase();\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; input.length(); i++) {\n            <span class=\"hljs-keyword\">if</span> (VOWELS.contains(input.charAt(i))) {\n                <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>;\n            }\n        }\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Charlie Moore",
+      "email": "58339043+charliejmoore@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Arthita Paul",
+      "email": "71807177+Arthita@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "acbin",
+      "email": "44314231+acbin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shravana Tirtha",
+      "email": "34398606+shravanatirtha@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Carlos Carvalho",
+      "email": "jcarloss.carvalho@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

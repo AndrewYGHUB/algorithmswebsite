@@ -1,0 +1,17 @@
+{
+  "slug": "cos",
+  "name": "Cos",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "math/cos.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/cos.go",
+      "code": "<span class=\"hljs-comment\">// author(s) [red_byte](https://github.com/i-redbyte)</span>\n<span class=\"hljs-comment\">// see cos_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> math\n\n<span class=\"hljs-keyword\">import</span> <span class=\"hljs-string\">&quot;math&quot;</span>\n\n<span class=\"hljs-comment\">// Cos  returns the cosine of the radian argument x. [See more](https://en.wikipedia.org/wiki/Sine_and_cosine)</span>\n<span class=\"hljs-comment\">// [Based on the idea of Bhaskara approximation of cos(x)](https://math.stackexchange.com/questions/3886552/bhaskara-approximation-of-cosx)</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Cos</span><span class=\"hljs-params\">(x <span class=\"hljs-type\">float64</span>)</span></span> <span class=\"hljs-type\">float64</span> {\n\ttp := <span class=\"hljs-number\">1.0</span> / (<span class=\"hljs-number\">2.0</span> * math.Pi)\n\tx *= tp\n\tx -= <span class=\"hljs-number\">0.25</span> + math.Floor(x+<span class=\"hljs-number\">0.25</span>)\n\tx *= <span class=\"hljs-number\">16.0</span> * (math.Abs(x) - <span class=\"hljs-number\">0.5</span>)\n\tx += <span class=\"hljs-number\">0.225</span> * x * (math.Abs(x) - <span class=\"hljs-number\">1.0</span>) <span class=\"hljs-comment\">//Extra precision</span>\n\t<span class=\"hljs-keyword\">return</span> x\n}\n"
+    }
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

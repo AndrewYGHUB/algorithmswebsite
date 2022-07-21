@@ -1,0 +1,12 @@
+{
+  "slug": "a000005-count-of-divisors",
+  "name": "A000005 Count of Divisors",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

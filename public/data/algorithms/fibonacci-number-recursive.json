@@ -1,0 +1,38 @@
+{
+  "slug": "fibonacci-number-recursive",
+  "name": "Fibonacci Number Recursive",
+  "categories": [
+    "recursive"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Recursive/FibonacciNumberRecursive.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Recursive/FibonacciNumberRecursive.js",
+      "code": "\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">Fibonacci</span>\n * <span class=\"hljs-doctag\">@description</span> Function to return the N-th Fibonacci number.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Integer</span>} <span class=\"hljs-variable\">n</span> - The input integer\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">Integer</span>} - Return the N-th Fibonacci number\n * <span class=\"hljs-doctag\">@see</span> [Fibonacci](https://en.wikipedia.org/wiki/Fibonacci_number)\n */</span>\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">fibonacci</span> = (<span class=\"hljs-params\">n</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (n &lt; <span class=\"hljs-number\">2</span>) {\n    <span class=\"hljs-keyword\">return</span> n\n  }\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title function_\">fibonacci</span>(n - <span class=\"hljs-number\">2</span>) + <span class=\"hljs-title function_\">fibonacci</span>(n - <span class=\"hljs-number\">1</span>)\n}\n\n<span class=\"hljs-keyword\">export</span> { fibonacci }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "illegalcall",
+      "email": "44542765+illegalcall@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

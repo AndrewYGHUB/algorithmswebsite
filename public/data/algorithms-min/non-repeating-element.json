@@ -1,0 +1,23 @@
+{
+  "slug": "non-repeating-element",
+  "name": "Non Repeating Element",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ishika22",
+      "email": "ishuagarwal2210@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

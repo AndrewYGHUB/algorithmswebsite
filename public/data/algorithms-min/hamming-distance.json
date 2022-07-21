@@ -1,0 +1,65 @@
+{
+  "slug": "hamming-distance",
+  "name": "Hamming Distance",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "rust": "",
+    "dart": "",
+    "r": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "cozek",
+      "email": "kaushikamardas@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Sahil Afrid Farookhi",
+      "email": "msafarookhi@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shivam Verma",
+      "email": "50954641+sarcastic-verma@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ravishankar Joshi",
+      "email": "21024229+ravibitsgoa@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "John Law",
+      "email": "johnlaw.po@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "AbhinavXT",
+      "email": "abhinavpathaka17@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Sedat Aybars Nazlica",
+      "email": "saybarsnazlica@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

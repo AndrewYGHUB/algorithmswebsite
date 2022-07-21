@@ -1,0 +1,29 @@
+{
+  "slug": "is-prime",
+  "name": "Is Prime",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "kotlin": "",
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    },
+    {
+      "name": "Caio Fernando",
+      "email": "caio.fernandooficial35@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

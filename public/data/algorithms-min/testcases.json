@@ -1,0 +1,23 @@
+{
+  "slug": "testcases",
+  "name": "Testcases",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "庄全蛋",
+      "email": "hello.wow93@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "FuXiang Shu",
+      "email": "6470547+Crazy3lf@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

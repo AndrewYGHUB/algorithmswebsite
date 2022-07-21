@@ -1,0 +1,24 @@
+{
+  "slug": "modular-exponentiation",
+  "name": "Modular Exponentiation",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Aayush Borkar",
+      "email": "30978331+AbstractGhoul05@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

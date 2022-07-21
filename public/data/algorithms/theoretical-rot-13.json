@@ -1,0 +1,23 @@
+{
+  "slug": "theoretical-rot-13",
+  "name": "Theoretical Rot 13",
+  "categories": [
+    "ciphers"
+  ],
+  "body": {},
+  "implementations": {
+    "rust": {
+      "dir": "src/ciphers/theoretical_rot13.rs",
+      "url": "https://github.com/TheAlgorithms/rust/tree/master/src/ciphers/theoretical_rot13.rs",
+      "code": "<span class=\"hljs-comment\">// in theory rot-13 only affects the lowercase characters in a cipher</span>\n<span class=\"hljs-keyword\">pub</span> <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">theoretical_rot13</span>(text: &amp;<span class=\"hljs-type\">str</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">String</span> {\n    <span class=\"hljs-keyword\">let</span> <span class=\"hljs-keyword\">mut </span><span class=\"hljs-variable\">pos</span>: <span class=\"hljs-type\">u8</span> = <span class=\"hljs-number\">0</span>;\n    <span class=\"hljs-keyword\">let</span> <span class=\"hljs-keyword\">mut </span><span class=\"hljs-variable\">npos</span>: <span class=\"hljs-type\">u8</span> = <span class=\"hljs-number\">0</span>;\n    text.<span class=\"hljs-title function_ invoke__\">to_owned</span>()\n        .<span class=\"hljs-title function_ invoke__\">chars</span>()\n        .<span class=\"hljs-title function_ invoke__\">map</span>(|<span class=\"hljs-keyword\">mut</span> c| {\n            <span class=\"hljs-keyword\">if</span> c.<span class=\"hljs-title function_ invoke__\">is_ascii_lowercase</span>() {\n                <span class=\"hljs-comment\">// ((c as u8) + 13) as char</span>\n                pos = c <span class=\"hljs-keyword\">as</span> <span class=\"hljs-type\">u8</span> - <span class=\"hljs-string\">b&#x27;a&#x27;</span>;\n                npos = (pos + <span class=\"hljs-number\">13</span>) % <span class=\"hljs-number\">26</span>;\n                c = (npos + <span class=\"hljs-string\">b&#x27;a&#x27;</span>) <span class=\"hljs-keyword\">as</span> <span class=\"hljs-type\">char</span>;\n                c\n            } <span class=\"hljs-keyword\">else</span> {\n                c\n            }\n        })\n        .<span class=\"hljs-title function_ invoke__\">collect</span>()\n}\n\n<span class=\"hljs-meta\">#[cfg(test)]</span>\n<span class=\"hljs-keyword\">mod</span> tests {\n    <span class=\"hljs-keyword\">use</span> super::*;\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_single_letter</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-string\">&quot;n&quot;</span>, <span class=\"hljs-title function_ invoke__\">theoretical_rot13</span>(<span class=\"hljs-string\">&quot;a&quot;</span>));\n    }\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_bunch_of_letters</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-string\">&quot;nop op&quot;</span>, <span class=\"hljs-title function_ invoke__\">theoretical_rot13</span>(<span class=\"hljs-string\">&quot;abc bc&quot;</span>));\n    }\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_non_ascii</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-string\">&quot;😀ab&quot;</span>, <span class=\"hljs-title function_ invoke__\">theoretical_rot13</span>(<span class=\"hljs-string\">&quot;😀no&quot;</span>));\n    }\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_twice</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-string\">&quot;abcd&quot;</span>, <span class=\"hljs-title function_ invoke__\">theoretical_rot13</span>(&amp;<span class=\"hljs-title function_ invoke__\">theoretical_rot13</span>(<span class=\"hljs-string\">&quot;abcd&quot;</span>)));\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Bello mahmud",
+      "email": "75342173+mahmudsudo@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

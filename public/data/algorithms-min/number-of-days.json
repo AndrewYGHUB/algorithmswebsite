@@ -1,0 +1,23 @@
+{
+  "slug": "number-of-days",
+  "name": "Number of Days",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Jessica Kwok",
+      "email": "jessicatckwok@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "check-camel-case",
+  "name": "Check Camel Case",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "SURYAPRATAP SINGH SURYAVANSHI",
+      "email": "67123991+suryapratapsinghsuryavanshi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "alvux",
+      "email": "alexandre.vu@hotmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "julia-sets",
+  "name": "Julia Sets",
+  "categories": [
+    "fractals"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Alexandre De Zotti",
+      "email": "alexn11@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

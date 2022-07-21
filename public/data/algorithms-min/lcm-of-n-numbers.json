@@ -1,0 +1,18 @@
+{
+  "slug": "lcm-of-n-numbers",
+  "name": "Lcm of N Numbers",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "pwygab",
+      "email": "88221256+merelymyself@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

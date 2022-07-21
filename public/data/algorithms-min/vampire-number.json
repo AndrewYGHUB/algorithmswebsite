@@ -1,0 +1,28 @@
+{
+  "slug": "vampire-number",
+  "name": "Vampire Number",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Stepfen Shawn",
+      "email": "m18824909883@163.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ben",
+      "email": "ben.riegel@mni.thm.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

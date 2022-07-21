@@ -1,0 +1,12 @@
+{
+  "slug": "branch-and-bound-solver",
+  "name": "Branch and bound solver",
+  "categories": [
+    "knapsack"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "pascal-triangle-ii",
+  "name": "Pascal Triangle Ii",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 10
+    }
+  ],
+  "explanationUrl": {}
+}

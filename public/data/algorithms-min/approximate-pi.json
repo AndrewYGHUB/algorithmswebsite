@@ -1,0 +1,12 @@
+{
+  "slug": "approximate-pi",
+  "name": "Approximate Pi",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

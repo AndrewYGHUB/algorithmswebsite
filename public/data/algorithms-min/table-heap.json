@@ -1,0 +1,18 @@
+{
+  "slug": "table-heap",
+  "name": "Table Heap",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

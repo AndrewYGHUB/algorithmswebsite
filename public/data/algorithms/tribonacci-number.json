@@ -1,0 +1,23 @@
+{
+  "slug": "tribonacci-number",
+  "name": "Tribonacci Number",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Dynamic-Programming/TribonacciNumber.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Dynamic-Programming/TribonacciNumber.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">Tribonacci</span>\n * <span class=\"hljs-doctag\">@description</span> Tribonacci is the sum of previous three tribonacci numbers.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Integer</span>} <span class=\"hljs-variable\">n</span> - The input integer\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">Integer</span>} tribonacci of n.\n * <span class=\"hljs-doctag\">@see</span> [Tribonacci_Numbers](https://www.geeksforgeeks.org/tribonacci-numbers/)\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">tribonacci</span> = (<span class=\"hljs-params\">n</span>) =&gt; {\n  <span class=\"hljs-comment\">// creating array to store previous tribonacci numbers</span>\n  <span class=\"hljs-keyword\">const</span> dp = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Array</span>(n + <span class=\"hljs-number\">1</span>)\n  dp[<span class=\"hljs-number\">0</span>] = <span class=\"hljs-number\">0</span>\n  dp[<span class=\"hljs-number\">1</span>] = <span class=\"hljs-number\">1</span>\n  dp[<span class=\"hljs-number\">2</span>] = <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">3</span>; i &lt;= n; i++) {\n    dp[i] = dp[i - <span class=\"hljs-number\">1</span>] + dp[i - <span class=\"hljs-number\">2</span>] + dp[i - <span class=\"hljs-number\">3</span>]\n  }\n  <span class=\"hljs-keyword\">return</span> dp[n]\n}\n\n<span class=\"hljs-keyword\">export</span> { tribonacci }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

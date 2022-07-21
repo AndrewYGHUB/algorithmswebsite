@@ -1,0 +1,28 @@
+{
+  "slug": "simpsons-integration",
+  "name": "Simpsons Integration",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "julia": {
+      "dir": "src/math/simpsons_integration.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/math/simpsons_integration.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    simpsons_integration(f::Function, a::Real, b::Real, n::Int)\n\nSimpson&#x27;s rule uses a quadratic polynomial on each subinterval of a partition to approximate the function f(x) and to compute the definite integral. \nThis is an improvement over the trapezoid rule which approximates f(x) by a straight line on each subinterval of a partition.\nFor more details of the method, check the link in the reference.\n\n# Arguments\n- `f`: The function to integrate. (ar the moment only single variable is suported)\n- `a`: Start of the integration limit.\n- `b`: End of the integration limit.\n- `n`: Number of points to sample. (as n increase, error decrease)\n\n# Examples/Test\n```julia\n# aproximate pi with f(x) = 4 / (1 + x^2)\njulia&gt; simpsons_integration(x -&gt; 4 / (1 + x^2), 0, 1, 100_000)\n3.1415926535897936\njulia&gt; simpsons_integration(x -&gt; 4 / (1 + x^2), 0, 1, 100_000) ≈ pi\ntrue\n```\n\n# References:\n- https://personal.math.ubc.ca/~pwalls/math-python/integration/simpsons-rule/\n\n# Contributed By:- [AugustoCL](https://github.com/AugustoCL)\n&quot;&quot;&quot;</span>\n<span class=\"hljs-keyword\">function</span> simpsons_integration(f::<span class=\"hljs-built_in\">Function</span>, a::<span class=\"hljs-built_in\">Real</span>, b::<span class=\"hljs-built_in\">Real</span>, n::<span class=\"hljs-built_in\">Int</span>)\n    <span class=\"hljs-comment\"># width of the segments</span>\n    Δₓ = (b - a) / n\n\n    <span class=\"hljs-comment\"># rules of the method (check link in references)</span>\n    a₁(i) = <span class=\"hljs-number\">2</span>i - <span class=\"hljs-number\">2</span>\n    a₂(i) = <span class=\"hljs-number\">2</span>i - <span class=\"hljs-number\">1</span>\n\n    <span class=\"hljs-comment\"># sum of the heights</span>\n    Σ = sum(<span class=\"hljs-number\">1</span>:(n/<span class=\"hljs-number\">2</span>)) <span class=\"hljs-keyword\">do</span> i\n        <span class=\"hljs-keyword\">return</span> f(a + a₁(i) * Δₓ) + <span class=\"hljs-number\">4</span>f(a + a₂(i) * Δₓ) + f(a + <span class=\"hljs-number\">2</span>i * Δₓ)\n    <span class=\"hljs-keyword\">end</span>\n\n    <span class=\"hljs-comment\"># approximate integral of f</span>\n    <span class=\"hljs-keyword\">return</span> (Δₓ / <span class=\"hljs-number\">3</span>) * Σ\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Augusto C. Leal",
+      "email": "leal.augusto@unifesp.br",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "3sum",
+  "name": "3sum",
+  "categories": [
+    "datastructures",
+    "array"
+  ],
+  "implementations": {
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "sidaksohi",
+      "email": "31377210+sidaksohi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Hardik Kapadia",
+      "email": "thecoderenroute@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "joshiujjawal22",
+      "email": "joshiujjawal22@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

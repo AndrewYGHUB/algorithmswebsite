@@ -1,0 +1,23 @@
+{
+  "slug": "intpow",
+  "name": "Intpow",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "lua": {
+      "dir": "src/math/intpow.lua",
+      "url": "https://github.com/TheAlgorithms/lua/tree/master/src/math/intpow.lua",
+      "code": "<span class=\"hljs-comment\">-- When exponentiating Lua numbers, always prefer the `^` operator (or `math.pow`) over this</span>\n<span class=\"hljs-comment\">-- Divide-and-conquer approach applied to integer exponentiation, intended for custom types like &quot;big&quot; numbers etc.</span>\n<span class=\"hljs-comment\">-- Exponentiation by squaring</span>\n<span class=\"hljs-keyword\">local</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">pow</span><span class=\"hljs-params\">(base, exponent)</span></span>\n\t<span class=\"hljs-keyword\">if</span> exponent == <span class=\"hljs-number\">1</span> <span class=\"hljs-keyword\">then</span>\n\t\t<span class=\"hljs-keyword\">return</span> base\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-keyword\">if</span> exponent % <span class=\"hljs-number\">2</span> == <span class=\"hljs-number\">1</span> <span class=\"hljs-keyword\">then</span>\n\t\t<span class=\"hljs-keyword\">local</span> root = <span class=\"hljs-built_in\">pow</span>(base, (exponent - <span class=\"hljs-number\">1</span>) / <span class=\"hljs-number\">2</span>)\n\t\t<span class=\"hljs-keyword\">return</span> root * root * base\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-keyword\">local</span> root = <span class=\"hljs-built_in\">pow</span>(base, exponent / <span class=\"hljs-number\">2</span>)\n\t<span class=\"hljs-keyword\">return</span> root * root\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(base, exponent)</span></span>\n\t<span class=\"hljs-keyword\">if</span> exponent == <span class=\"hljs-number\">0</span> <span class=\"hljs-keyword\">then</span>\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">1</span>\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-built_in\">assert</span>(exponent % <span class=\"hljs-number\">1</span> == <span class=\"hljs-number\">0</span>)\n\t<span class=\"hljs-keyword\">if</span> exponent &lt; <span class=\"hljs-number\">0</span> <span class=\"hljs-keyword\">then</span>\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">1</span> / <span class=\"hljs-built_in\">pow</span>(base, -exponent)\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">pow</span>(base, exponent)\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

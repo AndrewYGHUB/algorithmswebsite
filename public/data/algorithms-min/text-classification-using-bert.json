@@ -1,0 +1,19 @@
+{
+  "slug": "text-classification-using-bert",
+  "name": "Text Classification Using BERT",
+  "categories": [
+    "neuralnetwork",
+    "textclassification"
+  ],
+  "implementations": {
+    "jupyter": ""
+  },
+  "contributors": [
+    {
+      "name": "TheConfused1",
+      "email": "deepanshup003@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

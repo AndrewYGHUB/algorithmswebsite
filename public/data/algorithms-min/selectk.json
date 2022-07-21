@@ -1,0 +1,18 @@
+{
+  "slug": "selectk",
+  "name": "Selectk",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "1327253585",
+      "email": "1327253585@qq.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

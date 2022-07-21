@@ -1,0 +1,18 @@
+{
+  "slug": "alaw",
+  "name": "Alaw",
+  "categories": [
+    "audio"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Alliswell",
+      "email": "hisunzhenliang@outlook.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

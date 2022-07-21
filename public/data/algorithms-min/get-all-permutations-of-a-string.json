@@ -1,0 +1,12 @@
+{
+  "slug": "get-all-permutations-of-a-string",
+  "name": "Get all permutations of a string",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

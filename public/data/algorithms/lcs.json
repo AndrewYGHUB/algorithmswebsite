@@ -1,0 +1,38 @@
+{
+  "slug": "lcs",
+  "name": "LCS",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "body": {},
+  "implementations": {
+    "kotlin": {
+      "dir": "src/main/kotlin/dynamicProgramming/LCS.kt",
+      "url": "https://github.com/TheAlgorithms/kotlin/tree/master/src/main/kotlin/dynamicProgramming/LCS.kt",
+      "code": "<span class=\"hljs-keyword\">package</span> dynamicProgramming\n\n<span class=\"hljs-keyword\">import</span> kotlin.math.max\n\n<span class=\"hljs-comment\">/* This algorithm is Longest Common Subsequence\n\n * @param  s1,s2 - strings to be compared\n * @return Length of longest common subsequence between two strings.\n   Eg., for stage and sale it is 3.(sae is the longest common subsequence)\n */</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">fun</span> <span class=\"hljs-title\">lcs</span><span class=\"hljs-params\">(s1: <span class=\"hljs-type\">String</span>, s2: <span class=\"hljs-type\">String</span>)</span></span>: <span class=\"hljs-built_in\">Int</span> {\n    <span class=\"hljs-keyword\">val</span> L = Array(s1.length + <span class=\"hljs-number\">1</span>) { IntArray(s2.length + <span class=\"hljs-number\">1</span>) }\n\n    <span class=\"hljs-keyword\">for</span> (i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">0.</span>.s1.length) {\n        <span class=\"hljs-keyword\">for</span> (j <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">0.</span>.s2.length) {\n            <span class=\"hljs-keyword\">if</span> (i == <span class=\"hljs-number\">0</span> || j == <span class=\"hljs-number\">0</span>) L[i][j] = <span class=\"hljs-number\">0</span>\n            <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (s1[i - <span class=\"hljs-number\">1</span>] == s2[j - <span class=\"hljs-number\">1</span>]) L[i][j] = L[i - <span class=\"hljs-number\">1</span>][j - <span class=\"hljs-number\">1</span>] + <span class=\"hljs-number\">1</span>\n            <span class=\"hljs-keyword\">else</span> L[i][j] = max(L[i - <span class=\"hljs-number\">1</span>][j], L[i][j - <span class=\"hljs-number\">1</span>])\n        }\n    }\n    <span class=\"hljs-keyword\">return</span> L[s1.length][s2.length]\n}"
+    },
+    "julia": {
+      "dir": "src/strings/lcs.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/strings/lcs.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    LCS(a, b)\n\n# Brief:\n    A function that finds the longest common subsequence of two strings a and b.\n\n# For more informations:\n    https://www.programiz.com/dsa/longest-common-subsequence\n\n# Contributed by:- [Nikola Mircic](https://github.com/Nikola-Mircic)\n&quot;&quot;&quot;</span>\n\n<span class=\"hljs-keyword\">function</span> LCS(a::<span class=\"hljs-built_in\">String</span>, b::<span class=\"hljs-built_in\">String</span>)\n    <span class=\"hljs-comment\"># Create a matrix to store previous results</span>\n    <span class=\"hljs-comment\"># sol[i+1, j+1] is length of lcs for a[1:i] and b[1:j]</span>\n    sol = zeros(length(a) + <span class=\"hljs-number\">1</span>, length(b) + <span class=\"hljs-number\">1</span>)\n\n    <span class=\"hljs-comment\"># Calculate sol</span>\n    <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">1</span>:length(a)\n        <span class=\"hljs-keyword\">for</span> j <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">1</span>:length(b)\n            <span class=\"hljs-keyword\">if</span> a[i] == b[j]\n                <span class=\"hljs-comment\"># If a character a[i] is equal to a character b[j],</span>\n                <span class=\"hljs-comment\"># new length of lcs will be equal to length without it plus one </span>\n                sol[i+<span class=\"hljs-number\">1</span>, j+<span class=\"hljs-number\">1</span>] = sol[i, j] + <span class=\"hljs-number\">1</span>\n            <span class=\"hljs-keyword\">else</span>\n                <span class=\"hljs-comment\"># If characters are different, length will be maximum of two previously calculated lcs</span>\n                <span class=\"hljs-comment\"># One is without a[i], and second one is lcs when b[i] is not inluded</span>\n                sol[i+<span class=\"hljs-number\">1</span>, j+<span class=\"hljs-number\">1</span>] = max(sol[i+<span class=\"hljs-number\">1</span>, j], sol[i, j+<span class=\"hljs-number\">1</span>])\n            <span class=\"hljs-keyword\">end</span>\n        <span class=\"hljs-keyword\">end</span>\n    <span class=\"hljs-keyword\">end</span>\n\n    result = <span class=\"hljs-string\">&quot;&quot;</span>\n\n    <span class=\"hljs-comment\"># Start going trough the matrix from the last value and check which character</span>\n    <span class=\"hljs-comment\"># increases the length of lcs, and witch is copied value</span>\n    i = length(a) + <span class=\"hljs-number\">1</span>\n    j = length(b) + <span class=\"hljs-number\">1</span>\n    <span class=\"hljs-keyword\">while</span> i &gt; <span class=\"hljs-number\">1</span> &amp;&amp; j &gt; <span class=\"hljs-number\">1</span>\n        <span class=\"hljs-keyword\">if</span> sol[i, j] == sol[i, j-<span class=\"hljs-number\">1</span>]\n            <span class=\"hljs-comment\"># Copied left value</span>\n            j -= <span class=\"hljs-number\">1</span>\n        <span class=\"hljs-keyword\">elseif</span> sol[i, j] == sol[i-<span class=\"hljs-number\">1</span>, j]\n            <span class=\"hljs-comment\"># Copied value above</span>\n            i -= <span class=\"hljs-number\">1</span>\n        <span class=\"hljs-keyword\">else</span>\n            <span class=\"hljs-comment\"># Value is increased here</span>\n            result = b[j-<span class=\"hljs-number\">1</span>] * result <span class=\"hljs-comment\"># or a[i-1] * result</span>\n            i -= <span class=\"hljs-number\">1</span>\n            j -= <span class=\"hljs-number\">1</span>\n        <span class=\"hljs-keyword\">end</span>\n    <span class=\"hljs-keyword\">end</span>\n\n    <span class=\"hljs-keyword\">return</span> result\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Nikola Mircic",
+      "email": "nikola123mircic@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "socvirnyl.estela@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Akshay-H",
+      "email": "akshayhari555@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

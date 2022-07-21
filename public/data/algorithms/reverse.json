@@ -1,0 +1,28 @@
+{
+  "slug": "reverse",
+  "name": "Reverse",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "rust": {
+      "dir": "src/string/reverse.rs",
+      "url": "https://github.com/TheAlgorithms/rust/tree/master/src/string/reverse.rs",
+      "code": "<span class=\"hljs-keyword\">pub</span> <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">reverse</span>(text: &amp;<span class=\"hljs-type\">str</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">String</span> {\n    text.<span class=\"hljs-title function_ invoke__\">chars</span>().<span class=\"hljs-title function_ invoke__\">rev</span>().<span class=\"hljs-title function_ invoke__\">collect</span>()\n}\n\n<span class=\"hljs-meta\">#[cfg(test)]</span>\n<span class=\"hljs-keyword\">mod</span> tests {\n    <span class=\"hljs-keyword\">use</span> super::*;\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_simple</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-title function_ invoke__\">reverse</span>(<span class=\"hljs-string\">&quot;racecar&quot;</span>), <span class=\"hljs-string\">&quot;racecar&quot;</span>);\n    }\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_assymetric</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-title function_ invoke__\">reverse</span>(<span class=\"hljs-string\">&quot;abcdef&quot;</span>), <span class=\"hljs-string\">&quot;fedcba&quot;</span>)\n    }\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_sentence</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-title function_ invoke__\">reverse</span>(<span class=\"hljs-string\">&quot;step on no pets&quot;</span>), <span class=\"hljs-string\">&quot;step on no pets&quot;</span>);\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Roy Matero",
+      "email": "57762327+materoy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sutthinart Khunvadhana",
+      "email": "iakgoog@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,217 @@
+{
+  "slug": "factorial",
+  "name": "Factorial",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "c": "",
+    "haskell": "",
+    "f-sharp": "",
+    "go": "",
+    "dart": "",
+    "r": "",
+    "ruby": "",
+    "php": "",
+    "kotlin": "",
+    "julia": "",
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Stepfen Shawn",
+      "email": "m18824909883@163.com",
+      "commits": 1
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    },
+    {
+      "name": "Anh Tu Do",
+      "email": "d04nhtu@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "i1e0",
+      "email": "96235137+i1e0@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Liam Di Dato",
+      "email": "liamdidato@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shashanknp-linx",
+      "email": "shashanknp@apiplatform.io",
+      "commits": 1
+    },
+    {
+      "name": "Ndubuisi Onyemenam",
+      "email": "onyemenamndu@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "1fisedi",
+      "email": "51143882+1fisedi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sahil Afrid Farookhi",
+      "email": "msafarookhi@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Alex Garland",
+      "email": "alex@numinar.com",
+      "commits": 1
+    },
+    {
+      "name": "Vaishakh C R",
+      "email": "scientistyshock@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ashwani Rathee",
+      "email": "ab669522@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Croustys",
+      "email": "51267148+Croustys@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Wendell Lucas",
+      "email": "49886455+wendelllsc@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Arogon1",
+      "email": "40372809+Arogon1@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Kenneth Nero",
+      "email": "kbn1798@rit.edu",
+      "commits": 1
+    },
+    {
+      "name": "Sanders Lin",
+      "email": "45224617+SandersLin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Jigyasa G",
+      "email": "33327397+jpg-130@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Akshay Khale",
+      "email": "khaleakshay@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Erez Shomron",
+      "email": "48328872+eshom@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Rratic",
+      "email": "Rratic@163.com",
+      "commits": 2
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    },
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Ephraim Atta-Duncan",
+      "email": "55143799+dephraiim@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Vikrant khedkar",
+      "email": "vikrantkhedkar2720@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "MatanDavidi",
+      "email": "davidi.matan@gmail.com",
+      "commits": 4
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 5
+    },
+    {
+      "name": "Ejiah",
+      "email": "yosapoljittarak@hotmail.com",
+      "commits": 6
+    }
+  ],
+  "explanationUrl": {}
+}

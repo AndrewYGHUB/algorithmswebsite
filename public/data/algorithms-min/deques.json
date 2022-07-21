@@ -1,0 +1,24 @@
+{
+  "slug": "deques",
+  "name": "Deques",
+  "categories": [
+    "datastructures",
+    "queues"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ian Cowan",
+      "email": "38896380+iccowan@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

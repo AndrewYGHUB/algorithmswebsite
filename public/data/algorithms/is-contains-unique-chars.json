@@ -1,0 +1,23 @@
+{
+  "slug": "is-contains-unique-chars",
+  "name": "Is Contains Unique Chars",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "strings/is_contains_unique_chars.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/strings/is_contains_unique_chars.py",
+      "code": "<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">is_contains_unique_chars</span>(<span class=\"hljs-params\">input_str: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">bool</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Check if all characters in the string is unique or not.\n    &gt;&gt;&gt; is_contains_unique_chars(&quot;I_love.py&quot;)\n    True\n    &gt;&gt;&gt; is_contains_unique_chars(&quot;I don&#x27;t love Python&quot;)\n    False\n\n    Time complexity: O(n)\n    Space compexity: O(1) 19320 bytes as we are having 144697 characters in unicode\n    &quot;&quot;&quot;</span>\n\n    <span class=\"hljs-comment\"># Each bit will represent each unicode character</span>\n    <span class=\"hljs-comment\"># For example 65th bit representing &#x27;A&#x27;</span>\n    <span class=\"hljs-comment\"># https://stackoverflow.com/a/12811293</span>\n    bitmap = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">for</span> ch <span class=\"hljs-keyword\">in</span> input_str:\n        ch_unicode = <span class=\"hljs-built_in\">ord</span>(ch)\n        ch_bit_index_on = <span class=\"hljs-built_in\">pow</span>(<span class=\"hljs-number\">2</span>, ch_unicode)\n\n        <span class=\"hljs-comment\"># If we already turned on bit for current character&#x27;s unicode</span>\n        <span class=\"hljs-keyword\">if</span> bitmap &gt;&gt; ch_unicode &amp; <span class=\"hljs-number\">1</span> == <span class=\"hljs-number\">1</span>:\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">False</span>\n        bitmap |= ch_bit_index_on\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">True</span>\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Navpreet Singh Devpuri",
+      "email": "navpreetdevpuri@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

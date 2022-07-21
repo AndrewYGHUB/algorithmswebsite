@@ -1,0 +1,23 @@
+{
+  "slug": "hamming-numbers",
+  "name": "Hamming Numbers",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "maths/hamming_numbers.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/maths/hamming_numbers.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\nA Hamming number is a positive integer of the form 2^i*3^j*5^k, for some\nnon-negative integers i, j, and k. They are often referred to as regular numbers.\nMore info at: https://en.wikipedia.org/wiki/Regular_number.\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">hamming</span>(<span class=\"hljs-params\">n_element: <span class=\"hljs-built_in\">int</span></span>) -&gt; <span class=\"hljs-built_in\">list</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    This function creates an ordered list of n length as requested, and afterwards\n    returns the last value of the list. It must be given a positive integer.\n\n    :param n_element: The number of elements on the list\n    :return: The nth element of the list\n\n    &gt;&gt;&gt; hamming(5)\n    [1, 2, 3, 4, 5]\n    &gt;&gt;&gt; hamming(10)\n    [1, 2, 3, 4, 5, 6, 8, 9, 10, 12]\n    &gt;&gt;&gt; hamming(15)\n    [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24]\n    &quot;&quot;&quot;</span>\n    n_element = <span class=\"hljs-built_in\">int</span>(n_element)\n    <span class=\"hljs-keyword\">if</span> n_element &lt; <span class=\"hljs-number\">1</span>:\n        my_error = ValueError(<span class=\"hljs-string\">&quot;a should be a positive number&quot;</span>)\n        <span class=\"hljs-keyword\">raise</span> my_error\n\n    hamming_list = [<span class=\"hljs-number\">1</span>]\n    i, j, k = (<span class=\"hljs-number\">0</span>, <span class=\"hljs-number\">0</span>, <span class=\"hljs-number\">0</span>)\n    index = <span class=\"hljs-number\">1</span>\n    <span class=\"hljs-keyword\">while</span> index &lt; n_element:\n        <span class=\"hljs-keyword\">while</span> hamming_list[i] * <span class=\"hljs-number\">2</span> &lt;= hamming_list[-<span class=\"hljs-number\">1</span>]:\n            i += <span class=\"hljs-number\">1</span>\n        <span class=\"hljs-keyword\">while</span> hamming_list[j] * <span class=\"hljs-number\">3</span> &lt;= hamming_list[-<span class=\"hljs-number\">1</span>]:\n            j += <span class=\"hljs-number\">1</span>\n        <span class=\"hljs-keyword\">while</span> hamming_list[k] * <span class=\"hljs-number\">5</span> &lt;= hamming_list[-<span class=\"hljs-number\">1</span>]:\n            k += <span class=\"hljs-number\">1</span>\n        hamming_list.append(\n            <span class=\"hljs-built_in\">min</span>(hamming_list[i] * <span class=\"hljs-number\">2</span>, hamming_list[j] * <span class=\"hljs-number\">3</span>, hamming_list[k] * <span class=\"hljs-number\">5</span>)\n        )\n        index += <span class=\"hljs-number\">1</span>\n    <span class=\"hljs-keyword\">return</span> hamming_list\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    n = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&quot;Enter the last number (nth term) of the Hamming Number Series: &quot;</span>)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;Formula of Hamming Number Series =&gt; 2^i * 3^j * 5^k&quot;</span>)\n    hamming_numbers = hamming(<span class=\"hljs-built_in\">int</span>(n))\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;-----------------------------------------------------&quot;</span>)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;The list with nth numbers is: <span class=\"hljs-subst\">{hamming_numbers}</span>&quot;</span>)\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;-----------------------------------------------------&quot;</span>)\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "U",
+      "email": "80122730+und1n3@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

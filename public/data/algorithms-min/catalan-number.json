@@ -1,0 +1,24 @@
+{
+  "slug": "catalan-number",
+  "name": "Catalan Number",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "java": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Amritesh Anand",
+      "email": "73696688+amritesh19@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

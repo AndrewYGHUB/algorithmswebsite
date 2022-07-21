@@ -1,0 +1,18 @@
+{
+  "slug": "stabilize",
+  "name": "Stabilize",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "next-smaller-element",
+  "name": "Next Smaller Element",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Mohit Kumar",
+      "email": "74761614+itsmohitmkk@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ZiQiang Cao",
+      "email": "56420944+NullPointerC@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

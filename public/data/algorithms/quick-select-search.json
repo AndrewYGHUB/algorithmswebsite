@@ -1,0 +1,28 @@
+{
+  "slug": "quick-select-search",
+  "name": "Quick Select Search",
+  "categories": [
+    "searches"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Search/QuickSelectSearch.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Search/QuickSelectSearch.js",
+      "code": "<span class=\"hljs-comment\">/*\n * Places the `k` smallest elements in `array` in the first `k` indices: `[0..k-1]`\n * Modifies the passed in array *in place*\n * Returns a slice of the wanted elements for convenience\n * Efficient mainly because it never performs a full sort.\n *\n * The only guarantees are that:\n *\n * - The `k`th element is in its final sort index (if the array were to be sorted)\n * - All elements before index `k` are smaller than the `k`th element\n *\n * [Reference](http://en.wikipedia.org/wiki/Quickselect)\n */</span>\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">quickSelectSearch</span> (array, k) {\n  <span class=\"hljs-keyword\">if</span> (!array || array.<span class=\"hljs-property\">length</span> &lt;= k) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Error</span>(<span class=\"hljs-string\">&#x27;Invalid arguments&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">let</span> <span class=\"hljs-keyword\">from</span> = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">let</span> to = array.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">while</span> (<span class=\"hljs-keyword\">from</span> &lt; to) {\n    <span class=\"hljs-keyword\">let</span> left = <span class=\"hljs-keyword\">from</span>\n    <span class=\"hljs-keyword\">let</span> right = to\n    <span class=\"hljs-keyword\">const</span> pivot = array[<span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">ceil</span>((left + right) * <span class=\"hljs-number\">0.5</span>)]\n\n    <span class=\"hljs-keyword\">while</span> (left &lt; right) {\n      <span class=\"hljs-keyword\">if</span> (array[left] &gt;= pivot) {\n        <span class=\"hljs-keyword\">const</span> tmp = array[left]\n        array[left] = array[right]\n        array[right] = tmp\n        --right\n      } <span class=\"hljs-keyword\">else</span> {\n        ++left\n      }\n    }\n\n    <span class=\"hljs-keyword\">if</span> (array[left] &gt; pivot) {\n      --left\n    }\n\n    <span class=\"hljs-keyword\">if</span> (k &lt;= left) {\n      to = left\n    } <span class=\"hljs-keyword\">else</span> {\n      <span class=\"hljs-keyword\">from</span> = left + <span class=\"hljs-number\">1</span>\n    }\n  }\n  <span class=\"hljs-keyword\">return</span> array\n}\n\n<span class=\"hljs-comment\">/* ---------------------------------- Test ---------------------------------- */</span>\n\n<span class=\"hljs-comment\">// const arr = [1121111, 21, 333, 41, 5, 66, 7777, 28, 19, 11110]</span>\n<span class=\"hljs-comment\">// quickSelectSearch(arr, 5) // [ 19, 21, 28, 41, 5, 66, 333, 11110, 1121111, 7777 ]</span>\n<span class=\"hljs-comment\">// quickSelectSearch(arr, 2) // [ 19, 5, 21, 41, 28, 333, 11110, 1121111, 7777, 66 ]</span>\n<span class=\"hljs-comment\">// quickSelectSearch(arr, 7) // [ 19, 5, 21, 41, 28, 66, 333, 7777, 11110, 1121111 ]</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrew Chudinovskyh",
+      "email": "andron989@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

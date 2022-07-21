@@ -1,0 +1,23 @@
+{
+  "slug": "is-pronic",
+  "name": "Is Pronic",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/IsPronic.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/IsPronic.js",
+      "code": "<span class=\"hljs-comment\">/*\n * Author: Akshay Dubey (https://github.com/itsAkshayDubey)\n * Pronic Number: https://en.wikipedia.org/wiki/Pronic_number\n * function to check if number is pronic.\n * return true if number is pronic.\n * else false\n */</span>\n\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">isPronic</span>\n * <span class=\"hljs-doctag\">@description</span> -&gt; Checking if number is pronic using product of two consecutive numbers\n * If number is a product of two consecutive numbers, then it is pronic\n * therefore, the function will return true\n *\n * If number is not a product of two consecutive numbers, then it is not pronic\n * therefore, the function will return false\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} <span class=\"hljs-variable\">number</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">boolean</span>}\n */</span>\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">isPronic</span> = (<span class=\"hljs-params\">number</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (number === <span class=\"hljs-number\">0</span>) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n  }\n  <span class=\"hljs-keyword\">const</span> sqrt = <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">sqrt</span>(number)\n  <span class=\"hljs-keyword\">return</span> sqrt % <span class=\"hljs-number\">1</span> !== <span class=\"hljs-number\">0</span> &amp;&amp; <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">ceil</span>(sqrt) * <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">floor</span>(sqrt) === number\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Akshay Dubey",
+      "email": "38462415+itsAkshayDubey@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

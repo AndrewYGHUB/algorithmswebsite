@@ -1,0 +1,23 @@
+{
+  "slug": "horn-schunck",
+  "name": "Horn Schunck",
+  "categories": [
+    "computervision"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Simon",
+      "email": "simon.kiefhaber@outlook.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "matrix-multiplication",
+  "name": "Matrix Multiplication",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Michele Caci",
+      "email": "michele.caci@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Himanshu Shekhar",
+      "email": "himanshushekharb16@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Pete Looney",
+      "email": "petelooney81@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

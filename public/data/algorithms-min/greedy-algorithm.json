@@ -1,0 +1,23 @@
+{
+  "slug": "greedy-algorithm",
+  "name": "Greedy Algorithm",
+  "categories": [
+    "knapsack"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "KheeLong",
+      "email": "kheelong0387@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

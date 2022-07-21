@@ -1,0 +1,28 @@
+{
+  "slug": "breadth-first-search-2",
+  "name": "Breadth First Search 2",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Casper Rysgaard",
+      "email": "Crowton@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

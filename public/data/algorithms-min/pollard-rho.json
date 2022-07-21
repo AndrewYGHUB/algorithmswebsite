@@ -1,0 +1,29 @@
+{
+  "slug": "pollard-rho",
+  "name": "Pollard Rho",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Marcus T",
+      "email": "marcus.truscello@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

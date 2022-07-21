@@ -1,0 +1,55 @@
+{
+  "slug": "rsa",
+  "name": "RSA",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "java": "",
+    "go": "",
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "datta-agni",
+      "email": "dattadunga@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Prateek Chanda",
+      "email": "prateekkol21@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "khalil2535",
+      "email": "khalil2535@localhost",
+      "commits": 1
+    },
+    {
+      "name": "Nguyen Duy Tiep",
+      "email": "duytiep@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

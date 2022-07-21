@@ -1,0 +1,23 @@
+{
+  "slug": "sieve-er",
+  "name": "Sieve ER",
+  "categories": [
+    "sieveoferatosthenes"
+  ],
+  "implementations": {
+    "matlab-octave": ""
+  },
+  "contributors": [
+    {
+      "name": "MaximSmolskiy",
+      "email": "mithridatus@mail.ru",
+      "commits": 1
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

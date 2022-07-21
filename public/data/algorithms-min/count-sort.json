@@ -1,0 +1,23 @@
+{
+  "slug": "count-sort",
+  "name": "Count Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "php": ""
+  },
+  "contributors": [
+    {
+      "name": "thierrydev",
+      "email": "dev@perif.co",
+      "commits": 1
+    },
+    {
+      "name": "Acha Jackson",
+      "email": "achajackson@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

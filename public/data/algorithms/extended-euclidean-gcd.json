@@ -1,0 +1,28 @@
+{
+  "slug": "extended-euclidean-gcd",
+  "name": "Extended Euclidean GCD",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/ExtendedEuclideanGCD.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/ExtendedEuclideanGCD.js",
+      "code": "<span class=\"hljs-comment\">/**\n * Problem statement and explanation: https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm\n *\n * This algorithm plays an important role for modular arithmetic, and by extension for cyptography algorithms\n *\n * Basic explanation:\n * The Extended Euclidean algorithm is a modification of the standard Euclidean GCD algorithm.\n * It allows to calculate coefficients x and y for the equation:\n *          ax + by = gcd(a,b)\n *\n * This is called Bézout&#x27;s identity and the coefficients are called Bézout coefficients\n *\n * The algorithm uses the Euclidean method of getting remainder:\n * r_i+1 = r_i-1 - qi*ri\n * and applies it to series s and t (with same quotient q at each stage)\n * When r_n reaches 0, the value r_n-1 gives the gcd, and s_n-1 and t_n-1 give the coefficients\n *\n * This implementation uses an iterative approach to calculate the values\n */</span>\n\n<span class=\"hljs-comment\">/**\n *\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Number</span>} arg1 first argument\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Number</span>} arg2 second argument\n * <span class=\"hljs-doctag\">@returns</span> Array with GCD and first and second Bézout coefficients\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">extendedEuclideanGCD</span> = (<span class=\"hljs-params\">arg1, arg2</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> arg1 !== <span class=\"hljs-string\">&#x27;number&#x27;</span> || <span class=\"hljs-keyword\">typeof</span> arg2 !== <span class=\"hljs-string\">&#x27;number&#x27;</span>) <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Not a Number&#x27;</span>)\n  <span class=\"hljs-keyword\">if</span> (arg1 &lt; <span class=\"hljs-number\">1</span> || arg2 &lt; <span class=\"hljs-number\">1</span>) <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Must be positive numbers&#x27;</span>)\n\n  <span class=\"hljs-comment\">// Make the order of coefficients correct, as the algorithm assumes r0 &gt; r1</span>\n  <span class=\"hljs-keyword\">if</span> (arg1 &lt; arg2) {\n    <span class=\"hljs-keyword\">const</span> res = <span class=\"hljs-title function_\">extendedEuclideanGCD</span>(arg2, arg1)\n    <span class=\"hljs-keyword\">const</span> temp = res[<span class=\"hljs-number\">1</span>]\n    res[<span class=\"hljs-number\">1</span>] = res[<span class=\"hljs-number\">2</span>]\n    res[<span class=\"hljs-number\">2</span>] = temp\n    <span class=\"hljs-keyword\">return</span> res\n  }\n\n  <span class=\"hljs-comment\">// At this point arg1 &gt; arg2</span>\n\n  <span class=\"hljs-comment\">// Remainder values</span>\n  <span class=\"hljs-keyword\">let</span> r0 = arg1\n  <span class=\"hljs-keyword\">let</span> r1 = arg2\n\n  <span class=\"hljs-comment\">// Coefficient1 values</span>\n  <span class=\"hljs-keyword\">let</span> s0 = <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">let</span> s1 = <span class=\"hljs-number\">0</span>\n\n  <span class=\"hljs-comment\">// Coefficient 2 values</span>\n  <span class=\"hljs-keyword\">let</span> t0 = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">let</span> t1 = <span class=\"hljs-number\">1</span>\n\n  <span class=\"hljs-keyword\">while</span> (r1 !== <span class=\"hljs-number\">0</span>) {\n    <span class=\"hljs-keyword\">const</span> q = <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">floor</span>(r0 / r1)\n\n    <span class=\"hljs-keyword\">const</span> r2 = r0 - r1 * q\n    <span class=\"hljs-keyword\">const</span> s2 = s0 - s1 * q\n    <span class=\"hljs-keyword\">const</span> t2 = t0 - t1 * q\n\n    r0 = r1\n    r1 = r2\n    s0 = s1\n    s1 = s2\n    t0 = t1\n    t1 = t2\n  }\n  <span class=\"hljs-keyword\">return</span> [r0, s0, t0]\n}\n\n<span class=\"hljs-keyword\">export</span> { extendedEuclideanGCD }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "VinWare",
+      "email": "28603906+VinWare@users.noreply.github.com",
+      "commits": 6
+    }
+  ],
+  "explanationUrl": {}
+}

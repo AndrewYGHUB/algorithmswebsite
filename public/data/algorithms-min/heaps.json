@@ -1,0 +1,24 @@
+{
+  "slug": "heaps",
+  "name": "Heaps",
+  "categories": [
+    "math",
+    "permutation"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "kevinburchfield",
+      "email": "kevinburchfi@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

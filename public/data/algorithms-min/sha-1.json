@@ -1,0 +1,76 @@
+{
+  "slug": "sha-1",
+  "name": "Sha 1",
+  "categories": [
+    "hashing"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "aarch64_assembly": ""
+  },
+  "contributors": [
+    {
+      "name": "QuantumNovice",
+      "email": "43876848+QuantumNovice@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ravi Patel",
+      "email": "ravi.patel1245@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "tGautot",
+      "email": "44877251+tGautot@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "bum_fuzzle",
+      "email": "72404701+bumfuzzle33@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "CapofWeird",
+      "email": "40702379+CapofWeird@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Mickaël Schoentgen",
+      "email": "contact@tiger-222.fr",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 4
+    },
+    {
+      "name": "piyush-kgp",
+      "email": "piyushsinghkgpian@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

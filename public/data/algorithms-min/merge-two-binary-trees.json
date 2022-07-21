@@ -1,0 +1,29 @@
+{
+  "slug": "merge-two-binary-trees",
+  "name": "Merge Two Binary Trees",
+  "categories": [
+    "datastructures",
+    "binarytree"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Sherman Hui",
+      "email": "11592023+shermanhui@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Gaurav Jindal",
+      "email": "54955413+jindal2309@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

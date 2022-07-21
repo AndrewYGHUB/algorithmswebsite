@@ -1,0 +1,34 @@
+{
+  "slug": "max-character",
+  "name": "Max Character",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": "",
+    "php": ""
+  },
+  "contributors": [
+    {
+      "name": "Akshay Khale",
+      "email": "khale.akshay@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Akshay Khale",
+      "email": "khaleakshay@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Carlos Carvalho",
+      "email": "jcarloss.carvalho@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

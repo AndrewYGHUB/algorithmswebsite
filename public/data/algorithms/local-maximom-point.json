@@ -1,0 +1,29 @@
+{
+  "slug": "local-maximom-point",
+  "name": "Local Maximom Point",
+  "categories": [
+    "datastructures",
+    "array"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Data-Structures/Array/LocalMaximomPoint.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Data-Structures/Array/LocalMaximomPoint.js",
+      "code": "<span class=\"hljs-comment\">/**\n * [LocalMaxima](https://www.geeksforgeeks.org/find-indices-of-all-local-maxima-and-local-minima-in-an-array/) is an algorithm to find relative bigger numbers compared to their neighbors\n *\n * Notes:\n * - works by using divide and conquer\n * - the function gets the array A with n Real numbersand returns the local max point index (if more than one exists return the first one)\n *\n * <span class=\"hljs-doctag\">@complexity</span>: O(log(n)) (on average )\n * <span class=\"hljs-doctag\">@complexity</span>: O(log(n)) (worst case)\n * <span class=\"hljs-doctag\">@flow</span>\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">findMaxPointIndex</span> = (<span class=\"hljs-params\">array, rangeStartIndex, rangeEndIndex, originalLength</span>) =&gt; {\n  <span class=\"hljs-comment\">// find index range middle point</span>\n  <span class=\"hljs-keyword\">const</span> middleIndex = rangeStartIndex + <span class=\"hljs-built_in\">parseInt</span>((rangeEndIndex - rangeStartIndex) / <span class=\"hljs-number\">2</span>)\n\n  <span class=\"hljs-comment\">// handle array bounds</span>\n  <span class=\"hljs-keyword\">if</span> ((middleIndex === <span class=\"hljs-number\">0</span> || array[middleIndex - <span class=\"hljs-number\">1</span>] &lt;= array[middleIndex]) &amp;&amp;\n        (middleIndex === originalLength - <span class=\"hljs-number\">1</span> || array[middleIndex + <span class=\"hljs-number\">1</span>] &lt;= array[middleIndex])) {\n    <span class=\"hljs-keyword\">return</span> middleIndex\n  } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (middleIndex &gt; <span class=\"hljs-number\">0</span> &amp;&amp; array[middleIndex - <span class=\"hljs-number\">1</span>] &gt; array[middleIndex]) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title function_\">findMaxPointIndex</span>(array, rangeStartIndex, (middleIndex - <span class=\"hljs-number\">1</span>), originalLength)\n  } <span class=\"hljs-keyword\">else</span> {\n    <span class=\"hljs-comment\">// regular local max</span>\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title function_\">findMaxPointIndex</span>(array, (middleIndex + <span class=\"hljs-number\">1</span>), rangeEndIndex, originalLength)\n  }\n}\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">LocalMaximomPoint</span> = (<span class=\"hljs-params\">A</span>) =&gt; <span class=\"hljs-title function_\">findMaxPointIndex</span>(A, <span class=\"hljs-number\">0</span>, A.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>, A.<span class=\"hljs-property\">length</span>)\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">LocalMaximomPoint</span> }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "jhonDoe15",
+      "email": "62393042+jhonDoe15@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

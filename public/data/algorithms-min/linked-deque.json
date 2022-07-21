@@ -1,0 +1,18 @@
+{
+  "slug": "linked-deque",
+  "name": "Linked Deque",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

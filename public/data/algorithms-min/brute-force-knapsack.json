@@ -1,0 +1,23 @@
+{
+  "slug": "brute-force-knapsack",
+  "name": "Brute Force Knapsack",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rajat Jain",
+      "email": "rajatjain.jain29@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

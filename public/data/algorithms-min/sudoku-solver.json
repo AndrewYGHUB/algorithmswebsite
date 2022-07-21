@@ -1,0 +1,34 @@
+{
+  "slug": "sudoku-solver",
+  "name": "Sudoku Solver",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "javascript": "",
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "longvo",
+      "email": "69973421+longvo19@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Shadab Ali",
+      "email": "shadabali604@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

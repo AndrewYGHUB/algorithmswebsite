@@ -1,0 +1,28 @@
+{
+  "slug": "stream-sieve",
+  "name": "Stream Sieve",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "scala": ""
+  },
+  "contributors": [
+    {
+      "name": "Alfredo Torre",
+      "email": "alfredotorre@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "khanhhuynguyenvu",
+      "email": "khanhhuynguyenvu@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "cutajarj2",
+      "email": "james.cutajar@blip.pt",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "midpoint-integration",
+  "name": "Midpoint Integration",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "ggkogkou",
+      "email": "76820848+ggkogkou@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

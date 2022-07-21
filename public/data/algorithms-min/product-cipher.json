@@ -1,0 +1,18 @@
+{
+  "slug": "product-cipher",
+  "name": "Product Cipher",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Dilrose Reji",
+      "email": "70878223+dilroseR@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

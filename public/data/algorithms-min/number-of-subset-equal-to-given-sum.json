@@ -1,0 +1,23 @@
+{
+  "slug": "number-of-subset-equal-to-given-sum",
+  "name": "Number Of Subset Equal To Given Sum",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "rverma13927",
+      "email": "65550578+rverma13927@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

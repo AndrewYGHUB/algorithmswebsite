@@ -1,0 +1,19 @@
+{
+  "slug": "simple-sort",
+  "name": "Simple Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "java": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Florian",
+      "email": "38241786+Flonator3000@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

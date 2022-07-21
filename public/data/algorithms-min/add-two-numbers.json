@@ -1,0 +1,19 @@
+{
+  "slug": "add-two-numbers",
+  "name": "Add Two Numbers",
+  "categories": [
+    "datastructures",
+    "linkedlist"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Shakil Ahmmed",
+      "email": "30585539+ShakilAhmmed@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

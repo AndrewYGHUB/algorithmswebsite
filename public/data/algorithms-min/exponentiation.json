@@ -1,0 +1,13 @@
+{
+  "slug": "exponentiation",
+  "name": "Exponentiation",
+  "categories": [
+    "math",
+    "modular"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "decimal-to-roman",
+  "name": "Decimal To Roman",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Meehoi",
+      "email": "beam_baimon@hotmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

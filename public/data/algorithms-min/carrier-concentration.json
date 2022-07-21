@@ -1,0 +1,23 @@
+{
+  "slug": "carrier-concentration",
+  "name": "Carrier Concentration",
+  "categories": [
+    "electronics"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Sidhaant Thakker",
+      "email": "59668364+SidhaantThakker@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

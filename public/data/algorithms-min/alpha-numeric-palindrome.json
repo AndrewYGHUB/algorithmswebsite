@@ -1,0 +1,33 @@
+{
+  "slug": "alpha-numeric-palindrome",
+  "name": "Alpha Numeric Palindrome",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Syed Fasiuddin",
+      "email": "syedfasiuddin.02@gmail.com",
+      "commits": 8
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "bfs-shortest-path",
+  "name": "Bfs Shortest Path",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Akash G Krishnan",
+      "email": "krishnanag1996@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "hasan",
+      "email": "hasanuli10@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Kyle",
+      "email": "40903431+kylepw@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sarvesh Dubey",
+      "email": "38752758+dubesar@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

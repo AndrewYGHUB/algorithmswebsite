@@ -1,0 +1,23 @@
+{
+  "slug": "max-product-of-three",
+  "name": "Max Product Of Three",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "VinWare",
+      "email": "28603906+VinWare@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "devcer",
+      "email": "viswanathamsantosh@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

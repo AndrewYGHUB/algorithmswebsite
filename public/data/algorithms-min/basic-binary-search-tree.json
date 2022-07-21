@@ -1,0 +1,24 @@
+{
+  "slug": "basic-binary-search-tree",
+  "name": "Basic Binary Search Tree",
+  "categories": [
+    "datastructures",
+    "binarytree"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rratic",
+      "email": "Rratic@163.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

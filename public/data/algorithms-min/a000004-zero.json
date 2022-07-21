@@ -1,0 +1,12 @@
+{
+  "slug": "a000004-zero",
+  "name": "A000004 Zero",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

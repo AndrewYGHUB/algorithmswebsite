@@ -1,0 +1,18 @@
+{
+  "slug": "get-top-hn-posts",
+  "name": "Get Top Hn Posts",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Prakhar Gurunani",
+      "email": "prakhargurunani@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

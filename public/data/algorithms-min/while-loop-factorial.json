@@ -1,0 +1,33 @@
+{
+  "slug": "while-loop-factorial",
+  "name": "While Loop Factorial",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "theepag",
+      "email": "theepag@live.com",
+      "commits": 1
+    },
+    {
+      "name": "pwygab",
+      "email": "88221256+merelymyself@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

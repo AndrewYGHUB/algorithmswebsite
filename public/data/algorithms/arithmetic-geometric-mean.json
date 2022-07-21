@@ -1,0 +1,23 @@
+{
+  "slug": "arithmetic-geometric-mean",
+  "name": "Arithmetic Geometric Mean",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/ArithmeticGeometricMean.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/ArithmeticGeometricMean.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">agm</span>\n * <span class=\"hljs-doctag\">@description</span> This finds the Arithmetic-Geometric Mean between any 2 numbers.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Number</span>} <span class=\"hljs-variable\">a</span> - 1st number, also used to store Arithmetic Mean.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Number</span>} <span class=\"hljs-variable\">g</span> - 2nd number, also used to store Geometric Mean.\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">Number</span>} - AGM of both numbers.\n * <span class=\"hljs-doctag\">@see</span> [AGM](https://en.wikipedia.org/wiki/Arithmetic%E2%80%93geometric_mean)\n */</span>\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">agm</span> = (<span class=\"hljs-params\">a, g</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (a === <span class=\"hljs-title class_\">Infinity</span> &amp;&amp; g === <span class=\"hljs-number\">0</span>) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title class_\">NaN</span>\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-title class_\">Object</span>.<span class=\"hljs-title function_\">is</span>(a, -<span class=\"hljs-number\">0</span>) &amp;&amp; !<span class=\"hljs-title class_\">Object</span>.<span class=\"hljs-title function_\">is</span>(g, -<span class=\"hljs-number\">0</span>)) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">if</span> (a === g) <span class=\"hljs-keyword\">return</span> a <span class=\"hljs-comment\">// avoid rounding errors, and increase efficiency</span>\n  <span class=\"hljs-keyword\">let</span> x <span class=\"hljs-comment\">// temp var</span>\n  <span class=\"hljs-keyword\">do</span> {\n    [a, g, x] = [(a + g) / <span class=\"hljs-number\">2</span>, <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">sqrt</span>(a * g), a]\n  } <span class=\"hljs-keyword\">while</span> (a !== x &amp;&amp; !<span class=\"hljs-built_in\">isNaN</span>(a))\n  <span class=\"hljs-comment\">/*\n  `x !== a` ensures the return value has full precision,\n  and prevents infinite loops caused by rounding differences between `div` and `sqrt` (no need for &quot;epsilon&quot;).\n  If we were to compare `a` with `g`, some input combinations (not all) can cause an infinite loop,\n  because the rounding mode never changes at runtime.\n  Precision is not the same as accuracy, but they&#x27;re related.\n  This function isn&#x27;t always 100% accurate (round-errors), but at least is more than 95% accurate.\n  `!isNaN(x)` prevents infinite loops caused by invalid inputs like: negatives, NaNs and Infinities.\n  */</span>\n  <span class=\"hljs-keyword\">return</span> a\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ricardo Fernández Serrata",
+      "email": "76864299+Rudxain@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

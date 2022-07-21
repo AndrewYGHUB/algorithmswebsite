@@ -1,0 +1,78 @@
+{
+  "slug": "newton-raphson",
+  "name": "Newton Raphson",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "arithmetic_analysis/newton_raphson.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/arithmetic_analysis/newton_raphson.py",
+      "code": "<span class=\"hljs-comment\"># Implementing Newton Raphson method in Python</span>\n<span class=\"hljs-comment\"># Author: Syed Haseeb Shah (github.com/QuantumNovice)</span>\n<span class=\"hljs-comment\"># The Newton-Raphson method (also known as Newton&#x27;s method) is a way to</span>\n<span class=\"hljs-comment\"># quickly find a good approximation for the root of a real-valued function</span>\n<span class=\"hljs-keyword\">from</span> __future__ <span class=\"hljs-keyword\">import</span> annotations\n\n<span class=\"hljs-keyword\">from</span> decimal <span class=\"hljs-keyword\">import</span> Decimal\n<span class=\"hljs-keyword\">from</span> math <span class=\"hljs-keyword\">import</span> *  <span class=\"hljs-comment\"># noqa: F401, F403</span>\n\n<span class=\"hljs-keyword\">from</span> sympy <span class=\"hljs-keyword\">import</span> diff\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">newton_raphson</span>(<span class=\"hljs-params\">\n    func: <span class=\"hljs-built_in\">str</span>, a: <span class=\"hljs-built_in\">float</span> | Decimal, precision: <span class=\"hljs-built_in\">float</span> = <span class=\"hljs-number\">10</span>**-<span class=\"hljs-number\">10</span>\n</span>) -&gt; <span class=\"hljs-built_in\">float</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;Finds root from the point &#x27;a&#x27; onwards by Newton-Raphson method\n    &gt;&gt;&gt; newton_raphson(&quot;sin(x)&quot;, 2)\n    3.1415926536808043\n    &gt;&gt;&gt; newton_raphson(&quot;x**2 - 5*x +2&quot;, 0.4)\n    0.4384471871911695\n    &gt;&gt;&gt; newton_raphson(&quot;x**2 - 5&quot;, 0.1)\n    2.23606797749979\n    &gt;&gt;&gt; newton_raphson(&quot;log(x)- 1&quot;, 2)\n    2.718281828458938\n    &quot;&quot;&quot;</span>\n    x = a\n    <span class=\"hljs-keyword\">while</span> <span class=\"hljs-literal\">True</span>:\n        x = Decimal(x) - (Decimal(<span class=\"hljs-built_in\">eval</span>(func)) / Decimal(<span class=\"hljs-built_in\">eval</span>(<span class=\"hljs-built_in\">str</span>(diff(func)))))\n        <span class=\"hljs-comment\"># This number dictates the accuracy of the answer</span>\n        <span class=\"hljs-keyword\">if</span> <span class=\"hljs-built_in\">abs</span>(<span class=\"hljs-built_in\">eval</span>(func)) &lt; precision:\n            <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">float</span>(x)\n\n\n<span class=\"hljs-comment\"># Let&#x27;s Execute</span>\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-comment\"># Find root of trigonometric function</span>\n    <span class=\"hljs-comment\"># Find value of pi</span>\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;The root of sin(x) = 0 is <span class=\"hljs-subst\">{newton_raphson(<span class=\"hljs-string\">&#x27;sin(x)&#x27;</span>, <span class=\"hljs-number\">2</span>)}</span>&quot;</span>)\n    <span class=\"hljs-comment\"># Find root of polynomial</span>\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;The root of x**2 - 5*x + 2 = 0 is <span class=\"hljs-subst\">{newton_raphson(<span class=\"hljs-string\">&#x27;x**2 - 5*x + 2&#x27;</span>, <span class=\"hljs-number\">0.4</span>)}</span>&quot;</span>)\n    <span class=\"hljs-comment\"># Find Square Root of 5</span>\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;The root of log(x) - 1 = 0 is <span class=\"hljs-subst\">{newton_raphson(<span class=\"hljs-string\">&#x27;log(x) - 1&#x27;</span>, <span class=\"hljs-number\">2</span>)}</span>&quot;</span>)\n    <span class=\"hljs-comment\"># Exponential Roots</span>\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;The root of exp(x) - 1 = 0 is <span class=\"hljs-subst\">{newton_raphson(<span class=\"hljs-string\">&#x27;exp(x) - 1&#x27;</span>, <span class=\"hljs-number\">0</span>)}</span>&quot;</span>)\n"
+    },
+    "rust": {
+      "dir": "src/math/newton_raphson.rs",
+      "url": "https://github.com/TheAlgorithms/rust/tree/master/src/math/newton_raphson.rs",
+      "code": "<span class=\"hljs-keyword\">pub</span> <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">find_root</span>(f: <span class=\"hljs-title function_ invoke__\">fn</span>(<span class=\"hljs-type\">f64</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">f64</span>, fd: <span class=\"hljs-title function_ invoke__\">fn</span>(<span class=\"hljs-type\">f64</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">f64</span>, guess: <span class=\"hljs-type\">f64</span>, iterations: <span class=\"hljs-type\">i32</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">f64</span> {\n    <span class=\"hljs-keyword\">let</span> <span class=\"hljs-keyword\">mut </span><span class=\"hljs-variable\">result</span> = guess;\n    <span class=\"hljs-keyword\">for</span> <span class=\"hljs-variable\">_</span> <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">0</span>..iterations {\n        result = <span class=\"hljs-title function_ invoke__\">iteration</span>(f, fd, result);\n    }\n    result\n}\n\n<span class=\"hljs-keyword\">pub</span> <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">iteration</span>(f: <span class=\"hljs-title function_ invoke__\">fn</span>(<span class=\"hljs-type\">f64</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">f64</span>, fd: <span class=\"hljs-title function_ invoke__\">fn</span>(<span class=\"hljs-type\">f64</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">f64</span>, guess: <span class=\"hljs-type\">f64</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">f64</span> {\n    guess - <span class=\"hljs-title function_ invoke__\">f</span>(guess) / <span class=\"hljs-title function_ invoke__\">fd</span>(guess)\n}\n\n<span class=\"hljs-meta\">#[cfg(test)]</span>\n<span class=\"hljs-keyword\">mod</span> tests {\n    <span class=\"hljs-keyword\">use</span> super::*;\n\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">math_fn</span>(x: <span class=\"hljs-type\">f64</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">f64</span> {\n        <span class=\"hljs-keyword\">return</span> x.<span class=\"hljs-title function_ invoke__\">cos</span>() - (x * x * x);\n    }\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">math_fnd</span>(x: <span class=\"hljs-type\">f64</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">f64</span> {\n        <span class=\"hljs-keyword\">return</span> -x.<span class=\"hljs-title function_ invoke__\">sin</span>() - <span class=\"hljs-number\">3.0</span> * (x * x);\n    }\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">basic</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-title function_ invoke__\">find_root</span>(math_fn, math_fnd, <span class=\"hljs-number\">0.5</span>, <span class=\"hljs-number\">6</span>), <span class=\"hljs-number\">0.8654740331016144</span>);\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "mhorst00",
+      "email": "36167515+mhorst00@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Harshil Darji",
+      "email": "darjiharshil2994@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Rohit Joshi",
+      "email": "34398948+rohitjoshi21@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "guij15",
+      "email": "43374716+guij15@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "P-Shreyas-Shetty",
+      "email": "ps2shreyas@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 7
+    }
+  ],
+  "explanationUrl": {}
+}

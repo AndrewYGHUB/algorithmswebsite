@@ -1,0 +1,29 @@
+{
+  "slug": "find-all-duplicates-in-an-array",
+  "name": "Find All Duplicates in an Array",
+  "categories": [
+    "datastructures",
+    "hashtable"
+  ],
+  "body": {},
+  "implementations": {
+    "ruby": {
+      "dir": "data_structures/arrays/find_all_duplicates_in_an_array.rb",
+      "url": "https://github.com/TheAlgorithms/ruby/tree/master/data_structures/arrays/find_all_duplicates_in_an_array.rb",
+      "code": "<span class=\"hljs-comment\"># Find All Duplicates in an Array</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Given an array of integers, 1 ≤ a[i] ≤ n (n = size of array),</span>\n<span class=\"hljs-comment\"># some elements appear twice and others appear once.</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Find all the elements that appear twice in this array.</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Could you do it without extra space and in O(n) runtime?</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Example:</span>\n<span class=\"hljs-comment\"># Input:</span>\n<span class=\"hljs-comment\"># [4,3,2,7,8,2,3,1]</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Output:</span>\n<span class=\"hljs-comment\"># [2,3]</span>\n\n<span class=\"hljs-keyword\">require</span> <span class=\"hljs-string\">&#x27;benchmark&#x27;</span>\n\narray = [<span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">7</span>, <span class=\"hljs-number\">8</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">1</span>]\nlong_array = [<span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">7</span>, <span class=\"hljs-number\">8</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">1</span>] * <span class=\"hljs-number\">100</span>\n\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Approach 1: Brute force</span>\n<span class=\"hljs-comment\">#</span>\n\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Complexity Analysis</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Time complexity: O(n^2) average case.</span>\n<span class=\"hljs-comment\">#</span>\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">find_duplicates</span>(<span class=\"hljs-params\">array</span>)\n  current_num = array[<span class=\"hljs-number\">0</span>]\n  result_array = []\n\n  array.count.times <span class=\"hljs-keyword\">do</span> |<span class=\"hljs-params\">i</span>|\n    array.count.times <span class=\"hljs-keyword\">do</span> |<span class=\"hljs-params\">j</span>|\n      <span class=\"hljs-keyword\">next</span> <span class=\"hljs-keyword\">if</span> i == j |<span class=\"hljs-params\"></span>| current_num != array[j]\n\n      result_array.push(current_num)\n    <span class=\"hljs-keyword\">end</span>\n\n    current_num = array[i + <span class=\"hljs-number\">1</span>]\n  <span class=\"hljs-keyword\">end</span>\n\n  result_array.uniq\n<span class=\"hljs-keyword\">end</span>\n\nBenchmark.bmbm <span class=\"hljs-keyword\">do</span> |<span class=\"hljs-params\">x</span>|\n  x.report(<span class=\"hljs-string\">&#x27;execute algorithm 1&#x27;</span>) <span class=\"hljs-keyword\">do</span>\n    print(find_duplicates(array))\n    print(find_duplicates(long_array))\n  <span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Approach 2: Sort and Compare Adjacent Elements</span>\n<span class=\"hljs-comment\">#</span>\n\n<span class=\"hljs-comment\"># Intuition</span>\n\n<span class=\"hljs-comment\"># After sorting a list of elements, all elements of equivalent value get placed together.</span>\n<span class=\"hljs-comment\"># Thus, when you sort an array, equivalent elements form contiguous blocks.</span>\n\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Complexity Analysis</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Time complexity: O(n log n)</span>\n<span class=\"hljs-comment\">#</span>\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">find_duplicates</span>(<span class=\"hljs-params\">array</span>)\n  sorted_array = array.sort\n  result_array = []\n\n  (<span class=\"hljs-number\">1</span>..sorted_array.count).each <span class=\"hljs-keyword\">do</span> |<span class=\"hljs-params\">i</span>|\n    <span class=\"hljs-keyword\">next</span> <span class=\"hljs-keyword\">if</span> sorted_array[i] != sorted_array[i - <span class=\"hljs-number\">1</span>]\n\n    result_array.push(sorted_array[i])\n  <span class=\"hljs-keyword\">end</span>\n\n  result_array.uniq\n<span class=\"hljs-keyword\">end</span>\n\nBenchmark.bmbm <span class=\"hljs-keyword\">do</span> |<span class=\"hljs-params\">x</span>|\n  x.report(<span class=\"hljs-string\">&#x27;execute algorithm 2&#x27;</span>) <span class=\"hljs-keyword\">do</span>\n    print(find_duplicates(array))\n    print(find_duplicates(long_array))\n  <span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Jessica Kwok",
+      "email": "jessicatckwok@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

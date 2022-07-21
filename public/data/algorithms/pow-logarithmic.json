@@ -1,0 +1,23 @@
+{
+  "slug": "pow-logarithmic",
+  "name": "Pow Logarithmic",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/PowLogarithmic.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/PowLogarithmic.js",
+      "code": "<span class=\"hljs-keyword\">import</span> { isEven } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&#x27;./IsEven&#x27;</span>\n\n<span class=\"hljs-comment\">/**\n * This algorithm is divide the n by 2 every time and pass this to recursive call to find the result of smaller result.\n * why? Because\n *      x^n =&gt; [if n is even] x^(n / 2) *  x^(n / 2)     (example : 7^4 =&gt; 7^2 * 7^2)\n *             [if n is odd]  x^(n / 2) *  x^(n / 2) * x (example : 7^5 =&gt; 7^2 * 7^2 * 7)\n * and repeat the above step until we reach to the base case.\n *\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">PowLogarithmic</span>\n * <span class=\"hljs-doctag\">@description</span> Given two integers x and n, return x^n in logarithmic complexity.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Integer</span>} <span class=\"hljs-variable\">x</span> - The input integer\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Integer</span>} <span class=\"hljs-variable\">n</span> - The input integer\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">Integer</span>} - Returns x^n.\n * <span class=\"hljs-doctag\">@see</span> [Pow-Logarithmic](https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/)\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">powLogarithmic</span> = (<span class=\"hljs-params\">x, n</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (n === <span class=\"hljs-number\">0</span>) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">const</span> result = <span class=\"hljs-title function_\">powLogarithmic</span>(x, <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">floor</span>(n / <span class=\"hljs-number\">2</span>))\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-title function_\">isEven</span>(n)) {\n    <span class=\"hljs-keyword\">return</span> result * result\n  }\n  <span class=\"hljs-keyword\">return</span> result * result * x\n}\n\n<span class=\"hljs-keyword\">export</span> { powLogarithmic }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

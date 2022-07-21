@@ -1,0 +1,28 @@
+{
+  "slug": "autocomplete-using-trie",
+  "name": "Autocomplete Using Trie",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "matkosoric",
+      "email": "soric.matko@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Archana Prabhu",
+      "email": "prabhuarc27@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

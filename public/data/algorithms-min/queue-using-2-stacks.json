@@ -1,0 +1,24 @@
+{
+  "slug": "queue-using-2-stacks",
+  "name": "Queue Using 2 Stacks",
+  "categories": [
+    "datastructures",
+    "queues"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "hmizz",
+      "email": "60817898+hmizz@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

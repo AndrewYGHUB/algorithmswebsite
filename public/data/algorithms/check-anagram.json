@@ -1,0 +1,53 @@
+{
+  "slug": "check-anagram",
+  "name": "Check Anagram",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/CheckAnagram.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/CheckAnagram.js",
+      "code": "<span class=\"hljs-comment\">// An [Anagram](https://en.wikipedia.org/wiki/Anagram) is a string that is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once. Anagram check is not case-sensitive;</span>\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">checkAnagramRegex</span>\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">str1</span>\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">str2</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">boolean</span>}\n * <span class=\"hljs-doctag\">@description</span> - check anagram with the help of Regex\n * <span class=\"hljs-doctag\">@example</span> - checkAnagramRegex(&#x27;node&#x27;, &#x27;deno&#x27;) =&gt; true\n * <span class=\"hljs-doctag\">@example</span> - checkAnagramRegex(&#x27;Eleven plus two&#x27;, &#x27;Twelve plus one&#x27;) =&gt; true\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">checkAnagramRegex</span> = (<span class=\"hljs-params\">str1, str2</span>) =&gt; {\n  <span class=\"hljs-comment\">// check that inputs are strings.</span>\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> str1 !== <span class=\"hljs-string\">&#x27;string&#x27;</span> || <span class=\"hljs-keyword\">typeof</span> str2 !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Both arguments should be strings.&#x27;</span>)\n  }\n\n  <span class=\"hljs-comment\">// If both strings have not same lengths then they can not be anagram.</span>\n  <span class=\"hljs-keyword\">if</span> (str1.<span class=\"hljs-property\">length</span> !== str2.<span class=\"hljs-property\">length</span>) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n  }\n\n  <span class=\"hljs-comment\">/**\n   * str1 converted to an array and traverse each letter of str1 by reduce method\n   * reduce method return string which is empty or not.\n   * if it returns empty string &#x27;&#x27; -&gt; falsy, with Logical !(NOT) Operator, it&#x27;s will be converted to boolean and return true else false\n   */</span>\n  <span class=\"hljs-keyword\">return</span> ![...str1].<span class=\"hljs-title function_\">reduce</span>(\n    <span class=\"hljs-function\">(<span class=\"hljs-params\">str2Acc, cur</span>) =&gt;</span> str2Acc.<span class=\"hljs-title function_\">replace</span>(<span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">RegExp</span>(cur, <span class=\"hljs-string\">&#x27;i&#x27;</span>), <span class=\"hljs-string\">&#x27;&#x27;</span>), <span class=\"hljs-comment\">// remove the similar letter from str2Acc in case-insensitive</span>\n    str2\n  )\n}\n\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">checkAnagramMap</span>\n * <span class=\"hljs-doctag\">@description</span> - check anagram via using HashMap\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">str1</span>\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">str2</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">boolean</span>}\n * <span class=\"hljs-doctag\">@example</span> - checkAnagramMap(&#x27;node&#x27;, &#x27;deno&#x27;) =&gt; true\n * <span class=\"hljs-doctag\">@example</span> - checkAnagramMap(&#x27;Eleven plus two&#x27;, &#x27;Twelve plus one&#x27;) =&gt; true\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">checkAnagramMap</span> = (<span class=\"hljs-params\">str1, str2</span>) =&gt; {\n  <span class=\"hljs-comment\">// check that inputs are strings.</span>\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> str1 !== <span class=\"hljs-string\">&#x27;string&#x27;</span> || <span class=\"hljs-keyword\">typeof</span> str2 !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Both arguments should be strings.&#x27;</span>)\n  }\n\n  <span class=\"hljs-comment\">// If both strings have not same lengths then they can not be anagram.</span>\n  <span class=\"hljs-keyword\">if</span> (str1.<span class=\"hljs-property\">length</span> !== str2.<span class=\"hljs-property\">length</span>) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n  }\n\n  <span class=\"hljs-keyword\">const</span> str1List = <span class=\"hljs-title class_\">Array</span>.<span class=\"hljs-title function_\">from</span>(str1.<span class=\"hljs-title function_\">toUpperCase</span>()) <span class=\"hljs-comment\">// str1 to array</span>\n\n  <span class=\"hljs-comment\">// get the occurrences of str1 characters by using HashMap</span>\n  <span class=\"hljs-keyword\">const</span> str1Occurs = str1List.<span class=\"hljs-title function_\">reduce</span>(\n    <span class=\"hljs-function\">(<span class=\"hljs-params\">map, char</span>) =&gt;</span> map.<span class=\"hljs-title function_\">set</span>(char, map.<span class=\"hljs-title function_\">get</span>(char) + <span class=\"hljs-number\">1</span> || <span class=\"hljs-number\">1</span>),\n    <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Map</span>()\n  )\n\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">const</span> char <span class=\"hljs-keyword\">of</span> str2.<span class=\"hljs-title function_\">toUpperCase</span>()) {\n    <span class=\"hljs-comment\">// if char has not exist to the map it&#x27;s return false</span>\n    <span class=\"hljs-keyword\">if</span> (!str1Occurs.<span class=\"hljs-title function_\">has</span>(char)) {\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n    }\n\n    <span class=\"hljs-keyword\">let</span> getCharCount = str1Occurs.<span class=\"hljs-title function_\">get</span>(char)\n    str1Occurs.<span class=\"hljs-title function_\">set</span>(char, --getCharCount)\n\n    getCharCount === <span class=\"hljs-number\">0</span> &amp;&amp; str1Occurs.<span class=\"hljs-title function_\">delete</span>(char)\n  }\n\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n}\n\n<span class=\"hljs-keyword\">export</span> { checkAnagramRegex, checkAnagramMap }\n"
+    },
+    "php": {
+      "dir": "String/CheckAnagram.php",
+      "url": "https://github.com/TheAlgorithms/php/tree/master/String/CheckAnagram.php",
+      "code": "<span class=\"hljs-meta\">&lt;?php</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">isAnagram</span>(<span class=\"hljs-params\"><span class=\"hljs-keyword\">string</span> <span class=\"hljs-variable\">$originalString</span>, <span class=\"hljs-keyword\">string</span> <span class=\"hljs-variable\">$testString</span>, <span class=\"hljs-keyword\">bool</span> <span class=\"hljs-variable\">$caseInsensitive</span> = <span class=\"hljs-literal\">true</span></span>)\n</span>{\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-variable\">$caseInsensitive</span>) \n    {\n        <span class=\"hljs-variable\">$originalString</span> = <span class=\"hljs-title function_ invoke__\">strtolower</span>(<span class=\"hljs-variable\">$originalString</span>); <span class=\"hljs-comment\">// Converting string to lowercase for case-insensitive check</span>\n        <span class=\"hljs-variable\">$testString</span> = <span class=\"hljs-title function_ invoke__\">strtolower</span>(<span class=\"hljs-variable\">$testString</span>);\n    }\n\n    <span class=\"hljs-comment\">//count_chars(string, mode = 1) returns key-value pairs with character as key, frequency as value</span>\n    <span class=\"hljs-comment\">//We can directly compare the arrays in this case</span>\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-title function_ invoke__\">count_chars</span>(<span class=\"hljs-variable\">$originalString</span>, <span class=\"hljs-number\">1</span>) == <span class=\"hljs-title function_ invoke__\">count_chars</span>(<span class=\"hljs-variable\">$testString</span>, <span class=\"hljs-number\">1</span>))\n    {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>;\n    }\n    <span class=\"hljs-keyword\">else</span>\n    {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>;\n    }\n}"
+    }
+  },
+  "contributors": [
+    {
+      "name": "PalAditya",
+      "email": "adityapal.nghss@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "balbaal",
+      "email": "iqbal.mi20@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "techie_parth",
+      "email": "parthdesai997@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Charlie Moore",
+      "email": "58339043+charliejmoore@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Alexandre Xavier",
+      "email": "ale.bxsantos@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

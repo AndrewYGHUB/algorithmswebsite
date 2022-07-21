@@ -1,0 +1,18 @@
+{
+  "slug": "directed-graph",
+  "name": "Directed Graph",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "haskell": ""
+  },
+  "contributors": [
+    {
+      "name": "Niccolò Marcon",
+      "email": "marcon.niccolo@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

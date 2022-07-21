@@ -1,0 +1,12 @@
+{
+  "slug": "graph-coloringg",
+  "name": "Graph Coloringg",
+  "categories": [
+    "backtracking"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

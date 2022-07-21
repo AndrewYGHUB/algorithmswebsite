@@ -1,0 +1,18 @@
+{
+  "slug": "optimal-merge-pattern",
+  "name": "Optimal Merge Pattern",
+  "categories": [
+    "greedymethods"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Raj-Pansuriya",
+      "email": "72313592+Raj-Pansuriya@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "square-root-with-babylonian-method",
+  "name": "Square Root With Babylonian Method",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/SquareRootWithBabylonianMethod.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/SquareRootWithBabylonianMethod.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-keyword\">import</span> java.util.Scanner;\n\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">SquareRootWithBabylonianMethod</span> {\n    <span class=\"hljs-comment\">/**\n     * get the value, return the square root\n     *\n     * <span class=\"hljs-doctag\">@param</span> num contains elements\n     * <span class=\"hljs-doctag\">@return</span> the square root of num\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">float</span> <span class=\"hljs-title function_\">square_Root</span><span class=\"hljs-params\">(<span class=\"hljs-type\">float</span> num)</span>\n    {\n        <span class=\"hljs-type\">float</span> <span class=\"hljs-variable\">a</span> <span class=\"hljs-operator\">=</span> num;\n        <span class=\"hljs-type\">float</span> <span class=\"hljs-variable\">b</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>;\n        <span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">e</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0.000001</span>;\n        <span class=\"hljs-keyword\">while</span> (a - b &gt; e) {\n            a = (a + b) / <span class=\"hljs-number\">2</span>;\n            b = num / a;\n        }\n        <span class=\"hljs-keyword\">return</span> a;\n    }\n\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Saumya",
+      "email": "76432998+SaumyaBhushan@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

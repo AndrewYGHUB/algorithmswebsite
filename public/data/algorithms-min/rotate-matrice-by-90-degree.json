@@ -1,0 +1,23 @@
+{
+  "slug": "rotate-matrice-by-90-degree",
+  "name": "Rotate Matrice By 90 Degree",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "PRIYESHRANJAN10",
+      "email": "59314491+PRIYESHRANJAN10@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

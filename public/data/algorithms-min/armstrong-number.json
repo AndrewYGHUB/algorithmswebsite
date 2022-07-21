@@ -1,0 +1,95 @@
+{
+  "slug": "armstrong-number",
+  "name": "Armstrong Number",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": "",
+    "c-plus-plus": "",
+    "c": "",
+    "rust": "",
+    "dart": "",
+    "r": "",
+    "ruby": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Sedat Aybars Nazlica",
+      "email": "saybarsnazlica@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Manimbé",
+      "email": "73669682+manimbe@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Azzaare",
+      "email": "jf@baffier.fr",
+      "commits": 1
+    },
+    {
+      "name": "Ashwani Rathee",
+      "email": "ab669522@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "IlyaIskra",
+      "email": "70522988+IlyaIskra@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Anuran Roy",
+      "email": "76481787+anuran-roy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Harsh Tripathi",
+      "email": "63543719+happy-t@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ephraim Atta-Duncan",
+      "email": "55143799+dephraiim@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Shivam Singhal",
+      "email": "shivamsinghal0610@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Sahil Afrid Farookhi",
+      "email": "msafarookhi@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Abhishek Maletha",
+      "email": "67141747+Abhishek-photon@users.noreply.github.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

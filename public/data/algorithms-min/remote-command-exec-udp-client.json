@@ -1,0 +1,18 @@
+{
+  "slug": "remote-command-exec-udp-client",
+  "name": "Remote Command Exec Udp Client",
+  "categories": [
+    "clientserver"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Nikhill Vombatkere",
+      "email": "63743496+NVombat@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

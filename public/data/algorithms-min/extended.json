@@ -1,0 +1,19 @@
+{
+  "slug": "extended",
+  "name": "Extended",
+  "categories": [
+    "math",
+    "gcd"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

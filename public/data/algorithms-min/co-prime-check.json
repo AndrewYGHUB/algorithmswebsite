@@ -1,0 +1,23 @@
+{
+  "slug": "co-prime-check",
+  "name": "Co Prime Check",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

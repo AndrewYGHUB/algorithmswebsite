@@ -1,0 +1,18 @@
+{
+  "slug": "shortest-common-supersequence",
+  "name": "Shortest Common Supersequence",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "ridhishjain",
+      "email": "ultimate.ridhish@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

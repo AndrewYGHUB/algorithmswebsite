@@ -1,0 +1,33 @@
+{
+  "slug": "convex-hull-graham",
+  "name": "Convex Hull Graham",
+  "categories": [
+    "geometry"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "arnabuchiha",
+      "email": "arnabkeya04@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

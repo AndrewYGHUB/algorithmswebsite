@@ -1,0 +1,24 @@
+{
+  "slug": "circular-queue-linked-list",
+  "name": "Circular Queue Linked List",
+  "categories": [
+    "datastructures",
+    "queues"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Dylan Buchi",
+      "email": "devybuchi@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Víctor A. Rodríguez",
+      "email": "victor@bit-man.guru",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "perfect-square-checker",
+  "name": "Perfect Square Checker",
+  "categories": [
+    "numeric"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

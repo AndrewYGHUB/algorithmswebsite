@@ -1,0 +1,19 @@
+{
+  "slug": "extendedgcd",
+  "name": "Extendedgcd",
+  "categories": [
+    "math",
+    "gcd"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ryusei Nagai",
+      "email": "ryuuryuu908@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "nysiis",
+  "name": "NYSIIS",
+  "categories": [
+    "encoders"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

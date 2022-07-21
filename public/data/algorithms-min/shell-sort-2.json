@@ -1,0 +1,24 @@
+{
+  "slug": "shell-sort-2",
+  "name": "Shell Sort 2",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Krishna Vedala",
+      "email": "krishna.vedala@ieee.org",
+      "commits": 3
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

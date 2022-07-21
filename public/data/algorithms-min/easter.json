@@ -1,0 +1,18 @@
+{
+  "slug": "easter",
+  "name": "Easter",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "AlternateWalls",
+      "email": "71268229+AlternateWalls@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

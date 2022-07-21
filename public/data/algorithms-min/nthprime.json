@@ -1,0 +1,18 @@
+{
+  "slug": "nthprime",
+  "name": "Nthprime",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Saksham Madan",
+      "email": "43085346+Hawk453@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

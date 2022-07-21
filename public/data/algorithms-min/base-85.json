@@ -1,0 +1,33 @@
+{
+  "slug": "base-85",
+  "name": "Base 85",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "gerroo",
+      "email": "gerensuner@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

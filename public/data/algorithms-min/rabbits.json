@@ -1,0 +1,18 @@
+{
+  "slug": "rabbits",
+  "name": "Rabbits",
+  "categories": [
+    "projectrosalind"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Nikola Mircic",
+      "email": "nikola123mircic@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

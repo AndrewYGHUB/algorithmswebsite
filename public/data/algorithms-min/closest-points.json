@@ -1,0 +1,18 @@
+{
+  "slug": "closest-points",
+  "name": "Closest Points",
+  "categories": [
+    "geometry"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Pierre Gimalac",
+      "email": "pierre.gimalac@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

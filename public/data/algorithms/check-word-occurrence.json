@@ -1,0 +1,28 @@
+{
+  "slug": "check-word-occurrence",
+  "name": "Check Word Occurrence",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/CheckWordOccurrence.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/CheckWordOccurrence.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">checkWordOccurrence</span>\n * <span class=\"hljs-doctag\">@description</span> - this function count all the words in a sentence and return an word occurrence object\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">str</span>\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">boolean</span>} <span class=\"hljs-variable\">isCaseSensitive</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">Object</span>}\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">checkWordOccurrence</span> = (<span class=\"hljs-params\">str, isCaseSensitive = <span class=\"hljs-literal\">false</span></span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> str !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;The first param should be a string&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> isCaseSensitive !== <span class=\"hljs-string\">&#x27;boolean&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;The second param should be a boolean&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">const</span> modifiedStr = isCaseSensitive ? str.<span class=\"hljs-title function_\">toLowerCase</span>() : str\n\n  <span class=\"hljs-keyword\">return</span> modifiedStr\n    .<span class=\"hljs-title function_\">split</span>(<span class=\"hljs-regexp\">/\\s+/</span>) <span class=\"hljs-comment\">// remove all spaces and distribute all word in List</span>\n    .<span class=\"hljs-title function_\">reduce</span>(\n      <span class=\"hljs-function\">(<span class=\"hljs-params\">occurrence, word</span>) =&gt;</span> {\n        occurrence[word] = occurrence[word] + <span class=\"hljs-number\">1</span> || <span class=\"hljs-number\">1</span>\n        <span class=\"hljs-keyword\">return</span> occurrence\n      },\n      {}\n    )\n}\n\n<span class=\"hljs-keyword\">export</span> { checkWordOccurrence }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Carlos Carvalho",
+      "email": "jcarloss.carvalho@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

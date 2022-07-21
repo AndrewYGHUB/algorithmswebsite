@@ -1,0 +1,23 @@
+{
+  "slug": "extended-euclidean-gcd",
+  "name": "Extended Euclidean GCD",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "VinWare",
+      "email": "28603906+VinWare@users.noreply.github.com",
+      "commits": 6
+    }
+  ],
+  "explanationUrl": {}
+}

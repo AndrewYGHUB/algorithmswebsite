@@ -1,0 +1,29 @@
+{
+  "slug": "maximum-subarray",
+  "name": "Maximum Subarray",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "rust": "",
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "imp",
+      "email": "imp07@qq.com",
+      "commits": 1
+    },
+    {
+      "name": "sidaksohi",
+      "email": "31377210+sidaksohi@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

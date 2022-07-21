@@ -1,0 +1,33 @@
+{
+  "slug": "check-kebab-case",
+  "name": "Check Kebab Case",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/CheckKebabCase.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/CheckKebabCase.js",
+      "code": "<span class=\"hljs-comment\">// CheckKebabCase method checks the given string is in kebab-case or not.</span>\n\n<span class=\"hljs-comment\">// Problem Source &amp; Explanation: https://en.wikipedia.org/wiki/Naming_convention_(programming)</span>\n\n<span class=\"hljs-comment\">/**\n * CheckKebabCase method returns true if the string in kebab-case, else return the false.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">String</span>} varName the name of the variable to check.\n * <span class=\"hljs-doctag\">@returns</span> `Boolean` return true if the string is in kebab-case, else return false.\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">CheckKebabCase</span> = (<span class=\"hljs-params\">varName</span>) =&gt; {\n  <span class=\"hljs-comment\">// firstly, check that input is a string or not.</span>\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> varName !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Argument is not a string.&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">const</span> pat = <span class=\"hljs-regexp\">/(\\w+)-(\\w)([\\w-]*)/</span>\n  <span class=\"hljs-keyword\">return</span> pat.<span class=\"hljs-title function_\">test</span>(varName) &amp;&amp; !varName.<span class=\"hljs-title function_\">includes</span>(<span class=\"hljs-string\">&#x27;_&#x27;</span>)\n}\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">CheckKebabCase</span> }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

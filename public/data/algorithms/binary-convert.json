@@ -1,0 +1,28 @@
+{
+  "slug": "binary-convert",
+  "name": "Binary Convert",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/BinaryConvert.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/BinaryConvert.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">BinaryConvert</span>\n * <span class=\"hljs-doctag\">@description</span> Convert the decimal to binary.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Integer</span>} <span class=\"hljs-variable\">num</span> - The input integer\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">Integer</span>} - Binary of num.\n * <span class=\"hljs-doctag\">@see</span> [BinaryConvert](https://www.programiz.com/javascript/examples/decimal-binary)\n * <span class=\"hljs-doctag\">@example</span> BinaryConvert(12) = 1100\n * <span class=\"hljs-doctag\">@example</span> BinaryConvert(12 + 2) = 1110\n */</span>\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">BinaryConvert</span> = (<span class=\"hljs-params\">num</span>) =&gt; {\n  <span class=\"hljs-keyword\">let</span> power = <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">let</span> binary = <span class=\"hljs-number\">0</span>\n\n  <span class=\"hljs-keyword\">while</span> (num) {\n    <span class=\"hljs-keyword\">const</span> rem = num % <span class=\"hljs-number\">2</span>\n    num = <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">floor</span>(num / <span class=\"hljs-number\">2</span>)\n    binary = rem * power + binary\n    power *= <span class=\"hljs-number\">10</span>\n  }\n\n  <span class=\"hljs-keyword\">return</span> binary\n}\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">BinaryConvert</span> }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Arwy Syahputra Siregar",
+      "email": "55026697+arwysyah@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

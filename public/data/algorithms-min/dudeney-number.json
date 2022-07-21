@@ -1,0 +1,18 @@
+{
+  "slug": "dudeney-number",
+  "name": "Dudeney Number",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "uttarabahad",
+      "email": "34717612+uttarabahad@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

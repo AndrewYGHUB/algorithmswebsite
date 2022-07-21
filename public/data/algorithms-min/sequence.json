@@ -1,0 +1,24 @@
+{
+  "slug": "sequence",
+  "name": "Sequence",
+  "categories": [
+    "math",
+    "moserdebruijnsequence"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Iván Valdés",
+      "email": "iv@nvald.es",
+      "commits": 1
+    },
+    {
+      "name": "Sumita Canopas",
+      "email": "69897605+cp-sumi-k@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

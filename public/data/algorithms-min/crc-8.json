@@ -1,0 +1,18 @@
+{
+  "slug": "crc-8",
+  "name": "Crc 8",
+  "categories": [
+    "checksum"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

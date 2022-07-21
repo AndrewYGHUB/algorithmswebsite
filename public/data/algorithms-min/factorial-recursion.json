@@ -1,0 +1,29 @@
+{
+  "slug": "factorial-recursion",
+  "name": "Factorial Recursion",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": "",
+    "dart": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

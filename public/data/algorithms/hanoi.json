@@ -1,0 +1,63 @@
+{
+  "slug": "hanoi",
+  "name": "Hanoi",
+  "categories": [
+    "general"
+  ],
+  "body": {},
+  "implementations": {
+    "rust": {
+      "dir": "src/general/hanoi.rs",
+      "url": "https://github.com/TheAlgorithms/rust/tree/master/src/general/hanoi.rs",
+      "code": "<span class=\"hljs-keyword\">pub</span> <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">hanoi</span>(n: <span class=\"hljs-type\">i32</span>, from: <span class=\"hljs-type\">i32</span>, to: <span class=\"hljs-type\">i32</span>, via: <span class=\"hljs-type\">i32</span>, moves: &amp;<span class=\"hljs-keyword\">mut</span> <span class=\"hljs-type\">Vec</span>&lt;(<span class=\"hljs-type\">i32</span>, <span class=\"hljs-type\">i32</span>)&gt;) {\n    <span class=\"hljs-keyword\">if</span> n &gt; <span class=\"hljs-number\">0</span> {\n        <span class=\"hljs-title function_ invoke__\">hanoi</span>(n - <span class=\"hljs-number\">1</span>, from, via, to, moves);\n        moves.<span class=\"hljs-title function_ invoke__\">push</span>((from, to));\n        <span class=\"hljs-title function_ invoke__\">hanoi</span>(n - <span class=\"hljs-number\">1</span>, via, to, from, moves);\n    }\n}\n\n<span class=\"hljs-meta\">#[cfg(test)]</span>\n<span class=\"hljs-keyword\">mod</span> tests {\n    <span class=\"hljs-keyword\">use</span> super::*;\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">hanoi_simple</span>() {\n        <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">correct_solution</span>: <span class=\"hljs-type\">Vec</span>&lt;(<span class=\"hljs-type\">i32</span>, <span class=\"hljs-type\">i32</span>)&gt; =\n            <span class=\"hljs-built_in\">vec!</span>[(<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">3</span>), (<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">2</span>), (<span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">2</span>), (<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">3</span>), (<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">1</span>), (<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">3</span>), (<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">3</span>)];\n        <span class=\"hljs-keyword\">let</span> <span class=\"hljs-keyword\">mut </span><span class=\"hljs-variable\">our_solution</span>: <span class=\"hljs-type\">Vec</span>&lt;(<span class=\"hljs-type\">i32</span>, <span class=\"hljs-type\">i32</span>)&gt; = Vec::<span class=\"hljs-title function_ invoke__\">new</span>();\n        <span class=\"hljs-title function_ invoke__\">hanoi</span>(<span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">2</span>, &amp;<span class=\"hljs-keyword\">mut</span> our_solution);\n        <span class=\"hljs-built_in\">assert_eq!</span>(correct_solution, our_solution);\n    }\n}\n"
+    },
+    "julia": {
+      "dir": "src/basic/hanoi.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/basic/hanoi.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    The Tower of Hanoi\n\n# Brief:\n    The Tower of Hanoi is a mathematical game or puzzle consisting of three rods and a number\n    of disks of various diameters, which can slide onto any rod. \n    The puzzle begins with the disks stacked on one rod in order of decreasing size,\n    the smallest at the top, thus approximating a conical shape. \n    The objective of the puzzle is to move the entire stack to the last rod, \n    obeying the following rules:\n        1. Only one disk may be moved at a time.\n        2. Each move consists of taking the upper disk from one of the stacks and placing it on \n           top of another stack or on an empty rod.\n        3. No disk may be placed on top of a disk that is smaller than it.\n\n# Complexity: O(2^n)\n\n# Functions\n    - solveUtil(tower1, tower2, tower3, n::Int, solution::Array{Pair}) - The recursive function which finds the solution and saves it to \n                                                                         the array of pairs where each pair represents one move\n    - solve(tower1, tower2, tower3,n::Int) - The main function for finding the set of steps to move n rings from tower 1 to tower 3, using tower 2\n    - printSolution(solution::Array{Pair}) - Prints the solution given as an array of pairs by printing each pair ( step ) in a different line\n\n# Reference:- [Wikipedia](https://en.wikipedia.org/wiki/Tower_of_Hanoi)\n\n# Contributed by:- [Nikola Mircic](https://github.com/Nikola-Mircic)\n&quot;&quot;&quot;</span>\n\n<span class=\"hljs-keyword\">module</span> Hanoi\n<span class=\"hljs-keyword\">function</span> solveUtil(tower1, tower2, tower3, n::<span class=\"hljs-built_in\">Int</span>, solution::<span class=\"hljs-built_in\">Array</span>{<span class=\"hljs-built_in\">Pair</span>})\n    <span class=\"hljs-keyword\">if</span> n == <span class=\"hljs-number\">1</span>\n        push!(solution, tower1 =&gt; tower3) <span class=\"hljs-comment\"># There is only one ring, so just move it from tower1 to tower3</span>\n    <span class=\"hljs-keyword\">else</span>\n        solveUtil(tower1, tower3, tower2, n - <span class=\"hljs-number\">1</span>, solution) <span class=\"hljs-comment\"># Move n-1 rings from tower1 to tower2 to free the bottom ring</span>\n        push!(solution, tower1 =&gt; tower3) <span class=\"hljs-comment\"># Move the bottom ring from tower1 to tower3</span>\n        solveUtil(tower2, tower1, tower3, n - <span class=\"hljs-number\">1</span>, solution) <span class=\"hljs-comment\"># Now move those n-1 rings from tower2 to tower3</span>\n    <span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-keyword\">function</span> solve(tower1, tower2, tower3, n::<span class=\"hljs-built_in\">Int</span>)\n    solution = <span class=\"hljs-built_in\">Array</span>{<span class=\"hljs-built_in\">Pair</span>}(<span class=\"hljs-literal\">undef</span>, <span class=\"hljs-number\">0</span>)\n    solveUtil(tower1, tower2, tower3, n, solution)\n    <span class=\"hljs-keyword\">return</span> solution\n<span class=\"hljs-keyword\">end</span>\n\n<span class=\"hljs-keyword\">function</span> printSolution(solution::<span class=\"hljs-built_in\">Array</span>{<span class=\"hljs-built_in\">Pair</span>})\n    <span class=\"hljs-keyword\">for</span> step <span class=\"hljs-keyword\">in</span> solution\n        println(step)\n    <span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Arnav Borborah",
+      "email": "arnavborborah11@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "lukabavdaz",
+      "email": "lukabavdaz@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Nikola Mircic",
+      "email": "nikola123mircic@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "socvirnyl.estela@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "vasutomar",
+      "email": "vasutomar26@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "WILFRIED NJANGUI",
+      "email": "wilfried.njangui@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

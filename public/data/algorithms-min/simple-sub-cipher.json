@@ -1,0 +1,18 @@
+{
+  "slug": "simple-sub-cipher",
+  "name": "Simple Sub Cipher",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "patrick-steve",
+      "email": "75305373+patrick-steve@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

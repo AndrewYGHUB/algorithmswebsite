@@ -1,0 +1,19 @@
+{
+  "slug": "nearest-right-key",
+  "name": "Nearest Right Key",
+  "categories": [
+    "datastructures",
+    "tree"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "jhonDoe15",
+      "email": "62393042+jhonDoe15@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

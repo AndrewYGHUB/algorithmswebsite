@@ -1,0 +1,41 @@
+{
+  "slug": "skip-list",
+  "name": "Skip List",
+  "categories": [
+    "datastructures",
+    "linkedlist"
+  ],
+  "implementations": {
+    "python": "",
+    "c-plus-plus": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Parth Satodiya",
+      "email": "parth.satodiya@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Artem Boiarshinov",
+      "email": "54187376+Boiarshinov@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 5
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 7
+    },
+    {
+      "name": "enqidu",
+      "email": "dachikurcxalia@gmail.com",
+      "commits": 33
+    }
+  ],
+  "explanationUrl": {}
+}

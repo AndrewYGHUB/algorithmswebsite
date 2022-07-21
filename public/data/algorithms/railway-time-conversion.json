@@ -1,0 +1,43 @@
+{
+  "slug": "railway-time-conversion",
+  "name": "Railway Time Conversion",
+  "categories": [
+    "conversions"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Conversions/RailwayTimeConversion.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Conversions/RailwayTimeConversion.js",
+      "code": "<span class=\"hljs-comment\">/*\n    The time conversion of normalized time to the railway is a simple algorithm\n    because we know that if the time is in &#x27;AM&#x27; value it means they only want\n    some changes on hours and minutes and if the time in &#x27;PM&#x27; it means the only\n    want some changes in hour value.\n\n    Input Format -&gt; 07:05:45PM\n    Output Format -&gt; 19:05:45\n\n    Problem &amp; Explanation Source : https://www.mathsisfun.com/time.html\n*/</span>\n\n<span class=\"hljs-comment\">/**\n * RailwayTimeConversion method converts normalized time string to Railway time string.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">String</span>} timeString Normalized time string.\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">String</span>} Railway time string.\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">RailwayTimeConversion</span> = (<span class=\"hljs-params\">timeString</span>) =&gt; {\n  <span class=\"hljs-comment\">// firstly, check that input is a string or not.</span>\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> timeString !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Argument is not a string.&#x27;</span>)\n  }\n  <span class=\"hljs-comment\">// split the string by &#x27;:&#x27; character.</span>\n  <span class=\"hljs-keyword\">const</span> [hour, minute, scondWithShift] = timeString.<span class=\"hljs-title function_\">split</span>(<span class=\"hljs-string\">&#x27;:&#x27;</span>)\n  <span class=\"hljs-comment\">// split second and shift value.</span>\n  <span class=\"hljs-keyword\">const</span> [second, shift] = [scondWithShift.<span class=\"hljs-title function_\">substr</span>(<span class=\"hljs-number\">0</span>, <span class=\"hljs-number\">2</span>), scondWithShift.<span class=\"hljs-title function_\">substr</span>(<span class=\"hljs-number\">2</span>)]\n  <span class=\"hljs-comment\">// convert shifted time to not-shift time(Railway time) by using the above explanation.</span>\n  <span class=\"hljs-keyword\">if</span> (shift === <span class=\"hljs-string\">&#x27;PM&#x27;</span>) {\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-built_in\">parseInt</span>(hour) === <span class=\"hljs-number\">12</span>) { <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">`<span class=\"hljs-subst\">${hour}</span>:<span class=\"hljs-subst\">${minute}</span>:<span class=\"hljs-subst\">${second}</span>`</span> } <span class=\"hljs-keyword\">else</span> { <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">`<span class=\"hljs-subst\">${<span class=\"hljs-built_in\">parseInt</span>(hour) + <span class=\"hljs-number\">12</span>}</span>:<span class=\"hljs-subst\">${minute}</span>:<span class=\"hljs-subst\">${second}</span>`</span> }\n  } <span class=\"hljs-keyword\">else</span> {\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-built_in\">parseInt</span>(hour) === <span class=\"hljs-number\">12</span>) { <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">`00:<span class=\"hljs-subst\">${minute}</span>:<span class=\"hljs-subst\">${second}</span>`</span> } <span class=\"hljs-keyword\">else</span> { <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">`<span class=\"hljs-subst\">${hour}</span>:<span class=\"hljs-subst\">${minute}</span>:<span class=\"hljs-subst\">${second}</span>`</span> }\n  }\n}\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">RailwayTimeConversion</span> }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

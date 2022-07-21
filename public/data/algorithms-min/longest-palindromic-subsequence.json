@@ -1,0 +1,61 @@
+{
+  "slug": "longest-palindromic-subsequence",
+  "name": "Longest Palindromic Subsequence",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Himanshu Shekhar",
+      "email": "himanshushekharb16@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Omkarnath Parida",
+      "email": "pomkarnath98@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Omkarnath Parida",
+      "email": "omkarnath.parida@yocket.in",
+      "commits": 2
+    },
+    {
+      "name": "Suhail Malik",
+      "email": "devmsuhail@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "anjali1903",
+      "email": "anjali.jha1903@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "mmessmer",
+      "email": "mmessmer@unibz.it",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

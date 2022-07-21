@@ -1,0 +1,23 @@
+{
+  "slug": "roman-numeral-util",
+  "name": "Roman Numeral Util",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sokratis Fotkatzikis",
+      "email": "sokratis12GR@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "shared",
+  "name": "Shared",
+  "categories": [
+    "strings",
+    "ahocorasick"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "structure/linkedlist/shared.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/structure/linkedlist/shared.go",
+      "code": "<span class=\"hljs-keyword\">package</span> linkedlist\n\n<span class=\"hljs-comment\">// Node Structure representing the linkedlist node.</span>\n<span class=\"hljs-comment\">// This node is shared across different implementations.</span>\n<span class=\"hljs-keyword\">type</span> Node <span class=\"hljs-keyword\">struct</span> {\n\tVal  any\n\tPrev *Node\n\tNext *Node\n}\n\n<span class=\"hljs-comment\">// Create new node.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">NewNode</span><span class=\"hljs-params\">(val any)</span></span> *Node {\n\t<span class=\"hljs-keyword\">return</span> &amp;Node{val, <span class=\"hljs-literal\">nil</span>, <span class=\"hljs-literal\">nil</span>}\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ritik Bhandari",
+      "email": "ritikbhandari68@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

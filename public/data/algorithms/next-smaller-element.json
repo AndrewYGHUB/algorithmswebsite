@@ -1,0 +1,29 @@
+{
+  "slug": "next-smaller-element",
+  "name": "Next Smaller Element",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/datastructures/stacks/NextSmallerElement.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/datastructures/stacks/NextSmallerElement.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.datastructures.stacks;\n<span class=\"hljs-keyword\">import</span> java.util.Arrays;\n<span class=\"hljs-keyword\">import</span> java.util.Stack;\n\n\n<span class=\"hljs-comment\">/*\n    Given an array &quot;input&quot; you need to print the first smaller element for each element to the left side of an array.\n    For a given element x of an array, the Next Smaller element of that element is the \n    first smaller element to the left side of it. If no such element is present print -1.\n    \n    Example\n    input = { 2, 7, 3, 5, 4, 6, 8 };\n    At i = 0\n    No elements to left of it : -1\n    At i = 1\n    Next smaller element between (0 , 0) is 2\n    At i = 2\n    Next smaller element between (0 , 1) is 2\n    At i = 3\n    Next smaller element between (0 , 2) is 3\n    At i = 4\n    Next smaller element between (0 , 3) is 3\n    At i = 5\n    Next smaller element between (0 , 4) is 4\n    At i = 6\n    Next smaller element between (0 , 5) is 6\n    \n    result : [-1, 2, 2, 3, 3, 4, 6]\n    \n    1) Create a new empty stack st\n    \n    2) Iterate over array &quot;input&quot; , where &quot;i&quot;  goes from 0 to input.length -1.\n        a) We are looking for value just smaller than `input[i]`. So keep popping from &quot;stack&quot; \n           till elements in &quot;stack.peek() &gt;= input[i]&quot; or stack becomes empty.\n        b) If the stack is non-empty, then the top element is our previous element. Else the previous element does not exist. \n        c) push input[i] in stack.\n    3) If elements are left then their answer is -1\n */</span>\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">NextSmallerElement</span> {\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">int</span>[] findNextSmallerElements(<span class=\"hljs-type\">int</span>[] array)\n    {\n        <span class=\"hljs-comment\">// base case</span>\n        <span class=\"hljs-keyword\">if</span> (array == <span class=\"hljs-literal\">null</span>) {\n            <span class=\"hljs-keyword\">return</span> array;\n        }\n        Stack&lt;Integer&gt; stack = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Stack</span>&lt;&gt;();\n        <span class=\"hljs-type\">int</span>[] result = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[array.length];\n        Arrays.fill(result, -<span class=\"hljs-number\">1</span>);\n\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; array.length; i++) {\n            <span class=\"hljs-keyword\">while</span> (!stack.empty() &amp;&amp; stack.peek() &gt;= array[i]) stack.pop();\n            <span class=\"hljs-keyword\">if</span> (stack.empty()) {\n                result[i] = -<span class=\"hljs-number\">1</span>;\n            } <span class=\"hljs-keyword\">else</span> {\n                result[i] = stack.peek();\n            }\n            stack.push(array[i]);\n        }\n        <span class=\"hljs-keyword\">return</span> result;\n    }\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span>\n    {\n        <span class=\"hljs-type\">int</span>[] input = { <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">7</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">5</span>, <span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">6</span>, <span class=\"hljs-number\">8</span> };\n        <span class=\"hljs-type\">int</span>[] result = findNextSmallerElements(input);\n        System.out.println(Arrays.toString(result));\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Mohit Kumar",
+      "email": "74761614+itsmohitmkk@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ZiQiang Cao",
+      "email": "56420944+NullPointerC@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

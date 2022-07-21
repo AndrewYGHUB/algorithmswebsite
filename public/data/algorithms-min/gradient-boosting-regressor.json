@@ -1,0 +1,28 @@
+{
+  "slug": "gradient-boosting-regressor",
+  "name": "Gradient Boosting Regressor",
+  "categories": [
+    "machinelearning"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Vardhaman",
+      "email": "83634399+cyai@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Abdoulaye Balde",
+      "email": "51192943+abdoulayegk@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

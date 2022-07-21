@@ -1,0 +1,18 @@
+{
+  "slug": "is-contains-unique-chars",
+  "name": "Is Contains Unique Chars",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Navpreet Singh Devpuri",
+      "email": "navpreetdevpuri@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

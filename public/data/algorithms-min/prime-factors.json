@@ -1,0 +1,82 @@
+{
+  "slug": "prime-factors",
+  "name": "Prime Factors",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "rust": "",
+    "scala": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "pwygab",
+      "email": "88221256+merelymyself@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "QuantumNovice",
+      "email": "43876848+QuantumNovice@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Alfredo Torre",
+      "email": "alfredotorre@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "khanhhuynguyenvu",
+      "email": "khanhhuynguyenvu@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "aditiagarwal34550",
+      "email": "aditiagarwal34550@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rratic",
+      "email": "Rratic@163.com",
+      "commits": 1
+    },
+    {
+      "name": "Ashwani Rathee",
+      "email": "ab669522@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "utkarsh",
+      "email": "ucponia@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Allen Guan",
+      "email": "me@nella17.tw",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "Aditi Agarwal",
+      "email": "31546143+aditiagarwal34550@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Roland Hummel",
+      "email": "roland.hummel@qaware.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

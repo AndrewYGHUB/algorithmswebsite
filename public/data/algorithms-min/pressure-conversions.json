@@ -1,0 +1,18 @@
+{
+  "slug": "pressure-conversions",
+  "name": "Pressure Conversions",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Sabari Ganesh",
+      "email": "64348740+SabariGanesh-K@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

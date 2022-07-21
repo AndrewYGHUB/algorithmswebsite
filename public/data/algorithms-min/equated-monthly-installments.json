@@ -1,0 +1,18 @@
+{
+  "slug": "equated-monthly-installments",
+  "name": "Equated Monthly Installments",
+  "categories": [
+    "financial"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

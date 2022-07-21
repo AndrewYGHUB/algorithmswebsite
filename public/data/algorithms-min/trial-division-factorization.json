@@ -1,0 +1,13 @@
+{
+  "slug": "trial-division-factorization",
+  "name": "Trial division Factorization",
+  "categories": [
+    "numeric",
+    "factorization"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

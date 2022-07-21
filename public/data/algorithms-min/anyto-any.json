@@ -1,0 +1,38 @@
+{
+  "slug": "anyto-any",
+  "name": "Anyto Any",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Hassan",
+      "email": "hassan.elseoudy@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "khalil2535",
+      "email": "khalil2535@localhost",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    },
+    {
+      "name": "Shikhar Tyagi",
+      "email": "shikhart98@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

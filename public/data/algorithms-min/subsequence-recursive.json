@@ -1,0 +1,28 @@
+{
+  "slug": "subsequence-recursive",
+  "name": "Subsequence Recursive",
+  "categories": [
+    "recursive"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Chiranjeev",
+      "email": "6258860@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Chiranjeev",
+      "email": "49074304+chiranjeev-thapliyal@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

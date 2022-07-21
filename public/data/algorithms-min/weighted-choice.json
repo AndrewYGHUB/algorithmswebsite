@@ -1,0 +1,18 @@
+{
+  "slug": "weighted-choice",
+  "name": "Weighted Choice",
+  "categories": [
+    "random"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

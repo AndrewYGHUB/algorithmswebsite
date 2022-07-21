@@ -1,0 +1,23 @@
+{
+  "slug": "merge-sort-recursive",
+  "name": "Merge Sort Recursive",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Asindu Vidanagamachchi",
+      "email": "ashvg.dev@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

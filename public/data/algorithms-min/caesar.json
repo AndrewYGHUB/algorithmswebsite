@@ -1,0 +1,98 @@
+{
+  "slug": "caesar",
+  "name": "Caesar",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "java": "",
+    "go": "",
+    "rust": "",
+    "ruby": "",
+    "julia": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Arnav Borborah",
+      "email": "arnavborborah11@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ivan Tham",
+      "email": "pickfire@riseup.net",
+      "commits": 1
+    },
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "socvirnyl.estela@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Kaíque Kandy Koga",
+      "email": "kaiquekandykoga@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "TheDoctor",
+      "email": "doctorshacking@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Patricio Whittingslow",
+      "email": "graded.sp@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Subhro Acharjee",
+      "email": "88422396+subhroblkbox@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Maria Lungeanu",
+      "email": "Maria.Lungeanu@anritsu.com",
+      "commits": 1
+    },
+    {
+      "name": "Hassan",
+      "email": "hassan.elseoudy@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Fahri YARDIMCI",
+      "email": "ffahri@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    },
+    {
+      "name": "Marcos",
+      "email": "33052423+markettes@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "khalil2535",
+      "email": "khalil2535@localhost",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

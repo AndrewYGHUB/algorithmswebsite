@@ -1,0 +1,18 @@
+{
+  "slug": "djb-2",
+  "name": "Djb 2",
+  "categories": [
+    "hashing"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "bnMikheili",
+      "email": "39998190+bnMikheili@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "queuearray",
+  "name": "Queuearray",
+  "categories": [
+    "structure",
+    "queues"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "structure/queue/queuearray.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/structure/queue/queuearray.go",
+      "code": "<span class=\"hljs-comment\">// Queue Array</span>\n<span class=\"hljs-comment\">// description: based on `geeksforgeeks` description A Queue is a linear structure which follows a particular order in which the operations are performed.</span>\n<span class=\"hljs-comment\">// \tThe order is First In First Out (FIFO).</span>\n<span class=\"hljs-comment\">// details:</span>\n<span class=\"hljs-comment\">// \tQueue Data Structure : https://www.geeksforgeeks.org/queue-data-structure/</span>\n<span class=\"hljs-comment\">//  Queue (abstract data type) : https://en.wikipedia.org/wiki/Queue_(abstract_data_type)</span>\n<span class=\"hljs-comment\">// author [Milad](https://github.com/miraddo)</span>\n<span class=\"hljs-comment\">// see queuelinkedlist.go, queuelinkedlistwithlist.go, queue_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> queue\n\n<span class=\"hljs-keyword\">var</span> ListQueue []any\n\n<span class=\"hljs-comment\">// EnQueue it will be added new value into our list</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">EnQueue</span><span class=\"hljs-params\">(n any)</span></span> {\n\tListQueue = <span class=\"hljs-built_in\">append</span>(ListQueue, n)\n}\n\n<span class=\"hljs-comment\">// DeQueue it will be removed the first value that added into the list</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">DeQueue</span><span class=\"hljs-params\">()</span></span> any {\n\tdata := ListQueue[<span class=\"hljs-number\">0</span>]\n\tListQueue = ListQueue[<span class=\"hljs-number\">1</span>:]\n\t<span class=\"hljs-keyword\">return</span> data\n}\n\n<span class=\"hljs-comment\">// FrontQueue return the Front value</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">FrontQueue</span><span class=\"hljs-params\">()</span></span> any {\n\t<span class=\"hljs-keyword\">return</span> ListQueue[<span class=\"hljs-number\">0</span>]\n}\n\n<span class=\"hljs-comment\">// BackQueue return the Back value</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">BackQueue</span><span class=\"hljs-params\">()</span></span> any {\n\t<span class=\"hljs-keyword\">return</span> ListQueue[<span class=\"hljs-built_in\">len</span>(ListQueue)<span class=\"hljs-number\">-1</span>]\n}\n\n<span class=\"hljs-comment\">// LenQueue will return the length of the queue list</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">LenQueue</span><span class=\"hljs-params\">()</span></span> <span class=\"hljs-type\">int</span> {\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">len</span>(ListQueue)\n}\n\n<span class=\"hljs-comment\">// IsEmptyQueue check our list is empty or not</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">IsEmptyQueue</span><span class=\"hljs-params\">()</span></span> <span class=\"hljs-type\">bool</span> {\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">len</span>(ListQueue) == <span class=\"hljs-number\">0</span>\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ritik Bhandari",
+      "email": "ritikbhandari68@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Milad",
+      "email": "14594374+Miraddo@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

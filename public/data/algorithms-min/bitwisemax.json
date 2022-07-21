@@ -1,0 +1,19 @@
+{
+  "slug": "bitwisemax",
+  "name": "Bitwisemax",
+  "categories": [
+    "math",
+    "max"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

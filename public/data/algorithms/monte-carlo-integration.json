@@ -1,0 +1,38 @@
+{
+  "slug": "monte-carlo-integration",
+  "name": "Monte Carlo Integration",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "julia": {
+      "dir": "src/math/monte_carlo_integration.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/math/monte_carlo_integration.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    monte_carlo_integration(f::Function, a::Real, b::Real, n::Int)\n\nMonte carlo integration is a very easy and scalable way to do multidimentional integrals.\nHowever, only single variable integrals are considered.\n\n# Arguments\n- `f`: the function to integrate. (at the momment only single variable is suported)\n- `a`: start in the integration limits.\n- `b`: endin the integration limits.\n- `N`: Number of points to sample. For most simple functions, 1000 to 10,000 should be okay.\n\n# Examples\n```julia\njulia&gt; monte_carlo_integration(x -&gt; 3*x^2, 0, 1, 100000) # integrate a polynomial\n1.0000037602209\n\njulia&gt; monte_carlo_integration(x -&gt; sin(x), 0, pi, 1000) # integrate the sin function\n2.0018927826323756\n```\n\n# References\n- https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/monte-carlo-methods-in-practice/monte-carlo-integration\n- https://kingaa.github.io/sbied/pfilter/monteCarlo.html\n\n# Contributors\n- [AugustoCL](https://github.com/AugustoCL)\n- [Ved Mahajan](https://github.com/Ved-Mahajan)\n&quot;&quot;&quot;</span>\n<span class=\"hljs-keyword\">function</span> monte_carlo_integration(f::<span class=\"hljs-built_in\">Function</span>, a::<span class=\"hljs-built_in\">Real</span>, b::<span class=\"hljs-built_in\">Real</span>, n::<span class=\"hljs-built_in\">Int</span>)\n    Δₓ = ((b - a) / n)\n\n    Σ = <span class=\"hljs-number\">0.0</span>\n    <span class=\"hljs-keyword\">for</span> _ <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">1</span>:n\n        <span class=\"hljs-comment\"># generate uniform(a, b) using uniform(0, 1)</span>\n        Xᵢ = a + (b - a) * rand()\n        Σ += f(Xᵢ)\n    <span class=\"hljs-keyword\">end</span>\n\n    <span class=\"hljs-keyword\">return</span> Δₓ * Σ\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Augusto C. Leal",
+      "email": "augustoleal72@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Augusto C. Leal",
+      "email": "leal.augusto@unifesp.br",
+      "commits": 1
+    },
+    {
+      "name": "Ved Mahajan",
+      "email": "74182892+Ved-Mahajan@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

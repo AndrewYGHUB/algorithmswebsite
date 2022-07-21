@@ -1,0 +1,23 @@
+{
+  "slug": "longest-non-repeative-substring",
+  "name": "Longest Non Repeative Substring",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/strings/longestNonRepeativeSubstring.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/strings/longestNonRepeativeSubstring.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.strings ;\n<span class=\"hljs-keyword\">import</span> java.util.HashMap ;\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">longestNonRepeativeSubstring</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">lengthOfLongestSubstring</span><span class=\"hljs-params\">(String s)</span> {\n    \n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">max</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span> , start = <span class=\"hljs-number\">0</span> , i = <span class=\"hljs-number\">0</span> ;\n        HashMap&lt; Character , Integer &gt; map = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">HashMap</span>&lt;&gt;() ;\n    \n        <span class=\"hljs-keyword\">while</span> ( i &lt; s.length() ) {\n\n            <span class=\"hljs-type\">char</span> <span class=\"hljs-variable\">temp</span> <span class=\"hljs-operator\">=</span> s.charAt( i ) ;\n\n            <span class=\"hljs-comment\">// adding key to map if not present</span>\n            <span class=\"hljs-keyword\">if</span> ( ! map.containsKey( temp ) )\n                map.put( temp , <span class=\"hljs-number\">0</span> ) ;\n\n            <span class=\"hljs-comment\">// checking if the first value is the dublicate value</span>\n            <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> ( s.charAt( start ) == temp )\n                start++ ;\n\n            <span class=\"hljs-comment\">// checking if the previous value is dublicate value</span>\n            <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> ( s.charAt( i - <span class=\"hljs-number\">1</span> )  == temp ) {\n                <span class=\"hljs-keyword\">if</span> ( max &lt; map.size() ) max = map.size() ;\n                map = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">HashMap</span>&lt;&gt;() ;\n                start = i ;\n                i-- ;\n            }\n\n            <span class=\"hljs-comment\">// last possible place where dublicate value can be is between start and i</span>\n            <span class=\"hljs-keyword\">else</span> {\n                <span class=\"hljs-keyword\">if</span> ( max &lt; map.size() ) max = map.size() ;\n                <span class=\"hljs-keyword\">while</span> ( s.charAt( start ) != temp ) {\n                    map.remove( s.charAt( start ) ) ;\n                    start++ ;\n                }\n                start++ ;\n            }\n\n            i++ ;\n\n        }\n        <span class=\"hljs-keyword\">if</span> ( max &lt; map.size() ) max = map.size() ;\n        <span class=\"hljs-keyword\">return</span> max ;\n    }\n\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "SanOtaku",
+      "email": "SanOtaku098@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

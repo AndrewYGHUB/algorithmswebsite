@@ -1,0 +1,33 @@
+{
+  "slug": "swap-case",
+  "name": "Swap Case",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "f-sharp": {
+      "dir": "Algorithms/Strings/SwapCase.fs",
+      "url": "https://github.com/TheAlgorithms/f-sharp/tree/master/Algorithms/Strings/SwapCase.fs",
+      "code": "﻿<span class=\"hljs-keyword\">namespace</span> Algorithms.Strings\n\n<span class=\"hljs-keyword\">module</span> SwapCase <span class=\"hljs-operator\">=</span>\n    <span class=\"hljs-keyword\">type</span> <span class=\"hljs-title class_\">System</span>.Char <span class=\"hljs-keyword\">with</span>\n        <span class=\"hljs-keyword\">member</span> this.IsUpper()<span class=\"hljs-operator\">:</span> <span class=\"hljs-type\">bool</span> <span class=\"hljs-operator\">=</span>\n            <span class=\"hljs-keyword\">match</span> this <span class=\"hljs-keyword\">with</span>\n            <span class=\"hljs-operator\">|</span> c <span class=\"hljs-keyword\">when</span> c <span class=\"hljs-operator\">&gt;=</span> <span class=\"hljs-string\">&#x27;A&#x27;</span> <span class=\"hljs-operator\">&amp;&amp;</span> c <span class=\"hljs-operator\">&lt;=</span> <span class=\"hljs-string\">&#x27;Z&#x27;</span> <span class=\"hljs-operator\">-&gt;</span> <span class=\"hljs-literal\">true</span>\n            <span class=\"hljs-operator\">|</span> _ <span class=\"hljs-operator\">-&gt;</span> <span class=\"hljs-literal\">false</span>\n\n        <span class=\"hljs-keyword\">member</span> this.IsLower()<span class=\"hljs-operator\">:</span> <span class=\"hljs-type\">bool</span> <span class=\"hljs-operator\">=</span>\n            <span class=\"hljs-keyword\">match</span> this <span class=\"hljs-keyword\">with</span>\n            <span class=\"hljs-operator\">|</span> c <span class=\"hljs-keyword\">when</span> c <span class=\"hljs-operator\">&gt;=</span> <span class=\"hljs-string\">&#x27;a&#x27;</span> <span class=\"hljs-operator\">&amp;&amp;</span> c <span class=\"hljs-operator\">&lt;=</span> <span class=\"hljs-string\">&#x27;z&#x27;</span> <span class=\"hljs-operator\">-&gt;</span> <span class=\"hljs-literal\">true</span>\n            <span class=\"hljs-operator\">|</span> _ <span class=\"hljs-operator\">-&gt;</span> <span class=\"hljs-literal\">false</span>\n\n        <span class=\"hljs-keyword\">member</span> this.Lower()<span class=\"hljs-operator\">:</span> <span class=\"hljs-type\">char</span> <span class=\"hljs-operator\">=</span>\n            <span class=\"hljs-keyword\">match</span> this <span class=\"hljs-keyword\">with</span>\n            <span class=\"hljs-operator\">|</span> c <span class=\"hljs-keyword\">when</span> c <span class=\"hljs-operator\">&gt;=</span> <span class=\"hljs-string\">&#x27;A&#x27;</span> <span class=\"hljs-operator\">&amp;&amp;</span> c <span class=\"hljs-operator\">&lt;=</span> <span class=\"hljs-string\">&#x27;Z&#x27;</span> <span class=\"hljs-operator\">-&gt;</span> (char) ((int) this <span class=\"hljs-operator\">+</span> <span class=\"hljs-number\">32</span>)\n            <span class=\"hljs-operator\">|</span> _ <span class=\"hljs-operator\">-&gt;</span> this\n\n        <span class=\"hljs-keyword\">member</span> this.Upper()<span class=\"hljs-operator\">:</span> <span class=\"hljs-type\">char</span> <span class=\"hljs-operator\">=</span>\n            <span class=\"hljs-keyword\">match</span> this <span class=\"hljs-keyword\">with</span>\n            <span class=\"hljs-operator\">|</span> c <span class=\"hljs-keyword\">when</span> c <span class=\"hljs-operator\">&gt;=</span> <span class=\"hljs-string\">&#x27;a&#x27;</span> <span class=\"hljs-operator\">&amp;&amp;</span> c <span class=\"hljs-operator\">&lt;=</span> <span class=\"hljs-string\">&#x27;z&#x27;</span> <span class=\"hljs-operator\">-&gt;</span> (char) ((int) this <span class=\"hljs-operator\">-</span> <span class=\"hljs-number\">32</span>)\n            <span class=\"hljs-operator\">|</span> _ <span class=\"hljs-operator\">-&gt;</span> this\n\n    <span class=\"hljs-comment\">/// &lt;summary&gt;</span>\n    <span class=\"hljs-comment\">/// This function will convert all lowercase letters to uppercase letters and vice versa</span>\n    <span class=\"hljs-comment\">/// &lt;/summary&gt;</span>\n    <span class=\"hljs-keyword\">let</span> swapCase (sentence<span class=\"hljs-operator\">:</span> <span class=\"hljs-type\">string</span>)<span class=\"hljs-operator\">:</span> <span class=\"hljs-type\">string</span> <span class=\"hljs-operator\">=</span>\n        <span class=\"hljs-keyword\">let</span> <span class=\"hljs-keyword\">mutable</span> newString <span class=\"hljs-operator\">=</span> <span class=\"hljs-string\">&quot;&quot;</span>\n        <span class=\"hljs-keyword\">for</span> character <span class=\"hljs-keyword\">in</span> sentence <span class=\"hljs-keyword\">do</span>\n            <span class=\"hljs-keyword\">match</span> character <span class=\"hljs-keyword\">with</span>\n            <span class=\"hljs-operator\">|</span> c <span class=\"hljs-keyword\">when</span> c.IsUpper() <span class=\"hljs-operator\">-&gt;</span> newString <span class=\"hljs-operator\">&lt;-</span> newString <span class=\"hljs-operator\">+</span> (string) (character.Lower())\n            <span class=\"hljs-operator\">|</span> c <span class=\"hljs-keyword\">when</span> c.IsLower() <span class=\"hljs-operator\">-&gt;</span> newString <span class=\"hljs-operator\">&lt;-</span> newString <span class=\"hljs-operator\">+</span> (string) (character.Upper())\n            <span class=\"hljs-operator\">|</span> _ <span class=\"hljs-operator\">-&gt;</span> newString <span class=\"hljs-operator\">&lt;-</span> newString <span class=\"hljs-operator\">+</span> (string) character\n        newString\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Allister Isaiah Harvey",
+      "email": "41553768+powpow58@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Frank Schmitt",
+      "email": "frank@qwhon.de",
+      "commits": 1
+    },
+    {
+      "name": "Mayur Pardeshi",
+      "email": "45143349+mayur200@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

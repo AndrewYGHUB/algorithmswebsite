@@ -1,0 +1,23 @@
+{
+  "slug": "shortest-common-supersequence-length",
+  "name": "Shortest Common Supersequence Length",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Madhav Bhat K",
+      "email": "54632221+kmadhav907@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

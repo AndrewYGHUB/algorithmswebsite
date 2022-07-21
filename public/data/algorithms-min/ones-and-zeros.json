@@ -1,0 +1,18 @@
+{
+  "slug": "ones-and-zeros",
+  "name": "Ones and Zeros",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

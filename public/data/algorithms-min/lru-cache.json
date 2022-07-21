@@ -1,0 +1,61 @@
+{
+  "slug": "lru-cache",
+  "name": "Lru Cache",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aditya Kumar",
+      "email": "aditya1944@live.com",
+      "commits": 1
+    },
+    {
+      "name": "Nitin Sharma",
+      "email": "32377892+foo290@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "januslinhc",
+      "email": "januslinhc@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Vardhaman",
+      "email": "83634399+cyai@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrew Grangaard",
+      "email": "granny-github@ofb.net",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Tapajyoti Bose",
+      "email": "44058757+ruppysuppy@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 3
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

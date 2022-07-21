@@ -1,0 +1,33 @@
+{
+  "slug": "zero-one-knapsack",
+  "name": "Zero One Knapsack",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Anup Kumar Panwar",
+      "email": "1anuppanwar@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "68542775+raklaptudirm@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Omkarnath Parida",
+      "email": "pomkarnath98@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

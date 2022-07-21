@@ -1,0 +1,18 @@
+{
+  "slug": "twin-prime",
+  "name": "Twin Prime",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Exortions",
+      "email": "75327059+Exortions@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

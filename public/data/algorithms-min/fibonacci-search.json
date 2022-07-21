@@ -1,0 +1,112 @@
+{
+  "slug": "fibonacci-search",
+  "name": "Fibonacci Search",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "c": "",
+    "rust": "",
+    "dart": "",
+    "ruby": "",
+    "php": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Stepfen Shawn",
+      "email": "m18824909883@163.com",
+      "commits": 1
+    },
+    {
+      "name": "Alejandro",
+      "email": "47539231+ale94lko@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "DONSIMON92",
+      "email": "47272787+DONSIMON92@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Philip Schikora",
+      "email": "pschikora87@googlemail.com",
+      "commits": 1
+    },
+    {
+      "name": "Administrator",
+      "email": "pi@pglp.noip.me",
+      "commits": 1
+    },
+    {
+      "name": "James Mc Dermott",
+      "email": "james.mcdermott89@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Alhassan Atama",
+      "email": "Komputarist@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "KanakalathaVemuru",
+      "email": "46847239+KanakalathaVemuru@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "poloso",
+      "email": "posorio@sier.com.co",
+      "commits": 1
+    },
+    {
+      "name": "Ankur Chattopadhyay",
+      "email": "39518771+chttrjeankr@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Laisha Wadhwa",
+      "email": "laisha.w16@iiits.in",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "Andrew S Erwin",
+      "email": "andrew@andrewerwin.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 3
+    },
+    {
+      "name": "sprintyaf",
+      "email": "sstur17@freeuni.edu.ge",
+      "commits": 10
+    }
+  ],
+  "explanationUrl": {}
+}

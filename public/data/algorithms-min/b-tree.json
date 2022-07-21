@@ -1,0 +1,58 @@
+{
+  "slug": "b-tree",
+  "name": "B Tree",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Boyd Johnson",
+      "email": "boydjohnson@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Subroto",
+      "email": "shub1493biswas@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Matthias Gilch",
+      "email": "matthias.gilch.mg@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Femi Novia Lina",
+      "email": "77434812+FemiNoviaLina@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "liyl",
+      "email": "30368453+yaolin-Li@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Milad",
+      "email": "14594374+Miraddo@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

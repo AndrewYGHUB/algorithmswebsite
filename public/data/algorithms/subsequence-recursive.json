@@ -1,0 +1,33 @@
+{
+  "slug": "subsequence-recursive",
+  "name": "Subsequence Recursive",
+  "categories": [
+    "recursive"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Recursive/SubsequenceRecursive.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Recursive/SubsequenceRecursive.js",
+      "code": "<span class=\"hljs-comment\">/*\n * Problem Statement: Find all distinct, non-empty subsequence of given string in lexicographical order using recursive approach.\n *\n * What is subsequence?\n * A Subsequence is sequence obtained by deleting some or no elements without changing the order of elements\n * Example: Given a string = &quot;abcd&quot;\n * 1. &quot;abc&quot; is a subsequence\n * 2. &quot;abd&quot; is a subsequence\n * 3. But &quot;ba&quot; is not a subsequence (because order is changed)\n *\n * What is lexicographical order?\n * In simple terms, lexicographical order is dictionary order.\n * Example: Given a string = &quot;abcd&quot;\n * 1. &quot;abc&quot; will come before &quot;abcd&quot;.\n * 2. &quot;abd&quot; will come before &quot;ac&quot;.\n *\n * References for meaning of subsequence &amp; lexicographical:\n * https://en.wikipedia.org/wiki/Subsequence\n * https://en.wikipedia.org/wiki/Lexicographic_order\n */</span>\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">subsequence</span> = (<span class=\"hljs-params\">str, seq, low, output = []</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (low &lt;= str.<span class=\"hljs-property\">length</span> &amp;&amp; str.<span class=\"hljs-property\">length</span> !== <span class=\"hljs-number\">0</span>) {\n    output.<span class=\"hljs-title function_\">push</span>(seq)\n  }\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = low; i &lt; str.<span class=\"hljs-property\">length</span>; i++) {\n    <span class=\"hljs-title function_\">subsequence</span>(str, seq + str[i], i + <span class=\"hljs-number\">1</span>, output)\n  }\n  <span class=\"hljs-keyword\">return</span> output\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Chiranjeev",
+      "email": "6258860@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Chiranjeev",
+      "email": "49074304+chiranjeev-thapliyal@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

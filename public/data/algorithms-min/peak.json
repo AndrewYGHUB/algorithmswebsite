@@ -1,0 +1,23 @@
+{
+  "slug": "peak",
+  "name": "Peak",
+  "categories": [
+    "divideandconquer"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Cho Yin Yong",
+      "email": "choyiny@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

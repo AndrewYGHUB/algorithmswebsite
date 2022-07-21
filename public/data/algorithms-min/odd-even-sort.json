@@ -1,0 +1,73 @@
+{
+  "slug": "odd-even-sort",
+  "name": "Odd Even Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "c": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Jerrit Gläsker",
+      "email": "50867655+cherrysrc@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Edwin B. Ajong",
+      "email": "edwinajong@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ashwek Swamy",
+      "email": "39827514+ashwek@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "mustafasalih1993",
+      "email": "mustafasalih1991@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "JadenLeake333",
+      "email": "47929127+JadenLeake333@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ocean Monjur",
+      "email": "75680423+OCM-7898@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "PARISOT paul andrea",
+      "email": "parisotp@informatique.univ-paris-diderot.fr",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

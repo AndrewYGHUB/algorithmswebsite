@@ -1,0 +1,23 @@
+{
+  "slug": "partition-sort",
+  "name": "Partition Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "hai dang",
+      "email": "haihoangdang91@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

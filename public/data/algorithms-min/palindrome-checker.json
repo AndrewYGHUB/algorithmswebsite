@@ -1,0 +1,18 @@
+{
+  "slug": "palindrome-checker",
+  "name": "Palindrome Checker",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Jessica Kwok",
+      "email": "jessicatckwok@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

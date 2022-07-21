@@ -1,0 +1,28 @@
+{
+  "slug": "get-imdbtop",
+  "name": "Get Imdbtop",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Appledora",
+      "email": "nazia89@student.sust.edu",
+      "commits": 1
+    },
+    {
+      "name": "Orkun İncili",
+      "email": "orkunincili0@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

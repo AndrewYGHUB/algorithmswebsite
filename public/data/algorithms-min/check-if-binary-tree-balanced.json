@@ -1,0 +1,19 @@
+{
+  "slug": "check-if-binary-tree-balanced",
+  "name": "Check If Binary Tree Balanced",
+  "categories": [
+    "datastructures",
+    "tree"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Ian Cowan",
+      "email": "38896380+iccowan@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

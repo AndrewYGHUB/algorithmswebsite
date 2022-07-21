@@ -1,0 +1,38 @@
+{
+  "slug": "while-loop-factorial",
+  "name": "While Loop Factorial",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/WhileLoopFactorial.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/WhileLoopFactorial.js",
+      "code": "<span class=\"hljs-comment\">/*\n    author: Theepag, optimised by merelymyself\n */</span>\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">factorialize</span> = (<span class=\"hljs-params\">num</span>) =&gt; {\n  <span class=\"hljs-comment\">// Step 1. Handles cases where num is 0 or 1, by returning 1.</span>\n  <span class=\"hljs-keyword\">let</span> result = <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-comment\">// Step 2. WHILE loop</span>\n  <span class=\"hljs-keyword\">while</span> (num &gt; <span class=\"hljs-number\">1</span>) {\n    result *= num <span class=\"hljs-comment\">// or result = result * num;</span>\n    num-- <span class=\"hljs-comment\">// decrement 1 at each iteration</span>\n  }\n  <span class=\"hljs-comment\">// Step 3. Return the factorial</span>\n  <span class=\"hljs-keyword\">return</span> result\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "theepag",
+      "email": "theepag@live.com",
+      "commits": 1
+    },
+    {
+      "name": "pwygab",
+      "email": "88221256+merelymyself@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

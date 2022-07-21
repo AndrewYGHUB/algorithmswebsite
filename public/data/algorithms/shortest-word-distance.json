@@ -1,0 +1,24 @@
+{
+  "slug": "shortest-word-distance",
+  "name": "Shortest Word Distance",
+  "categories": [
+    "datastructures",
+    "array"
+  ],
+  "body": {},
+  "implementations": {
+    "ruby": {
+      "dir": "data_structures/arrays/shortest_word_distance.rb",
+      "url": "https://github.com/TheAlgorithms/ruby/tree/master/data_structures/arrays/shortest_word_distance.rb",
+      "code": "<span class=\"hljs-comment\"># Shortest Word Distance</span>\n<span class=\"hljs-comment\"># Given a list of words and two words word1 and word2,</span>\n<span class=\"hljs-comment\"># return the shortest distance between these two words in the list.</span>\n<span class=\"hljs-comment\"># <span class=\"hljs-doctag\">@param</span> {String[]} words</span>\n<span class=\"hljs-comment\"># <span class=\"hljs-doctag\">@param</span> {String} word1</span>\n<span class=\"hljs-comment\"># <span class=\"hljs-doctag\">@param</span> {String} word2</span>\n<span class=\"hljs-comment\"># <span class=\"hljs-doctag\">@return</span> {Integer}</span>\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">shortest_distance</span>(<span class=\"hljs-params\">words, word1, word2</span>)\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span> <span class=\"hljs-keyword\">if</span> word1 == word2\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span> <span class=\"hljs-keyword\">unless</span> words.<span class=\"hljs-keyword\">include</span>?(word1) &amp;&amp; words.<span class=\"hljs-keyword\">include</span>?(word2)\n\n  minimum_distance = words.length\n  words.each_with_index <span class=\"hljs-keyword\">do</span> |<span class=\"hljs-params\">outer_value, outer_index</span>|\n    words.each_with_index <span class=\"hljs-keyword\">do</span> |<span class=\"hljs-params\">inner_value, inner_index</span>|\n      <span class=\"hljs-keyword\">if</span> ((inner_value == word1 &amp;&amp; outer_value == word2) |<span class=\"hljs-params\"></span>| (inner_value == word2 &amp;&amp; outer_value == word1)) &amp;&amp; (minimum_distance &gt; (outer_index - inner_index).abs)\n        minimum_distance = (outer_index - inner_index).abs\n      <span class=\"hljs-keyword\">end</span>\n    <span class=\"hljs-keyword\">end</span>\n  <span class=\"hljs-keyword\">end</span>\n  minimum_distance\n<span class=\"hljs-keyword\">end</span>\n\nwords = <span class=\"hljs-string\">%w[practice makes perfect coding makes]</span>\nword1 = <span class=\"hljs-string\">&#x27;coding&#x27;</span>\nword2 = <span class=\"hljs-string\">&#x27;practice&#x27;</span>\nputs(shortest_distance(words, word1, word2))\n<span class=\"hljs-comment\"># Output: 3</span>\nwords = <span class=\"hljs-string\">%w[practice makes perfect coding makes]</span>\nword1 = <span class=\"hljs-string\">&#x27;makes&#x27;</span>\nword2 = <span class=\"hljs-string\">&#x27;coding&#x27;</span>\nputs(shortest_distance(words, word1, word2))\n<span class=\"hljs-comment\"># Output: 1</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Leo",
+      "email": "leandrofrancarj@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

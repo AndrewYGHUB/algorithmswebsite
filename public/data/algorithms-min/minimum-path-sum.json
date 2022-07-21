@@ -1,0 +1,29 @@
+{
+  "slug": "minimum-path-sum",
+  "name": "Minimum Path Sum",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "EATONJIANGHAHAHA",
+      "email": "pillow_103@yeah.net",
+      "commits": 1
+    },
+    {
+      "name": "Raine Legary",
+      "email": "64663183+Rainethhh@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

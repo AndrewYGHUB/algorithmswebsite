@@ -1,0 +1,65 @@
+{
+  "slug": "greatest-common-divisor",
+  "name": "Greatest Common Divisor",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "rust": "",
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "imp",
+      "email": "imp07@qq.com",
+      "commits": 1
+    },
+    {
+      "name": "Tomi Korkalainen",
+      "email": "tomi.korkalainen@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Joyce",
+      "email": "jycyeo@yahoo.com.sg",
+      "commits": 1
+    },
+    {
+      "name": "Ankur Chattopadhyay",
+      "email": "39518771+chttrjeankr@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "percy07",
+      "email": "56677891+percy07@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ghulam Mohiyuddin",
+      "email": "subahani98@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Brian Janssen",
+      "email": "brian-janssen@hotmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Jobin John",
+      "email": "jobin1094@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

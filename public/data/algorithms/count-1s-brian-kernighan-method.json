@@ -1,0 +1,23 @@
+{
+  "slug": "count-1s-brian-kernighan-method",
+  "name": "Count 1s Brian Kernighan Method",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "bit_manipulation/count_1s_brian_kernighan_method.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/bit_manipulation/count_1s_brian_kernighan_method.py",
+      "code": "<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">get_1s_count</span>(<span class=\"hljs-params\">number: <span class=\"hljs-built_in\">int</span></span>) -&gt; <span class=\"hljs-built_in\">int</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Count the number of set bits in a 32 bit integer using Brian Kernighan&#x27;s way.\n    Ref - http://graphics.stanford.edu/~seander/bithacks.html#CountBitsSetKernighan\n    &gt;&gt;&gt; get_1s_count(25)\n    3\n    &gt;&gt;&gt; get_1s_count(37)\n    3\n    &gt;&gt;&gt; get_1s_count(21)\n    3\n    &gt;&gt;&gt; get_1s_count(58)\n    4\n    &gt;&gt;&gt; get_1s_count(0)\n    0\n    &gt;&gt;&gt; get_1s_count(256)\n    1\n    &gt;&gt;&gt; get_1s_count(-1)\n    Traceback (most recent call last):\n        ...\n    ValueError: the value of input must be positive\n    &gt;&gt;&gt; get_1s_count(0.8)\n    Traceback (most recent call last):\n        ...\n    TypeError: Input value must be an &#x27;int&#x27; type\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">if</span> number &lt; <span class=\"hljs-number\">0</span>:\n        <span class=\"hljs-keyword\">raise</span> ValueError(<span class=\"hljs-string\">&quot;the value of input must be positive&quot;</span>)\n    <span class=\"hljs-keyword\">elif</span> <span class=\"hljs-built_in\">isinstance</span>(number, <span class=\"hljs-built_in\">float</span>):\n        <span class=\"hljs-keyword\">raise</span> TypeError(<span class=\"hljs-string\">&quot;Input value must be an &#x27;int&#x27; type&quot;</span>)\n    count = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">while</span> number:\n        <span class=\"hljs-comment\"># This way we arrive at next set bit (next 1) instead of looping</span>\n        <span class=\"hljs-comment\"># through each bit and checking for 1s hence the</span>\n        <span class=\"hljs-comment\"># loop won&#x27;t run 32 times it will only run the number of `1` times</span>\n        number &amp;= number - <span class=\"hljs-number\">1</span>\n        count += <span class=\"hljs-number\">1</span>\n    <span class=\"hljs-keyword\">return</span> count\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Jainendra Mandavi",
+      "email": "jainendra@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

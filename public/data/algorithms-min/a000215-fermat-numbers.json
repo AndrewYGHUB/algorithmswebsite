@@ -1,0 +1,12 @@
+{
+  "slug": "a000215-fermat-numbers",
+  "name": "A000215 Fermat Numbers",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

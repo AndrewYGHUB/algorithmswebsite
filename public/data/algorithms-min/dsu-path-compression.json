@@ -1,0 +1,23 @@
+{
+  "slug": "dsu-path-compression",
+  "name": "Dsu Path Compression",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Lajat5",
+      "email": "64376519+Lazeeez@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aayush Vyas",
+      "email": "1830002@kiit.ac.in",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "adaline-learning",
+  "name": "Adaline Learning",
+  "categories": [
+    "machinelearning"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Piyush Kumar",
+      "email": "81097447+piyush168713@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 11
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "all-combinations-of-size-k",
+  "name": "All Combinations Of Size K",
+  "categories": [
+    "backtracking"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Backtracking/AllCombinationsOfSizeK.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Backtracking/AllCombinationsOfSizeK.js",
+      "code": "<span class=\"hljs-comment\">/*\n  Problem: Given two numbers, n and k, make all unique combinations of k numbers from 1 to n and in sorted order\n\n  What is combinations?\n  - Combinations is selecting items from a collections without considering order of selection\n\n  Example:\n  - We have an apple, a banana, and a jackfruit\n  - We have three objects, and need to choose two items, then combinations will be\n\n  1. Apple &amp; Banana\n  2. Apple &amp; Jackfruit\n  3. Banana &amp; Jackfruit\n\n  To read more about combinations, you can visit the following link:\n  - https://betterexplained.com/articles/easy-permutations-and-combinations/\n\n  Solution:\n  - We will be using backtracking to solve this questions\n  - Take one element, and make all them combinations for k-1 elements\n  - Once we get all combinations of that element, pop it and do same for next element\n*/</span>\n\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Combinations</span> {\n  <span class=\"hljs-title function_\">constructor</span> (n, k) {\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">n</span> = n\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">k</span> = k\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">current</span> = [] <span class=\"hljs-comment\">// will be used for storing current combination</span>\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">combinations</span> = []\n  }\n\n  findCombinations (high = <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">n</span>, total = <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">k</span>, low = <span class=\"hljs-number\">1</span>) {\n    <span class=\"hljs-keyword\">if</span> (total === <span class=\"hljs-number\">0</span>) {\n      <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">combinations</span>.<span class=\"hljs-title function_\">push</span>([...<span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">current</span>])\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">combinations</span>\n    }\n    <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = low; i &lt;= high; i++) {\n      <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">current</span>.<span class=\"hljs-title function_\">push</span>(i)\n      <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-title function_\">findCombinations</span>(high, total - <span class=\"hljs-number\">1</span>, i + <span class=\"hljs-number\">1</span>)\n      <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">current</span>.<span class=\"hljs-title function_\">pop</span>()\n    }\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">combinations</span>\n  }\n}\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">Combinations</span> }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Chiranjeev",
+      "email": "6258860@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

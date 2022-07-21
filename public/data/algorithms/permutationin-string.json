@@ -1,0 +1,29 @@
+{
+  "slug": "permutationin-string",
+  "name": "Permutationin String",
+  "categories": [
+    "dynamicprogramming",
+    "slidingwindow"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Dynamic-Programming/Sliding-Window/PermutationinString.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Dynamic-Programming/Sliding-Window/PermutationinString.js",
+      "code": "<span class=\"hljs-comment\">/**\n *  <span class=\"hljs-doctag\">@name</span> <span class=\"hljs-variable\">The</span>-Sliding-Window Algorithm is primarily used for the problems dealing with linear data structures like Arrays, Lists, Strings etc.\n *  These problems can easily be solved using Brute Force techniques which result in quadratic or exponential time complexity.\n *  Sliding window technique reduces the required time to linear O(n).\n *  <span class=\"hljs-doctag\">@see</span> [The-Sliding-Window](https://www.geeksforgeeks.org/window-sliding-technique/)\n */</span>\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">PermutationinString</span>\n * <span class=\"hljs-doctag\">@description</span> Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">String</span>} <span class=\"hljs-variable\">s1</span> - The input string\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">String</span>} <span class=\"hljs-variable\">s2</span> - The input string\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">boolean</span>} - Returns true if s2 contains a permutation of s1, or false otherwise.\n */</span>\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">PermutationinString</span> (s1, s2) {\n  <span class=\"hljs-keyword\">if</span> (s1.<span class=\"hljs-property\">length</span> &gt; s2.<span class=\"hljs-property\">length</span>) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n  <span class=\"hljs-keyword\">let</span> start = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">let</span> end = s1.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">const</span> s1Set = <span class=\"hljs-title class_\">SetHash</span>()\n  <span class=\"hljs-keyword\">const</span> s2Set = <span class=\"hljs-title class_\">SetHash</span>()\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; s1.<span class=\"hljs-property\">length</span>; i++) {\n    s1Set[s1[i]]++\n    s2Set[s2[i]]++\n  }\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-title function_\">equals</span>(s1Set, s2Set)) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n  <span class=\"hljs-keyword\">while</span> (end &lt; s2.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>) {\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-title function_\">equals</span>(s1Set, s2Set)) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n    end++\n    <span class=\"hljs-keyword\">const</span> c1 = s2[start]\n    <span class=\"hljs-keyword\">const</span> c2 = s2[end]\n    <span class=\"hljs-keyword\">if</span> (s2Set[c1] &gt; <span class=\"hljs-number\">0</span>) s2Set[c1]--\n    s2Set[c2]++\n    start++\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-title function_\">equals</span>(s1Set, s2Set)) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n  }\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n}\n<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">equals</span> (a, b) {\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title class_\">JSON</span>.<span class=\"hljs-title function_\">stringify</span>(a) === <span class=\"hljs-title class_\">JSON</span>.<span class=\"hljs-title function_\">stringify</span>(b)\n}\n\n<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">SetHash</span> () {\n  <span class=\"hljs-keyword\">const</span> set = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Set</span>()\n  <span class=\"hljs-keyword\">const</span> alphabets = <span class=\"hljs-string\">&#x27;abcdefghijklmnopqrstuvwxyz&#x27;</span>\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; alphabets.<span class=\"hljs-property\">length</span>; i++) {\n    set[alphabets[i]] = <span class=\"hljs-number\">0</span>\n  }\n  <span class=\"hljs-keyword\">return</span> set\n}\n\n<span class=\"hljs-comment\">// Example 1:</span>\n<span class=\"hljs-comment\">// Input: s1 = &quot;ab&quot;, s2 = &quot;eidbaooo&quot;</span>\n<span class=\"hljs-comment\">// Output: true</span>\n<span class=\"hljs-comment\">// Explanation: s2 contains one permutation of s1 (&quot;ba&quot;).</span>\n\n<span class=\"hljs-comment\">// Example 2:</span>\n<span class=\"hljs-comment\">// Input: s1 = &quot;ab&quot;, s2 = &quot;eidboaoo&quot;</span>\n<span class=\"hljs-comment\">// Output: false</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Leo Toff",
+      "email": "lev.taydakov@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aditya Parmar",
+      "email": "58773630+Aditya1942@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

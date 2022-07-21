@@ -1,0 +1,18 @@
+{
+  "slug": "nevilles-method",
+  "name": "Nevilles Method",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Matthew Wisdom",
+      "email": "matthewwisdom11@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

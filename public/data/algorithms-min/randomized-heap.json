@@ -1,0 +1,29 @@
+{
+  "slug": "randomized-heap",
+  "name": "Randomized Heap",
+  "categories": [
+    "datastructures",
+    "heap"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Dylan Buchi",
+      "email": "devybuchi@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Phil Bazun",
+      "email": "Phil9lne@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

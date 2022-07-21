@@ -1,0 +1,28 @@
+{
+  "slug": "check-snake-case",
+  "name": "Check Snake Case",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/CheckSnakeCase.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/CheckSnakeCase.js",
+      "code": "<span class=\"hljs-comment\">// CheckSnakeCase method checks the given string is in snake_case or not.</span>\n\n<span class=\"hljs-comment\">// Problem Source &amp; Explanation: https://en.wikipedia.org/wiki/Naming_convention_(programming)</span>\n\n<span class=\"hljs-comment\">/**\n * checkSnakeCase method returns true if the string in snake_case, else return the false.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">String</span>} varName the name of the variable to check.\n * <span class=\"hljs-doctag\">@returns</span> `Boolean` return true if the string is in snake_case, else return false.\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">checkSnakeCase</span> = (<span class=\"hljs-params\">varName</span>) =&gt; {\n  <span class=\"hljs-comment\">// firstly, check that input is a string or not.</span>\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> varName !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Argument is not a string.&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">const</span> pat = <span class=\"hljs-regexp\">/(.*?)_([a-zA-Z])*/</span>\n  <span class=\"hljs-keyword\">return</span> pat.<span class=\"hljs-title function_\">test</span>(varName)\n}\n\n<span class=\"hljs-keyword\">export</span> { checkSnakeCase }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "alvux",
+      "email": "alexandre.vu@hotmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

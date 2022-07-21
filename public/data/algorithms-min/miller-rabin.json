@@ -1,0 +1,45 @@
+{
+  "slug": "miller-rabin",
+  "name": "Miller Rabin",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "c-plus-plus": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "casperes1996",
+      "email": "31016919+casperes1996@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Paulo S. G. Ferraz",
+      "email": "paulosgf.pf@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Anzo Teh",
+      "email": "anzoteh@hotmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

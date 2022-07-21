@@ -1,0 +1,18 @@
+{
+  "slug": "keith-number-checker",
+  "name": "Keith Number Checker",
+  "categories": [
+    "numeric"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Keith Stanley",
+      "email": "46853837+iamstan13y@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

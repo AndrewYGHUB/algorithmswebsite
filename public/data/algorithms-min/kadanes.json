@@ -1,0 +1,12 @@
+{
+  "slug": "kadanes",
+  "name": "Kadanes",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

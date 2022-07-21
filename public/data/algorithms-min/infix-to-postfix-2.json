@@ -1,0 +1,18 @@
+{
+  "slug": "infix-to-postfix-2",
+  "name": "Infix to Postfix 2",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Kumar Yash",
+      "email": "kumaryash1808@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

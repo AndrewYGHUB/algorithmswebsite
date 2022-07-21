@@ -1,0 +1,12 @@
+{
+  "slug": "a005132-recamans",
+  "name": "A005132 Recaman's",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "find-kth-number",
+  "name": "Find Kth Number",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "XU ZHIWEI",
+      "email": "jsrdxzw@163.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

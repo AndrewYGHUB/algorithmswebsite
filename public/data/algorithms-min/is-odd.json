@@ -1,0 +1,33 @@
+{
+  "slug": "is-odd",
+  "name": "Is Odd",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Jake Gerber",
+      "email": "jake.j.gerber@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

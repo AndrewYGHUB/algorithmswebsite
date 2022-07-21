@@ -1,0 +1,23 @@
+{
+  "slug": "partitions",
+  "name": "Partitions",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "socvirnyl.estela@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Vaishakh C R",
+      "email": "scientistyshock@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

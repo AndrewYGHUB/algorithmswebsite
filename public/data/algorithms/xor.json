@@ -1,0 +1,33 @@
+{
+  "slug": "xor",
+  "name": "Xor",
+  "categories": [
+    "ciphers"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "cipher/xor/xor.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/cipher/xor/xor.go",
+      "code": "<span class=\"hljs-comment\">// Package xor is an encryption algorithm that operates the exclusive disjunction(XOR)</span>\n<span class=\"hljs-comment\">// ref: https://en.wikipedia.org/wiki/XOR_cipher</span>\n<span class=\"hljs-keyword\">package</span> xor\n\n<span class=\"hljs-comment\">// Encrypt encrypts with Xor encryption after converting each character to byte</span>\n<span class=\"hljs-comment\">// The returned value might not be readable because there is no guarantee</span>\n<span class=\"hljs-comment\">// which is within the ASCII range</span>\n<span class=\"hljs-comment\">// If using other type such as string, []int, or some other types,</span>\n<span class=\"hljs-comment\">// add the statements for converting the type to []byte.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Encrypt</span><span class=\"hljs-params\">(key <span class=\"hljs-type\">byte</span>, plaintext []<span class=\"hljs-type\">byte</span>)</span></span> []<span class=\"hljs-type\">byte</span> {\n\tcipherText := []<span class=\"hljs-type\">byte</span>{}\n\t<span class=\"hljs-keyword\">for</span> _, ch := <span class=\"hljs-keyword\">range</span> plaintext {\n\t\tcipherText = <span class=\"hljs-built_in\">append</span>(cipherText, key^ch)\n\t}\n\t<span class=\"hljs-keyword\">return</span> cipherText\n}\n\n<span class=\"hljs-comment\">// Decrypt decrypts with Xor encryption</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Decrypt</span><span class=\"hljs-params\">(key <span class=\"hljs-type\">byte</span>, cipherText []<span class=\"hljs-type\">byte</span>)</span></span> []<span class=\"hljs-type\">byte</span> {\n\tplainText := []<span class=\"hljs-type\">byte</span>{}\n\t<span class=\"hljs-keyword\">for</span> _, ch := <span class=\"hljs-keyword\">range</span> cipherText {\n\t\tplainText = <span class=\"hljs-built_in\">append</span>(plainText, key^ch)\n\t}\n\t<span class=\"hljs-keyword\">return</span> plainText\n}\n"
+    },
+    "rust": {
+      "dir": "src/ciphers/xor.rs",
+      "url": "https://github.com/TheAlgorithms/rust/tree/master/src/ciphers/xor.rs",
+      "code": "<span class=\"hljs-keyword\">pub</span> <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">xor</span>(text: &amp;<span class=\"hljs-type\">str</span>, key: <span class=\"hljs-type\">u8</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">String</span> {\n    text.<span class=\"hljs-title function_ invoke__\">chars</span>().<span class=\"hljs-title function_ invoke__\">map</span>(|c| ((c <span class=\"hljs-keyword\">as</span> <span class=\"hljs-type\">u8</span>) ^ key) <span class=\"hljs-keyword\">as</span> <span class=\"hljs-type\">char</span>).<span class=\"hljs-title function_ invoke__\">collect</span>()\n}\n\n<span class=\"hljs-meta\">#[cfg(test)]</span>\n<span class=\"hljs-keyword\">mod</span> tests {\n    <span class=\"hljs-keyword\">use</span> super::*;\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_simple</span>() {\n        <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">test_string</span> = <span class=\"hljs-string\">&quot;test string&quot;</span>;\n        <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">ciphered_text</span> = <span class=\"hljs-title function_ invoke__\">xor</span>(test_string, <span class=\"hljs-number\">32</span>);\n        <span class=\"hljs-built_in\">assert_eq!</span>(test_string, <span class=\"hljs-title function_ invoke__\">xor</span>(&amp;ciphered_text, <span class=\"hljs-number\">32</span>));\n    }\n\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">test_every_alphabet_with_space</span>() {\n        <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">test_string</span> = <span class=\"hljs-string\">&quot;The quick brown fox jumps over the lazy dog&quot;</span>;\n        <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">ciphered_text</span> = <span class=\"hljs-title function_ invoke__\">xor</span>(test_string, <span class=\"hljs-number\">64</span>);\n        <span class=\"hljs-built_in\">assert_eq!</span>(test_string, <span class=\"hljs-title function_ invoke__\">xor</span>(&amp;ciphered_text, <span class=\"hljs-number\">64</span>));\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Sutthinart Khunvadhana",
+      "email": "iakgoog@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

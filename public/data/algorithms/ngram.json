@@ -1,0 +1,23 @@
+{
+  "slug": "ngram",
+  "name": "Ngram",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "strings/ngram.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/strings/ngram.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\nhttps://en.wikipedia.org/wiki/N-gram\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">create_ngram</span>(<span class=\"hljs-params\">sentence: <span class=\"hljs-built_in\">str</span>, ngram_size: <span class=\"hljs-built_in\">int</span></span>) -&gt; <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">str</span>]:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Create ngrams from a sentence\n\n    &gt;&gt;&gt; create_ngram(&quot;I am a sentence&quot;, 2)\n    [&#x27;I &#x27;, &#x27; a&#x27;, &#x27;am&#x27;, &#x27;m &#x27;, &#x27; a&#x27;, &#x27;a &#x27;, &#x27; s&#x27;, &#x27;se&#x27;, &#x27;en&#x27;, &#x27;nt&#x27;, &#x27;te&#x27;, &#x27;en&#x27;, &#x27;nc&#x27;, &#x27;ce&#x27;]\n    &gt;&gt;&gt; create_ngram(&quot;I am an NLPer&quot;, 2)\n    [&#x27;I &#x27;, &#x27; a&#x27;, &#x27;am&#x27;, &#x27;m &#x27;, &#x27; a&#x27;, &#x27;an&#x27;, &#x27;n &#x27;, &#x27; N&#x27;, &#x27;NL&#x27;, &#x27;LP&#x27;, &#x27;Pe&#x27;, &#x27;er&#x27;]\n    &gt;&gt;&gt; create_ngram(&quot;This is short&quot;, 50)\n    []\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">return</span> [sentence[i : i + ngram_size] <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(<span class=\"hljs-built_in\">len</span>(sentence) - ngram_size + <span class=\"hljs-number\">1</span>)]\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">from</span> doctest <span class=\"hljs-keyword\">import</span> testmod\n\n    testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Harshit Agarwal",
+      "email": "43147421+9harshit@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

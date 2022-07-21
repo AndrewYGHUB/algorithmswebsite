@@ -1,0 +1,13 @@
+{
+  "slug": "median-of-three-pivot",
+  "name": "Median of three pivot",
+  "categories": [
+    "sorts",
+    "comparison"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "bisection",
+  "name": "Bisection",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "arithmetic_analysis/bisection.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/arithmetic_analysis/bisection.py",
+      "code": "<span class=\"hljs-keyword\">from</span> collections.abc <span class=\"hljs-keyword\">import</span> <span class=\"hljs-type\">Callable</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">bisection</span>(<span class=\"hljs-params\">function: <span class=\"hljs-type\">Callable</span>[[<span class=\"hljs-built_in\">float</span>], <span class=\"hljs-built_in\">float</span>], a: <span class=\"hljs-built_in\">float</span>, b: <span class=\"hljs-built_in\">float</span></span>) -&gt; <span class=\"hljs-built_in\">float</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    finds where function becomes 0 in [a,b] using bolzano\n    &gt;&gt;&gt; bisection(lambda x: x ** 3 - 1, -5, 5)\n    1.0000000149011612\n    &gt;&gt;&gt; bisection(lambda x: x ** 3 - 1, 2, 1000)\n    Traceback (most recent call last):\n    ...\n    ValueError: could not find root in given interval.\n    &gt;&gt;&gt; bisection(lambda x: x ** 2 - 4 * x + 3, 0, 2)\n    1.0\n    &gt;&gt;&gt; bisection(lambda x: x ** 2 - 4 * x + 3, 2, 4)\n    3.0\n    &gt;&gt;&gt; bisection(lambda x: x ** 2 - 4 * x + 3, 4, 1000)\n    Traceback (most recent call last):\n    ...\n    ValueError: could not find root in given interval.\n    &quot;&quot;&quot;</span>\n    start: <span class=\"hljs-built_in\">float</span> = a\n    end: <span class=\"hljs-built_in\">float</span> = b\n    <span class=\"hljs-keyword\">if</span> function(a) == <span class=\"hljs-number\">0</span>:  <span class=\"hljs-comment\"># one of the a or b is a root for the function</span>\n        <span class=\"hljs-keyword\">return</span> a\n    <span class=\"hljs-keyword\">elif</span> function(b) == <span class=\"hljs-number\">0</span>:\n        <span class=\"hljs-keyword\">return</span> b\n    <span class=\"hljs-keyword\">elif</span> (\n        function(a) * function(b) &gt; <span class=\"hljs-number\">0</span>\n    ):  <span class=\"hljs-comment\"># if none of these are root and they are both positive or negative,</span>\n        <span class=\"hljs-comment\"># then this algorithm can&#x27;t find the root</span>\n        <span class=\"hljs-keyword\">raise</span> ValueError(<span class=\"hljs-string\">&quot;could not find root in given interval.&quot;</span>)\n    <span class=\"hljs-keyword\">else</span>:\n        mid: <span class=\"hljs-built_in\">float</span> = start + (end - start) / <span class=\"hljs-number\">2.0</span>\n        <span class=\"hljs-keyword\">while</span> <span class=\"hljs-built_in\">abs</span>(start - mid) &gt; <span class=\"hljs-number\">10</span>**-<span class=\"hljs-number\">7</span>:  <span class=\"hljs-comment\"># until precisely equals to 10^-7</span>\n            <span class=\"hljs-keyword\">if</span> function(mid) == <span class=\"hljs-number\">0</span>:\n                <span class=\"hljs-keyword\">return</span> mid\n            <span class=\"hljs-keyword\">elif</span> function(mid) * function(start) &lt; <span class=\"hljs-number\">0</span>:\n                end = mid\n            <span class=\"hljs-keyword\">else</span>:\n                start = mid\n            mid = start + (end - start) / <span class=\"hljs-number\">2.0</span>\n        <span class=\"hljs-keyword\">return</span> mid\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">f</span>(<span class=\"hljs-params\">x: <span class=\"hljs-built_in\">float</span></span>) -&gt; <span class=\"hljs-built_in\">float</span>:\n    <span class=\"hljs-keyword\">return</span> x**<span class=\"hljs-number\">3</span> - <span class=\"hljs-number\">2</span> * x - <span class=\"hljs-number\">5</span>\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-built_in\">print</span>(bisection(f, <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">1000</span>))\n\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n"
+    },
+    "matlab-octave": {
+      "dir": "algorithms/arithmetic_analysis/bisection.m",
+      "url": "https://github.com/TheAlgorithms/matlab-octave/tree/master/algorithms/arithmetic_analysis/bisection.m",
+      "code": "<span class=\"hljs-comment\">%The bisection method for finding the root of a function.</span>\n<span class=\"hljs-comment\">%f(a) is &lt; 0 and f(b) &gt; 0. By the intermediate value theorem,</span>\n<span class=\"hljs-comment\">%there exists a number c in between a and b such that f(c) = 0.</span>\n<span class=\"hljs-comment\">%In other words, there is always a root in between f(a) and f(b).</span>\n<span class=\"hljs-comment\">%The bisection method takes the midpoint between a and b and evaluates</span>\n<span class=\"hljs-comment\">%the value of the function at the midpoint. If it is less than 0,</span>\n<span class=\"hljs-comment\">%a is assigned the midpoint. If it is greater than 0, b is assigned the</span>\n<span class=\"hljs-comment\">%midpoint. With each iteration, the interval the root lies in is halved,</span>\n<span class=\"hljs-comment\">%guaranteeing that the algorithm will converge towards the root.</span>\n\n<span class=\"hljs-comment\">%INPUTS:</span>\n<span class=\"hljs-comment\">%Function handle f</span>\n<span class=\"hljs-comment\">%endpoint a</span>\n<span class=\"hljs-comment\">%endpoint b</span>\n<span class=\"hljs-comment\">%maximum tolerated error</span>\n\n<span class=\"hljs-comment\">%OUTPUTS:</span>\n<span class=\"hljs-comment\">%An approximated value for the root of f within the defined interval.</span>\n\n<span class=\"hljs-comment\">%Written by MatteoRaso</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">y</span> = <span class=\"hljs-title\">bisection</span><span class=\"hljs-params\">(f, a, b, error)</span></span>\n  <span class=\"hljs-comment\">%Making sure that the user didn&#x27;t input invalid endpoints.</span>\n  <span class=\"hljs-keyword\">if</span> ~(f(a) &lt; <span class=\"hljs-number\">0</span>)\n    <span class=\"hljs-built_in\">disp</span>(<span class=\"hljs-string\">&quot;f(a) must be less than 0&quot;</span>)\n  <span class=\"hljs-keyword\">elseif</span> ~(f(b) &gt; <span class=\"hljs-number\">0</span>)\n    <span class=\"hljs-built_in\">disp</span>(<span class=\"hljs-string\">&quot;f(b) must be greater than 0&quot;</span>)\n  <span class=\"hljs-keyword\">else</span> \n    c = <span class=\"hljs-number\">1e9</span>;\n    <span class=\"hljs-comment\">%Loops until we reach an acceptable approximation.</span>\n    <span class=\"hljs-keyword\">while</span> <span class=\"hljs-built_in\">abs</span>(f(c)) &gt; error\n      c = (a + b) / <span class=\"hljs-number\">2</span>;\n      <span class=\"hljs-keyword\">if</span> f(c) &lt; <span class=\"hljs-number\">0</span>\n        a = c;\n      <span class=\"hljs-keyword\">else</span>\n        b = c;\n      endif\n      <span class=\"hljs-built_in\">disp</span>(f(c))\n    endwhile\n    x = [<span class=\"hljs-string\">&quot;The root is approximately located at &quot;</span>, num2str(c)];\n    <span class=\"hljs-built_in\">disp</span>(x)\n    y = c;\n  endif\nendfunction\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "AlexDvorak",
+      "email": "opti.jawsome@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "MatteoRaso",
+      "email": "33975162+MatteoRaso@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "onlinejudge95",
+      "email": "44158581+onlinejudge95@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "spamegg",
+      "email": "4255997+spamegg1@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "billpaps",
+      "email": "37051006+billpaps@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "wuminbin",
+      "email": "wuminbin@yeah.net",
+      "commits": 1
+    },
+    {
+      "name": "Rafael García Cuéllar",
+      "email": "r.gc@hotmail.es",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

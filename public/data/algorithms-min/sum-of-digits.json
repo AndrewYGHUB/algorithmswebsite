@@ -1,0 +1,58 @@
+{
+  "slug": "sum-of-digits",
+  "name": "Sum of Digits",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "ruby": "",
+    "matlab-octave": ""
+  },
+  "contributors": [
+    {
+      "name": "kNOzone",
+      "email": "72206118+kNOzone@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Abhinav Anand",
+      "email": "manasgmishra@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Vignesh",
+      "email": "ravivignesh2000@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Dumby",
+      "email": "71999854+SpiderMath@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

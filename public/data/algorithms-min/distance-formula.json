@@ -1,0 +1,18 @@
+{
+  "slug": "distance-formula",
+  "name": "Distance Formula",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Raghav Taneja",
+      "email": "97575679+RaghavTaneja@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "fisher-yates-shuffle",
+  "name": "Fisher Yates Shuffle",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "javascript": "",
+    "dart": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    },
+    {
+      "name": "Damien Chazoule",
+      "email": "damien.chazoule@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Parowicz",
+      "email": "arturparowicz@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Omkarnath Parida",
+      "email": "pomkarnath98@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

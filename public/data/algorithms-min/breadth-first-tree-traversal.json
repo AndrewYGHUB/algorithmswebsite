@@ -1,0 +1,38 @@
+{
+  "slug": "breadth-first-tree-traversal",
+  "name": "Breadth First Tree Traversal",
+  "categories": [
+    "tree"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Worldwidebrine",
+      "email": "40757969+Worldwidebrine@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Gerardo A. Abantao Jr",
+      "email": "gaabantao1@up.edu.ph",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

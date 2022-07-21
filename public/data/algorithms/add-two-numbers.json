@@ -1,0 +1,24 @@
+{
+  "slug": "add-two-numbers",
+  "name": "Add Two Numbers",
+  "categories": [
+    "datastructures",
+    "linkedlist"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Data-Structures/Linked-List/AddTwoNumbers.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Data-Structures/Linked-List/AddTwoNumbers.js",
+      "code": "<span class=\"hljs-comment\">/**\n * A LinkedList based solution for Add Two Numbers\n *\n */</span>\n<span class=\"hljs-keyword\">import</span> { <span class=\"hljs-title class_\">Node</span> } <span class=\"hljs-keyword\">from</span> <span class=\"hljs-string\">&#x27;./SinglyLinkedList.js&#x27;</span>\n\n<span class=\"hljs-comment\">/*\nProblem Statement:\nGiven two non-empty linked lists representing two non-negative integers.\nThe digits are stored in reverse order and each of their nodes contain a single digit.\nAdd the two numbers and return it as a linked list.\n\nLink for the Problem: https://leetcode.com/problems/add-two-numbers/\n*/</span>\n\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">AddTwoNumbers</span> {\n  <span class=\"hljs-title function_\">constructor</span> () {\n    <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">dummyNode</span> = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Node</span>(<span class=\"hljs-number\">0</span>)\n  }\n\n  solution (firstList, secondList) {\n    <span class=\"hljs-keyword\">let</span> firstRunner = firstList\n    <span class=\"hljs-keyword\">let</span> secondRunner = secondList\n    <span class=\"hljs-keyword\">let</span> tail = <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">dummyNode</span>\n    <span class=\"hljs-keyword\">let</span> carry = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">while</span> (firstRunner != <span class=\"hljs-literal\">null</span> || secondRunner != <span class=\"hljs-literal\">null</span>) {\n      <span class=\"hljs-keyword\">const</span> firstNumber = firstRunner ? firstRunner.<span class=\"hljs-property\">data</span> : <span class=\"hljs-number\">0</span>\n      <span class=\"hljs-keyword\">const</span> secondNumber = secondRunner ? secondRunner.<span class=\"hljs-property\">data</span> : <span class=\"hljs-number\">0</span>\n      <span class=\"hljs-keyword\">const</span> sum = carry + firstNumber + secondNumber\n      carry = <span class=\"hljs-built_in\">parseInt</span>(sum / <span class=\"hljs-number\">10</span>)\n      tail.<span class=\"hljs-property\">next</span> = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Node</span>(sum % <span class=\"hljs-number\">10</span>)\n      tail = tail.<span class=\"hljs-property\">next</span>\n      <span class=\"hljs-keyword\">if</span> (firstRunner) {\n        firstRunner = firstRunner.<span class=\"hljs-property\">next</span>\n      }\n      <span class=\"hljs-keyword\">if</span> (secondRunner) {\n        secondRunner = secondRunner.<span class=\"hljs-property\">next</span>\n      }\n    }\n    <span class=\"hljs-keyword\">if</span> (carry &gt; <span class=\"hljs-number\">0</span>) {\n      tail.<span class=\"hljs-property\">next</span> = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Node</span>(carry % <span class=\"hljs-number\">10</span>)\n    }\n\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">dummyNode</span>.<span class=\"hljs-property\">next</span>\n  }\n\n  solutionToArray () {\n    <span class=\"hljs-keyword\">const</span> list = []\n    <span class=\"hljs-keyword\">let</span> currentNode = <span class=\"hljs-variable language_\">this</span>.<span class=\"hljs-property\">dummyNode</span>.<span class=\"hljs-property\">next</span>\n    <span class=\"hljs-keyword\">while</span> (currentNode) {\n      list.<span class=\"hljs-title function_\">push</span>(currentNode.<span class=\"hljs-property\">data</span>)\n      currentNode = currentNode.<span class=\"hljs-property\">next</span>\n    }\n\n    <span class=\"hljs-keyword\">return</span> list\n  }\n}\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">AddTwoNumbers</span> }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Shakil Ahmmed",
+      "email": "30585539+ShakilAhmmed@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

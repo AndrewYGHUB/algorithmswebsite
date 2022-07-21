@@ -1,0 +1,18 @@
+{
+  "slug": "trial-division",
+  "name": "Trial Division",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "DONSIMON92",
+      "email": "47272787+DONSIMON92@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

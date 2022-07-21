@@ -1,0 +1,44 @@
+{
+  "slug": "montecarlopi",
+  "name": "Montecarlopi",
+  "categories": [
+    "math",
+    "pi"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Paul Leydier",
+      "email": "75126792+paul-leydier@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Iván Valdés",
+      "email": "iv@nvald.es",
+      "commits": 1
+    },
+    {
+      "name": "Brayo",
+      "email": "vukubrian@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Anderson Queiroz",
+      "email": "contato@andersonq.eti.br",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

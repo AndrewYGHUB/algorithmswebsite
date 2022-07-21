@@ -1,0 +1,18 @@
+{
+  "slug": "errors",
+  "name": "Errors",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "FuXiang Shu",
+      "email": "6470547+Crazy3lf@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

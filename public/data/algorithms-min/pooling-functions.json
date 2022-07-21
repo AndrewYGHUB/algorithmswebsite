@@ -1,0 +1,18 @@
+{
+  "slug": "pooling-functions",
+  "name": "Pooling Functions",
+  "categories": [
+    "computervision"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Navaneeth Sharma",
+      "email": "63489382+Navaneeth-Sharma@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

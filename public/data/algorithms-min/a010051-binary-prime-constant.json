@@ -1,0 +1,12 @@
+{
+  "slug": "a010051-binary-prime-constant",
+  "name": "A010051 Binary Prime Constant",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

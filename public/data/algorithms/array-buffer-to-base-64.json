@@ -1,0 +1,23 @@
+{
+  "slug": "array-buffer-to-base-64",
+  "name": "Array Buffer To Base 64",
+  "categories": [
+    "conversions"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Conversions/ArrayBufferToBase64.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Conversions/ArrayBufferToBase64.js",
+      "code": "<span class=\"hljs-comment\">// About base64: https://en.wikipedia.org/wiki/Base64</span>\n\n<span class=\"hljs-comment\">/**\n * Converts an array of bytes to base64 encoding\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">ArrayBuffer</span>} binaryData An ArrayBuffer which represents an array of bytes\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">string</span>} A string containing the base64 encoding of `binaryData`\n */</span>\n<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">bufferToBase64</span> (binaryData) {\n  <span class=\"hljs-comment\">// The base64 encoding uses the following set of characters to encode any binary data as text</span>\n  <span class=\"hljs-keyword\">const</span> base64Table = <span class=\"hljs-string\">&#x27;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/&#x27;</span>\n  <span class=\"hljs-comment\">// Every 3 bytes translates to 4 base64 characters, if we have less than 3 bytes we must append &#x27;=&#x27; chars as padding</span>\n  <span class=\"hljs-keyword\">const</span> padding = <span class=\"hljs-number\">3</span> - (binaryData.<span class=\"hljs-property\">byteLength</span> % <span class=\"hljs-number\">3</span>)\n  <span class=\"hljs-comment\">// Create an instance of Uint8Array, to read from the binaryData array buffer</span>\n  <span class=\"hljs-keyword\">const</span> byteView = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Uint8Array</span>(binaryData)\n  <span class=\"hljs-keyword\">let</span> result = <span class=\"hljs-string\">&#x27;&#x27;</span>\n\n  <span class=\"hljs-comment\">// Loop through all bytes in the buffer, in increments of 3 bytes</span>\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; byteView.<span class=\"hljs-property\">byteLength</span>; i += <span class=\"hljs-number\">3</span>) {\n    <span class=\"hljs-comment\">// Get the index for the next 4 base64 chars</span>\n    <span class=\"hljs-keyword\">const</span> char1 = (byteView[i] &amp; <span class=\"hljs-number\">252</span>) &gt;&gt; <span class=\"hljs-number\">2</span>\n    <span class=\"hljs-keyword\">const</span> char2 = ((byteView[i] &amp; <span class=\"hljs-number\">3</span>) &lt;&lt; <span class=\"hljs-number\">4</span>) + ((byteView[i + <span class=\"hljs-number\">1</span>] &amp; <span class=\"hljs-number\">240</span>) &gt;&gt; <span class=\"hljs-number\">4</span>)\n    <span class=\"hljs-keyword\">const</span> char3 = ((byteView[i + <span class=\"hljs-number\">1</span>] &amp; <span class=\"hljs-number\">15</span>) &lt;&lt; <span class=\"hljs-number\">2</span>) + ((byteView[i + <span class=\"hljs-number\">2</span>] &amp; <span class=\"hljs-number\">192</span>) &gt;&gt; <span class=\"hljs-number\">6</span>)\n    <span class=\"hljs-keyword\">const</span> char4 = byteView[i + <span class=\"hljs-number\">2</span>] &amp; <span class=\"hljs-number\">63</span>\n\n    result +=\n        base64Table[char1] +\n        base64Table[char2] +\n        base64Table[char3] +\n        base64Table[char4]\n  }\n\n  <span class=\"hljs-comment\">// Add padding &#x27;=&#x27; chars if needed</span>\n  <span class=\"hljs-keyword\">if</span> (padding !== <span class=\"hljs-number\">3</span>) {\n    <span class=\"hljs-keyword\">const</span> paddedResult = result.<span class=\"hljs-title function_\">slice</span>(<span class=\"hljs-number\">0</span>, result.<span class=\"hljs-property\">length</span> - padding) + <span class=\"hljs-string\">&#x27;=&#x27;</span>.<span class=\"hljs-title function_\">repeat</span>(padding)\n    <span class=\"hljs-keyword\">return</span> paddedResult\n  }\n\n  <span class=\"hljs-keyword\">return</span> result\n}\n\n<span class=\"hljs-keyword\">export</span> { bufferToBase64 }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Luis De Anda",
+      "email": "ldeandac16@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

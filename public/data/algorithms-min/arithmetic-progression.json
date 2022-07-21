@@ -1,0 +1,19 @@
+{
+  "slug": "arithmetic-progression",
+  "name": "Arithmetic Progression",
+  "categories": [
+    "math",
+    "sum"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

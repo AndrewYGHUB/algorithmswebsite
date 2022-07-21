@@ -1,0 +1,73 @@
+{
+  "slug": "lib",
+  "name": "Lib",
+  "categories": [
+    "linearalgebra"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "AlexDvorak",
+      "email": "opti.jawsome@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aman kanojiya",
+      "email": "50018596+AMANKANOJIYA@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Iqrar Agalosi Nureyza",
+      "email": "misteriqrar@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Milad Sadeghi DM",
+      "email": "Cor3Down@ProtonMail.ch",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ashwek Swamy",
+      "email": "39827514+ashwek@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Tianyi Zheng",
+      "email": "tianyizheng02@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Alex Veltman",
+      "email": "alexveltman0@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 3
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

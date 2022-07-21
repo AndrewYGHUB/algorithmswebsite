@@ -1,0 +1,18 @@
+{
+  "slug": "schur-complement",
+  "name": "Schur Complement",
+  "categories": [
+    "linearalgebra"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "iradonov",
+      "email": "86876427+iradonov@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

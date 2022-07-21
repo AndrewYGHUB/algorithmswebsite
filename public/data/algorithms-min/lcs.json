@@ -1,0 +1,29 @@
+{
+  "slug": "lcs",
+  "name": "LCS",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "kotlin": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Nikola Mircic",
+      "email": "nikola123mircic@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "socvirnyl.estela@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Akshay-H",
+      "email": "akshayhari555@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "permutation",
+  "name": "Permutation",
+  "categories": [
+    "backtracking"
+  ],
+  "implementations": {
+    "java": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Mayur Dahibhate",
+      "email": "52608503+mayurdahibhate@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ashot Janibekyan",
+      "email": "31385299+ashotjanibekyan@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "cpiao3",
+      "email": "72165966+cpiao3@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

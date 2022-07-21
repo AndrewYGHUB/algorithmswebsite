@@ -1,0 +1,23 @@
+{
+  "slug": "djikstra",
+  "name": "Djikstra",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Gabriel Soares",
+      "email": "soaresggm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "sagnik-chatterjee",
+      "email": "chatterjeesagnik88@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "matrix-operation",
+  "name": "Matrix Operation",
+  "categories": [
+    "matrix"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Omkaar",
+      "email": "79257339+Pysics@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "onlinejudge95",
+      "email": "44158581+onlinejudge95@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Stephen Gemin",
+      "email": "45926479+StephenGemin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "wuyudi",
+      "email": "wuyudi1109@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

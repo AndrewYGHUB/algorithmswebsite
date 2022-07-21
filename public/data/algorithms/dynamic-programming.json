@@ -1,0 +1,33 @@
+{
+  "slug": "dynamic-programming",
+  "name": "Dynamic Programming",
+  "categories": [
+    "knapsack"
+  ],
+  "body": {},
+  "implementations": {
+    "julia": {
+      "dir": "src/longest_increasing_subsequence/dynamic_programming.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/longest_increasing_subsequence/dynamic_programming.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    lis(arr::Array{Int}, ::Val{:dp})\n\n# Arguments:\n- `arr`: sequence of integers\n\n# Examples/Tests \n```julia\njulia&gt; lis([3, 10, 2, 1, 20], Val(:dp))\n[3, 10, 20]\n\njulia&gt; lis([2, 2, 3], Val(:dp))\n[2, 3]\n```\n\n# Brief:\nGiven a sequence of integers, the function finds the longest, strictly increasing, subsequence in that sequence.\n\n# For more information:\nhttps://cp-algorithms.com/sequences/longest_increasing_subsequence.html\n\n# Contributed by:\n- [Igor Malheiros](https://github.com/igormalheiros)\n&quot;&quot;&quot;</span>\n\n<span class=\"hljs-keyword\">function</span> lis(arr::<span class=\"hljs-built_in\">Array</span>{<span class=\"hljs-built_in\">Int</span>}, ::<span class=\"hljs-built_in\">Val</span>{:dp})\n    len = length(arr)\n    memo = ones(<span class=\"hljs-built_in\">Int</span>, len)\n    p = zeros(<span class=\"hljs-built_in\">Int</span>, len)\n\n    lis_arr = <span class=\"hljs-built_in\">Int</span>[]\n\n    len == <span class=\"hljs-number\">0</span> &amp;&amp; <span class=\"hljs-keyword\">return</span> lis_arr <span class=\"hljs-comment\"># if arr is empty</span>\n\n    lis_value = <span class=\"hljs-number\">1</span>\n    lis_pos = <span class=\"hljs-number\">1</span>\n\n    <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">2</span>:len\n        <span class=\"hljs-keyword\">for</span> j <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">1</span>:i\n            <span class=\"hljs-keyword\">if</span> arr[j] &lt; arr[i] &amp;&amp; memo[i] &lt; memo[j] + <span class=\"hljs-number\">1</span>\n                memo[i] = memo[j] + <span class=\"hljs-number\">1</span>\n                p[i] = j\n            <span class=\"hljs-keyword\">end</span>\n        <span class=\"hljs-keyword\">end</span>\n        <span class=\"hljs-comment\"># Updates the longest increasing value and position</span>\n        <span class=\"hljs-keyword\">if</span> memo[i] &gt; lis_value\n            lis_value = memo[i]\n            lis_pos = i\n        <span class=\"hljs-keyword\">end</span>\n    <span class=\"hljs-keyword\">end</span>\n\n    <span class=\"hljs-comment\"># Restoring</span>\n    <span class=\"hljs-keyword\">while</span> lis_pos != <span class=\"hljs-number\">0</span>\n        push!(lis_arr, arr[lis_pos])\n        lis_pos = p[lis_pos]\n    <span class=\"hljs-keyword\">end</span>\n\n    reverse!(lis_arr)\n\n    <span class=\"hljs-keyword\">return</span> lis_arr\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "KheeLong",
+      "email": "kheelong0387@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Igor Malheiros",
+      "email": "igormalheiros92@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

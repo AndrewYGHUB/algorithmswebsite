@@ -1,0 +1,33 @@
+{
+  "slug": "roman-to-decimal",
+  "name": "Roman To Decimal",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "68542775+raklaptudirm@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Jonathan Gómez",
+      "email": "jonicgp97@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

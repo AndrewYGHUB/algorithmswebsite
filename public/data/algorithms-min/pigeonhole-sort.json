@@ -1,0 +1,70 @@
+{
+  "slug": "pigeonhole-sort",
+  "name": "Pigeonhole Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "c": "",
+    "go": "",
+    "rust": "",
+    "dart": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "pwygab",
+      "email": "88221256+merelymyself@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Hiyabye",
+      "email": "jihoon7373@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Lownish Rai Sookha",
+      "email": "69192570+Lownish@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Yadunandan Bhat",
+      "email": "54680617+yadunandanbhat@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Níkolas Vargas",
+      "email": "vargasnikolass@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "SHAKTI SINGH",
+      "email": "mohittanwar2323@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Chris Kolonas",
+      "email": "ckolonas@csd.auth.gr",
+      "commits": 7
+    }
+  ],
+  "explanationUrl": {}
+}

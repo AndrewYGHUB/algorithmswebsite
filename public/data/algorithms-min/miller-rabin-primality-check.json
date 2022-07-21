@@ -1,0 +1,12 @@
+{
+  "slug": "miller-rabin-primality-check",
+  "name": "Miller-Rabin primality check",
+  "categories": [
+    "numeric"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

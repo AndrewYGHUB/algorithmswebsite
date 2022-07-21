@@ -1,0 +1,24 @@
+{
+  "slug": "xor",
+  "name": "Xor",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "go": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Sutthinart Khunvadhana",
+      "email": "iakgoog@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "stack-with-singly-linked-list",
+  "name": "Stack with Singly Linked List",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "python": "",
+    "c-plus-plus": "",
+    "java": "",
+    "c": "",
+    "go": "",
+    "rust": "",
+    "dart": "",
+    "lua": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

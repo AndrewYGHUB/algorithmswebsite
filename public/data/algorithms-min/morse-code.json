@@ -1,0 +1,46 @@
+{
+  "slug": "morse-code",
+  "name": "Morse Code",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "python": "",
+    "c-plus-plus": "",
+    "rust": "",
+    "php": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Lukas",
+      "email": "lukas.aurelius@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aalekh Patel",
+      "email": "aalekh.gwpeck.7998@icloud.com",
+      "commits": 1
+    },
+    {
+      "name": "InverMN",
+      "email": "31947630+InverMN@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Deep Raval",
+      "email": "deepraval2905@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

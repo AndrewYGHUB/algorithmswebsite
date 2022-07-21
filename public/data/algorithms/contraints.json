@@ -1,0 +1,23 @@
+{
+  "slug": "contraints",
+  "name": "Contraints",
+  "categories": [
+    "constraints"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "constraints/contraints.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/constraints/contraints.go",
+      "code": "<span class=\"hljs-comment\">// Package constraints has some useful generic type constraints defined which is very similar to</span>\n<span class=\"hljs-comment\">// [golang.org/x/exp/constraints](https://pkg.go.dev/golang.org/x/exp/constraints) package.</span>\n<span class=\"hljs-comment\">// We refrained from using that until it gets placed into the standard library - currently</span>\n<span class=\"hljs-comment\">// there are some questions regarding this package [ref](https://github.com/golang/go/issues/50792).</span>\n<span class=\"hljs-keyword\">package</span> constraints\n\n<span class=\"hljs-comment\">// Signed is a generic type constraint for all signed integers.</span>\n<span class=\"hljs-keyword\">type</span> Signed <span class=\"hljs-keyword\">interface</span> {\n\t~<span class=\"hljs-type\">int</span> | ~<span class=\"hljs-type\">int8</span> | ~<span class=\"hljs-type\">int16</span> | ~<span class=\"hljs-type\">int32</span> | ~<span class=\"hljs-type\">int64</span>\n}\n\n<span class=\"hljs-comment\">// Unsigned is a generic type constraint for all unsigned integers.</span>\n<span class=\"hljs-keyword\">type</span> Unsigned <span class=\"hljs-keyword\">interface</span> {\n\t~<span class=\"hljs-type\">uint</span> | ~<span class=\"hljs-type\">uint8</span> | ~<span class=\"hljs-type\">uint16</span> | ~<span class=\"hljs-type\">uint32</span> | ~<span class=\"hljs-type\">uint64</span>\n}\n\n<span class=\"hljs-comment\">// Integer is a generic type constraint for all integers (signed and unsigned.)</span>\n<span class=\"hljs-keyword\">type</span> Integer <span class=\"hljs-keyword\">interface</span> {\n\tSigned | Unsigned\n}\n\n<span class=\"hljs-comment\">// Float is a generic type constraint for all floating point types.</span>\n<span class=\"hljs-keyword\">type</span> Float <span class=\"hljs-keyword\">interface</span> {\n\t~<span class=\"hljs-type\">float32</span> | ~<span class=\"hljs-type\">float64</span>\n}\n\n<span class=\"hljs-comment\">// Number is a generic type constraint for all numeric types in Go except Complex types.</span>\n<span class=\"hljs-keyword\">type</span> Number <span class=\"hljs-keyword\">interface</span> {\n\tInteger | Float\n}\n\n<span class=\"hljs-comment\">// Ordered is a generic type constraint for all ordered data types in Go.</span>\n<span class=\"hljs-comment\">// Loosely speaking, in mathematics a field is an ordered field if there is a &quot;total</span>\n<span class=\"hljs-comment\">// order&quot; (a binary relation - in this case `&lt;` symbol) such that we will always have</span>\n<span class=\"hljs-comment\">// if a &lt; b then a + c &lt; b + c and if 0 &lt; a, 0 &lt; b then 0 &lt; a.b</span>\n<span class=\"hljs-comment\">// The idea in Go is quite similar, though only limited to Go standard types</span>\n<span class=\"hljs-comment\">// not user defined types.</span>\n<span class=\"hljs-keyword\">type</span> Ordered <span class=\"hljs-keyword\">interface</span> {\n\tInteger | ~<span class=\"hljs-type\">string</span> | Float\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

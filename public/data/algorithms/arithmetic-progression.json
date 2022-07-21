@@ -1,0 +1,24 @@
+{
+  "slug": "arithmetic-progression",
+  "name": "Arithmetic Progression",
+  "categories": [
+    "math",
+    "sum"
+  ],
+  "body": {},
+  "implementations": {
+    "lua": {
+      "dir": "src/math/sum/arithmetic_progression.lua",
+      "url": "https://github.com/TheAlgorithms/lua/tree/master/src/math/sum/arithmetic_progression.lua",
+      "code": "<span class=\"hljs-comment\">-- Based on the gaussian sum formula</span>\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(\n\tfrom, <span class=\"hljs-comment\">-- inclusive lower bound</span>\n\tto, <span class=\"hljs-comment\">-- inclusive upper bound</span>\n\tstep <span class=\"hljs-comment\">-- step between values</span>\n)</span></span>\n\t<span class=\"hljs-keyword\">if</span> from &gt; to <span class=\"hljs-keyword\">then</span>\n\t\t<span class=\"hljs-built_in\">assert</span>(step &lt; <span class=\"hljs-number\">0</span>, <span class=\"hljs-string\">&quot;empty interval&quot;</span>)\n\t<span class=\"hljs-keyword\">end</span>\n\tstep = step <span class=\"hljs-keyword\">or</span> <span class=\"hljs-number\">1</span>\n\t<span class=\"hljs-keyword\">local</span> count = <span class=\"hljs-built_in\">math</span>.<span class=\"hljs-built_in\">floor</span>((to - from) / step)\n\t<span class=\"hljs-keyword\">local</span> last = from + count * step\n\t<span class=\"hljs-comment\">-- sum of numbers from `from` to `to` with step `step`</span>\n\t<span class=\"hljs-keyword\">return</span> (count + <span class=\"hljs-number\">1</span>) * (from + last) / <span class=\"hljs-number\">2</span>\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "longest-non-repeative-substring",
+  "name": "Longest Non Repeative Substring",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "SanOtaku",
+      "email": "SanOtaku098@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "simplist-radical-form",
+  "name": "Simplist Radical Form",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "lua": {
+      "dir": "src/math/simplist_radical_form.lua",
+      "url": "https://github.com/TheAlgorithms/lua/tree/master/src/math/simplist_radical_form.lua",
+      "code": "<span class=\"hljs-comment\">-- Finds the simplist radical form of sqrt x</span>\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(\n\tx <span class=\"hljs-comment\">-- number</span>\n)</span></span>\n\t<span class=\"hljs-keyword\">if</span> x == <span class=\"hljs-number\">0</span> <span class=\"hljs-keyword\">then</span>\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">0</span>\n\t<span class=\"hljs-keyword\">end</span> <span class=\"hljs-comment\">-- 0 = 1 sqrt 0</span>\n\t<span class=\"hljs-built_in\">assert</span>(x &gt; <span class=\"hljs-number\">0</span>)\n\t<span class=\"hljs-keyword\">local</span> coefficient = <span class=\"hljs-number\">1</span>\n\t<span class=\"hljs-keyword\">local</span> root_term = <span class=\"hljs-number\">1</span>\n\t<span class=\"hljs-keyword\">for</span> factor = <span class=\"hljs-number\">2</span>, <span class=\"hljs-built_in\">math</span>.<span class=\"hljs-built_in\">sqrt</span>(x) <span class=\"hljs-keyword\">do</span> <span class=\"hljs-comment\">-- Prime-factorize x</span>\n\t\t<span class=\"hljs-keyword\">local</span> count = <span class=\"hljs-number\">0</span>\n\t\t<span class=\"hljs-keyword\">while</span> x % factor == <span class=\"hljs-number\">0</span> <span class=\"hljs-keyword\">do</span>\n\t\t\tx = x / factor\n\t\t\tcount = count + <span class=\"hljs-number\">1</span>\n\t\t<span class=\"hljs-keyword\">end</span>\n\t\tcoefficient = coefficient * factor ^ <span class=\"hljs-built_in\">math</span>.<span class=\"hljs-built_in\">floor</span>(count / <span class=\"hljs-number\">2</span>) <span class=\"hljs-comment\">-- extract sqrt(factor^(2y)) = factor^y</span>\n\t\troot_term = root_term * factor ^ (count % <span class=\"hljs-number\">2</span>) <span class=\"hljs-comment\">-- possible leftover prime factor is multiplied with root term</span>\n\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-comment\">-- x may itself be prime; the prime factorization only iterates up to sqrt x for efficiency, not handling that case</span>\n\troot_term = root_term * x <span class=\"hljs-comment\">-- multiply by leftover prime factor x (which is either the original x or 1)</span>\n\t<span class=\"hljs-comment\">-- Simplist radical form as coefficient * sqrt(root_term)</span>\n\t<span class=\"hljs-keyword\">return</span> coefficient, root_term\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

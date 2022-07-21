@@ -1,0 +1,18 @@
+{
+  "slug": "wildcard-pattern-matching",
+  "name": "Wildcard Pattern Matching",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "P U N I T H",
+      "email": "55887644+punithbajaj@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "perfect-numbers",
+  "name": "Perfect Numbers",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "f-sharp": "",
+    "rust": "",
+    "aarch64_assembly": ""
+  },
+  "contributors": [
+    {
+      "name": "Mertcan Davulcu",
+      "email": "54983926+mertcandav@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "i1e0",
+      "email": "96235137+i1e0@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Idrek",
+      "email": "Idrek@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "DONSIMON92",
+      "email": "47272787+DONSIMON92@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Allister Isaiah Harvey",
+      "email": "41553768+powpow58@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "hash-crc-32",
+  "name": "Hash Crc 32",
+  "categories": [
+    "hashing"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

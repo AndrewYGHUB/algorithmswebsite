@@ -1,0 +1,19 @@
+{
+  "slug": "catalan",
+  "name": "Catalan",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Calebe Oliveira",
+      "email": "30943380+calebeof@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

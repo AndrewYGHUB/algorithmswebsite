@@ -1,0 +1,18 @@
+{
+  "slug": "ngram",
+  "name": "Ngram",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Harshit Agarwal",
+      "email": "43147421+9harshit@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

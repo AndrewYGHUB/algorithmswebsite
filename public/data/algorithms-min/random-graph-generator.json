@@ -1,0 +1,23 @@
+{
+  "slug": "random-graph-generator",
+  "name": "Random Graph Generator",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Rohan R Bharadwaj",
+      "email": "rohanrbharadwaj@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Manuel Di Lullo",
+      "email": "39048927+manueldilullo@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

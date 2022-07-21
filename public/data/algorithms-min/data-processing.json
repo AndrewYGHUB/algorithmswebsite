@@ -1,0 +1,18 @@
+{
+  "slug": "data-processing",
+  "name": "Data Processing",
+  "categories": [
+    "datapreprocessing"
+  ],
+  "implementations": {
+    "r": ""
+  },
+  "contributors": [
+    {
+      "name": "Erez Shomron",
+      "email": "48328872+eshom@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

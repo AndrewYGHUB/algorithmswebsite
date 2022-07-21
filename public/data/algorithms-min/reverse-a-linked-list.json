@@ -1,0 +1,23 @@
+{
+  "slug": "reverse-a-linked-list",
+  "name": "Reverse a Linked List",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "2kindsofcs",
+      "email": "42531877+2kindsofcs@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Tisha Soumya",
+      "email": "tishasoumya@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

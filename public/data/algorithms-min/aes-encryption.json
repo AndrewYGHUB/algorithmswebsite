@@ -1,0 +1,33 @@
+{
+  "slug": "aes-encryption",
+  "name": "AES Encryption",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Hakan Arslan",
+      "email": "hakan0arslan@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Mahmoud khalil",
+      "email": "khalil2535@yahoo.com",
+      "commits": 1
+    },
+    {
+      "name": "Piyush Yadav",
+      "email": "piyush13y@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

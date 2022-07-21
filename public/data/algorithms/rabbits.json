@@ -1,0 +1,23 @@
+{
+  "slug": "rabbits",
+  "name": "Rabbits",
+  "categories": [
+    "projectrosalind"
+  ],
+  "body": {},
+  "implementations": {
+    "julia": {
+      "dir": "src/project-rosalind/rabbits.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/project-rosalind/rabbits.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    rabbits(n::Integer, k::Integer)\n\nProblem: https://rosalind.info/problems/fib/\n\nGiven: Two numbers:\n          - n =&gt; number of months\n          - k =&gt; number of rabbits litter per each pair \n\nReturns: Number of rabbits after n months\n\nContributed by:- [Nikola Mircic](https://github.com/Nikola-Mircic)\n&quot;&quot;&quot;</span>\n\n<span class=\"hljs-keyword\">function</span> rabbits(n::<span class=\"hljs-built_in\">Integer</span>, k::<span class=\"hljs-built_in\">Integer</span>)\n    <span class=\"hljs-comment\"># For calculating the number of rabbit pairs, we will only need the last two months</span>\n    <span class=\"hljs-comment\"># and instead of the array with n elements, we will only use two variables</span>\n    a = <span class=\"hljs-number\">1</span> <span class=\"hljs-comment\"># First generation</span>\n    b = <span class=\"hljs-number\">1</span> <span class=\"hljs-comment\"># Second generation</span>\n    <span class=\"hljs-comment\"># Calculate the number of rabbits for each generation from 3rd to nth</span>\n    <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">3</span>:n\n        <span class=\"hljs-comment\"># Every rabbit pair older than month will give 3 new pairs</span>\n        <span class=\"hljs-comment\"># so the number of rabbits in k-th month is a[k] = a[k-1] + a[k-2] * 3</span>\n        t = b\n        b = b + <span class=\"hljs-number\">3</span>*a\n        a = t\n    <span class=\"hljs-keyword\">end</span>\n    <span class=\"hljs-keyword\">return</span> b\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Nikola Mircic",
+      "email": "nikola123mircic@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

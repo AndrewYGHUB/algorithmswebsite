@@ -1,0 +1,23 @@
+{
+  "slug": "validate-url",
+  "name": "Validate Url",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/ValidateUrl.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/ValidateUrl.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">ValidateURL</span>\n * <span class=\"hljs-doctag\">@description</span> validate the URL.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">String</span>} <span class=\"hljs-variable\">url</span> - The input URL string\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">Boolean</span>}\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">validateURL</span> = (<span class=\"hljs-params\">url</span>) =&gt; {\n  <span class=\"hljs-keyword\">const</span> <span class=\"hljs-variable constant_\">URL_PATTERN</span> = <span class=\"hljs-regexp\">/^(https?:\\/\\/(?:www\\.|(?!www))[^\\s.]+\\.[^\\s]{2,}|www\\.[^\\s]+\\.[^\\s]{2,})$/gi</span>\n\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-variable constant_\">URL_PATTERN</span>.<span class=\"hljs-title function_\">test</span>(url)\n}\n\n<span class=\"hljs-keyword\">export</span> { validateURL }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "longest-alternating-subsequence",
+  "name": "Longest Alternating Subsequence",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Limbad Yash",
+      "email": "56826569+limbad-YK@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

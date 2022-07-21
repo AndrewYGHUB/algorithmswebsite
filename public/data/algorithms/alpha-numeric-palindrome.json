@@ -1,0 +1,38 @@
+{
+  "slug": "alpha-numeric-palindrome",
+  "name": "Alpha Numeric Palindrome",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/AlphaNumericPalindrome.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/AlphaNumericPalindrome.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">alphaNumericPalindrome</span>\n * <span class=\"hljs-doctag\">@description</span> alphaNumericPalindrome should return true if the string has alphanumeric characters that are palindrome irrespective of special characters and the letter case.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} str the string to check\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">boolean</span>}\n * <span class=\"hljs-doctag\">@see</span> [Palindrome](https://en.wikipedia.org/wiki/Palindrome)\n * <span class=\"hljs-doctag\">@example</span>\n * The function alphaNumericPalindrome() receives a string with varying formats\n * like &quot;racecar&quot;, &quot;RaceCar&quot;, and &quot;race CAR&quot;\n * The string can also have special characters\n * like &quot;2A3*3a2&quot;, &quot;2A3 3a2&quot;, and &quot;2_A3*3#A2&quot;\n *\n * But the catch is, we have to check only if the alphanumeric characters\n * are palindrome i.e remove spaces, symbols, punctuations etc\n * and the case of the characters doesn&#x27;t matter\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">alphaNumericPalindrome</span> = (<span class=\"hljs-params\">str</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> str !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Argument should be string&#x27;</span>)\n  }\n\n  <span class=\"hljs-comment\">// removing all the special characters and turning everything to lowercase</span>\n  <span class=\"hljs-keyword\">const</span> newStr = str.<span class=\"hljs-title function_\">replace</span>(<span class=\"hljs-regexp\">/[^a-z0-9]+/ig</span>, <span class=\"hljs-string\">&#x27;&#x27;</span>).<span class=\"hljs-title function_\">toLowerCase</span>()\n  <span class=\"hljs-keyword\">const</span> midIndex = newStr.<span class=\"hljs-property\">length</span> &gt;&gt; <span class=\"hljs-number\">1</span> <span class=\"hljs-comment\">// x &gt;&gt; y = floor(x / 2^y)</span>\n\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; midIndex; i++) {\n    <span class=\"hljs-keyword\">if</span> (newStr.<span class=\"hljs-title function_\">at</span>(i) !== newStr.<span class=\"hljs-title function_\">at</span>(~i)) { <span class=\"hljs-comment\">// ~n = -(n + 1)</span>\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n    }\n  }\n\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> alphaNumericPalindrome\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Syed Fasiuddin",
+      "email": "syedfasiuddin.02@gmail.com",
+      "commits": 8
+    }
+  ],
+  "explanationUrl": {}
+}

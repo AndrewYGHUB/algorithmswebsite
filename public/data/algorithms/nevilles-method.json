@@ -1,0 +1,23 @@
+{
+  "slug": "nevilles-method",
+  "name": "Nevilles Method",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "maths/nevilles_method.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/maths/nevilles_method.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    Python program to show how to interpolate and evaluate a polynomial\n    using Neville&#x27;s method.\n    Neville’s method evaluates a polynomial that passes through a\n    given set of x and y points for a particular x value (x0) using the\n    Newton polynomial form.\n    Reference:\n        https://rpubs.com/aaronsc32/nevilles-method-polynomial-interpolation\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">neville_interpolate</span>(<span class=\"hljs-params\">x_points: <span class=\"hljs-built_in\">list</span>, y_points: <span class=\"hljs-built_in\">list</span>, x0: <span class=\"hljs-built_in\">int</span></span>) -&gt; <span class=\"hljs-built_in\">list</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n       Interpolate and evaluate a polynomial using Neville&#x27;s method.\n       Arguments:\n           x_points, y_points: Iterables of x and corresponding y points through\n            which the polynomial passes.\n           x0: The value of x to evaluate the polynomial for.\n       Return Value: A list of the approximated value and the Neville iterations\n           table respectively.\n    &gt;&gt;&gt; import pprint\n    &gt;&gt;&gt; neville_interpolate((1,2,3,4,6), (6,7,8,9,11), 5)[0]\n    10.0\n    &gt;&gt;&gt; pprint.pprint(neville_interpolate((1,2,3,4,6), (6,7,8,9,11), 99)[1])\n    [[0, 6, 0, 0, 0],\n     [0, 7, 0, 0, 0],\n     [0, 8, 104.0, 0, 0],\n     [0, 9, 104.0, 104.0, 0],\n     [0, 11, 104.0, 104.0, 104.0]]\n    &gt;&gt;&gt; neville_interpolate((1,2,3,4,6), (6,7,8,9,11), 99)[0]\n    104.0\n    &gt;&gt;&gt; neville_interpolate((1,2,3,4,6), (6,7,8,9,11), &#x27;&#x27;)\n    Traceback (most recent call last):\n      File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;\n      ...\n    TypeError: unsupported operand type(s) for -: &#x27;str&#x27; and &#x27;int&#x27;\n    &quot;&quot;&quot;</span>\n    n = <span class=\"hljs-built_in\">len</span>(x_points)\n    q = [[<span class=\"hljs-number\">0</span>] * n <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(n)]\n    <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(n):\n        q[i][<span class=\"hljs-number\">1</span>] = y_points[i]\n\n    <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(<span class=\"hljs-number\">2</span>, n):\n        <span class=\"hljs-keyword\">for</span> j <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(i, n):\n            q[j][i] = (\n                (x0 - x_points[j - i + <span class=\"hljs-number\">1</span>]) * q[j][i - <span class=\"hljs-number\">1</span>]\n                - (x0 - x_points[j]) * q[j - <span class=\"hljs-number\">1</span>][i - <span class=\"hljs-number\">1</span>]\n            ) / (x_points[j] - x_points[j - i + <span class=\"hljs-number\">1</span>])\n\n    <span class=\"hljs-keyword\">return</span> [q[n - <span class=\"hljs-number\">1</span>][n - <span class=\"hljs-number\">1</span>], q]\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Matthew Wisdom",
+      "email": "matthewwisdom11@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

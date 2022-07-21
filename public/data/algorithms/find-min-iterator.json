@@ -1,0 +1,23 @@
+{
+  "slug": "find-min-iterator",
+  "name": "Find Min Iterator",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/FindMinIterator.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/FindMinIterator.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">FindMinIterator</span>\n * <span class=\"hljs-doctag\">@description</span> Function to find the minimum number given in an array.\n */</span>\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">FindMinIterator</span> = (<span class=\"hljs-params\">_iterable, _selector = <span class=\"hljs-literal\">undefined</span></span>) =&gt; {\n  <span class=\"hljs-keyword\">let</span> min\n\n  <span class=\"hljs-keyword\">const</span> iterator = _iterable[<span class=\"hljs-title class_\">Symbol</span>.<span class=\"hljs-property\">iterator</span>]()\n  <span class=\"hljs-keyword\">if</span> (!_selector) {\n    <span class=\"hljs-keyword\">let</span> current = iterator.<span class=\"hljs-title function_\">next</span>()\n    <span class=\"hljs-keyword\">if</span> (current.<span class=\"hljs-property\">done</span>) { <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">undefined</span> }\n    min = current.<span class=\"hljs-property\">value</span>\n\n    current = iterator.<span class=\"hljs-title function_\">next</span>()\n    <span class=\"hljs-keyword\">while</span> (!current.<span class=\"hljs-property\">done</span>) {\n      <span class=\"hljs-keyword\">const</span> x = current.<span class=\"hljs-property\">value</span>\n      <span class=\"hljs-keyword\">if</span> (x &lt; min) { min = x }\n      current = iterator.<span class=\"hljs-title function_\">next</span>()\n    }\n  } <span class=\"hljs-keyword\">else</span> {\n    <span class=\"hljs-keyword\">let</span> current = iterator.<span class=\"hljs-title function_\">next</span>()\n    <span class=\"hljs-keyword\">if</span> (current.<span class=\"hljs-property\">done</span>) { <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">undefined</span> }\n    min = <span class=\"hljs-title function_\">_selector</span>(current.<span class=\"hljs-property\">value</span>)\n\n    current = iterator.<span class=\"hljs-title function_\">next</span>()\n    <span class=\"hljs-keyword\">while</span> (!current.<span class=\"hljs-property\">done</span>) {\n      <span class=\"hljs-keyword\">const</span> x = <span class=\"hljs-title function_\">_selector</span>(current.<span class=\"hljs-property\">value</span>)\n      <span class=\"hljs-keyword\">if</span> (x &lt; min) { min = x }\n      current = iterator.<span class=\"hljs-title function_\">next</span>()\n    }\n  }\n  <span class=\"hljs-keyword\">return</span> min\n}\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">FindMinIterator</span> }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "TrasherDK",
+      "email": "trasherdk@fumlersoft.dk",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

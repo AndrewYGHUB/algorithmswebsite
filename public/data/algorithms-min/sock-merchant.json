@@ -1,0 +1,18 @@
+{
+  "slug": "sock-merchant",
+  "name": "Sock Merchant",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Souvik Ghosh",
+      "email": "42302494+SouvikGhosh05@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "diffiehellmankeyexchange",
+  "name": "Diffiehellmankeyexchange",
+  "categories": [
+    "ciphers",
+    "diffiehellman"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Pritam Singh",
+      "email": "43764373+Zzocker@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "yicheng wang",
+      "email": "yichengww@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Brayo",
+      "email": "vukubrian@gmail.com",
+      "commits": 6
+    }
+  ],
+  "explanationUrl": {}
+}

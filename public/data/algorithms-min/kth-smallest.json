@@ -1,0 +1,18 @@
+{
+  "slug": "kth-smallest",
+  "name": "Kth Smallest",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Arthur Kurbidaev",
+      "email": "artkurbidaev@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

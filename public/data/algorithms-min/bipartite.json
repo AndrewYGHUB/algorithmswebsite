@@ -1,0 +1,19 @@
+{
+  "slug": "bipartite",
+  "name": "Bipartite",
+  "categories": [
+    "graphs",
+    "coloring"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Metta Ong",
+      "email": "ongspxm@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

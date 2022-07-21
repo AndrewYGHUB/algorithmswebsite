@@ -1,0 +1,33 @@
+{
+  "slug": "breadth-first-shortest-path",
+  "name": "Breadth First Shortest Path",
+  "categories": [
+    "graphs"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Graphs/BreadthFirstShortestPath.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Graphs/BreadthFirstShortestPath.js",
+      "code": "<span class=\"hljs-comment\">/**\r\n * Breadth-first approach can be applied to determine the shortest path between two nodes in an equi-weighted graph.\r\n *\r\n * It searches the target node among all neighbors of the starting node, then the process is repeated on the level of\r\n * the neighbors of the neighbors and so on.\r\n *\r\n * <span class=\"hljs-doctag\">@see</span> https://en.wikipedia.org/wiki/Breadth-first_search\r\n * <span class=\"hljs-doctag\">@see</span> https://www.koderdojo.com/blog/breadth-first-search-and-shortest-path-in-csharp-and-net-core\r\n */</span>\r\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">breadthFirstShortestPath</span> (graph, startNode, targetNode) {\r\n  <span class=\"hljs-comment\">// check if startNode &amp; targetNode are identical</span>\r\n  <span class=\"hljs-keyword\">if</span> (startNode === targetNode) {\r\n    <span class=\"hljs-keyword\">return</span> [startNode]\r\n  }\r\n\r\n  <span class=\"hljs-comment\">// visited keeps track of all nodes visited</span>\r\n  <span class=\"hljs-keyword\">const</span> visited = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Set</span>()\r\n\r\n  <span class=\"hljs-comment\">// queue contains the paths to be explored in the future</span>\r\n  <span class=\"hljs-keyword\">const</span> initialPath = [startNode]\r\n  <span class=\"hljs-keyword\">const</span> queue = [initialPath]\r\n\r\n  <span class=\"hljs-keyword\">while</span> (queue.<span class=\"hljs-property\">length</span> &gt; <span class=\"hljs-number\">0</span>) {\r\n    <span class=\"hljs-comment\">// start with the queue&#x27;s first path</span>\r\n    <span class=\"hljs-keyword\">const</span> path = queue.<span class=\"hljs-title function_\">shift</span>()\r\n    <span class=\"hljs-keyword\">const</span> node = path[path.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>]\r\n\r\n    <span class=\"hljs-comment\">// explore this node if it hasn&#x27;t been visited yet</span>\r\n    <span class=\"hljs-keyword\">if</span> (!visited.<span class=\"hljs-title function_\">has</span>(node)) {\r\n      <span class=\"hljs-comment\">// mark the node as visited</span>\r\n      visited.<span class=\"hljs-title function_\">add</span>(node)\r\n\r\n      <span class=\"hljs-keyword\">const</span> neighbors = graph[node]\r\n\r\n      <span class=\"hljs-comment\">// create a new path in the queue for each neighbor</span>\r\n      <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; neighbors.<span class=\"hljs-property\">length</span>; i++) {\r\n        <span class=\"hljs-keyword\">const</span> newPath = path.<span class=\"hljs-title function_\">concat</span>([neighbors[i]])\r\n\r\n        <span class=\"hljs-comment\">// the first path to contain the target node is the shortest path</span>\r\n        <span class=\"hljs-keyword\">if</span> (neighbors[i] === targetNode) {\r\n          <span class=\"hljs-keyword\">return</span> newPath\r\n        }\r\n\r\n        <span class=\"hljs-comment\">// queue the new path</span>\r\n        queue.<span class=\"hljs-title function_\">push</span>(newPath)\r\n      }\r\n    }\r\n  }\r\n\r\n  <span class=\"hljs-comment\">// the target node was not reachable</span>\r\n  <span class=\"hljs-keyword\">return</span> []\r\n}\r\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Tapajyoti Bose",
+      "email": "44058757+ruppysuppy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "algobytewise",
+      "email": "algobytewise@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Roland Hummel",
+      "email": "roland.hummel@qaware.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

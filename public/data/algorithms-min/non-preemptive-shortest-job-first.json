@@ -1,0 +1,18 @@
+{
+  "slug": "non-preemptive-shortest-job-first",
+  "name": "Non Preemptive Shortest Job First",
+  "categories": [
+    "scheduling"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "이빈",
+      "email": "76545238+Bynnn@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

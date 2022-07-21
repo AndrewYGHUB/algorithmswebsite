@@ -1,0 +1,23 @@
+{
+  "slug": "molecular-chemistry",
+  "name": "Molecular Chemistry",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Prakhar Gurunani",
+      "email": "prakhargurunani@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

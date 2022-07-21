@@ -1,0 +1,33 @@
+{
+  "slug": "max-word",
+  "name": "Max Word",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/MaxWord.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/MaxWord.js",
+      "code": "<span class=\"hljs-comment\">// Given a sentence, return the most occurring word</span>\n\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">sentence</span> - the sentence you want to find the most occurring word\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">string</span>} - the most occurring word\n *\n * <span class=\"hljs-doctag\">@example</span>\n *     -  maxWord(&#x27;lala lili lala&#x27;); // lala\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">maxWord</span> = (<span class=\"hljs-params\">sentence = <span class=\"hljs-string\">&#x27;&#x27;</span></span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> sentence !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;the param should be string&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">if</span> (!sentence) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">null</span>\n  }\n\n  <span class=\"hljs-keyword\">const</span> words = sentence.<span class=\"hljs-title function_\">split</span>(<span class=\"hljs-string\">&#x27; &#x27;</span>)\n  <span class=\"hljs-keyword\">if</span> (words.<span class=\"hljs-property\">length</span> &lt; <span class=\"hljs-number\">2</span>) {\n    <span class=\"hljs-keyword\">return</span> words[<span class=\"hljs-number\">0</span>]\n  }\n\n  <span class=\"hljs-keyword\">const</span> occurrences = {}\n  words.<span class=\"hljs-title function_\">forEach</span>(<span class=\"hljs-function\"><span class=\"hljs-params\">word</span> =&gt;</span> {\n    occurrences[word.<span class=\"hljs-title function_\">toLocaleLowerCase</span>()] = occurrences[word.<span class=\"hljs-title function_\">toLocaleLowerCase</span>()] + <span class=\"hljs-number\">1</span> || <span class=\"hljs-number\">1</span>\n  })\n\n  <span class=\"hljs-keyword\">const</span> max = <span class=\"hljs-title class_\">Object</span>.<span class=\"hljs-title function_\">keys</span>(occurrences).<span class=\"hljs-title function_\">reduce</span>(<span class=\"hljs-function\">(<span class=\"hljs-params\">n, word</span>) =&gt;</span> {\n    <span class=\"hljs-keyword\">if</span> (occurrences[word] &gt; n.<span class=\"hljs-property\">count</span>) { <span class=\"hljs-keyword\">return</span> { word, <span class=\"hljs-attr\">count</span>: occurrences[word] } } <span class=\"hljs-keyword\">else</span> { <span class=\"hljs-keyword\">return</span> n }\n  }, { <span class=\"hljs-attr\">word</span>: <span class=\"hljs-string\">&#x27;&#x27;</span>, <span class=\"hljs-attr\">count</span>: <span class=\"hljs-number\">0</span> })\n\n  <span class=\"hljs-keyword\">return</span> max.<span class=\"hljs-property\">word</span>\n}\n\n<span class=\"hljs-keyword\">export</span> { maxWord }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "farharamadhan2",
+      "email": "farharamadhan2@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

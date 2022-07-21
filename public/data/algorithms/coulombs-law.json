@@ -1,0 +1,28 @@
+{
+  "slug": "coulombs-law",
+  "name": "Coulombs Law",
+  "categories": [
+    "electronics"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "electronics/coulombs_law.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/electronics/coulombs_law.py",
+      "code": "<span class=\"hljs-comment\"># https://en.wikipedia.org/wiki/Coulomb%27s_law</span>\n\n<span class=\"hljs-keyword\">from</span> __future__ <span class=\"hljs-keyword\">import</span> annotations\n\nCOULOMBS_CONSTANT = <span class=\"hljs-number\">8.988e9</span>  <span class=\"hljs-comment\"># units = N * m^s * C^-2</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">couloumbs_law</span>(<span class=\"hljs-params\">\n    force: <span class=\"hljs-built_in\">float</span>, charge1: <span class=\"hljs-built_in\">float</span>, charge2: <span class=\"hljs-built_in\">float</span>, distance: <span class=\"hljs-built_in\">float</span>\n</span>) -&gt; <span class=\"hljs-built_in\">dict</span>[<span class=\"hljs-built_in\">str</span>, <span class=\"hljs-built_in\">float</span>]:\n\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Apply Coulomb&#x27;s Law on any three given values. These can be force, charge1,\n    charge2, or distance, and then in a Python dict return name/value pair of\n    the zero value.\n\n    Coulomb&#x27;s Law states that the magnitude of the electrostatic force of\n    attraction or repulsion between two point charges is directly proportional\n    to the product of the magnitudes of charges and inversely proportional to\n    the square of the distance between them.\n\n    Reference\n    ----------\n    Coulomb (1785) &quot;Premier mémoire sur l’électricité et le magnétisme,&quot;\n    Histoire de l’Académie Royale des Sciences, pp. 569–577.\n\n    Parameters\n    ----------\n    force : float with units in Newtons\n\n    charge1 : float with units in Coulombs\n\n    charge2 : float with units in Coulombs\n\n    distance : float with units in meters\n\n    Returns\n    -------\n    result : dict name/value pair of the zero value\n\n    &gt;&gt;&gt; couloumbs_law(force=0, charge1=3, charge2=5, distance=2000)\n    {&#x27;force&#x27;: 33705.0}\n\n    &gt;&gt;&gt; couloumbs_law(force=10, charge1=3, charge2=5, distance=0)\n    {&#x27;distance&#x27;: 116112.01488218177}\n\n    &gt;&gt;&gt; couloumbs_law(force=10, charge1=0, charge2=5, distance=2000)\n    {&#x27;charge1&#x27;: 0.0008900756564307966}\n\n    &gt;&gt;&gt; couloumbs_law(force=0, charge1=0, charge2=5, distance=2000)\n    Traceback (most recent call last):\n      ...\n    ValueError: One and only one argument must be 0\n\n    &gt;&gt;&gt; couloumbs_law(force=0, charge1=3, charge2=5, distance=-2000)\n    Traceback (most recent call last):\n      ...\n    ValueError: Distance cannot be negative\n\n    &quot;&quot;&quot;</span>\n\n    charge_product = <span class=\"hljs-built_in\">abs</span>(charge1 * charge2)\n\n    <span class=\"hljs-keyword\">if</span> (force, charge1, charge2, distance).count(<span class=\"hljs-number\">0</span>) != <span class=\"hljs-number\">1</span>:\n        <span class=\"hljs-keyword\">raise</span> ValueError(<span class=\"hljs-string\">&quot;One and only one argument must be 0&quot;</span>)\n    <span class=\"hljs-keyword\">if</span> distance &lt; <span class=\"hljs-number\">0</span>:\n        <span class=\"hljs-keyword\">raise</span> ValueError(<span class=\"hljs-string\">&quot;Distance cannot be negative&quot;</span>)\n    <span class=\"hljs-keyword\">if</span> force == <span class=\"hljs-number\">0</span>:\n        force = COULOMBS_CONSTANT * charge_product / (distance**<span class=\"hljs-number\">2</span>)\n        <span class=\"hljs-keyword\">return</span> {<span class=\"hljs-string\">&quot;force&quot;</span>: force}\n    <span class=\"hljs-keyword\">elif</span> charge1 == <span class=\"hljs-number\">0</span>:\n        charge1 = <span class=\"hljs-built_in\">abs</span>(force) * (distance**<span class=\"hljs-number\">2</span>) / (COULOMBS_CONSTANT * charge2)\n        <span class=\"hljs-keyword\">return</span> {<span class=\"hljs-string\">&quot;charge1&quot;</span>: charge1}\n    <span class=\"hljs-keyword\">elif</span> charge2 == <span class=\"hljs-number\">0</span>:\n        charge2 = <span class=\"hljs-built_in\">abs</span>(force) * (distance**<span class=\"hljs-number\">2</span>) / (COULOMBS_CONSTANT * charge1)\n        <span class=\"hljs-keyword\">return</span> {<span class=\"hljs-string\">&quot;charge2&quot;</span>: charge2}\n    <span class=\"hljs-keyword\">elif</span> distance == <span class=\"hljs-number\">0</span>:\n        distance = (COULOMBS_CONSTANT * charge_product / <span class=\"hljs-built_in\">abs</span>(force)) ** <span class=\"hljs-number\">0.5</span>\n        <span class=\"hljs-keyword\">return</span> {<span class=\"hljs-string\">&quot;distance&quot;</span>: distance}\n    <span class=\"hljs-keyword\">raise</span> ValueError(<span class=\"hljs-string\">&quot;Exactly one argument must be 0&quot;</span>)\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Jenny Vo",
+      "email": "40080855+ovynnej@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

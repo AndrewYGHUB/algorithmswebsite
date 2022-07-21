@@ -1,0 +1,29 @@
+{
+  "slug": "dnf-sort",
+  "name": "Dnf Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "ERR !",
+      "email": "75872316+amino19@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sujal Gupta",
+      "email": "55016909+heysujal@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "G.V.AKHIL CHANDRA",
+      "email": "75377985+GV-Akhil-Chandra@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

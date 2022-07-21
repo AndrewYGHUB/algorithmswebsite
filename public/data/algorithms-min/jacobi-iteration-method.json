@@ -1,0 +1,23 @@
+{
+  "slug": "jacobi-iteration-method",
+  "name": "Jacobi Iteration Method",
+  "categories": [
+    "numericalanalysis"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Leoriem-code",
+      "email": "73761711+Leoriem-code@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Nivas Manduva",
+      "email": "53264470+eviltypha@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

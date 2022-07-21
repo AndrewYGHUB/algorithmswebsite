@@ -1,0 +1,12 @@
+{
+  "slug": "a000027-natural",
+  "name": "A000027 Natural",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

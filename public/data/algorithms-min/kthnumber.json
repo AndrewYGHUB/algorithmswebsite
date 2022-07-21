@@ -1,0 +1,12 @@
+{
+  "slug": "kthnumber",
+  "name": "Kthnumber",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "fibonacci-java-streams",
+  "name": "Fibonacci Java Streams",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "caos321",
+      "email": "36530240+caos321@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

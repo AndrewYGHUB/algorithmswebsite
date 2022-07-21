@@ -1,0 +1,28 @@
+{
+  "slug": "max-word",
+  "name": "Max Word",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "farharamadhan2",
+      "email": "farharamadhan2@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

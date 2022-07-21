@@ -1,0 +1,30 @@
+{
+  "slug": "simpson-integration",
+  "name": "Simpson Integration",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": "",
+    "java": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "ggkogkou",
+      "email": "76820848+ggkogkou@users.noreply.github.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

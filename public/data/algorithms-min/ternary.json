@@ -1,0 +1,23 @@
+{
+  "slug": "ternary",
+  "name": "Ternary",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ayoub Chegraoui",
+      "email": "ayoubch807@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

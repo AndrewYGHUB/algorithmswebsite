@@ -1,0 +1,18 @@
+{
+  "slug": "sliding-window",
+  "name": "Sliding Window",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Mor Mordechai Ben",
+      "email": "31767946+morMBen@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

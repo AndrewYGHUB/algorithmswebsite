@@ -1,0 +1,20 @@
+{
+  "slug": "generic-hash-map-using-array-list",
+  "name": "Generic Hash Map Using Array List",
+  "categories": [
+    "datastructures",
+    "hashmap",
+    "hashing"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Divya Raichura",
+      "email": "92081543+divya-raichura@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

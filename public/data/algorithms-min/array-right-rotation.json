@@ -1,0 +1,28 @@
+{
+  "slug": "array-right-rotation",
+  "name": "Array Right Rotation",
+  "categories": [
+    "operationsondatastructures"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "Alvin Philips",
+      "email": "alvinphilips257@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

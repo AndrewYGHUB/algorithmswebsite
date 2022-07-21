@@ -1,0 +1,33 @@
+{
+  "slug": "dice-coefficient",
+  "name": "Dice Coefficient",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/DiceCoefficient.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/DiceCoefficient.js",
+      "code": "<span class=\"hljs-comment\">/* The Sørensen–Dice coefficient is a statistic used to gauge the similarity of two samples.\n * Applied to strings, it can give you a value between 0 and 1 (included) which tells you how similar they are.\n * Dice coefficient is calculated by comparing the bigrams of both strings,\n * a bigram is a substring of the string of length 2.\n * read more: https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient\n */</span>\n\n<span class=\"hljs-comment\">// Time complexity: O(m + n), m and n being the sizes of string A and string B</span>\n\n<span class=\"hljs-comment\">// Find the bistrings of a string and return a hashmap (key =&gt; bistring, value =&gt; count)</span>\n<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">mapBigrams</span> (string) {\n  <span class=\"hljs-keyword\">const</span> bigrams = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Map</span>()\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; string.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>; i++) {\n    <span class=\"hljs-keyword\">const</span> bigram = string.<span class=\"hljs-title function_\">substring</span>(i, i + <span class=\"hljs-number\">2</span>)\n    <span class=\"hljs-keyword\">const</span> count = bigrams.<span class=\"hljs-title function_\">get</span>(bigram)\n    bigrams.<span class=\"hljs-title function_\">set</span>(bigram, (count || <span class=\"hljs-number\">0</span>) + <span class=\"hljs-number\">1</span>)\n  }\n  <span class=\"hljs-keyword\">return</span> bigrams\n}\n\n<span class=\"hljs-comment\">// Calculate the number of common bigrams between a map of bigrams and a string</span>\n\n<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">countCommonBigrams</span> (bigrams, string) {\n  <span class=\"hljs-keyword\">let</span> count = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; string.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>; i++) {\n    <span class=\"hljs-keyword\">const</span> bigram = string.<span class=\"hljs-title function_\">substring</span>(i, i + <span class=\"hljs-number\">2</span>)\n    <span class=\"hljs-keyword\">if</span> (bigrams.<span class=\"hljs-title function_\">has</span>(bigram)) count++\n  }\n  <span class=\"hljs-keyword\">return</span> count\n}\n\n<span class=\"hljs-comment\">// Calculate Dice coeff of 2 strings</span>\n<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">diceCoefficient</span> (stringA, stringB) {\n  <span class=\"hljs-keyword\">if</span> (stringA === stringB) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (stringA.<span class=\"hljs-property\">length</span> &lt; <span class=\"hljs-number\">2</span> || stringB.<span class=\"hljs-property\">length</span> &lt; <span class=\"hljs-number\">2</span>) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>\n\n  <span class=\"hljs-keyword\">const</span> bigramsA = <span class=\"hljs-title function_\">mapBigrams</span>(stringA)\n\n  <span class=\"hljs-keyword\">const</span> lengthA = stringA.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">const</span> lengthB = stringB.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>\n\n  <span class=\"hljs-keyword\">let</span> dice = (<span class=\"hljs-number\">2</span> * <span class=\"hljs-title function_\">countCommonBigrams</span>(bigramsA, stringB)) / (lengthA + lengthB)\n\n  <span class=\"hljs-comment\">// cut 0.xxxxxx to 0.xx for simplicity</span>\n  dice = <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">floor</span>(dice * <span class=\"hljs-number\">100</span>) / <span class=\"hljs-number\">100</span>\n\n  <span class=\"hljs-keyword\">return</span> dice\n}\n\n<span class=\"hljs-keyword\">export</span> { diceCoefficient }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Urcute",
+      "email": "75350256+itsUrcute@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

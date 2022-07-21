@@ -1,0 +1,45 @@
+{
+  "slug": "binomial-coefficient",
+  "name": "Binomial Coefficient",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "java": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "1fisedi",
+      "email": "51143882+1fisedi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Michele Caci",
+      "email": "michele.caci@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Akshay Dubey",
+      "email": "38462415+itsAkshayDubey@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "prathmesh1199",
+      "email": "51616294+prathmesh1199@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

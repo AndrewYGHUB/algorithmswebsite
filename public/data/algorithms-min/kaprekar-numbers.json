@@ -1,0 +1,23 @@
+{
+  "slug": "kaprekar-numbers",
+  "name": "Kaprekar Numbers",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "s-devran",
+      "email": "78323181+s-devran@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Subhro Acharjee",
+      "email": "88422396+subhroblkbox@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

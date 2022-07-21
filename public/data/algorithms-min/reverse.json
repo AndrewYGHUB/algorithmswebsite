@@ -1,0 +1,23 @@
+{
+  "slug": "reverse",
+  "name": "Reverse",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Roy Matero",
+      "email": "57762327+materoy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sutthinart Khunvadhana",
+      "email": "iakgoog@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "mosaic-augmentation",
+  "name": "Mosaic Augmentation",
+  "categories": [
+    "computervision"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Khoi Vo",
+      "email": "nguyenkhoi8071@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

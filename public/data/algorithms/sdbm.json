@@ -1,0 +1,48 @@
+{
+  "slug": "sdbm",
+  "name": "SDBM",
+  "categories": [
+    "hashing"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "hashes/sdbm.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/hashes/sdbm.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    This algorithm was created for sdbm (a public-domain reimplementation of ndbm)\n    database library.\n    It was found to do well in scrambling bits, causing better distribution of the keys\n    and fewer splits.\n    It also happens to be a good general hashing function with good distribution.\n    The actual function (pseudo code) is:\n        for i in i..len(str):\n            hash(i) = hash(i - 1) * 65599 + str[i];\n\n    What is included below is the faster version used in gawk. [there is even a faster,\n    duff-device version]\n    The magic constant 65599 was picked out of thin air while experimenting with\n    different constants.\n    It turns out to be a prime.\n    This is one of the algorithms used in berkeley db (see sleepycat) and elsewhere.\n\n    source: http://www.cse.yorku.ca/~oz/hash.html\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">sdbm</span>(<span class=\"hljs-params\">plain_text: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">int</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Function implements sdbm hash, easy to use, great for bits scrambling.\n    iterates over each character in the given string and applies function to each of\n    them.\n\n    &gt;&gt;&gt; sdbm(&#x27;Algorithms&#x27;)\n    1462174910723540325254304520539387479031000036\n\n    &gt;&gt;&gt; sdbm(&#x27;scramble bits&#x27;)\n    730247649148944819640658295400555317318720608290373040936089\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-built_in\">hash</span> = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">for</span> plain_chr <span class=\"hljs-keyword\">in</span> plain_text:\n        <span class=\"hljs-built_in\">hash</span> = <span class=\"hljs-built_in\">ord</span>(plain_chr) + (<span class=\"hljs-built_in\">hash</span> &lt;&lt; <span class=\"hljs-number\">6</span>) + (<span class=\"hljs-built_in\">hash</span> &lt;&lt; <span class=\"hljs-number\">16</span>) - <span class=\"hljs-built_in\">hash</span>\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">hash</span>\n"
+    },
+    "c": {
+      "dir": "hash/hash_sdbm.c",
+      "url": "https://github.com/TheAlgorithms/c/tree/master/hash/hash_sdbm.c",
+      "code": "<span class=\"hljs-comment\">/**\n * @addtogroup hash Hash algorithms\n * @{\n * @file hash_sdbm.c\n * @author [Christian Bender](https://github.com/christianbender)\n * @brief [SDBM hash algorithm](http://www.cse.yorku.ca/~oz/hash.html)\n */</span>\n<span class=\"hljs-meta\">#<span class=\"hljs-keyword\">include</span> <span class=\"hljs-string\">&lt;assert.h&gt;</span></span>\n<span class=\"hljs-meta\">#<span class=\"hljs-keyword\">include</span> <span class=\"hljs-string\">&lt;inttypes.h&gt;</span></span>\n<span class=\"hljs-meta\">#<span class=\"hljs-keyword\">include</span> <span class=\"hljs-string\">&lt;stdio.h&gt;</span></span>\n\n<span class=\"hljs-comment\">/**\n * @brief SDBM algorithm implementation\n *\n * @param s NULL terminated string to hash\n * @return 64-bit hash result\n */</span>\n<span class=\"hljs-type\">uint64_t</span> <span class=\"hljs-title function_\">sdbm</span><span class=\"hljs-params\">(<span class=\"hljs-type\">const</span> <span class=\"hljs-type\">char</span>* s)</span>\n{\n    <span class=\"hljs-type\">uint64_t</span> hash = <span class=\"hljs-number\">0</span>;\n    <span class=\"hljs-type\">size_t</span> i = <span class=\"hljs-number\">0</span>;\n    <span class=\"hljs-keyword\">while</span> (s[i] != <span class=\"hljs-string\">&#x27;\\0&#x27;</span>)\n    {\n        hash = s[i] + (hash &lt;&lt; <span class=\"hljs-number\">6</span>) + (hash &lt;&lt; <span class=\"hljs-number\">16</span>) - hash;\n        i++;\n    }\n    <span class=\"hljs-keyword\">return</span> hash;\n}\n\n<span class=\"hljs-comment\">/**\n * @brief Test function for ::sdbm\n * \\returns None\n */</span>\n<span class=\"hljs-type\">void</span> <span class=\"hljs-title function_\">test_sdbm</span><span class=\"hljs-params\">()</span>\n{\n    assert(sdbm(<span class=\"hljs-string\">&quot;Hello World&quot;</span>) == <span class=\"hljs-number\">12881824461405877380U</span>);\n    assert(sdbm(<span class=\"hljs-string\">&quot;Hello World!&quot;</span>) == <span class=\"hljs-number\">7903571203300273309</span>);\n    assert(sdbm(<span class=\"hljs-string\">&quot;Hello world&quot;</span>) == <span class=\"hljs-number\">15154913742888948900U</span>);\n    assert(sdbm(<span class=\"hljs-string\">&quot;Hello world!&quot;</span>) == <span class=\"hljs-number\">15254999417003201661U</span>);\n    <span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">&quot;Tests passed\\n&quot;</span>);\n}\n\n<span class=\"hljs-comment\">/** @} */</span>\n\n<span class=\"hljs-comment\">/** Main function */</span>\n<span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span>\n{\n    test_sdbm();\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>;\n}\n"
+    },
+    "matlab-octave": {
+      "dir": "algorithms/crypto/sdbm-hash/sdbm.m",
+      "url": "https://github.com/TheAlgorithms/matlab-octave/tree/master/algorithms/crypto/sdbm-hash/sdbm.m",
+      "code": "<span class=\"hljs-comment\">% sdbm: implements the sdbm-hash algorithm</span>\n<span class=\"hljs-comment\">% argument: str of type string</span>\n<span class=\"hljs-comment\">% returns: double</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">ans</span> = <span class=\"hljs-title\">sdbm</span><span class=\"hljs-params\">(str)</span></span>\n  hash = <span class=\"hljs-number\">0</span>;\n  <span class=\"hljs-keyword\">for</span> ch = str\n    hash = double(ch) + bitshift(hash,<span class=\"hljs-number\">6</span>) + bitshift(hash,<span class=\"hljs-number\">16</span>) - hash;\n  endfor\n  <span class=\"hljs-built_in\">ans</span> = hash;\nendfunction"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 1
+    },
+    {
+      "name": "algobytewise",
+      "email": "algobytewise@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "bnMikheili",
+      "email": "39998190+bnMikheili@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "anagram-checker",
+  "name": "Anagram Checker",
+  "categories": [
+    "datastructures",
+    "hashtable"
+  ],
+  "body": {},
+  "implementations": {
+    "ruby": {
+      "dir": "data_structures/arrays/strings/anagram_checker.rb",
+      "url": "https://github.com/TheAlgorithms/ruby/tree/master/data_structures/arrays/strings/anagram_checker.rb",
+      "code": "<span class=\"hljs-comment\"># Challenge name: Is anagram</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Given two strings s and t , write a function to determine</span>\n<span class=\"hljs-comment\"># if t is an anagram of s.</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Note:</span>\n<span class=\"hljs-comment\"># You may assume the string contains only lowercase alphabets.</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Follow up:</span>\n<span class=\"hljs-comment\"># What if the inputs contain unicode characters?</span>\n<span class=\"hljs-comment\"># How would you adapt your solution to such case?</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># <span class=\"hljs-doctag\">@param</span> {String} s</span>\n<span class=\"hljs-comment\"># <span class=\"hljs-doctag\">@param</span> {String} t</span>\n<span class=\"hljs-comment\"># <span class=\"hljs-doctag\">@return</span> {Boolean}</span>\n\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Approach: Sort and Compare</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Complexity analysis:</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-comment\"># Time Complexity: O(n log n). Assume that n is the length of s, sorting costs O(n log n), and comparing two strings costs O(n). Sorting time dominates and the overall time complexity is O(n log n).</span>\n<span class=\"hljs-comment\"># Space Complexity: O(1). Space depends on the sorting implementation which, usually, costs O(1) auxiliary space if heapsort is used.</span>\n<span class=\"hljs-comment\">#</span>\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">is_anagram</span>(<span class=\"hljs-params\">s, t</span>)\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span> <span class=\"hljs-keyword\">if</span> s.length != t.length\n\n  arr1 = s.split(<span class=\"hljs-string\">&#x27;&#x27;</span>).sort\n  arr2 = t.split(<span class=\"hljs-string\">&#x27;&#x27;</span>).sort\n\n  arr1 == arr2\n<span class=\"hljs-keyword\">end</span>\n\ns = <span class=\"hljs-string\">&#x27;anagram&#x27;</span>\nt = <span class=\"hljs-string\">&#x27;nagaram&#x27;</span>\nputs(is_anagram(s, t))\n<span class=\"hljs-comment\"># =&gt; true</span>\ns = <span class=\"hljs-string\">&#x27;rat&#x27;</span>\nt = <span class=\"hljs-string\">&#x27;car&#x27;</span>\nputs(is_anagram(s, t))\n<span class=\"hljs-comment\"># =&gt; false</span>\ns = <span class=\"hljs-string\">&#x27;a&#x27;</span>\nt = <span class=\"hljs-string\">&#x27;ab&#x27;</span>\nputs(is_anagram(s, t))\n<span class=\"hljs-comment\"># =&gt; false</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Jessica Kwok",
+      "email": "jessicatckwok@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 11
+    }
+  ],
+  "explanationUrl": {}
+}

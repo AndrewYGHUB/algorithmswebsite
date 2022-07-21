@@ -1,0 +1,18 @@
+{
+  "slug": "hamming-numbers",
+  "name": "Hamming Numbers",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "U",
+      "email": "80122730+und1n3@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "a000108-catalan",
+  "name": "A000108 Catalan",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

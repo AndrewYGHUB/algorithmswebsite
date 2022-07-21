@@ -1,0 +1,18 @@
+{
+  "slug": "tcp-full-duplex-server",
+  "name": "Tcp Full Duplex Server",
+  "categories": [
+    "clientserver"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Nikhill Vombatkere",
+      "email": "63743496+NVombat@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

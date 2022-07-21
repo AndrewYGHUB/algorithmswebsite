@@ -1,0 +1,19 @@
+{
+  "slug": "bipartite-grapf-dfs",
+  "name": "Bipartite Grapf DFS",
+  "categories": [
+    "datastructures",
+    "graphs"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Shubhojeet Banerjee",
+      "email": "50337427+Shubhojeetban@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "next-grater-element",
+  "name": "Next Grater Element",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Mohit Kumar",
+      "email": "74761614+itsmohitmkk@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

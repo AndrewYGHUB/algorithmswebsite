@@ -1,0 +1,33 @@
+{
+  "slug": "title-case-conversion",
+  "name": "Title Case Conversion",
+  "categories": [
+    "conversions"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Conversions/TitleCaseConversion.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Conversions/TitleCaseConversion.js",
+      "code": "<span class=\"hljs-comment\">/*\n    Problem statement and Explanation : https://www.codeproject.com/Tips/162540/Letter-Case-Conversion-Algorithms-Title-Case-Toggl.\n    [Title case](https://en.wikipedia.org/wiki/Title_case) is a style where all words are capitalized. Officially, title case\n    does not capitalize some words, such as very short words like &quot;a&quot; or &quot;is&quot;, but for the purposes of this function, a general approach\n    is taken where all words are capitalized regardless of length.\n*/</span>\n\n<span class=\"hljs-comment\">/**\n * The titleCaseConversion function converts a string into a title case string.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} inputString The input string which can have any types of letter casing.\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">string</span>} A string that is in title case.\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">titleCaseConversion</span> = (<span class=\"hljs-params\">inputString</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (inputString === <span class=\"hljs-string\">&#x27;&#x27;</span>) <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&#x27;&#x27;</span>\n  <span class=\"hljs-comment\">// Extract all space separated string.</span>\n  <span class=\"hljs-keyword\">const</span> stringCollections = inputString.<span class=\"hljs-title function_\">split</span>(<span class=\"hljs-string\">&#x27; &#x27;</span>).<span class=\"hljs-title function_\">map</span>(<span class=\"hljs-function\"><span class=\"hljs-params\">word</span> =&gt;</span> {\n    <span class=\"hljs-keyword\">let</span> firstChar = <span class=\"hljs-string\">&#x27;&#x27;</span>\n    <span class=\"hljs-comment\">// Get the [ASCII](https://en.wikipedia.org/wiki/ASCII) character code by the use charCodeAt method.</span>\n    <span class=\"hljs-keyword\">const</span> firstCharCode = word[<span class=\"hljs-number\">0</span>].<span class=\"hljs-title function_\">charCodeAt</span>()\n    <span class=\"hljs-comment\">// If the ASCII character code lies between 97 to 122 it means they are in the lowercase so convert it.</span>\n    <span class=\"hljs-keyword\">if</span> (firstCharCode &gt;= <span class=\"hljs-number\">97</span> &amp;&amp; firstCharCode &lt;= <span class=\"hljs-number\">122</span>) {\n      <span class=\"hljs-comment\">// Convert the case by use of the above explanation.</span>\n      firstChar += <span class=\"hljs-title class_\">String</span>.<span class=\"hljs-title function_\">fromCharCode</span>(firstCharCode - <span class=\"hljs-number\">32</span>)\n    } <span class=\"hljs-keyword\">else</span> {\n      <span class=\"hljs-comment\">// Else store the characters without any modification.</span>\n      firstChar += word[<span class=\"hljs-number\">0</span>]\n    }\n    <span class=\"hljs-keyword\">const</span> newWordChar = word.<span class=\"hljs-title function_\">slice</span>(<span class=\"hljs-number\">1</span>).<span class=\"hljs-title function_\">split</span>(<span class=\"hljs-string\">&#x27;&#x27;</span>).<span class=\"hljs-title function_\">map</span>(<span class=\"hljs-function\"><span class=\"hljs-params\">char</span> =&gt;</span> {\n      <span class=\"hljs-comment\">// Get the ASCII character code by the use charCodeAt method.</span>\n      <span class=\"hljs-keyword\">const</span> presentCharCode = char.<span class=\"hljs-title function_\">charCodeAt</span>()\n      <span class=\"hljs-comment\">// If the ASCII character code lies between 65 to 90, it means they are in the uppercase so convert it.</span>\n      <span class=\"hljs-keyword\">if</span> (presentCharCode &gt;= <span class=\"hljs-number\">65</span> &amp;&amp; presentCharCode &lt;= <span class=\"hljs-number\">90</span>) {\n        <span class=\"hljs-comment\">// Convert the case by use of the above explanation.</span>\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title class_\">String</span>.<span class=\"hljs-title function_\">fromCharCode</span>(presentCharCode + <span class=\"hljs-number\">32</span>)\n      }\n      <span class=\"hljs-comment\">// Else return the characters without any modification.</span>\n      <span class=\"hljs-keyword\">return</span> char\n    })\n    <span class=\"hljs-comment\">// Return the first converted character and remaining character string.</span>\n    <span class=\"hljs-keyword\">return</span> firstChar + newWordChar.<span class=\"hljs-title function_\">join</span>(<span class=\"hljs-string\">&#x27;&#x27;</span>)\n  })\n  <span class=\"hljs-comment\">// Convert all words in a string and return it.</span>\n  <span class=\"hljs-keyword\">return</span> stringCollections.<span class=\"hljs-title function_\">join</span>(<span class=\"hljs-string\">&#x27; &#x27;</span>)\n}\n\n<span class=\"hljs-keyword\">export</span> { titleCaseConversion }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Charlie Moore",
+      "email": "moorejchar@gmail.com",
+      "commits": 6
+    }
+  ],
+  "explanationUrl": {}
+}

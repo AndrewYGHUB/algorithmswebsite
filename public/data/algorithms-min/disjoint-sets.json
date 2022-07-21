@@ -1,0 +1,29 @@
+{
+  "slug": "disjoint-sets",
+  "name": "Disjoint Sets",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "java": "",
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "NimrodRak",
+      "email": "68863114+NimrodRak@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Nimrod Rak",
+      "email": "nimrod.rak@mail.huji.ac.il",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

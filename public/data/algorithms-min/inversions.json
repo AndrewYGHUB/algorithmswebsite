@@ -1,0 +1,38 @@
+{
+  "slug": "inversions",
+  "name": "Inversions",
+  "categories": [
+    "divideandconquer"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Shuangchi He",
+      "email": "34329208+Yulv-git@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Muhammad Hammad Sani",
+      "email": "58339378+mhammadsaani@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Maxwell Aladago",
+      "email": "maxwell.aladago@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "advancedahocorasick",
+  "name": "Advancedahocorasick",
+  "categories": [
+    "strings",
+    "ahocorasick"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

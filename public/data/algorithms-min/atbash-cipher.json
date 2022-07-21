@@ -1,0 +1,23 @@
+{
+  "slug": "atbash-cipher",
+  "name": "Atbash Cipher",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Lajat5",
+      "email": "64376519+Lazeeez@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Focus",
+      "email": "65309793+Focusucof@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

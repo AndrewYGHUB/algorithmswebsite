@@ -1,0 +1,24 @@
+{
+  "slug": "plotdata",
+  "name": "Plotdata",
+  "categories": [
+    "machinelearning",
+    "logisticregression"
+  ],
+  "body": {},
+  "implementations": {
+    "matlab-octave": {
+      "dir": "algorithms/machine_learning/Linear-Regression/plotdata.m",
+      "url": "https://github.com/TheAlgorithms/matlab-octave/tree/master/algorithms/machine_learning/Linear-Regression/plotdata.m",
+      "code": "<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">plotdata</span><span class=\"hljs-params\">(x, Y)</span></span>\n\n<span class=\"hljs-built_in\">figure</span>;\n\n<span class=\"hljs-built_in\">plot</span>(x, Y, <span class=\"hljs-string\">&#x27;rx&#x27;</span>, <span class=\"hljs-string\">&#x27;MarkerSize&#x27;</span>, <span class=\"hljs-number\">10</span>); <span class=\"hljs-comment\">% rx means red coloured x.</span>\n\nylabel(<span class=\"hljs-string\">&#x27;Profit in $10,000s&#x27;</span>);\n\nxlabel(<span class=\"hljs-string\">&#x27;Population of city in 10,000s&#x27;</span>);\n\n<span class=\"hljs-keyword\">end</span>"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Anesh Kaul",
+      "email": "aneshkaul@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

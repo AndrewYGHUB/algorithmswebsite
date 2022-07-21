@@ -1,0 +1,23 @@
+{
+  "slug": "binary-search-recursive",
+  "name": "Binary Search Recursive",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Raj Mazumder",
+      "email": "61340960+RajMazumder18110@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Leonardo Freua",
+      "email": "leonardo.batista.freua@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

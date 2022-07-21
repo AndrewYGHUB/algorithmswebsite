@@ -1,0 +1,60 @@
+{
+  "slug": "collatz-sequence",
+  "name": "Collatz Sequence",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Azzaare",
+      "email": "jf@baffier.fr",
+      "commits": 1
+    },
+    {
+      "name": "Rratic",
+      "email": "Rratic@163.com",
+      "commits": 1
+    },
+    {
+      "name": "Sanders Lin",
+      "email": "45224617+SandersLin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "TheSuperNoob",
+      "email": "larsthorland@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "ArjunwadkarAjay",
+      "email": "41279300+ArjunwadkarAjay@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "Exortions",
+      "email": "75327059+Exortions@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "a-1z-26-cipher",
+  "name": "A 1z 26 Cipher",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Focus",
+      "email": "65309793+Focusucof@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

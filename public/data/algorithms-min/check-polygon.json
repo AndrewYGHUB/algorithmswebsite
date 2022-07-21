@@ -1,0 +1,23 @@
+{
+  "slug": "check-polygon",
+  "name": "Check Polygon",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "poloso",
+      "email": "osoriopabl@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Arghya Sarkar (ASRA)",
+      "email": "67339217+sarkarghya@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

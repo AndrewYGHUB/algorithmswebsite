@@ -1,0 +1,23 @@
+{
+  "slug": "rat-in-a-maze",
+  "name": "Rat In A Maze",
+  "categories": [
+    "backtracking"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Chiranjeev",
+      "email": "6258860@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Roland Hummel",
+      "email": "roland.hummel@qaware.de",
+      "commits": 6
+    }
+  ],
+  "explanationUrl": {}
+}

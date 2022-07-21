@@ -1,0 +1,19 @@
+{
+  "slug": "erosion-operation",
+  "name": "Erosion Operation",
+  "categories": [
+    "digitalimageprocessing",
+    "morphologicaloperations"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Saurabh Suresh Powar",
+      "email": "66636289+Spnetic-5@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

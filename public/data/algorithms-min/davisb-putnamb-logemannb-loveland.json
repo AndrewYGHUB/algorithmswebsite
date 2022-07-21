@@ -1,0 +1,23 @@
+{
+  "slug": "davisb-putnamb-logemannb-loveland",
+  "name": "Davisb Putnamb Logemannb Loveland",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrew Grangaard",
+      "email": "granny-github@ofb.net",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

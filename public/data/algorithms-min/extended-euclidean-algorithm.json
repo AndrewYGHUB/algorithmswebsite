@@ -1,0 +1,44 @@
+{
+  "slug": "extended-euclidean-algorithm",
+  "name": "Extended Euclidean Algorithm",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Jerrit Gläsker",
+      "email": "50867655+cherrysrc@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Joyce",
+      "email": "jycyeo@yahoo.com.sg",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "S. Sharma",
+      "email": "36388139+s1l3ntcat@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,99 @@
+{
+  "slug": "is-palindrome",
+  "name": "Is Palindrome",
+  "categories": [
+    "datastructures",
+    "linkedlist"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "f-sharp": "",
+    "go": "",
+    "matlab-octave": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Müller",
+      "email": "34514239+appgurueu@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "kNOzone",
+      "email": "72206118+kNOzone@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Kaushik Amar Das",
+      "email": "cozek@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "1fisedi",
+      "email": "51143882+1fisedi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Fernanda Kawasaki",
+      "email": "50497814+fernandakawasaki@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Azzaare",
+      "email": "jf@baffier.fr",
+      "commits": 1
+    },
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "66054069+ReneganRonin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Madison Estabrook",
+      "email": "madison.estabrook@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Nischal Patel",
+      "email": "nischalpatel20@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ashwin Das",
+      "email": "ashwindasr@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Muhammad Umer Farooq",
+      "email": "mumerfarooqlablnet01@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ishani",
+      "email": "ishanigarkoti08@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Allister Isaiah Harvey",
+      "email": "41553768+powpow58@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Andrea Tota",
+      "email": "59341503+HereBeAndre@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

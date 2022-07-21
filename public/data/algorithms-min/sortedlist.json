@@ -1,0 +1,18 @@
+{
+  "slug": "sortedlist",
+  "name": "SortedList",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "ronimizy",
+      "email": "71693183+ronimizy@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

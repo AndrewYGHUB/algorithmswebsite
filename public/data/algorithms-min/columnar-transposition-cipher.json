@@ -1,0 +1,33 @@
+{
+  "slug": "columnar-transposition-cipher",
+  "name": "Columnar Transposition Cipher",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Maria Lungeanu",
+      "email": "Maria.Lungeanu@anritsu.com",
+      "commits": 1
+    },
+    {
+      "name": "DESKTOP-0VAEMFL\\joaom",
+      "email": "1160907@isep.ipp.pt",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    },
+    {
+      "name": "khalil2535",
+      "email": "khalil2535@localhost",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

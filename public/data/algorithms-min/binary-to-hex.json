@@ -1,0 +1,23 @@
+{
+  "slug": "binary-to-hex",
+  "name": "Binary To Hex",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "ddhira123",
+      "email": "dhana_dhira@apps.ipb.ac.id",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

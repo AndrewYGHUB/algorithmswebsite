@@ -1,0 +1,18 @@
+{
+  "slug": "reddit",
+  "name": "Reddit",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Jaydeep Das",
+      "email": "jaydeepjd.8914@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

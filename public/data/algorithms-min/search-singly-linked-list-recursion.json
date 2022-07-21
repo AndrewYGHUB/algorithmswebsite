@@ -1,0 +1,24 @@
+{
+  "slug": "search-singly-linked-list-recursion",
+  "name": "Search Singly Linked List Recursion",
+  "categories": [
+    "datastructures",
+    "list"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

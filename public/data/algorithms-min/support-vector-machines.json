@@ -1,0 +1,28 @@
+{
+  "slug": "support-vector-machines",
+  "name": "Support Vector Machines",
+  "categories": [
+    "machinelearning"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "QuantumNovice",
+      "email": "43876848+QuantumNovice@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Todor Peev",
+      "email": "46652070+Bjiornulf@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

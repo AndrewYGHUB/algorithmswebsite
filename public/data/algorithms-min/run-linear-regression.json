@@ -1,0 +1,19 @@
+{
+  "slug": "run-linear-regression",
+  "name": "Run Linear Regression",
+  "categories": [
+    "machinelearning",
+    "linearregression"
+  ],
+  "implementations": {
+    "matlab-octave": ""
+  },
+  "contributors": [
+    {
+      "name": "Anesh Kaul",
+      "email": "aneshkaul@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

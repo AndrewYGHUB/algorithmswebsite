@@ -1,0 +1,23 @@
+{
+  "slug": "binary-length",
+  "name": "Binary Length",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Soc Virnyl S. Estela",
+      "email": "socvirnyl.estela@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Michael (Poetry) Flynn",
+      "email": "70995865+F35H@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

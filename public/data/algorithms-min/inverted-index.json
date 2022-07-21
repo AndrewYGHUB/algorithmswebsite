@@ -1,0 +1,18 @@
+{
+  "slug": "inverted-index",
+  "name": "Inverted index",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Sergii Lischuk",
+      "email": "evertodante@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

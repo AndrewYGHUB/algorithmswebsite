@@ -1,0 +1,23 @@
+{
+  "slug": "random-search",
+  "name": "Random Search",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "matlab-octave": ""
+  },
+  "contributors": [
+    {
+      "name": "MaximSmolskiy",
+      "email": "mithridatus@mail.ru",
+      "commits": 1
+    },
+    {
+      "name": "Abhishek Mehra",
+      "email": "52788025+Triaro@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

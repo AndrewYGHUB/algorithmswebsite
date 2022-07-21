@@ -1,0 +1,25 @@
+{
+  "slug": "fibonacci-heap",
+  "name": "Fibonacci Heap",
+  "categories": [
+    "datastructures",
+    "heaps"
+  ],
+  "implementations": {
+    "java": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Brian Mata",
+      "email": "CyberMobius@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Omar",
+      "email": "59146036+omarmahamid@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

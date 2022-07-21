@@ -1,0 +1,123 @@
+{
+  "slug": "trie",
+  "name": "Trie",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c": "",
+    "go": "",
+    "rust": "",
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Dimitri Belopopsky",
+      "email": "ShadowMitia@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "lakhan_nad",
+      "email": "lakhannad1999@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "AlexDvorak",
+      "email": "opti.jawsome@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ariel Alfonso Triana Pérez",
+      "email": "61637781+ArielTriana@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "xavier268",
+      "email": "xavier268@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ranadeep Biswas",
+      "email": "ranadip.bswas@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Daniel Beecham",
+      "email": "daniel@lunix.se",
+      "commits": 1
+    },
+    {
+      "name": "Carlos Rafael",
+      "email": "carlosk2gunn@hotmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "68542775+raklaptudirm@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Edward Nuno",
+      "email": "GOD11341258@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Sherman Hui",
+      "email": "11592023+shermanhui@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sangeet K",
+      "email": "sangeethk.137@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "97arushisharma",
+      "email": "97arushisharma@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Javon Davis",
+      "email": "JavonDavis@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Shashike Dissanayake",
+      "email": "shashikedissanayake@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "cclauss",
+      "email": "cclauss@bluewin.ch",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

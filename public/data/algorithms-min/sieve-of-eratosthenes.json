@@ -1,0 +1,156 @@
+{
+  "slug": "sieve-of-eratosthenes",
+  "name": "Sieve of Eratosthenes",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "rust": "",
+    "dart": "",
+    "julia": "",
+    "lua": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    },
+    {
+      "name": "varunu28",
+      "email": "varun.u28@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "DONSIMON92",
+      "email": "47272787+DONSIMON92@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 1
+    },
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ved Mahajan",
+      "email": "vsmahajan2k@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "utkarsh",
+      "email": "ucponia@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Daniil Efimenko",
+      "email": "dan.ef1999@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "JimmyJoo",
+      "email": "jimmyjoo1029@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Samarth Jain",
+      "email": "53353139+samjain2907@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ParthS007",
+      "email": "parth1989shandilya@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Mohit Sharma",
+      "email": "mohit1532.cse16@chitkara.edu.in",
+      "commits": 1
+    },
+    {
+      "name": "Artem Boiarshinov",
+      "email": "54187376+Boiarshinov@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "obelisk0114",
+      "email": "obelisk0114@yahoo.com.tw",
+      "commits": 1
+    },
+    {
+      "name": "Joyce",
+      "email": "jycyeo@yahoo.com.sg",
+      "commits": 1
+    },
+    {
+      "name": "Farhan",
+      "email": "farhankasmani956@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "AlexDvorak",
+      "email": "opti.jawsome@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Ephraim Atta-Duncan",
+      "email": "55143799+dephraiim@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 3
+    },
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 6
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 7
+    }
+  ],
+  "explanationUrl": {}
+}

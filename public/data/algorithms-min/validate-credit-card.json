@@ -1,0 +1,18 @@
+{
+  "slug": "validate-credit-card",
+  "name": "Validate Credit Card",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "@im_8055",
+      "email": "38890773+Bhargavishnu@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

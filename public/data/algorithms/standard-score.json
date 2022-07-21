@@ -1,0 +1,23 @@
+{
+  "slug": "standard-score",
+  "name": "Standard Score",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/StandardScore.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/StandardScore.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">StandardScore</span> {\n\t<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">double</span> <span class=\"hljs-title function_\">zScore</span><span class=\"hljs-params\">(<span class=\"hljs-type\">double</span> num, <span class=\"hljs-type\">double</span> mean, <span class=\"hljs-type\">double</span> stdDev)</span>\n\t{\n\t\t<span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">z</span> <span class=\"hljs-operator\">=</span> (num - mean)/stdDev;\n\t\t<span class=\"hljs-keyword\">return</span> z;\n\t}\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Raghav Taneja",
+      "email": "97575679+RaghavTaneja@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

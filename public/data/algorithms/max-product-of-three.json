@@ -1,0 +1,28 @@
+{
+  "slug": "max-product-of-three",
+  "name": "Max Product Of Three",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Dynamic-Programming/MaxProductOfThree.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Dynamic-Programming/MaxProductOfThree.js",
+      "code": "<span class=\"hljs-comment\">/**\n *  Given an array of numbers, return the maximum product\n *  of 3 numbers from the array\n *  https://wsvincent.com/javascript-three-sum-highest-product-of-three-numbers/\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number[]</span>} <span class=\"hljs-variable\">arrayItems</span>\n * <span class=\"hljs-doctag\">@returns</span> <span class=\"hljs-variable\">number</span>\n */</span>\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">maxProductOfThree</span> (arrayItems) {\n  <span class=\"hljs-comment\">// if size is less than 3, no triplet exists</span>\n  <span class=\"hljs-keyword\">const</span> n = arrayItems.<span class=\"hljs-property\">length</span>\n  <span class=\"hljs-keyword\">if</span> (n &lt; <span class=\"hljs-number\">3</span>) <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Error</span>(<span class=\"hljs-string\">&#x27;Triplet cannot exist with the given array&#x27;</span>)\n  <span class=\"hljs-keyword\">let</span> max1 = arrayItems[<span class=\"hljs-number\">0</span>]\n  <span class=\"hljs-keyword\">let</span> max2 = -<span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">let</span> max3 = -<span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">let</span> min1 = arrayItems[<span class=\"hljs-number\">0</span>]\n  <span class=\"hljs-keyword\">let</span> min2 = -<span class=\"hljs-number\">1</span>\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">1</span>; i &lt; n; i++) {\n    <span class=\"hljs-keyword\">if</span> (arrayItems[i] &gt; max1) {\n      max3 = max2\n      max2 = max1\n      max1 = arrayItems[i]\n    } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (max2 === -<span class=\"hljs-number\">1</span> || arrayItems[i] &gt; max2) {\n      max3 = max2\n      max2 = arrayItems[i]\n    } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (max3 === -<span class=\"hljs-number\">1</span> || arrayItems[i] &gt; max3) {\n      max3 = arrayItems[i]\n    }\n    <span class=\"hljs-keyword\">if</span> (arrayItems[i] &lt; min1) {\n      min2 = min1\n      min1 = arrayItems[i]\n    } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (min2 === -<span class=\"hljs-number\">1</span> || arrayItems[i] &lt; min2) {\n      min2 = arrayItems[i]\n    }\n  }\n  <span class=\"hljs-keyword\">const</span> prod1 = max1 * max2 * max3\n  <span class=\"hljs-keyword\">const</span> prod2 = max1 * min1 * min2\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">max</span>(prod1, prod2)\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "VinWare",
+      "email": "28603906+VinWare@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "devcer",
+      "email": "viswanathamsantosh@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

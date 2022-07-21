@@ -1,0 +1,18 @@
+{
+  "slug": "count-1s-brian-kernighan-method",
+  "name": "Count 1s Brian Kernighan Method",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Jainendra Mandavi",
+      "email": "jainendra@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

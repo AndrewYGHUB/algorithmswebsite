@@ -1,0 +1,23 @@
+{
+  "slug": "stabilize",
+  "name": "Stabilize",
+  "categories": [
+    "sorts"
+  ],
+  "body": {},
+  "implementations": {
+    "lua": {
+      "dir": "src/sorting/stabilize.lua",
+      "url": "https://github.com/TheAlgorithms/lua/tree/master/src/sorting/stabilize.lua",
+      "code": "<span class=\"hljs-comment\">-- Stabilizes any sorting algorithm, using linear auxiliary space (for the indices) per sorting</span>\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(\n\tsort <span class=\"hljs-comment\">-- function(list, less_than)</span>\n)</span></span>\n\t<span class=\"hljs-comment\">-- stabilized sorting function</span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(list, less_than)</span></span>\n\t\tless_than = less_than <span class=\"hljs-keyword\">or</span> <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(a, b)</span></span>\n\t\t\t<span class=\"hljs-keyword\">return</span> a &lt; b\n\t\t<span class=\"hljs-keyword\">end</span>\n\t\t<span class=\"hljs-comment\">-- Build a list of indices</span>\n\t\t<span class=\"hljs-keyword\">local</span> indices = {}\n\t\t<span class=\"hljs-keyword\">for</span> index = <span class=\"hljs-number\">1</span>, #list <span class=\"hljs-keyword\">do</span>\n\t\t\tindices[index] = index\n\t\t<span class=\"hljs-keyword\">end</span>\n\t\t<span class=\"hljs-comment\">-- Sort the list of indices according to values; compare indices only if they have the same value</span>\n\t\t<span class=\"hljs-built_in\">sort</span>(indices, <span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span><span class=\"hljs-params\">(index_a, index_b)</span></span>\n\t\t\t<span class=\"hljs-keyword\">if</span> less_than(list[index_a], list[index_b]) <span class=\"hljs-keyword\">then</span>\n\t\t\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n\t\t\t<span class=\"hljs-keyword\">end</span>\n\t\t\t<span class=\"hljs-keyword\">if</span> less_than(list[index_b], list[index_a]) <span class=\"hljs-keyword\">then</span>\n\t\t\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n\t\t\t<span class=\"hljs-keyword\">end</span>\n\t\t\t<span class=\"hljs-keyword\">return</span> index_a &lt; index_b\n\t\t<span class=\"hljs-keyword\">end</span>)\n\t\t<span class=\"hljs-comment\">-- Map indices to values</span>\n\t\t<span class=\"hljs-keyword\">for</span> index = <span class=\"hljs-number\">1</span>, #list <span class=\"hljs-keyword\">do</span>\n\t\t\tindices[index] = list[indices[index]]\n\t\t<span class=\"hljs-keyword\">end</span>\n\t\t<span class=\"hljs-comment\">-- Replace elements in original list (sorting is supposed to be in-place)</span>\n\t\t<span class=\"hljs-keyword\">for</span> index = <span class=\"hljs-number\">1</span>, #list <span class=\"hljs-keyword\">do</span>\n\t\t\tlist[index] = indices[index]\n\t\t<span class=\"hljs-keyword\">end</span>\n\t<span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

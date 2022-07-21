@@ -1,0 +1,23 @@
+{
+  "slug": "one-hot-encode",
+  "name": "One Hot Encode",
+  "categories": [
+    "datamanipulation"
+  ],
+  "implementations": {
+    "r": ""
+  },
+  "contributors": [
+    {
+      "name": "Alex Garland",
+      "email": "alex@numinar.com",
+      "commits": 1
+    },
+    {
+      "name": "Erez Shomron",
+      "email": "48328872+eshom@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

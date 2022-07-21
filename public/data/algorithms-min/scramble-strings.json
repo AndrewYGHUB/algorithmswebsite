@@ -1,0 +1,23 @@
+{
+  "slug": "scramble-strings",
+  "name": "Scramble Strings",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Koddi Evangelista",
+      "email": "70675656+Koddi-Evangelista@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Omkarnath Parida",
+      "email": "omkarnath.parida@yocket.in",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "square-root-with-babylonian-method",
+  "name": "Square Root With Babylonian Method",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Saumya",
+      "email": "76432998+SaumyaBhushan@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "sock-merchant",
+  "name": "Sock Merchant",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "maths/sock_merchant.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/maths/sock_merchant.py",
+      "code": "<span class=\"hljs-keyword\">from</span> collections <span class=\"hljs-keyword\">import</span> Counter\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">sock_merchant</span>(<span class=\"hljs-params\">colors: <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">int</span>]</span>) -&gt; <span class=\"hljs-built_in\">int</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    &gt;&gt;&gt; sock_merchant([10, 20, 20, 10, 10, 30, 50, 10, 20])\n    3\n    &gt;&gt;&gt; sock_merchant([1, 1, 3, 3])\n    2\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">sum</span>(socks_by_color // <span class=\"hljs-number\">2</span> <span class=\"hljs-keyword\">for</span> socks_by_color <span class=\"hljs-keyword\">in</span> Counter(colors).values())\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n\n    colors = [<span class=\"hljs-built_in\">int</span>(x) <span class=\"hljs-keyword\">for</span> x <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&quot;Enter socks by color :&quot;</span>).rstrip().split()]\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;sock_merchant(<span class=\"hljs-subst\">{colors}</span>) = <span class=\"hljs-subst\">{sock_merchant(colors)}</span>&quot;</span>)\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Souvik Ghosh",
+      "email": "42302494+SouvikGhosh05@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

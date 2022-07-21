@@ -1,0 +1,23 @@
+{
+  "slug": "alpha-numerical-sort",
+  "name": "Alpha Numerical Sort",
+  "categories": [
+    "sorts"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Sorts/AlphaNumericalSort.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Sorts/AlphaNumericalSort.js",
+      "code": "<span class=\"hljs-comment\">/*\n  https://en.wikipedia.org/wiki/Natural_sort_order\n\n  In computing, natural sort order (or natural sorting) is the ordering of strings in alphabetical order,\n  except that multi-digit numbers are treated atomically, i.e., as if they were a single character. Natural sort order\n  has been promoted as being more human-friendly (&quot;natural&quot;) than machine-oriented, pure alphabetical sort order.[1]\n\n  For example, in alphabetical sorting, &quot;z11&quot; would be sorted before &quot;z2&quot; because the &quot;1&quot; in the first string is sorted as smaller\n  than &quot;2&quot;, while in natural sorting &quot;z2&quot; is sorted before &quot;z11&quot; because &quot;2&quot; is treated as smaller than &quot;11&quot;.\n\n  Alphabetical sorting:\n  1.z11\n  2.z2\n\n  Natural sorting:\n  1. z2\n  2. z11\n\n  P.S. use this function, as there are a lot of implementations on the stackoverflow and other forums, but many of them don&#x27;t work correctly (can&#x27;t pass all my tests)\n\n*/</span>\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">alphaNumericalSort</span> = (<span class=\"hljs-params\">a, b</span>) =&gt; {\n  <span class=\"hljs-comment\">/*\n    https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare\n\n    The localeCompare() method returns a number indicating whether a reference string comes before, or after, or is the same as the given string in sort order.\n\n    The new locales and options arguments let applications specify the language whose sort order should be used and customize the behavior of the function.\n    In older implementations, which ignore the locales and options arguments, the locale and sort order used are entirely implementation-dependent.\n    Syntax:\n    localeCompare(compareString, locales, options)\n\n  */</span>\n  <span class=\"hljs-keyword\">return</span> a.<span class=\"hljs-title function_\">localeCompare</span>(b, <span class=\"hljs-literal\">undefined</span>, { <span class=\"hljs-attr\">numeric</span>: <span class=\"hljs-literal\">true</span> })\n}\n\n<span class=\"hljs-keyword\">export</span> { alphaNumericalSort }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Mirzoev Ruslan",
+      "email": "48970799+RuSaG0@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

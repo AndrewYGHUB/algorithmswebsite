@@ -1,0 +1,93 @@
+{
+  "slug": "rsa-cipher",
+  "name": "Rsa Cipher",
+  "categories": [
+    "ciphers"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "ciphers/rsa_cipher.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/ciphers/rsa_cipher.py",
+      "code": "<span class=\"hljs-keyword\">import</span> os\n<span class=\"hljs-keyword\">import</span> sys\n\n<span class=\"hljs-keyword\">from</span> . <span class=\"hljs-keyword\">import</span> rsa_key_generator <span class=\"hljs-keyword\">as</span> rkg\n\nDEFAULT_BLOCK_SIZE = <span class=\"hljs-number\">128</span>\nBYTE_SIZE = <span class=\"hljs-number\">256</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">get_blocks_from_text</span>(<span class=\"hljs-params\">\n    message: <span class=\"hljs-built_in\">str</span>, block_size: <span class=\"hljs-built_in\">int</span> = DEFAULT_BLOCK_SIZE\n</span>) -&gt; <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">int</span>]:\n    message_bytes = message.encode(<span class=\"hljs-string\">&quot;ascii&quot;</span>)\n\n    block_ints = []\n    <span class=\"hljs-keyword\">for</span> block_start <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(<span class=\"hljs-number\">0</span>, <span class=\"hljs-built_in\">len</span>(message_bytes), block_size):\n        block_int = <span class=\"hljs-number\">0</span>\n        <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(block_start, <span class=\"hljs-built_in\">min</span>(block_start + block_size, <span class=\"hljs-built_in\">len</span>(message_bytes))):\n            block_int += message_bytes[i] * (BYTE_SIZE ** (i % block_size))\n        block_ints.append(block_int)\n    <span class=\"hljs-keyword\">return</span> block_ints\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">get_text_from_blocks</span>(<span class=\"hljs-params\">\n    block_ints: <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">int</span>], message_length: <span class=\"hljs-built_in\">int</span>, block_size: <span class=\"hljs-built_in\">int</span> = DEFAULT_BLOCK_SIZE\n</span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    message: <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">str</span>] = []\n    <span class=\"hljs-keyword\">for</span> block_int <span class=\"hljs-keyword\">in</span> block_ints:\n        block_message: <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">str</span>] = []\n        <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(block_size - <span class=\"hljs-number\">1</span>, -<span class=\"hljs-number\">1</span>, -<span class=\"hljs-number\">1</span>):\n            <span class=\"hljs-keyword\">if</span> <span class=\"hljs-built_in\">len</span>(message) + i &lt; message_length:\n                ascii_number = block_int // (BYTE_SIZE**i)\n                block_int = block_int % (BYTE_SIZE**i)\n                block_message.insert(<span class=\"hljs-number\">0</span>, <span class=\"hljs-built_in\">chr</span>(ascii_number))\n        message.extend(block_message)\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&quot;&quot;</span>.join(message)\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">encrypt_message</span>(<span class=\"hljs-params\">\n    message: <span class=\"hljs-built_in\">str</span>, key: <span class=\"hljs-built_in\">tuple</span>[<span class=\"hljs-built_in\">int</span>, <span class=\"hljs-built_in\">int</span>], blockSize: <span class=\"hljs-built_in\">int</span> = DEFAULT_BLOCK_SIZE\n</span>) -&gt; <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">int</span>]:\n    encrypted_blocks = []\n    n, e = key\n\n    <span class=\"hljs-keyword\">for</span> block <span class=\"hljs-keyword\">in</span> get_blocks_from_text(message, blockSize):\n        encrypted_blocks.append(<span class=\"hljs-built_in\">pow</span>(block, e, n))\n    <span class=\"hljs-keyword\">return</span> encrypted_blocks\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">decrypt_message</span>(<span class=\"hljs-params\">\n    encrypted_blocks: <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">int</span>],\n    message_length: <span class=\"hljs-built_in\">int</span>,\n    key: <span class=\"hljs-built_in\">tuple</span>[<span class=\"hljs-built_in\">int</span>, <span class=\"hljs-built_in\">int</span>],\n    block_size: <span class=\"hljs-built_in\">int</span> = DEFAULT_BLOCK_SIZE,\n</span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    decrypted_blocks = []\n    n, d = key\n    <span class=\"hljs-keyword\">for</span> block <span class=\"hljs-keyword\">in</span> encrypted_blocks:\n        decrypted_blocks.append(<span class=\"hljs-built_in\">pow</span>(block, d, n))\n    <span class=\"hljs-keyword\">return</span> get_text_from_blocks(decrypted_blocks, message_length, block_size)\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">read_key_file</span>(<span class=\"hljs-params\">key_filename: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">tuple</span>[<span class=\"hljs-built_in\">int</span>, <span class=\"hljs-built_in\">int</span>, <span class=\"hljs-built_in\">int</span>]:\n    <span class=\"hljs-keyword\">with</span> <span class=\"hljs-built_in\">open</span>(key_filename) <span class=\"hljs-keyword\">as</span> fo:\n        content = fo.read()\n    key_size, n, EorD = content.split(<span class=\"hljs-string\">&quot;,&quot;</span>)\n    <span class=\"hljs-keyword\">return</span> (<span class=\"hljs-built_in\">int</span>(key_size), <span class=\"hljs-built_in\">int</span>(n), <span class=\"hljs-built_in\">int</span>(EorD))\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">encrypt_and_write_to_file</span>(<span class=\"hljs-params\">\n    message_filename: <span class=\"hljs-built_in\">str</span>,\n    key_filename: <span class=\"hljs-built_in\">str</span>,\n    message: <span class=\"hljs-built_in\">str</span>,\n    block_size: <span class=\"hljs-built_in\">int</span> = DEFAULT_BLOCK_SIZE,\n</span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    key_size, n, e = read_key_file(key_filename)\n    <span class=\"hljs-keyword\">if</span> key_size &lt; block_size * <span class=\"hljs-number\">8</span>:\n        sys.exit(\n            <span class=\"hljs-string\">&quot;ERROR: Block size is %s bits and key size is %s bits. The RSA cipher &quot;</span>\n            <span class=\"hljs-string\">&quot;requires the block size to be equal to or greater than the key size. &quot;</span>\n            <span class=\"hljs-string\">&quot;Either decrease the block size or use different keys.&quot;</span>\n            % (block_size * <span class=\"hljs-number\">8</span>, key_size)\n        )\n\n    encrypted_blocks = [<span class=\"hljs-built_in\">str</span>(i) <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> encrypt_message(message, (n, e), block_size)]\n\n    encrypted_content = <span class=\"hljs-string\">&quot;,&quot;</span>.join(encrypted_blocks)\n    encrypted_content = <span class=\"hljs-string\">f&quot;<span class=\"hljs-subst\">{<span class=\"hljs-built_in\">len</span>(message)}</span>_<span class=\"hljs-subst\">{block_size}</span>_<span class=\"hljs-subst\">{encrypted_content}</span>&quot;</span>\n    <span class=\"hljs-keyword\">with</span> <span class=\"hljs-built_in\">open</span>(message_filename, <span class=\"hljs-string\">&quot;w&quot;</span>) <span class=\"hljs-keyword\">as</span> fo:\n        fo.write(encrypted_content)\n    <span class=\"hljs-keyword\">return</span> encrypted_content\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">read_from_file_and_decrypt</span>(<span class=\"hljs-params\">message_filename: <span class=\"hljs-built_in\">str</span>, key_filename: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">str</span>:\n    key_size, n, d = read_key_file(key_filename)\n    <span class=\"hljs-keyword\">with</span> <span class=\"hljs-built_in\">open</span>(message_filename) <span class=\"hljs-keyword\">as</span> fo:\n        content = fo.read()\n    message_length_str, block_size_str, encrypted_message = content.split(<span class=\"hljs-string\">&quot;_&quot;</span>)\n    message_length = <span class=\"hljs-built_in\">int</span>(message_length_str)\n    block_size = <span class=\"hljs-built_in\">int</span>(block_size_str)\n\n    <span class=\"hljs-keyword\">if</span> key_size &lt; block_size * <span class=\"hljs-number\">8</span>:\n        sys.exit(\n            <span class=\"hljs-string\">&quot;ERROR: Block size is %s bits and key size is %s bits. The RSA cipher &quot;</span>\n            <span class=\"hljs-string\">&quot;requires the block size to be equal to or greater than the key size. &quot;</span>\n            <span class=\"hljs-string\">&quot;Did you specify the correct key file and encrypted file?&quot;</span>\n            % (block_size * <span class=\"hljs-number\">8</span>, key_size)\n        )\n\n    encrypted_blocks = []\n    <span class=\"hljs-keyword\">for</span> block <span class=\"hljs-keyword\">in</span> encrypted_message.split(<span class=\"hljs-string\">&quot;,&quot;</span>):\n        encrypted_blocks.append(<span class=\"hljs-built_in\">int</span>(block))\n\n    <span class=\"hljs-keyword\">return</span> decrypt_message(encrypted_blocks, message_length, (n, d), block_size)\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">main</span>() -&gt; <span class=\"hljs-literal\">None</span>:\n    filename = <span class=\"hljs-string\">&quot;encrypted_file.txt&quot;</span>\n    response = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">r&quot;Encrypt\\Decrypt [e\\d]: &quot;</span>)\n\n    <span class=\"hljs-keyword\">if</span> response.lower().startswith(<span class=\"hljs-string\">&quot;e&quot;</span>):\n        mode = <span class=\"hljs-string\">&quot;encrypt&quot;</span>\n    <span class=\"hljs-keyword\">elif</span> response.lower().startswith(<span class=\"hljs-string\">&quot;d&quot;</span>):\n        mode = <span class=\"hljs-string\">&quot;decrypt&quot;</span>\n\n    <span class=\"hljs-keyword\">if</span> mode == <span class=\"hljs-string\">&quot;encrypt&quot;</span>:\n        <span class=\"hljs-keyword\">if</span> <span class=\"hljs-keyword\">not</span> os.path.exists(<span class=\"hljs-string\">&quot;rsa_pubkey.txt&quot;</span>):\n            rkg.makeKeyFiles(<span class=\"hljs-string\">&quot;rsa&quot;</span>, <span class=\"hljs-number\">1024</span>)\n\n        message = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&quot;\\nEnter message: &quot;</span>)\n        pubkey_filename = <span class=\"hljs-string\">&quot;rsa_pubkey.txt&quot;</span>\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;Encrypting and writing to <span class=\"hljs-subst\">{filename}</span>...&quot;</span>)\n        encryptedText = encrypt_and_write_to_file(filename, pubkey_filename, message)\n\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;\\nEncrypted text:&quot;</span>)\n        <span class=\"hljs-built_in\">print</span>(encryptedText)\n\n    <span class=\"hljs-keyword\">elif</span> mode == <span class=\"hljs-string\">&quot;decrypt&quot;</span>:\n        privkey_filename = <span class=\"hljs-string\">&quot;rsa_privkey.txt&quot;</span>\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;Reading from <span class=\"hljs-subst\">{filename}</span> and decrypting...&quot;</span>)\n        decrypted_text = read_from_file_and_decrypt(filename, privkey_filename)\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;writing decryption to rsa_decryption.txt...&quot;</span>)\n        <span class=\"hljs-keyword\">with</span> <span class=\"hljs-built_in\">open</span>(<span class=\"hljs-string\">&quot;rsa_decryption.txt&quot;</span>, <span class=\"hljs-string\">&quot;w&quot;</span>) <span class=\"hljs-keyword\">as</span> dec:\n            dec.write(decrypted_text)\n\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;\\nDecryption:&quot;</span>)\n        <span class=\"hljs-built_in\">print</span>(decrypted_text)\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    main()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "AlexDvorak",
+      "email": "opti.jawsome@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Harshil Darji",
+      "email": "darjiharshil2994@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "ParthS007",
+      "email": "parth1989shandilya@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Vardhaman",
+      "email": "83634399+cyai@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "CarsonHam",
+      "email": "carson.ham@utexas.edu",
+      "commits": 1
+    },
+    {
+      "name": "Jenia Dysin",
+      "email": "jenia90@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "cclauss",
+      "email": "cclauss@bluewin.ch",
+      "commits": 1
+    },
+    {
+      "name": "97arushisharma",
+      "email": "97arushisharma@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Manilawala",
+      "email": "dhruvmanila@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Mickaël Schoentgen",
+      "email": "contact@tiger-222.fr",
+      "commits": 2
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 5
+    },
+    {
+      "name": "Brayo",
+      "email": "vukubrian@gmail.com",
+      "commits": 6
+    }
+  ],
+  "explanationUrl": {}
+}

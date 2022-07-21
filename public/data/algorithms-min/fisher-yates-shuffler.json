@@ -1,0 +1,23 @@
+{
+  "slug": "fisher-yates-shuffler",
+  "name": "Fisher-Yates Shuffler",
+  "categories": [
+    "shufflers"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Diego Delgado",
+      "email": "105917468+dideldev@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dima1247",
+      "email": "palamarchuk1247@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

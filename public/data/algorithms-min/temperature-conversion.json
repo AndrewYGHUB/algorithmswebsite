@@ -1,0 +1,38 @@
+{
+  "slug": "temperature-conversion",
+  "name": "Temperature Conversion",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ddhira123",
+      "email": "dhana_dhira@apps.ipb.ac.id",
+      "commits": 1
+    },
+    {
+      "name": "Indre Maksimovaite",
+      "email": "imaksimovaite@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Sabari Ganesh",
+      "email": "64348740+SabariGanesh-K@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "a000040-primes",
+  "name": "A000040 Primes",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

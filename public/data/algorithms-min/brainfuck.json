@@ -1,0 +1,18 @@
+{
+  "slug": "brainfuck",
+  "name": "Brainfuck",
+  "categories": [
+    "esolang"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

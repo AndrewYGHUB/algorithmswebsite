@@ -1,0 +1,12 @@
+{
+  "slug": "lerp",
+  "name": "Lerp",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "c": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

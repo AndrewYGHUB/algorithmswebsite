@@ -1,0 +1,28 @@
+{
+  "slug": "magic-square",
+  "name": "Magic Square",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/MagicSquare.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/MagicSquare.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-keyword\">import</span> java.util.*;\n\n<span class=\"hljs-comment\">/*A magic square of order n is an arrangement of distinct n^2 integers,in a square, such that the n numbers in all\nrows, all columns, and both diagonals sum to the same constant. A magic square contains the integers from 1 to n^2.*/</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">MagicSquare</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span> {\n\n        <span class=\"hljs-type\">Scanner</span> <span class=\"hljs-variable\">sc</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Scanner</span>(System.in);\n        System.out.print(<span class=\"hljs-string\">&quot;Input a number: &quot;</span>);\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">num</span> <span class=\"hljs-operator\">=</span> sc.nextInt();\n        <span class=\"hljs-keyword\">if</span> ((num % <span class=\"hljs-number\">2</span> == <span class=\"hljs-number\">0</span>) || (num &lt;= <span class=\"hljs-number\">0</span>)) {\n            System.out.print(<span class=\"hljs-string\">&quot;Input number must be odd and &gt;0&quot;</span>);\n            System.exit(<span class=\"hljs-number\">0</span>);\n        }\n\n        <span class=\"hljs-type\">int</span>[][] magic_square = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[num][num];\n\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">row_num</span> <span class=\"hljs-operator\">=</span> num / <span class=\"hljs-number\">2</span>;\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">col_num</span> <span class=\"hljs-operator\">=</span> num - <span class=\"hljs-number\">1</span>;\n        magic_square[row_num][col_num] = <span class=\"hljs-number\">1</span>;\n\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">2</span>; i &lt;= num * num; i++) {\n            <span class=\"hljs-keyword\">if</span> (magic_square[(row_num - <span class=\"hljs-number\">1</span> + num) % num][(col_num + <span class=\"hljs-number\">1</span>) % num] == <span class=\"hljs-number\">0</span>) {\n                row_num = (row_num - <span class=\"hljs-number\">1</span> + num) % num;\n                col_num = (col_num + <span class=\"hljs-number\">1</span>) % num;\n            } <span class=\"hljs-keyword\">else</span> {\n                col_num = (col_num - <span class=\"hljs-number\">1</span> + num) % num;\n            }\n            magic_square[row_num][col_num] = i;\n        }\n\n        <span class=\"hljs-comment\">// print the square</span>\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; num; i++) {\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">j</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; j &lt; num; j++) {\n                <span class=\"hljs-keyword\">if</span> (magic_square[i][j] &lt; <span class=\"hljs-number\">10</span>) {\n                    System.out.print(<span class=\"hljs-string\">&quot; &quot;</span>);\n                }\n                <span class=\"hljs-keyword\">if</span> (magic_square[i][j] &lt; <span class=\"hljs-number\">100</span>) {\n                    System.out.print(<span class=\"hljs-string\">&quot; &quot;</span>);\n                }\n                System.out.print(magic_square[i][j] + <span class=\"hljs-string\">&quot; &quot;</span>);\n            }\n            System.out.println();\n        }\n\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aman Singh",
+      "email": "68653906+Gagarod@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

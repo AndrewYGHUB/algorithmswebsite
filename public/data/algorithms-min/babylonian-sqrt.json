@@ -1,0 +1,23 @@
+{
+  "slug": "babylonian-sqrt",
+  "name": "Babylonian Sqrt",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Anson Biggs",
+      "email": "ansonleebiggs@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

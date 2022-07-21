@@ -1,0 +1,19 @@
+{
+  "slug": "base-64",
+  "name": "Base 64",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "python": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Paul Leydier",
+      "email": "75126792+paul-leydier@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

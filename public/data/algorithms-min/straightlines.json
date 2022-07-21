@@ -1,0 +1,29 @@
+{
+  "slug": "straightlines",
+  "name": "Straightlines",
+  "categories": [
+    "math",
+    "geometry"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Shreyas Sable",
+      "email": "43932047+KILLinefficiency@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

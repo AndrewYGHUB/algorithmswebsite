@@ -1,0 +1,12 @@
+{
+  "slug": "a006577-number-of-3n1-steps-to-reach-1",
+  "name": "A006577 Number of '3n+1' steps to reach 1",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "bankers-algorithm",
+  "name": "Bankers Algorithm",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Amritesh Anand",
+      "email": "73696688+amritesh19@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

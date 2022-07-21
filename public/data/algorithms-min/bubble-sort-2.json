@@ -1,0 +1,34 @@
+{
+  "slug": "bubble-sort-2",
+  "name": "Bubble Sort 2",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "c": "",
+    "php": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrew S Erwin",
+      "email": "andrew@andrewerwin.com",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "krishna.vedala@ieee.org",
+      "commits": 1
+    },
+    {
+      "name": "Gabriel Fioravante",
+      "email": "gfvante@gmail.com",
+      "commits": 10
+    }
+  ],
+  "explanationUrl": {}
+}

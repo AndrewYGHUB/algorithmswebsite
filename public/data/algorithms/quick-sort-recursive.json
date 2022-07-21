@@ -1,0 +1,28 @@
+{
+  "slug": "quick-sort-recursive",
+  "name": "Quick Sort Recursive",
+  "categories": [
+    "sorts"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Sorts/QuickSortRecursive.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Sorts/QuickSortRecursive.js",
+      "code": "<span class=\"hljs-comment\">/*\n    Quicksort is the most popular sorting algorithm and there have\n    lots of different implementations but the &quot;recursive&quot; or &quot;Partition in place&quot;\n    is one of the most efficient implementations below we have discussed how to\n    implement it.\n\n    Partition in place =&gt; &quot;in place&quot; Partition in place indicates that we\n    do not need any other space to store the auxiliary array and the term\n    &quot;partition&quot; denotes that we split the list into two parts one is less\n    than the pivot and the other is greater than the pivot and repeats this\n    process recursively and breaks the problem into sub-problems and makes\n    it singular so that the behavior or &quot;divide and conquer&quot; get involved\n    too.\n\n    Problem &amp; Source of Explanation =&gt; https://www.cs.auckland.ac.nz/software/AlgAnim/qsort1a.html\n*/</span>\n\n<span class=\"hljs-comment\">/**\n * Partition in place QuickSort.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number[]</span>} inputList list of values.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} low lower index for partition.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} high higher index for partition.\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">quickSort</span> = (<span class=\"hljs-params\">inputList, low, high</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (!<span class=\"hljs-title class_\">Array</span>.<span class=\"hljs-title function_\">isArray</span>(inputList)) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Please input a valid list or array.&#x27;</span>)\n  }\n  <span class=\"hljs-keyword\">if</span> (low &lt; high) {\n    <span class=\"hljs-comment\">// get the partition index.</span>\n    <span class=\"hljs-keyword\">const</span> pIndex = <span class=\"hljs-title function_\">partition</span>(inputList, low, high)\n    <span class=\"hljs-comment\">// recursively call the quickSort method again.</span>\n    <span class=\"hljs-title function_\">quickSort</span>(inputList, low, pIndex - <span class=\"hljs-number\">1</span>)\n    <span class=\"hljs-title function_\">quickSort</span>(inputList, pIndex + <span class=\"hljs-number\">1</span>, high)\n  }\n  <span class=\"hljs-keyword\">return</span> inputList\n}\n\n<span class=\"hljs-comment\">/**\n * Partition In Place method.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number[]</span>} partitionList list for partitioning.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} low lower index for partition.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} high higher index for partition.\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">number</span>} `pIndex` pivot index value.\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">partition</span> = (<span class=\"hljs-params\">partitionList, low, high</span>) =&gt; {\n  <span class=\"hljs-keyword\">const</span> pivot = partitionList[high]\n  <span class=\"hljs-keyword\">let</span> pIndex = low\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> index = low; index &lt;= high - <span class=\"hljs-number\">1</span>; index++) {\n    <span class=\"hljs-keyword\">if</span> (partitionList[index] &lt; pivot) {\n      <span class=\"hljs-comment\">// swap variables using array destructuring</span>\n      [partitionList[index], partitionList[pIndex]] = [partitionList[pIndex], partitionList[index]]\n      pIndex += <span class=\"hljs-number\">1</span>\n    }\n  }\n  [partitionList[pIndex], partitionList[high]] = [partitionList[high], partitionList[pIndex]]\n  <span class=\"hljs-keyword\">return</span> pIndex\n}\n\n<span class=\"hljs-keyword\">export</span> { quickSort }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "SURYAPRATAP SINGH SURYAVANSHI",
+      "email": "67123991+suryapratapsinghsuryavanshi@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

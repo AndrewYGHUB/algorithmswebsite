@@ -1,0 +1,48 @@
+{
+  "slug": "caesars-cipher",
+  "name": "Caesars Cipher",
+  "categories": [
+    "ciphers"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Ciphers/CaesarsCipher.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Ciphers/CaesarsCipher.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">caesarsCipher</span>\n * <span class=\"hljs-doctag\">@description</span> - In cryptography, a Caesar cipher, also known as Caesar&#x27;s cipher, the shift cipher, Caesar&#x27;s code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.\n * <span class=\"hljs-doctag\">@see</span> - [wiki](https://en.wikipedia.org/wiki/Caesar_cipher)\n * <span class=\"hljs-doctag\">@param</span>  {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">str</span> - string to be encrypted\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} <span class=\"hljs-variable\">rotation</span> - the number of rotation, expect real number ( &gt; 0)\n * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-type\">string</span>} - decrypted string\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">caesarsCipher</span> = (<span class=\"hljs-params\">str, rotation</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> str !== <span class=\"hljs-string\">&#x27;string&#x27;</span> || !<span class=\"hljs-title class_\">Number</span>.<span class=\"hljs-title function_\">isInteger</span>(rotation) || rotation &lt; <span class=\"hljs-number\">0</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Arguments are invalid&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">const</span> alphabets = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Array</span>(<span class=\"hljs-number\">26</span>)\n    .<span class=\"hljs-title function_\">fill</span>()\n    .<span class=\"hljs-title function_\">map</span>(<span class=\"hljs-function\">(<span class=\"hljs-params\">_, index</span>) =&gt;</span> <span class=\"hljs-title class_\">String</span>.<span class=\"hljs-title function_\">fromCharCode</span>(<span class=\"hljs-number\">97</span> + index)) <span class=\"hljs-comment\">// generate all lower alphabets array a-z</span>\n\n  <span class=\"hljs-keyword\">const</span> cipherMap = alphabets.<span class=\"hljs-title function_\">reduce</span>(\n    <span class=\"hljs-function\">(<span class=\"hljs-params\">map, char, index</span>) =&gt;</span> map.<span class=\"hljs-title function_\">set</span>(char, alphabets[(rotation + index) % <span class=\"hljs-number\">26</span>]),\n    <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Map</span>()\n  )\n\n  <span class=\"hljs-keyword\">return</span> str.<span class=\"hljs-title function_\">replace</span>(<span class=\"hljs-regexp\">/[a-z]/gi</span>, <span class=\"hljs-function\">(<span class=\"hljs-params\">char</span>) =&gt;</span> {\n    <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-regexp\">/[A-Z]/</span>.<span class=\"hljs-title function_\">test</span>(char)) {\n      <span class=\"hljs-keyword\">return</span> cipherMap.<span class=\"hljs-title function_\">get</span>(char.<span class=\"hljs-title function_\">toLowerCase</span>()).<span class=\"hljs-title function_\">toUpperCase</span>()\n    }\n\n    <span class=\"hljs-keyword\">return</span> cipherMap.<span class=\"hljs-title function_\">get</span>(char)\n  })\n}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> caesarsCipher\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ed Mendoza",
+      "email": "polyneue@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

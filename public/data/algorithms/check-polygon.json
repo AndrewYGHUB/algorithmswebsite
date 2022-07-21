@@ -1,0 +1,28 @@
+{
+  "slug": "check-polygon",
+  "name": "Check Polygon",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "maths/check_polygon.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/maths/check_polygon.py",
+      "code": "<span class=\"hljs-keyword\">from</span> __future__ <span class=\"hljs-keyword\">import</span> annotations\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">check_polygon</span>(<span class=\"hljs-params\">nums: <span class=\"hljs-built_in\">list</span>[<span class=\"hljs-built_in\">float</span>]</span>) -&gt; <span class=\"hljs-built_in\">bool</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Takes list of possible side lengths and determines whether a\n    two-dimensional polygon with such side lengths can exist.\n\n    Returns a boolean value for the &lt; comparison\n    of the largest side length with sum of the rest.\n    Wiki: https://en.wikipedia.org/wiki/Triangle_inequality\n\n    &gt;&gt;&gt; check_polygon([6, 10, 5])\n    True\n    &gt;&gt;&gt; check_polygon([3, 7, 13, 2])\n    False\n    &gt;&gt;&gt; check_polygon([1, 4.3, 5.2, 12.2])\n    False\n    &gt;&gt;&gt; nums = [3, 7, 13, 2]\n    &gt;&gt;&gt; _ = check_polygon(nums) #   Run function, do not show answer in output\n    &gt;&gt;&gt; nums #  Check numbers are not reordered\n    [3, 7, 13, 2]\n    &gt;&gt;&gt; check_polygon([])\n    Traceback (most recent call last):\n        ...\n    ValueError: Monogons and Digons are not polygons in the Euclidean space\n    &gt;&gt;&gt; check_polygon([-2, 5, 6])\n    Traceback (most recent call last):\n        ...\n    ValueError: All values must be greater than 0\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">if</span> <span class=\"hljs-built_in\">len</span>(nums) &lt; <span class=\"hljs-number\">2</span>:\n        <span class=\"hljs-keyword\">raise</span> ValueError(<span class=\"hljs-string\">&quot;Monogons and Digons are not polygons in the Euclidean space&quot;</span>)\n    <span class=\"hljs-keyword\">if</span> <span class=\"hljs-built_in\">any</span>(i &lt;= <span class=\"hljs-number\">0</span> <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> nums):\n        <span class=\"hljs-keyword\">raise</span> ValueError(<span class=\"hljs-string\">&quot;All values must be greater than 0&quot;</span>)\n    copy_nums = nums.copy()\n    copy_nums.sort()\n    <span class=\"hljs-keyword\">return</span> copy_nums[-<span class=\"hljs-number\">1</span>] &lt; <span class=\"hljs-built_in\">sum</span>(copy_nums[:-<span class=\"hljs-number\">1</span>])\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "poloso",
+      "email": "osoriopabl@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Arghya Sarkar (ASRA)",
+      "email": "67339217+sarkarghya@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

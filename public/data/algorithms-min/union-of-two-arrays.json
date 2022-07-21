@@ -1,0 +1,18 @@
+{
+  "slug": "union-of-two-arrays",
+  "name": "Union of Two Arrays",
+  "categories": [
+    "operationsondatastructures"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Alvin Philips",
+      "email": "alvinphilips257@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

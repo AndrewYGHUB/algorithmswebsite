@@ -1,0 +1,23 @@
+{
+  "slug": "highest-common-factor",
+  "name": "Highest Common Factor",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "matlab-octave": ""
+  },
+  "contributors": [
+    {
+      "name": "MaximSmolskiy",
+      "email": "mithridatus@mail.ru",
+      "commits": 1
+    },
+    {
+      "name": "Andrew",
+      "email": "andrewzhang2323@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

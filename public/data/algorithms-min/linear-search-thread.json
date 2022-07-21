@@ -1,0 +1,18 @@
+{
+  "slug": "linear-search-thread",
+  "name": "Linear Search Thread",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Louve Le bronec",
+      "email": "lebroneclo@cy-tech.fr",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

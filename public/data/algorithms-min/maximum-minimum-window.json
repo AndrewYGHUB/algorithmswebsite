@@ -1,0 +1,19 @@
+{
+  "slug": "maximum-minimum-window",
+  "name": "Maximum Minimum Window",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "sahil-13399",
+      "email": "46062089+sahil-13399@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

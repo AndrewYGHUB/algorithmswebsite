@@ -1,0 +1,13 @@
+{
+  "slug": "geometric",
+  "name": "Geometric",
+  "categories": [
+    "math",
+    "series"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

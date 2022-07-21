@@ -1,0 +1,19 @@
+{
+  "slug": "pairing-heap",
+  "name": "Pairing Heap",
+  "categories": [
+    "datastructures",
+    "heap"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Sergii Lischuk",
+      "email": "evertodante@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

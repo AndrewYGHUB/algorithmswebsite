@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/aarch64_assembly" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/algorithms-explanation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/c" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/c-plus-plus" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/c-sharp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/dart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/elixir" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/elm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/f-sharp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/haskell" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/java" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/javascript" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/julia" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/jupyter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/kotlin" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/lua" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/matlab-octave" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/ocaml" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/php" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/r" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/ruby" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/rust" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/scala" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/public/data/repositories/swift" vcs="Git" />
+  </component>
+</project>

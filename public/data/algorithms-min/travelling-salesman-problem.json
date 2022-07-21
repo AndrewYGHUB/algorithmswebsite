@@ -1,0 +1,18 @@
+{
+  "slug": "travelling-salesman-problem",
+  "name": "Travelling Salesman Problem",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Mayank Mamgain",
+      "email": "56592363+Mayank17M@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "zig-zag-pattern",
+  "name": "Zig Zag Pattern",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "SanOtaku",
+      "email": "SanOtaku098@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

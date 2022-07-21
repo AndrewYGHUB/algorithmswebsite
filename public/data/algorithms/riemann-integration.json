@@ -1,0 +1,23 @@
+{
+  "slug": "riemann-integration",
+  "name": "Riemann Integration",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "julia": {
+      "dir": "src/math/riemann_integration.jl",
+      "url": "https://github.com/TheAlgorithms/julia/tree/master/src/math/riemann_integration.jl",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n    riemann_integration(f::Function, a::Real, b::Real, n::Int, approx::Symbol = :midpoint)\n\na Riemann sum is a certain kind of approximation of an integral by a finite sum.\nThe sum is calculated by partitioning the region into shapes (rectangles, trapezoids, parabolas, or cubics) that together form a region that is similar to the region being measured, then calculating the area for each of these shapes, and finally adding all of these small areas together.\n\nBecause the region filled by the small shapes is usually not exactly the same shape as the region being measured, the Riemann sum will differ from the area being measured. \nThis error can be reduced by dividing up the region more finely, using smaller and smaller shapes. \nAs the shapes get smaller and smaller, the sum approaches the Riemann integral.\n\n# Arguments\n- `f`: the function to integrate. (at the momment only single variable is suported)\n- `a`: Start of the integration limit.\n- `b`: End of the integration limit.\n- `n`: Number of points to sample. (as n increase, error decrease)\n- `approx`: Indicate the method of approximation (midpoint, left or right)\n\n# Examples\n```julia\njulia&gt; riemann_integration(x -&gt; x, 1, 3, 1_000, :midpoint)  # 4.0\njulia&gt; riemann_integration(x -&gt; x, 1, 3, 1_000, :left)      # 3.997997997997998\njulia&gt; riemann_integration(x -&gt; x, 1, 3, 1_000, :right)     # 4.002002002002002\njulia&gt; riemann_integration(x -&gt; 3*x^2, 0, 1, 100000)        # integrate a polynomial\n0.9999999999750021\njulia&gt; riemann_integration(x -&gt; sin(x), 0, pi, 1000)          # integrate the sin function\n2.0000008241146774\n```\n\n# Refereces\n- https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-2/a/riemann-sums-review\n- https://math.libretexts.org/Courses/Mount_Royal_University/MATH_2200%3A_Calculus_for_Scientists_II/2%3A_Techniques_of_Integration/2.5%3A_Numerical_Integration_-_Midpoint%2C_Trapezoid%2C_Simpson&#x27;s_rule\n- https://abel.math.harvard.edu/~knill/teaching/math1a_2011/handouts/40-numerical.pdf\n- https://en.wikipedia.org/wiki/Riemann_integral\n\n\nContributed By:- [AugustoCL](https://github.com/AugustoCL)\n&quot;&quot;&quot;</span>\n<span class=\"hljs-keyword\">function</span> riemann_integration(\n    f::<span class=\"hljs-built_in\">Function</span>,\n    a::<span class=\"hljs-built_in\">Real</span>,\n    b::<span class=\"hljs-built_in\">Real</span>,\n    n::<span class=\"hljs-built_in\">Int</span>,\n    approx::<span class=\"hljs-built_in\">Symbol</span> = :midpoint,\n)\n    <span class=\"hljs-comment\"># width of the rectangles</span>\n    Δₓ = (b - a) / n\n\n    <span class=\"hljs-comment\"># methods of approximation (:midpoint, :left, :right)</span>\n    <span class=\"hljs-keyword\">if</span> approx == :midpoint\n        sum_range = (a+Δₓ/<span class=\"hljs-number\">2</span>):Δₓ:(b-Δₓ/<span class=\"hljs-number\">2</span>)\n    <span class=\"hljs-keyword\">elseif</span> approx == :left\n        sum_range = a:Δₓ:(b-Δₓ)\n    <span class=\"hljs-keyword\">elseif</span> approx == :right\n        sum_range = (a+Δₓ):Δₓ:b\n    <span class=\"hljs-keyword\">else</span>\n        throw(\n            <span class=\"hljs-built_in\">ArgumentError</span>(\n                <span class=\"hljs-string\">&quot;The symbol :<span class=\"hljs-variable\">$approx</span> is not a valid argument. Insert :midpoint, :left or :right&quot;</span>,\n            ),\n        )\n    <span class=\"hljs-keyword\">end</span>\n\n    <span class=\"hljs-comment\"># sum of the height of the rectangles</span>\n    Σ = <span class=\"hljs-number\">0.0</span>\n    <span class=\"hljs-keyword\">for</span> i <span class=\"hljs-keyword\">in</span> <span class=\"hljs-number\">2</span>:length(sum_range)\n        a = sum_range[i-<span class=\"hljs-number\">1</span>]\n        b = sum_range[i]\n        xᵢ = a + (b - a) * rand()   <span class=\"hljs-comment\"># draw a uniform(a,b) for each subinterval [a,b]</span>\n        Σ += f(xᵢ)\n    <span class=\"hljs-keyword\">end</span>\n\n    <span class=\"hljs-comment\"># approximate integral of f</span>\n    <span class=\"hljs-keyword\">return</span> Δₓ * Σ\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

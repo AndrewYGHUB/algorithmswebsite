@@ -1,0 +1,23 @@
+{
+  "slug": "fetch-well-rx-price",
+  "name": "Fetch Well Rx Price",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Saptarshi Sengupta",
+      "email": "94242536+saptarshi1996@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

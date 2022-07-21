@@ -1,0 +1,25 @@
+{
+  "slug": "main-linear-probing",
+  "name": "Main Linear Probing",
+  "categories": [
+    "datastructures",
+    "hashmap",
+    "hashing"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ray",
+      "email": "rbshealy@live.unc.edu",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

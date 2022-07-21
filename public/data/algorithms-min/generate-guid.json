@@ -1,0 +1,23 @@
+{
+  "slug": "generate-guid",
+  "name": "Generate GUID",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Lukas Kleybolte",
+      "email": "lukas.kleybolte@hs-augsburg.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

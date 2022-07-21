@@ -1,0 +1,133 @@
+{
+  "slug": "topological-sort",
+  "name": "Topological Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "c-plus-plus": "",
+    "java": "",
+    "c": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "PalAditya",
+      "email": "adityapal.nghss@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "fffzlfk",
+      "email": "44939690+fffzlfk@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Connor Bottum",
+      "email": "cbb692@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Niranjan Godbole",
+      "email": "niranjan8192@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ttuanho",
+      "email": "hhoanhtuann@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "Mehdi ALAOUI",
+      "email": "alaoui.mehdi.1995@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Carlos Rafael",
+      "email": "carlosk2gunn@hotmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "68542775+raklaptudirm@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "PatOnTheBack",
+      "email": "51241310+PatOnTheBack@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ayaankhan98",
+      "email": "ayaankhan98@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Jonathan Taylor",
+      "email": "jontaylor091@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Sarvesh Kumar Dwivedi",
+      "email": "georgiansarvesh4396@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "cclauss",
+      "email": "cclauss@bluewin.ch",
+      "commits": 1
+    },
+    {
+      "name": "97arushisharma",
+      "email": "97arushisharma@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Zach Wild",
+      "email": "zacharyjwild@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Abhishek Yadav",
+      "email": "31253403+AbhiY98@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Filip Hlasek",
+      "email": "fhlasek@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

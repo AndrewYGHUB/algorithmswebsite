@@ -1,0 +1,23 @@
+{
+  "slug": "lcm-of-n-numbers",
+  "name": "Lcm of N Numbers",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "rust": {
+      "dir": "src/math/lcm_of_n_numbers.rs",
+      "url": "https://github.com/TheAlgorithms/rust/tree/master/src/math/lcm_of_n_numbers.rs",
+      "code": "<span class=\"hljs-comment\">// returns the least common multiple of n numbers</span>\n\n<span class=\"hljs-keyword\">pub</span> <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">lcm</span>(nums: &amp;[<span class=\"hljs-type\">usize</span>]) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">usize</span> {\n    <span class=\"hljs-keyword\">if</span> nums.<span class=\"hljs-title function_ invoke__\">len</span>() == <span class=\"hljs-number\">1</span> {\n        <span class=\"hljs-keyword\">return</span> nums[<span class=\"hljs-number\">0</span>];\n    }\n    <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">a</span> = nums[<span class=\"hljs-number\">0</span>];\n    <span class=\"hljs-keyword\">let</span> <span class=\"hljs-variable\">b</span> = <span class=\"hljs-title function_ invoke__\">lcm</span>(&amp;nums[<span class=\"hljs-number\">1</span>..]);\n    a * b / <span class=\"hljs-title function_ invoke__\">gcd_of_two_numbers</span>(a, b)\n}\n\n<span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">gcd_of_two_numbers</span>(a: <span class=\"hljs-type\">usize</span>, b: <span class=\"hljs-type\">usize</span>) <span class=\"hljs-punctuation\">-&gt;</span> <span class=\"hljs-type\">usize</span> {\n    <span class=\"hljs-keyword\">if</span> b == <span class=\"hljs-number\">0</span> {\n        <span class=\"hljs-keyword\">return</span> a;\n    }\n    <span class=\"hljs-title function_ invoke__\">gcd_of_two_numbers</span>(b, a % b)\n}\n\n<span class=\"hljs-meta\">#[cfg(test)]</span>\n<span class=\"hljs-keyword\">mod</span> tests {\n    <span class=\"hljs-keyword\">use</span> super::*;\n    <span class=\"hljs-meta\">#[test]</span>\n    <span class=\"hljs-keyword\">fn</span> <span class=\"hljs-title function_\">it_works</span>() {\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-title function_ invoke__\">lcm</span>(&amp;[<span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">5</span>]), <span class=\"hljs-number\">60</span>);\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-title function_ invoke__\">lcm</span>(&amp;[<span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">4</span>, <span class=\"hljs-number\">6</span>, <span class=\"hljs-number\">8</span>, <span class=\"hljs-number\">10</span>]), <span class=\"hljs-number\">120</span>);\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-title function_ invoke__\">lcm</span>(&amp;[<span class=\"hljs-number\">3</span>, <span class=\"hljs-number\">6</span>, <span class=\"hljs-number\">9</span>, <span class=\"hljs-number\">12</span>, <span class=\"hljs-number\">15</span>]), <span class=\"hljs-number\">180</span>);\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-title function_ invoke__\">lcm</span>(&amp;[<span class=\"hljs-number\">10</span>]), <span class=\"hljs-number\">10</span>);\n        <span class=\"hljs-built_in\">assert_eq!</span>(<span class=\"hljs-title function_ invoke__\">lcm</span>(&amp;[<span class=\"hljs-number\">21</span>, <span class=\"hljs-number\">110</span>]), <span class=\"hljs-number\">2310</span>);\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "pwygab",
+      "email": "88221256+merelymyself@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

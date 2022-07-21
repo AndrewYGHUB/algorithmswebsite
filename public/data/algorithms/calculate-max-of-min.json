@@ -1,0 +1,24 @@
+{
+  "slug": "calculate-max-of-min",
+  "name": "Calculate Max Of Min",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/datastructures/stacks/CalculateMaxOfMin.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/datastructures/stacks/CalculateMaxOfMin.java",
+      "code": "<span class=\"hljs-comment\">/** Author : Siddhant Swarup Mallick\n * Github : https://github.com/siddhant2002\n */</span>\n\n<span class=\"hljs-comment\">/** Program description - Given an integer array. The task is to find the maximum of the minimum of the array */</span>\n<span class=\"hljs-keyword\">package</span> com.thealgorithms.datastructures.stacks;\n\n<span class=\"hljs-keyword\">import</span> java.util.*;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">CalculateMaxOfMin</span> {\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">calculateMaxOfMin</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span>[] a)</span> {\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">n</span> <span class=\"hljs-operator\">=</span> a.length;\n        <span class=\"hljs-type\">int</span>[] ans = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[n];\n        <span class=\"hljs-type\">int</span>[] arr2 = Arrays.copyOf(a, n);\n        Arrays.sort(arr2);\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">maxNum</span> <span class=\"hljs-operator\">=</span> arr2[arr2.length - <span class=\"hljs-number\">1</span>];\n        ans[<span class=\"hljs-number\">0</span>] = maxNum;\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">index</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>;\n        <span class=\"hljs-keyword\">while</span> (index != ans.length) {\n            <span class=\"hljs-type\">int</span>[] minimums = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[n - index];\n            <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; n - index; i++) {\n                <span class=\"hljs-type\">int</span>[] windowArray = Arrays.copyOfRange(a, i, i + index + <span class=\"hljs-number\">1</span>);\n                Arrays.sort(windowArray);\n                <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">minNum</span> <span class=\"hljs-operator\">=</span> windowArray[<span class=\"hljs-number\">0</span>];\n                minimums[i] = minNum;\n            }\n            Arrays.sort(minimums);\n            ans[index] = minimums[minimums.length - <span class=\"hljs-number\">1</span>];\n            index += <span class=\"hljs-number\">1</span>;\n        }\n        <span class=\"hljs-keyword\">return</span> ans[<span class=\"hljs-number\">0</span>];\n    }\n}\n<span class=\"hljs-comment\">/**\n * Given an integer array. The task is to find the maximum of the minimum of the\n * given array\n */</span>"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Siddhant Swarup Mallick",
+      "email": "78552027+siddhant2002@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

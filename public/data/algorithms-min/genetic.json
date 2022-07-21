@@ -1,0 +1,23 @@
+{
+  "slug": "genetic",
+  "name": "Genetic",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Abel",
+      "email": "abel.tay@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

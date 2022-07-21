@@ -1,0 +1,18 @@
+{
+  "slug": "base-64-to-array-buffer",
+  "name": "Base 64 To Array Buffer",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Luis De Anda",
+      "email": "ldeandac16@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

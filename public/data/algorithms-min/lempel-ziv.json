@@ -1,0 +1,33 @@
+{
+  "slug": "lempel-ziv",
+  "name": "Lempel Ziv",
+  "categories": [
+    "compression"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "algobytewise",
+      "email": "algobytewise@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Erwin Junge",
+      "email": "erwin@junge.nl",
+      "commits": 1
+    },
+    {
+      "name": "Ioane Margiani",
+      "email": "margianiioane@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

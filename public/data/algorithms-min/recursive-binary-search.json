@@ -1,0 +1,12 @@
+{
+  "slug": "recursive-binary-search",
+  "name": "Recursive Binary Search",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

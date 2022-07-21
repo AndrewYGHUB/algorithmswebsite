@@ -1,0 +1,12 @@
+{
+  "slug": "a057588-kummer-numbers",
+  "name": "A057588 Kummer Numbers",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

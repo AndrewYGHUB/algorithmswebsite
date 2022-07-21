@@ -1,0 +1,24 @@
+{
+  "slug": "harmonic-series",
+  "name": "Harmonic Series",
+  "categories": [
+    "math",
+    "series"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "imp",
+      "email": "imp07@qq.com",
+      "commits": 1
+    },
+    {
+      "name": "Muhammad Ibtihaj Naeem",
+      "email": "i.ibtihajnaeem@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

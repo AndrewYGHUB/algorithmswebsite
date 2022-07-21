@@ -1,0 +1,19 @@
+{
+  "slug": "mru-cache",
+  "name": "MRU Cache",
+  "categories": [
+    "datastructures",
+    "cache"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "januslinhc",
+      "email": "januslinhc@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

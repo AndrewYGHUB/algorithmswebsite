@@ -1,0 +1,23 @@
+{
+  "slug": "quick-select-search",
+  "name": "Quick Select Search",
+  "categories": [
+    "searches"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrew Chudinovskyh",
+      "email": "andron989@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

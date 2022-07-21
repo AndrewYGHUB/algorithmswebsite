@@ -1,0 +1,23 @@
+{
+  "slug": "simpsons-integration",
+  "name": "Simpsons Integration",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Augusto C. Leal",
+      "email": "leal.augusto@unifesp.br",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

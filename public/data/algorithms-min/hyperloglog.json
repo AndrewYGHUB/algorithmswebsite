@@ -1,0 +1,19 @@
+{
+  "slug": "hyperloglog",
+  "name": "HyperLogLog",
+  "categories": [
+    "datastructures",
+    "probabilistic"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Stephen Lorello",
+      "email": "42971704+slorello89@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

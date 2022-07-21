@@ -1,0 +1,28 @@
+{
+  "slug": "keyword-shifted-alphabet",
+  "name": "Keyword Shifted Alphabet",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Bambusek, David",
+      "email": "dbambusek@netsuite.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

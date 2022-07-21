@@ -1,0 +1,33 @@
+{
+  "slug": "rgb-to-hex",
+  "name": "RGB To Hex",
+  "categories": [
+    "conversions"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Conversions/RGBToHex.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Conversions/RGBToHex.js",
+      "code": "<span class=\"hljs-keyword\">function</span> <span class=\"hljs-title function_\">RGBToHex</span> (r, g, b) {\n  <span class=\"hljs-keyword\">if</span> (\n    <span class=\"hljs-keyword\">typeof</span> r !== <span class=\"hljs-string\">&#x27;number&#x27;</span> ||\n    <span class=\"hljs-keyword\">typeof</span> g !== <span class=\"hljs-string\">&#x27;number&#x27;</span> ||\n    <span class=\"hljs-keyword\">typeof</span> b !== <span class=\"hljs-string\">&#x27;number&#x27;</span>\n  ) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;argument is not a Number&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">toHex</span> = n =&gt; (n || <span class=\"hljs-string\">&#x27;0&#x27;</span>).<span class=\"hljs-title function_\">toString</span>(<span class=\"hljs-number\">16</span>).<span class=\"hljs-title function_\">padStart</span>(<span class=\"hljs-number\">2</span>, <span class=\"hljs-string\">&#x27;0&#x27;</span>)\n\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">`#<span class=\"hljs-subst\">${toHex(r)}</span><span class=\"hljs-subst\">${toHex(g)}</span><span class=\"hljs-subst\">${toHex(b)}</span>`</span>\n}\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">RGBToHex</span> }\n\n<span class=\"hljs-comment\">// &gt; RGBToHex(255, 255, 255)</span>\n<span class=\"hljs-comment\">// &#x27;#ffffff&#x27;</span>\n\n<span class=\"hljs-comment\">// &gt; RGBToHex(255, 99, 71)</span>\n<span class=\"hljs-comment\">// &#x27;#ff6347&#x27;</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Stas",
+      "email": "real.peha@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

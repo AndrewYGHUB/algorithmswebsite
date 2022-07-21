@@ -1,0 +1,12 @@
+{
+  "slug": "a006880-number-of-primes-by-powers-of-10",
+  "name": "A006880 Number of Primes by Powers of 10",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

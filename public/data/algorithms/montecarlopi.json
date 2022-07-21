@@ -1,0 +1,49 @@
+{
+  "slug": "montecarlopi",
+  "name": "Montecarlopi",
+  "categories": [
+    "math",
+    "pi"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "math/pi/montecarlopi.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/pi/montecarlopi.go",
+      "code": "<span class=\"hljs-comment\">// montecarlopi.go</span>\n<span class=\"hljs-comment\">// description: Calculating pi by the Monte Carlo method</span>\n<span class=\"hljs-comment\">// details:</span>\n<span class=\"hljs-comment\">// implementations of Monte Carlo Algorithm for the calculating of Pi - [Monte Carlo method](https://en.wikipedia.org/wiki/Monte_Carlo_method)</span>\n<span class=\"hljs-comment\">// author(s): [red_byte](https://github.com/i-redbyte), [Paul Leydier] (https://github.com/paul-leydier)</span>\n<span class=\"hljs-comment\">// see montecarlopi_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> pi\n\n<span class=\"hljs-keyword\">import</span> (\n\t<span class=\"hljs-string\">&quot;fmt&quot;</span>       <span class=\"hljs-comment\">// Used for error formatting</span>\n\t<span class=\"hljs-string\">&quot;math/rand&quot;</span> <span class=\"hljs-comment\">// Used for random number generation in Monte Carlo method</span>\n\t<span class=\"hljs-string\">&quot;runtime&quot;</span>   <span class=\"hljs-comment\">// Used to get information on available CPUs</span>\n\t<span class=\"hljs-string\">&quot;time&quot;</span>      <span class=\"hljs-comment\">// Used for seeding the random number generation</span>\n)\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">MonteCarloPi</span><span class=\"hljs-params\">(randomPoints <span class=\"hljs-type\">int</span>)</span></span> <span class=\"hljs-type\">float64</span> {\n\trnd := rand.New(rand.NewSource(time.Now().UnixNano()))\n\tinside := <span class=\"hljs-number\">0</span>\n\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-number\">0</span>; i &lt; randomPoints; i++ {\n\t\tx := rnd.Float64()\n\t\ty := rnd.Float64()\n\t\t<span class=\"hljs-keyword\">if</span> x*x+y*y &lt;= <span class=\"hljs-number\">1</span> {\n\t\t\tinside += <span class=\"hljs-number\">1</span>\n\t\t}\n\t}\n\tpi := <span class=\"hljs-type\">float64</span>(inside) / <span class=\"hljs-type\">float64</span>(randomPoints) * <span class=\"hljs-number\">4</span>\n\t<span class=\"hljs-keyword\">return</span> pi\n}\n\n<span class=\"hljs-comment\">// MonteCarloPiConcurrent approximates the value of pi using the Monte Carlo method.</span>\n<span class=\"hljs-comment\">// Unlike the MonteCarloPi function (first version), this implementation uses</span>\n<span class=\"hljs-comment\">// goroutines and channels to parallelize the computation.</span>\n<span class=\"hljs-comment\">// More details on the Monte Carlo method available at https://en.wikipedia.org/wiki/Monte_Carlo_method.</span>\n<span class=\"hljs-comment\">// More details on goroutines parallelization available at https://go.dev/doc/effective_go#parallel.</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">MonteCarloPiConcurrent</span><span class=\"hljs-params\">(n <span class=\"hljs-type\">int</span>)</span></span> (<span class=\"hljs-type\">float64</span>, <span class=\"hljs-type\">error</span>) {\n\tnumCPU := runtime.GOMAXPROCS(<span class=\"hljs-number\">0</span>)\n\tc := <span class=\"hljs-built_in\">make</span>(<span class=\"hljs-keyword\">chan</span> <span class=\"hljs-type\">int</span>, numCPU)\n\tpointsToDraw, err := splitInt(n, numCPU) <span class=\"hljs-comment\">// split the task in sub-tasks of approximately equal sizes</span>\n\t<span class=\"hljs-keyword\">if</span> err != <span class=\"hljs-literal\">nil</span> {\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>, err\n\t}\n\n\t<span class=\"hljs-comment\">// launch numCPU parallel tasks</span>\n\t<span class=\"hljs-keyword\">for</span> _, p := <span class=\"hljs-keyword\">range</span> pointsToDraw {\n\t\t<span class=\"hljs-keyword\">go</span> drawPoints(p, c)\n\t}\n\n\t<span class=\"hljs-comment\">// collect the tasks results</span>\n\tinside := <span class=\"hljs-number\">0</span>\n\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-number\">0</span>; i &lt; numCPU; i++ {\n\t\tinside += &lt;-c\n\t}\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-type\">float64</span>(inside) / <span class=\"hljs-type\">float64</span>(n) * <span class=\"hljs-number\">4</span>, <span class=\"hljs-literal\">nil</span>\n}\n\n<span class=\"hljs-comment\">// drawPoints draws n random two-dimensional points in the interval [0, 1), [0, 1) and sends through c</span>\n<span class=\"hljs-comment\">// the number of points which where within the circle of center 0 and radius 1 (unit circle)</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">drawPoints</span><span class=\"hljs-params\">(n <span class=\"hljs-type\">int</span>, c <span class=\"hljs-keyword\">chan</span>&lt;- <span class=\"hljs-type\">int</span>)</span></span> {\n\trnd := rand.New(rand.NewSource(time.Now().UnixNano()))\n\tinside := <span class=\"hljs-number\">0</span>\n\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-number\">0</span>; i &lt; n; i++ {\n\t\tx, y := rnd.Float64(), rnd.Float64()\n\t\t<span class=\"hljs-keyword\">if</span> x*x+y*y &lt;= <span class=\"hljs-number\">1</span> {\n\t\t\tinside++\n\t\t}\n\t}\n\tc &lt;- inside\n}\n\n<span class=\"hljs-comment\">// splitInt takes an integer x and splits it within an integer slice of length n in the most uniform</span>\n<span class=\"hljs-comment\">// way possible.</span>\n<span class=\"hljs-comment\">// For example, splitInt(10, 3) will return []int{4, 3, 3}, nil</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">splitInt</span><span class=\"hljs-params\">(x <span class=\"hljs-type\">int</span>, n <span class=\"hljs-type\">int</span>)</span></span> ([]<span class=\"hljs-type\">int</span>, <span class=\"hljs-type\">error</span>) {\n\t<span class=\"hljs-keyword\">if</span> x &lt; n {\n\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">nil</span>, fmt.Errorf(<span class=\"hljs-string\">&quot;x must be &lt; n - given values are x=%d, n=%d&quot;</span>, x, n)\n\t}\n\tsplit := <span class=\"hljs-built_in\">make</span>([]<span class=\"hljs-type\">int</span>, n)\n\t<span class=\"hljs-keyword\">if</span> x%n == <span class=\"hljs-number\">0</span> {\n\t\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-number\">0</span>; i &lt; n; i++ {\n\t\t\tsplit[i] = x / n\n\t\t}\n\t} <span class=\"hljs-keyword\">else</span> {\n\t\tlimit := x % n\n\t\t<span class=\"hljs-keyword\">for</span> i := <span class=\"hljs-number\">0</span>; i &lt; limit; i++ {\n\t\t\tsplit[i] = x/n + <span class=\"hljs-number\">1</span>\n\t\t}\n\t\t<span class=\"hljs-keyword\">for</span> i := limit; i &lt; n; i++ {\n\t\t\tsplit[i] = x / n\n\t\t}\n\t}\n\t<span class=\"hljs-keyword\">return</span> split, <span class=\"hljs-literal\">nil</span>\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Paul Leydier",
+      "email": "75126792+paul-leydier@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Iván Valdés",
+      "email": "iv@nvald.es",
+      "commits": 1
+    },
+    {
+      "name": "Brayo",
+      "email": "vukubrian@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Anderson Queiroz",
+      "email": "contato@andersonq.eti.br",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

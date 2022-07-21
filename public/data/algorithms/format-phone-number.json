@@ -1,0 +1,28 @@
+{
+  "slug": "format-phone-number",
+  "name": "Format Phone Number",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/FormatPhoneNumber.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/FormatPhoneNumber.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@description</span> - function that takes 10 digits and returns a string of the formatted phone number e.g.: 1234567890 -&gt; (123) 456-7890\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">phoneNumber</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">string</span>} - Format to (XXX) XXX-XXXX pattern\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">formatPhoneNumber</span> = (<span class=\"hljs-params\">phoneNumber</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> ((phoneNumber.<span class=\"hljs-property\">length</span> !== <span class=\"hljs-number\">10</span>) || <span class=\"hljs-built_in\">isNaN</span>(phoneNumber)) {\n    <span class=\"hljs-comment\">// return &quot;Invalid phone number.&quot;</span>\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Invalid phone number!&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">let</span> index = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&#x27;(XXX) XXX-XXXX&#x27;</span>.<span class=\"hljs-title function_\">replace</span>(<span class=\"hljs-regexp\">/X/g</span>, <span class=\"hljs-function\">() =&gt;</span> phoneNumber[index++])\n}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> formatPhoneNumber\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Mahfoudh Arous",
+      "email": "mahfoudh.arous@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

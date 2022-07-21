@@ -1,0 +1,12 @@
+{
+  "slug": "perimeter",
+  "name": "Perimeter",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "brian-kernighan-algorithm",
+  "name": "Brian Kernighan Algorithm",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "varunu28",
+      "email": "varun.u28@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    },
+    {
+      "name": "Nishita Aggarwal",
+      "email": "naggarwal97@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

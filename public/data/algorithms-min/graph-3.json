@@ -1,0 +1,19 @@
+{
+  "slug": "graph-3",
+  "name": "Graph 3",
+  "categories": [
+    "datastructures",
+    "graphs"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "DongJoon Cha",
+      "email": "81581204+dongjji@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

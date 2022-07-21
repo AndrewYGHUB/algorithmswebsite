@@ -1,0 +1,23 @@
+{
+  "slug": "check-exceeding",
+  "name": "Check Exceeding",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "String/CheckExceeding.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/String/CheckExceeding.js",
+      "code": "<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">checkExceeding</span>\n * <span class=\"hljs-doctag\">@description</span> - Exceeding words are words where the gap between two adjacent characters is increasing. The gap is the distance in ascii\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">string</span>} <span class=\"hljs-variable\">str</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">boolean</span>}\n * <span class=\"hljs-doctag\">@example</span> - checkExceeding(&#x27;delete&#x27;) =&gt; true, ascii difference - [1, 7, 7, 15, 15] which is incremental\n * <span class=\"hljs-doctag\">@example</span> - checkExceeding(&#x27;update&#x27;) =&gt; false, ascii difference - [5, 12, 3, 19, 15] which is not incremental\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">checkExceeding</span> = (<span class=\"hljs-params\">str</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> str !== <span class=\"hljs-string\">&#x27;string&#x27;</span>) {\n    <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Argument is not a string&#x27;</span>)\n  }\n\n  <span class=\"hljs-keyword\">const</span> upperChars = str\n    .<span class=\"hljs-title function_\">toUpperCase</span>()\n    .<span class=\"hljs-title function_\">replace</span>(<span class=\"hljs-regexp\">/[^A-Z]/g</span>, <span class=\"hljs-string\">&#x27;&#x27;</span>) <span class=\"hljs-comment\">// remove all from str except A to Z alphabets</span>\n\n  <span class=\"hljs-keyword\">const</span> adjacentDiffList = []\n\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; upperChars.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>; i++) {\n    <span class=\"hljs-comment\">// destructuring current char &amp; adjacent char by index, cause in javascript String is an object.</span>\n    <span class=\"hljs-keyword\">const</span> { [i]: char, [i + <span class=\"hljs-number\">1</span>]: adjacentChar } = upperChars\n\n    <span class=\"hljs-keyword\">if</span> (char !== adjacentChar) {\n      adjacentDiffList.<span class=\"hljs-title function_\">push</span>(\n        <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">abs</span>(char.<span class=\"hljs-title function_\">charCodeAt</span>() - adjacentChar.<span class=\"hljs-title function_\">charCodeAt</span>())\n      )\n    }\n  }\n\n  <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">0</span>; i &lt; adjacentDiffList.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>; i++) {\n    <span class=\"hljs-keyword\">const</span> { [i]: charDiff, [i + <span class=\"hljs-number\">1</span>]: secondCharDiff } = adjacentDiffList\n\n    <span class=\"hljs-keyword\">if</span> (charDiff &gt; secondCharDiff) {\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n    }\n  }\n\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n}\n\n<span class=\"hljs-keyword\">export</span> { checkExceeding }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

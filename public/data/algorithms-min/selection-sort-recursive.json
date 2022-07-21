@@ -1,0 +1,39 @@
+{
+  "slug": "selection-sort-recursive",
+  "name": "Selection Sort Recursive",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "DhruvPasricha",
+      "email": "dhruvpasricha0002@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "tGautot",
+      "email": "44877251+tGautot@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Tushar Khanduri",
+      "email": "62638544+Tushar-K24@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "David Leal",
+      "email": "halfpacho@gmail.com",
+      "commits": 5
+    },
+    {
+      "name": "Dhruv Pasricha",
+      "email": "78498002+DhruvPasricha@users.noreply.github.com",
+      "commits": 23
+    }
+  ],
+  "explanationUrl": {}
+}

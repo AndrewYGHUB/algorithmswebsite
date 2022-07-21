@@ -1,0 +1,12 @@
+{
+  "slug": "a006862-euclid-numbers",
+  "name": "A006862 Euclid Numbers",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

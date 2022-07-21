@@ -1,0 +1,12 @@
+{
+  "slug": "radians-to-degrees",
+  "name": "Radians to Degrees",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

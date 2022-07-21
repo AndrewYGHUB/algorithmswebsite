@@ -1,0 +1,35 @@
+{
+  "slug": "queue-linked-list",
+  "name": "Queue Linked List",
+  "categories": [
+    "datastructures",
+    "linkedlist"
+  ],
+  "implementations": {
+    "c": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ritik Bhandari",
+      "email": "ritikbhandari68@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Milad",
+      "email": "14594374+Miraddo@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shubham Sah",
+      "email": "42349247+shubhamsah@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

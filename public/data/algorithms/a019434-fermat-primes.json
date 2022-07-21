@@ -1,0 +1,17 @@
+{
+  "slug": "a019434-fermat-primes",
+  "name": "A019434 Fermat Primes",
+  "categories": [
+    "sequences"
+  ],
+  "body": {},
+  "implementations": {
+    "c-sharp": {
+      "dir": "./Algorithms/Sequences/FermatPrimesSequence.cs",
+      "url": "https:/github.com/TheAlgorithms/C-Sharp/tree/master/Algorithms/Sequences/FermatPrimesSequence.cs",
+      "code": "﻿<span class=\"hljs-keyword\">using</span> System.Collections.Generic;\n<span class=\"hljs-keyword\">using</span> System.Linq;\n<span class=\"hljs-keyword\">using</span> System.Numerics;\n\n<span class=\"hljs-keyword\">namespace</span> <span class=\"hljs-title\">Algorithms.Sequences</span>\n{\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;summary&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     <span class=\"hljs-doctag\">&lt;para&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>         Sequence of Fermat primes: primes of the form 2^(2^k) + 1, for some k &gt;= 0.</span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     <span class=\"hljs-doctag\">&lt;/para&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     <span class=\"hljs-doctag\">&lt;para&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>         Wikipedia: https://wikipedia.org/wiki/Fermat_number.</span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     <span class=\"hljs-doctag\">&lt;/para&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     <span class=\"hljs-doctag\">&lt;para&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>         OEIS: https://oeis.org/A019434.</span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span>     <span class=\"hljs-doctag\">&lt;/para&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;/summary&gt;</span></span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title\">FermatPrimesSequence</span> : <span class=\"hljs-title\">ISequence</span>\n    {\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;summary&gt;</span></span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> Gets sequence of Fermat primes.</span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;/summary&gt;</span></span>\n        <span class=\"hljs-keyword\">public</span> IEnumerable&lt;BigInteger&gt; Sequence\n        {\n            <span class=\"hljs-keyword\">get</span>\n            {\n                <span class=\"hljs-keyword\">var</span> fermatNumbers = <span class=\"hljs-keyword\">new</span> FermatNumbersSequence().Sequence.Take(<span class=\"hljs-number\">5</span>);\n\n                <span class=\"hljs-keyword\">foreach</span> (<span class=\"hljs-keyword\">var</span> n <span class=\"hljs-keyword\">in</span> fermatNumbers)\n                {\n                    <span class=\"hljs-keyword\">yield</span> <span class=\"hljs-keyword\">return</span> n;\n                }\n            }\n        }\n    }\n}\n"
+    }
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "segment-tree-multiplication",
+  "name": "Segment Tree Multiplication",
+  "categories": [
+    "datastructures",
+    "segmenttrees"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "middle-point-pivot",
+  "name": "Middle point pivot",
+  "categories": [
+    "sorts",
+    "comparison"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "array-left-rotation",
+  "name": "Array Left Rotation",
+  "categories": [
+    "operationsondatastructures"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "Alvin Philips",
+      "email": "alvinphilips257@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "sangin-lee",
+      "email": "92197656+sangin-lee@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

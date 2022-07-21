@@ -1,0 +1,19 @@
+{
+  "slug": "graph-2",
+  "name": "Graph 2",
+  "categories": [
+    "datastructures",
+    "graphs"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "a002110-primorial-numbers",
+  "name": "A002110 Primorial Numbers",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

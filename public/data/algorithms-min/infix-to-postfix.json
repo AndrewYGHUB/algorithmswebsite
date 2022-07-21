@@ -1,0 +1,35 @@
+{
+  "slug": "infix-to-postfix",
+  "name": "Infix To Postfix",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "java": "",
+    "c": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Harsh Karande",
+      "email": "harshskarande@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Harsh Karande",
+      "email": "66206863+harshcut@users.noreply.github.com",
+      "commits": 7
+    }
+  ],
+  "explanationUrl": {}
+}

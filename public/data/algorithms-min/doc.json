@@ -1,0 +1,28 @@
+{
+  "slug": "doc",
+  "name": "Doc",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Paul Leydier",
+      "email": "75126792+paul-leydier@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shivam Rathore",
+      "email": "shivam.rathore010@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 9
+    }
+  ],
+  "explanationUrl": {}
+}

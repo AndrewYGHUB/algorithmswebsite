@@ -1,0 +1,23 @@
+{
+  "slug": "merge-sort-no-extra-space",
+  "name": "Merge Sort No Extra Space",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shraddha",
+      "email": "42699578+shraddhavp@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

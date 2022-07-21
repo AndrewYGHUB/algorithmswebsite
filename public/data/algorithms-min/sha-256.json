@@ -1,0 +1,57 @@
+{
+  "slug": "sha-256",
+  "name": "Sha 256",
+  "categories": [
+    "hashing"
+  ],
+  "implementations": {
+    "python": "",
+    "javascript": "",
+    "go": "",
+    "rust": "",
+    "aarch64_assembly": ""
+  },
+  "contributors": [
+    {
+      "name": "Torben Lehmann",
+      "email": "rabiet@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Paul Leydier",
+      "email": "75126792+paul-leydier@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ravi Patel",
+      "email": "ravi.patel1245@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Studiex",
+      "email": "80968515+Studiex@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

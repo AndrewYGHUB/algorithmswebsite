@@ -1,0 +1,18 @@
+{
+  "slug": "damm",
+  "name": "Damm",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Artem Boiarshinov",
+      "email": "54187376+Boiarshinov@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

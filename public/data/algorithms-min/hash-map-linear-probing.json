@@ -1,0 +1,35 @@
+{
+  "slug": "hash-map-linear-probing",
+  "name": "Hash Map Linear Probing",
+  "categories": [
+    "datastructures",
+    "hashmap",
+    "hashing"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ray S",
+      "email": "68674276+rbshealy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ray",
+      "email": "rbshealy@live.unc.edu",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

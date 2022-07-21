@@ -1,0 +1,38 @@
+{
+  "slug": "is-armstrong",
+  "name": "Is Armstrong",
+  "categories": [
+    "others"
+  ],
+  "body": {},
+  "implementations": {
+    "c": {
+      "dir": "misc/is_armstrong.c",
+      "url": "https://github.com/TheAlgorithms/c/tree/master/misc/is_armstrong.c",
+      "code": "<span class=\"hljs-meta\">#<span class=\"hljs-keyword\">include</span> <span class=\"hljs-string\">&lt;stdio.h&gt;</span></span>\n\n<span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span>\n{\n    <span class=\"hljs-type\">int</span> n, sum = <span class=\"hljs-number\">0</span>, i, num;\n    <span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">&quot;Enter number: &quot;</span>);\n    <span class=\"hljs-built_in\">scanf</span>(<span class=\"hljs-string\">&quot;%d&quot;</span>, &amp;n);\n    num = n;\n    <span class=\"hljs-keyword\">while</span> (n != <span class=\"hljs-number\">0</span>)\n    {\n        i = n % <span class=\"hljs-number\">10</span>;\n        sum = sum + (i * i * i);\n        n = n / <span class=\"hljs-number\">10</span>;\n    }\n    <span class=\"hljs-keyword\">if</span> (sum == num)\n    {\n        <span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">&quot;%d is an armstrong number!\\n&quot;</span>, num);\n    }\n    <span class=\"hljs-keyword\">else</span>\n    {\n        <span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">&quot;%d is not an armstrong number!\\n&quot;</span>, num);\n    }\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>;\n}\n"
+    },
+    "go": {
+      "dir": "math/armstrong/isarmstrong.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/armstrong/isarmstrong.go",
+      "code": "<span class=\"hljs-comment\">// isarmstrong.go</span>\n<span class=\"hljs-comment\">// description: Checks if the given number is armstrong number or not</span>\n<span class=\"hljs-comment\">// details: An Armstrong number is a n-digit number that is equal to the sum of each of its digits taken to the nth power.</span>\n<span class=\"hljs-comment\">// ref: https://mathlair.allfunandgames.ca/armstrong.php</span>\n<span class=\"hljs-comment\">// author: Kavitha J</span>\n\n<span class=\"hljs-keyword\">package</span> armstrong\n\n<span class=\"hljs-keyword\">import</span> (\n\t<span class=\"hljs-string\">&quot;math&quot;</span>\n\t<span class=\"hljs-string\">&quot;strconv&quot;</span>\n)\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">IsArmstrong</span><span class=\"hljs-params\">(number <span class=\"hljs-type\">int</span>)</span></span> <span class=\"hljs-type\">bool</span> {\n\t<span class=\"hljs-keyword\">var</span> rightMost <span class=\"hljs-type\">int</span>\n\t<span class=\"hljs-keyword\">var</span> sum <span class=\"hljs-type\">int</span> = <span class=\"hljs-number\">0</span>\n\t<span class=\"hljs-keyword\">var</span> tempNum <span class=\"hljs-type\">int</span> = number\n\n\t<span class=\"hljs-comment\">// to get the number of digits in the number</span>\n\tlength := <span class=\"hljs-type\">float64</span>(<span class=\"hljs-built_in\">len</span>(strconv.Itoa(number)))\n\n\t<span class=\"hljs-comment\">// get the right most digit and break the loop once all digits are iterated</span>\n\t<span class=\"hljs-keyword\">for</span> tempNum &gt; <span class=\"hljs-number\">0</span> {\n\t\trightMost = tempNum % <span class=\"hljs-number\">10</span>\n\t\tsum += <span class=\"hljs-type\">int</span>(math.Pow(<span class=\"hljs-type\">float64</span>(rightMost), length))\n\n\t\t<span class=\"hljs-comment\">// update the input digit minus the processed rightMost</span>\n\t\ttempNum /= <span class=\"hljs-number\">10</span>\n\t}\n\n\t<span class=\"hljs-keyword\">return</span> number == sum\n}\n"
+    },
+    "matlab-octave": {
+      "dir": "algorithms/maths/is_armstrong.m",
+      "url": "https://github.com/TheAlgorithms/matlab-octave/tree/master/algorithms/maths/is_armstrong.m",
+      "code": "<span class=\"hljs-comment\">%% Armstrong no</span>\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span> <span class=\"hljs-title\">n</span>= <span class=\"hljs-title\">is_armstrong</span><span class=\"hljs-params\">(num)</span></span>\n<span class=\"hljs-keyword\">if</span>(num&lt;<span class=\"hljs-number\">0</span>)\n    n=<span class=\"hljs-number\">0</span>; <span class=\"hljs-comment\">%as negative no can&#x27;t be armstrong</span>\n<span class=\"hljs-keyword\">end</span>\nsum=<span class=\"hljs-number\">0</span>;\ntemp=num;\n<span class=\"hljs-keyword\">while</span>(temp&gt;<span class=\"hljs-number\">0</span>)\n    sum=sum*<span class=\"hljs-number\">10</span> + <span class=\"hljs-built_in\">rem</span>(temp,<span class=\"hljs-number\">10</span>);\n    temp=<span class=\"hljs-built_in\">fix</span>(temp/<span class=\"hljs-number\">10</span>);\n<span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">if</span>(sum==num)\n    n=<span class=\"hljs-number\">1</span>;    <span class=\"hljs-comment\">% the no is armstrong</span>\n<span class=\"hljs-keyword\">else</span>\n    n=<span class=\"hljs-number\">0</span>;    <span class=\"hljs-comment\">% the no is not armstrong</span>\n<span class=\"hljs-keyword\">end</span>\n<span class=\"hljs-keyword\">end</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "kNOzone",
+      "email": "72206118+kNOzone@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "kavithajm",
+      "email": "91771245+kavithajm@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

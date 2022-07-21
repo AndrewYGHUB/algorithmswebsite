@@ -1,0 +1,24 @@
+{
+  "slug": "shuffle-array",
+  "name": "Shuffle Array",
+  "categories": [
+    "datastructures",
+    "array"
+  ],
+  "implementations": {
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Jessica Kwok",
+      "email": "jessicatckwok@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "brute-force-string-searching",
+  "name": "Brute Force String Searching",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Siddhartha Shankar Padhy",
+      "email": "83332618+Siddhartha-Padhy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Goyal-Akshit",
+      "email": "91284474+Goyal-Akshit@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "1pierres1u",
+      "email": "1pierres1u@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

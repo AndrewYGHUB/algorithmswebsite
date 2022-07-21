@@ -1,0 +1,24 @@
+{
+  "slug": "reverse-bits",
+  "name": "Reverse Bits",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "implementations": {
+    "python": "",
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Ayush Bisht",
+      "email": "61404154+ayushbisht2001@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

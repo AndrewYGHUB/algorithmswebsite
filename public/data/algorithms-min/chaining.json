@@ -1,0 +1,38 @@
+{
+  "slug": "chaining",
+  "name": "Chaining",
+  "categories": [
+    "hashing"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Piyush Kumar",
+      "email": "81097447+piyush168713@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "Nitin Sharma",
+      "email": "32377892+foo290@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "vasutomar",
+      "email": "vasutomar26@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 6
+    }
+  ],
+  "explanationUrl": {}
+}

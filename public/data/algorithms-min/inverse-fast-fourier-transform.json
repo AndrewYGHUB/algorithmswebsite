@@ -1,0 +1,28 @@
+{
+  "slug": "inverse-fast-fourier-transform",
+  "name": "Inverse Fast Fourier Transform",
+  "categories": [
+    "numericalmethods"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Lajat5",
+      "email": "64376519+Lazeeez@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "2kindsofcs",
+      "email": "42531877+2kindsofcs@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ameya Chawla",
+      "email": "88154798+ameyachawlaggsipu@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

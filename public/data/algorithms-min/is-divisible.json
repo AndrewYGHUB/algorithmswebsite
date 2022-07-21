@@ -1,0 +1,33 @@
+{
+  "slug": "is-divisible",
+  "name": "Is Divisible",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Ricardo Fernández Serrata",
+      "email": "76864299+Rudxain@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Japoncio3k",
+      "email": "49957327+Japoncio3k@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Masahiko Shin",
+      "email": "contact@shin-translation.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

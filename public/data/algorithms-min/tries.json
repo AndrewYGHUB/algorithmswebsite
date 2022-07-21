@@ -1,0 +1,12 @@
+{
+  "slug": "tries",
+  "name": "Tries",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

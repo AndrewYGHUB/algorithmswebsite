@@ -1,0 +1,23 @@
+{
+  "slug": "upper-case-conversion",
+  "name": "Upper Case Conversion",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Charlie Moore",
+      "email": "moorejchar@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

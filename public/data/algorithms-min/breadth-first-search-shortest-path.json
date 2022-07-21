@@ -1,0 +1,33 @@
+{
+  "slug": "breadth-first-search-shortest-path",
+  "name": "Breadth First Search Shortest Path",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "hasan",
+      "email": "hasanuli10@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Marcos Cannabrava",
+      "email": "54267712+marcoscannabrava@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Sanders Lin",
+      "email": "45224617+SandersLin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

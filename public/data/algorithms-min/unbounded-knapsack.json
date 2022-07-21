@@ -1,0 +1,18 @@
+{
+  "slug": "unbounded-knapsack",
+  "name": "Unbounded Knapsack",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "kotlin": ""
+  },
+  "contributors": [
+    {
+      "name": "Akshay-H",
+      "email": "akshayhari555@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

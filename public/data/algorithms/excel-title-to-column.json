@@ -1,0 +1,23 @@
+{
+  "slug": "excel-title-to-column",
+  "name": "Excel Title to Column",
+  "categories": [
+    "conversions"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "conversions/excel_title_to_column.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/conversions/excel_title_to_column.py",
+      "code": "<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">excel_title_to_column</span>(<span class=\"hljs-params\">column_title: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">int</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Given a string column_title that represents\n    the column title in an Excel sheet, return\n    its corresponding column number.\n\n    &gt;&gt;&gt; excel_title_to_column(&quot;A&quot;)\n    1\n    &gt;&gt;&gt; excel_title_to_column(&quot;B&quot;)\n    2\n    &gt;&gt;&gt; excel_title_to_column(&quot;AB&quot;)\n    28\n    &gt;&gt;&gt; excel_title_to_column(&quot;Z&quot;)\n    26\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">assert</span> column_title.isupper()\n    answer = <span class=\"hljs-number\">0</span>\n    index = <span class=\"hljs-built_in\">len</span>(column_title) - <span class=\"hljs-number\">1</span>\n    power = <span class=\"hljs-number\">0</span>\n\n    <span class=\"hljs-keyword\">while</span> index &gt;= <span class=\"hljs-number\">0</span>:\n        value = (<span class=\"hljs-built_in\">ord</span>(column_title[index]) - <span class=\"hljs-number\">64</span>) * <span class=\"hljs-built_in\">pow</span>(<span class=\"hljs-number\">26</span>, power)\n        answer += value\n        power += <span class=\"hljs-number\">1</span>\n        index -= <span class=\"hljs-number\">1</span>\n\n    <span class=\"hljs-keyword\">return</span> answer\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">from</span> doctest <span class=\"hljs-keyword\">import</span> testmod\n\n    testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Luke Banicevic",
+      "email": "60857954+banaboi@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

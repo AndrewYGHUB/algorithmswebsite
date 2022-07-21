@@ -1,0 +1,18 @@
+{
+  "slug": "prophet",
+  "name": "Prophet",
+  "categories": [
+    "machinelearning"
+  ],
+  "implementations": {
+    "jupyter": ""
+  },
+  "contributors": [
+    {
+      "name": "Yannick Ulmrich",
+      "email": "yannickulmrich@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

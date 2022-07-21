@@ -1,0 +1,12 @@
+{
+  "slug": "a000008-make-change",
+  "name": "A000008 Make Change",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

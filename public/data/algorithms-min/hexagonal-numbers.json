@@ -1,0 +1,19 @@
+{
+  "slug": "hexagonal-numbers",
+  "name": "Hexagonal Numbers",
+  "categories": [
+    "math",
+    "series"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Shriyans Gandhi",
+      "email": "41372639+shri30yans@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "wave",
+  "name": "Wave",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "strings/wave.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/strings/wave.py",
+      "code": "<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">wave</span>(<span class=\"hljs-params\">txt: <span class=\"hljs-built_in\">str</span></span>) -&gt; <span class=\"hljs-built_in\">list</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    Returns a so called &#x27;wave&#x27; of a given string\n    &gt;&gt;&gt; wave(&#x27;cat&#x27;)\n    [&#x27;Cat&#x27;, &#x27;cAt&#x27;, &#x27;caT&#x27;]\n    &gt;&gt;&gt; wave(&#x27;one&#x27;)\n    [&#x27;One&#x27;, &#x27;oNe&#x27;, &#x27;onE&#x27;]\n    &gt;&gt;&gt; wave(&#x27;book&#x27;)\n    [&#x27;Book&#x27;, &#x27;bOok&#x27;, &#x27;boOk&#x27;, &#x27;booK&#x27;]\n    &quot;&quot;&quot;</span>\n\n    <span class=\"hljs-keyword\">return</span> [\n        txt[:a] + txt[a].upper() + txt[a + <span class=\"hljs-number\">1</span> :]\n        <span class=\"hljs-keyword\">for</span> a <span class=\"hljs-keyword\">in</span> <span class=\"hljs-built_in\">range</span>(<span class=\"hljs-built_in\">len</span>(txt))\n        <span class=\"hljs-keyword\">if</span> txt[a].isalpha()\n    ]\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-built_in\">__import__</span>(<span class=\"hljs-string\">&quot;doctest&quot;</span>).testmod()\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Margaret",
+      "email": "62753112+meg-1@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

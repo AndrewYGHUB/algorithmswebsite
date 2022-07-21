@@ -1,0 +1,13 @@
+{
+  "slug": "directed-weighted-graph-via-adjacency-matrix",
+  "name": "Directed Weighted Graph Via Adjacency Matrix",
+  "categories": [
+    "datastructures",
+    "graphs"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,58 @@
+{
+  "slug": "gaussian",
+  "name": "Gaussian",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "maths/gaussian.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/maths/gaussian.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\nReference: https://en.wikipedia.org/wiki/Gaussian_function\n&quot;&quot;&quot;</span>\n<span class=\"hljs-keyword\">from</span> numpy <span class=\"hljs-keyword\">import</span> exp, pi, sqrt\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">gaussian</span>(<span class=\"hljs-params\">x, mu: <span class=\"hljs-built_in\">float</span> = <span class=\"hljs-number\">0.0</span>, sigma: <span class=\"hljs-built_in\">float</span> = <span class=\"hljs-number\">1.0</span></span>) -&gt; <span class=\"hljs-built_in\">int</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    &gt;&gt;&gt; gaussian(1)\n    0.24197072451914337\n\n    &gt;&gt;&gt; gaussian(24)\n    3.342714441794458e-126\n\n    &gt;&gt;&gt; gaussian(1, 4, 2)\n    0.06475879783294587\n\n    &gt;&gt;&gt; gaussian(1, 5, 3)\n    0.05467002489199788\n\n    Supports NumPy Arrays\n    Use numpy.meshgrid with this to generate gaussian blur on images.\n    &gt;&gt;&gt; import numpy as np\n    &gt;&gt;&gt; x = np.arange(15)\n    &gt;&gt;&gt; gaussian(x)\n    array([3.98942280e-01, 2.41970725e-01, 5.39909665e-02, 4.43184841e-03,\n           1.33830226e-04, 1.48671951e-06, 6.07588285e-09, 9.13472041e-12,\n           5.05227108e-15, 1.02797736e-18, 7.69459863e-23, 2.11881925e-27,\n           2.14638374e-32, 7.99882776e-38, 1.09660656e-43])\n\n    &gt;&gt;&gt; gaussian(15)\n    5.530709549844416e-50\n\n    &gt;&gt;&gt; gaussian([1,2, &#x27;string&#x27;])\n    Traceback (most recent call last):\n        ...\n    TypeError: unsupported operand type(s) for -: &#x27;list&#x27; and &#x27;float&#x27;\n\n    &gt;&gt;&gt; gaussian(&#x27;hello world&#x27;)\n    Traceback (most recent call last):\n        ...\n    TypeError: unsupported operand type(s) for -: &#x27;str&#x27; and &#x27;float&#x27;\n\n    &gt;&gt;&gt; gaussian(10**234) # doctest: +IGNORE_EXCEPTION_DETAIL\n    Traceback (most recent call last):\n        ...\n    OverflowError: (34, &#x27;Result too large&#x27;)\n\n    &gt;&gt;&gt; gaussian(10**-326)\n    0.3989422804014327\n\n    &gt;&gt;&gt; gaussian(2523, mu=234234, sigma=3425)\n    0.0\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">1</span> / sqrt(<span class=\"hljs-number\">2</span> * pi * sigma**<span class=\"hljs-number\">2</span>) * exp(-((x - mu) ** <span class=\"hljs-number\">2</span>) / (<span class=\"hljs-number\">2</span> * sigma**<span class=\"hljs-number\">2</span>))\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-keyword\">import</span> doctest\n\n    doctest.testmod()\n"
+    },
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/Gaussian.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/Gaussian.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-keyword\">import</span> java.util.ArrayList;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Gaussian</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> ArrayList&lt;Double&gt; <span class=\"hljs-title function_\">gaussian</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> mat_size, ArrayList&lt;Double&gt; matrix)</span> {\n        ArrayList&lt;Double&gt; answerArray = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">ArrayList</span>&lt;Double&gt;();\n        <span class=\"hljs-type\">int</span> i, j = <span class=\"hljs-number\">0</span>;\n\n        <span class=\"hljs-type\">double</span>[][] mat = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">double</span>[mat_size + <span class=\"hljs-number\">1</span>][mat_size + <span class=\"hljs-number\">1</span>];\n        <span class=\"hljs-type\">double</span>[][] x = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">double</span>[mat_size][mat_size + <span class=\"hljs-number\">1</span>];\n\n        <span class=\"hljs-comment\">// Values from arraylist to matrix</span>\n        <span class=\"hljs-keyword\">for</span> (i = <span class=\"hljs-number\">0</span>; i &lt; mat_size; i++) {\n            <span class=\"hljs-keyword\">for</span> (j = <span class=\"hljs-number\">0</span>; j &lt;= mat_size; j++) {\n                mat[i][j] = matrix.get(i);\n            }\n        }\n\n        mat = gaussianElimination(mat_size, i, mat);\n        answerArray = valueOfGaussian(mat_size, x, mat);\n        <span class=\"hljs-keyword\">return</span> answerArray;\n    }\n\n    <span class=\"hljs-comment\">// Perform Gaussian elimination</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">double</span>[][] gaussianElimination(<span class=\"hljs-type\">int</span> mat_size, <span class=\"hljs-type\">int</span> i, <span class=\"hljs-type\">double</span>[][] mat) {\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">step</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>;\n        <span class=\"hljs-keyword\">for</span> (step = <span class=\"hljs-number\">0</span>; step &lt; mat_size - <span class=\"hljs-number\">1</span>; step++) {\n            <span class=\"hljs-keyword\">for</span> (i = step; i &lt; mat_size - <span class=\"hljs-number\">1</span>; i++) {\n                <span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">a</span> <span class=\"hljs-operator\">=</span> (mat[i + <span class=\"hljs-number\">1</span>][step] / mat[step][step]);\n\n                <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">j</span> <span class=\"hljs-operator\">=</span> step; j &lt;= mat_size; j++) {\n                    mat[i + <span class=\"hljs-number\">1</span>][j] = mat[i + <span class=\"hljs-number\">1</span>][j] - (a * mat[step][j]);\n                }\n            }\n        }\n        <span class=\"hljs-keyword\">return</span> mat;\n    }\n\n    <span class=\"hljs-comment\">// calculate the x_1, x_2,... values of the gaussian and save it in an arraylist.</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> ArrayList&lt;Double&gt; <span class=\"hljs-title function_\">valueOfGaussian</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> mat_size, <span class=\"hljs-type\">double</span>[][] x, <span class=\"hljs-type\">double</span>[][] mat)</span> {\n        ArrayList&lt;Double&gt; answerArray = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">ArrayList</span>&lt;Double&gt;();\n        <span class=\"hljs-type\">int</span> i, j;\n\n        <span class=\"hljs-keyword\">for</span> (i = <span class=\"hljs-number\">0</span>; i &lt; mat_size; i++) {\n            <span class=\"hljs-keyword\">for</span> (j = <span class=\"hljs-number\">0</span>; j &lt;= mat_size; j++) {\n                x[i][j] = mat[i][j];\n            }\n        }\n\n        <span class=\"hljs-keyword\">for</span> (i = mat_size - <span class=\"hljs-number\">1</span>; i &gt;= <span class=\"hljs-number\">0</span>; i--) {\n            <span class=\"hljs-type\">double</span> <span class=\"hljs-variable\">sum</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>;\n            <span class=\"hljs-keyword\">for</span> (j = mat_size - <span class=\"hljs-number\">1</span>; j &gt; i; j--) {\n                x[i][j] = x[j][j] * x[i][j];\n                sum = x[i][j] + sum;\n            }\n            <span class=\"hljs-keyword\">if</span> (x[i][i] == <span class=\"hljs-number\">0</span>) {\n                x[i][i] = <span class=\"hljs-number\">0</span>;\n            } <span class=\"hljs-keyword\">else</span> {\n                x[i][i] = (x[i][mat_size] - sum) / (x[i][i]);\n            }\n            answerArray.add(x[i][j]);\n        }\n        <span class=\"hljs-keyword\">return</span> answerArray;\n    }\n}"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "aryan26roy",
+      "email": "50577809+aryan26roy@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "QuantumNovice",
+      "email": "43876848+QuantumNovice@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "leren1",
+      "email": "98456022+leren1@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Sachwin Kohli",
+      "email": "sachwin.kohli@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

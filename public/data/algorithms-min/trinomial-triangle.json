@@ -1,0 +1,18 @@
+{
+  "slug": "trinomial-triangle",
+  "name": "Trinomial Triangle",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Florian",
+      "email": "38241786+Flonator3000@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

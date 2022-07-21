@@ -1,0 +1,23 @@
+{
+  "slug": "coulombs-law",
+  "name": "Coulombs Law",
+  "categories": [
+    "electronics"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Jenny Vo",
+      "email": "40080855+ovynnej@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

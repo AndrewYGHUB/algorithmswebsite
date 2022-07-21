@@ -1,0 +1,38 @@
+{
+  "slug": "reverse-number",
+  "name": "Reverse Number",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/ReverseNumber.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/ReverseNumber.js",
+      "code": "<span class=\"hljs-comment\">/*\n    Problem statement and Explanation : https://medium.com/@ManBearPigCode/how-to-reverse-a-number-mathematically-97c556626ec6\n*/</span>\n\n<span class=\"hljs-comment\">/**\n * ReverseNumber return the reversed value of the given number.\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">Number</span>} n any digit number.\n * <span class=\"hljs-doctag\">@returns</span> `Number` n reverse in reverse.\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">ReverseNumber</span> = (<span class=\"hljs-params\">number</span>) =&gt; {\n  <span class=\"hljs-comment\">// firstly, check that input is a number or not.</span>\n  <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-keyword\">typeof</span> number !== <span class=\"hljs-string\">&#x27;number&#x27;</span>) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">TypeError</span>(<span class=\"hljs-string\">&#x27;Argument is not a number.&#x27;</span>)\n  }\n  <span class=\"hljs-comment\">// A variable for storing the reversed number.</span>\n  <span class=\"hljs-keyword\">let</span> reverseNumber = <span class=\"hljs-number\">0</span>\n  <span class=\"hljs-comment\">// Iterate the process until getting the number is 0.</span>\n  <span class=\"hljs-keyword\">while</span> (number &gt; <span class=\"hljs-number\">0</span>) {\n    <span class=\"hljs-comment\">// get the last digit of the number</span>\n    <span class=\"hljs-keyword\">const</span> lastDigit = number % <span class=\"hljs-number\">10</span>\n    <span class=\"hljs-comment\">// add to the last digit to in reverseNumber</span>\n    reverseNumber = reverseNumber * <span class=\"hljs-number\">10</span> + lastDigit\n    <span class=\"hljs-comment\">// reduce the actual number.</span>\n    number = <span class=\"hljs-title class_\">Math</span>.<span class=\"hljs-title function_\">floor</span>(number / <span class=\"hljs-number\">10</span>)\n  }\n  <span class=\"hljs-keyword\">return</span> reverseNumber\n}\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">ReverseNumber</span> }\n"
+    },
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/ReverseNumber.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/ReverseNumber.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-keyword\">import</span> java.util.Scanner;\n<span class=\"hljs-keyword\">import</span> java.util.NoSuchElementException;\n<span class=\"hljs-keyword\">import</span> java.lang.IllegalStateException;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">ReverseNumber</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span> {\n        <span class=\"hljs-type\">int</span> number;\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">reverse</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>;\n\n        <span class=\"hljs-keyword\">try</span> (<span class=\"hljs-type\">Scanner</span> <span class=\"hljs-variable\">sc</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Scanner</span>(System.in)) {\n            System.out.println(<span class=\"hljs-string\">&quot;Enter a number:&quot;</span>);\n            number = sc.nextInt();\n        } <span class=\"hljs-keyword\">catch</span> (NoSuchElementException | IllegalStateException e) {\n            System.out.println(<span class=\"hljs-string\">&quot;ERROR: Invalid input&quot;</span>);\n            <span class=\"hljs-keyword\">return</span>;\n        }\n\n        <span class=\"hljs-keyword\">while</span> (number != <span class=\"hljs-number\">0</span>) {\n            <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">remainder</span> <span class=\"hljs-operator\">=</span> number % <span class=\"hljs-number\">10</span>;\n\n            reverse = reverse * <span class=\"hljs-number\">10</span> + remainder;\n            number = number / <span class=\"hljs-number\">10</span>;\n        }\n\n        System.out.println(<span class=\"hljs-string\">&quot;The reverse of the given number is: &quot;</span> + reverse);\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Suryapratap Singh",
+      "email": "suryprtaps@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

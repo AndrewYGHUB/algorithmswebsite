@@ -1,0 +1,44 @@
+{
+  "slug": "page-rank",
+  "name": "Page Rank",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "python": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dilrose Reji",
+      "email": "70878223+dilroseR@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "GeorgeChambi",
+      "email": "charalambous99@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Bhushan Borole",
+      "email": "37565807+bhushan-borole@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

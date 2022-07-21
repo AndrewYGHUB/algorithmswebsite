@@ -1,0 +1,69 @@
+{
+  "slug": "lca",
+  "name": "LCA",
+  "categories": [
+    "datastructures",
+    "tree"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/datastructures/trees/LCA.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/datastructures/trees/LCA.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.datastructures.trees;\n\n<span class=\"hljs-keyword\">import</span> java.util.ArrayList;\n<span class=\"hljs-keyword\">import</span> java.util.Scanner;\n\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">LCA</span> {\n\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">Scanner</span> <span class=\"hljs-variable\">scanner</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Scanner</span>(System.in);\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String[] args)</span> {\n\n        <span class=\"hljs-comment\">//The adjacency list representation of a tree:</span>\n        ArrayList&lt;ArrayList&lt;Integer&gt;&gt; adj = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">ArrayList</span>&lt;&gt;();\n\n        <span class=\"hljs-comment\">//v is the number of vertices and e is the number of edges</span>\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">v</span> <span class=\"hljs-operator\">=</span> scanner.nextInt(), e = v - <span class=\"hljs-number\">1</span>;\n\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; v; i++) {\n            adj.add(<span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">ArrayList</span>&lt;Integer&gt;());\n        }\n\n        <span class=\"hljs-comment\">//Storing the given tree as an adjacency list</span>\n        <span class=\"hljs-type\">int</span> to, from;\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">i</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>; i &lt; e; i++) {\n\n            to = scanner.nextInt();\n            from = scanner.nextInt();\n\n            adj.get(to).add(from);\n            adj.get(from).add(to);\n        }\n\n        <span class=\"hljs-comment\">//parent[v1] gives parent of a vertex v1</span>\n        <span class=\"hljs-type\">int</span>[] parent = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[v];\n\n        <span class=\"hljs-comment\">//depth[v1] gives depth of vertex v1 with respect to the root</span>\n        <span class=\"hljs-type\">int</span>[] depth = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">int</span>[v];\n\n        <span class=\"hljs-comment\">//Assuming the tree to be rooted at 0, hence calculating parent and depth of every vertex</span>\n        dfs(adj, <span class=\"hljs-number\">0</span>, -<span class=\"hljs-number\">1</span>, parent, depth);\n\n        <span class=\"hljs-comment\">//Inputting the two vertices whose LCA is to be calculated</span>\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">v1</span> <span class=\"hljs-operator\">=</span> scanner.nextInt(), v2 = scanner.nextInt();\n\n        <span class=\"hljs-comment\">//Outputting the LCA</span>\n        System.out.println(getLCA(v1, v2, depth, parent));\n\n    }\n\n    <span class=\"hljs-comment\">/**\n     * Depth first search to calculate parent and depth of every vertex\n     *\n     * <span class=\"hljs-doctag\">@param</span> adj The adjacency list representation of the tree\n     * <span class=\"hljs-doctag\">@param</span> s The source vertex\n     * <span class=\"hljs-doctag\">@param</span> p Parent of source\n     * <span class=\"hljs-doctag\">@param</span> parent An array to store parents of all vertices\n     * <span class=\"hljs-doctag\">@param</span> depth An array to store depth of all vertices\n     */</span>\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">dfs</span><span class=\"hljs-params\">(ArrayList&lt;ArrayList&lt;Integer&gt;&gt; adj, <span class=\"hljs-type\">int</span> s, <span class=\"hljs-type\">int</span> p, <span class=\"hljs-type\">int</span>[] parent, <span class=\"hljs-type\">int</span>[] depth)</span> {\n        <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-type\">int</span> adjacent : adj.get(s)) {\n            <span class=\"hljs-keyword\">if</span> (adjacent != p) {\n                parent[adjacent] = s;\n                depth[adjacent] = <span class=\"hljs-number\">1</span> + depth[s];\n                dfs(adj, adjacent, s, parent, depth);\n            }\n        }\n    }\n\n    <span class=\"hljs-comment\">/**\n     * Method to calculate Lowest Common Ancestor\n     *\n     * <span class=\"hljs-doctag\">@param</span> v1 The first vertex\n     * <span class=\"hljs-doctag\">@param</span> v2 The second vertex\n     * <span class=\"hljs-doctag\">@param</span> depth An array with depths of all vertices\n     * <span class=\"hljs-doctag\">@param</span> parent An array with parents of all vertices\n     * <span class=\"hljs-doctag\">@return</span> Returns a vertex that is LCA of v1 and v2\n     */</span>\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">getLCA</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> v1, <span class=\"hljs-type\">int</span> v2, <span class=\"hljs-type\">int</span>[] depth, <span class=\"hljs-type\">int</span>[] parent)</span> {\n        <span class=\"hljs-keyword\">if</span> (depth[v1] &lt; depth[v2]) {\n            <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">temp</span> <span class=\"hljs-operator\">=</span> v1;\n            v1 = v2;\n            v2 = temp;\n        }\n        <span class=\"hljs-keyword\">while</span> (depth[v1] != depth[v2]) {\n            v1 = parent[v1];\n        }\n        <span class=\"hljs-keyword\">if</span> (v1 == v2) {\n            <span class=\"hljs-keyword\">return</span> v1;\n        }\n        <span class=\"hljs-keyword\">while</span> (v1 != v2) {\n            v1 = parent[v1];\n            v2 = parent[v2];\n        }\n        <span class=\"hljs-keyword\">return</span> v1;\n    }\n}\n\n<span class=\"hljs-comment\">/**\n * Input:\n * 10\n * 0 1\n * 0 2\n * 1 5\n * 5 6\n * 2 4\n * 2 3\n * 3 7\n * 7 9\n * 7 8\n * 9 4\n * Output:\n * 2\n */</span>\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "stepfencurryxiao",
+      "email": "stepfencurryxiao@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Krishna Vedala",
+      "email": "7001608+kvedala@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "ayaankhan98",
+      "email": "ayaankhan98@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Filip Hlasek",
+      "email": "fhlasek@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "rohan",
+      "email": "rgkbitw@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dhruv Panwar",
+      "email": "60705641+dhruvinfo28@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Reshad Hasan",
+      "email": "reshadhasan555@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "John Law",
+      "email": "johnlaw.po@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "max",
+  "name": "Max",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Meet Valani",
+      "email": "40715819+meetvalani@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

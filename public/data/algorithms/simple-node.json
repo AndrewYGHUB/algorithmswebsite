@@ -1,0 +1,24 @@
+{
+  "slug": "simple-node",
+  "name": "Simple Node",
+  "categories": [
+    "devutils",
+    "nodes"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/devutils/nodes/SimpleNode.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/devutils/nodes/SimpleNode.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.devutils.nodes;\n\n<span class=\"hljs-comment\">/**\n * Simple Node implementation that holds a reference to the next Node.\n *\n * <span class=\"hljs-doctag\">@param</span> &lt;E&gt; The type of the data held in the Node.\n *\n * <span class=\"hljs-doctag\">@author</span> &lt;a href=&quot;https://github.com/aitorfi&quot;&gt;aitorfi&lt;/a&gt;\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">SimpleNode</span>&lt;E&gt; <span class=\"hljs-keyword\">extends</span> <span class=\"hljs-title class_\">Node</span>&lt;E&gt; {\n\n    <span class=\"hljs-comment\">/**\n     * Reference to the next Node.\n     */</span>\n    <span class=\"hljs-keyword\">private</span> SimpleNode&lt;E&gt; nextNode;\n\n    <span class=\"hljs-comment\">/**\n     * Empty contructor.\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-title function_\">SimpleNode</span><span class=\"hljs-params\">()</span> {\n        <span class=\"hljs-built_in\">super</span>();\n    }\n\n    <span class=\"hljs-comment\">/**\n     * Initializes the Nodes&#x27; data.\n     *\n     * <span class=\"hljs-doctag\">@param</span> data Value to which data will be initialized.\n     * <span class=\"hljs-doctag\">@see</span> Node#Node(Object)\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-title function_\">SimpleNode</span><span class=\"hljs-params\">(E data)</span> {\n        <span class=\"hljs-built_in\">super</span>(data);\n    }\n\n    <span class=\"hljs-comment\">/**\n     * Initializes the Nodes&#x27; data and next node reference.\n     *\n     * <span class=\"hljs-doctag\">@param</span> data Value to which data will be initialized.\n     * <span class=\"hljs-doctag\">@param</span> nextNode Value to which the next node reference will be set.\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-title function_\">SimpleNode</span><span class=\"hljs-params\">(E data, SimpleNode&lt;E&gt; nextNode)</span> {\n        <span class=\"hljs-built_in\">super</span>(data);\n        <span class=\"hljs-built_in\">this</span>.nextNode = nextNode;\n    }\n\n    <span class=\"hljs-comment\">/**\n     * <span class=\"hljs-doctag\">@return</span> True if there is a next node, otherwise false.\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">hasNext</span><span class=\"hljs-params\">()</span> {\n        <span class=\"hljs-keyword\">return</span> (nextNode != <span class=\"hljs-literal\">null</span>);\n    }\n\n    <span class=\"hljs-keyword\">public</span> SimpleNode&lt;E&gt; <span class=\"hljs-title function_\">getNextNode</span><span class=\"hljs-params\">()</span> {\n        <span class=\"hljs-keyword\">return</span> nextNode;\n    }\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">setNextNode</span><span class=\"hljs-params\">(SimpleNode&lt;E&gt; nextNode)</span> {\n        <span class=\"hljs-built_in\">this</span>.nextNode = nextNode;\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

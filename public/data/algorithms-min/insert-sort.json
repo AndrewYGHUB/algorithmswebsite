@@ -1,0 +1,12 @@
+{
+  "slug": "insert-sort",
+  "name": "Insert Sort",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "dart": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

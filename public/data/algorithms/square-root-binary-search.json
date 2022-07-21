@@ -1,0 +1,23 @@
+{
+  "slug": "square-root-binary-search",
+  "name": "Square Root Binary Search",
+  "categories": [
+    "searches"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/searches/SquareRootBinarySearch.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/searches/SquareRootBinarySearch.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.searches;\n\n<span class=\"hljs-keyword\">import</span> java.util.Scanner;\n\n<span class=\"hljs-comment\">/**\n * Given an integer x, find the square root of x. If x is not a perfect square,\n * then return floor(√x).\n * &lt;p&gt;\n * For example, if x = 5, The answer should be 2 which is the floor value of √5.\n * &lt;p&gt;\n * The approach that will be used for solving the above problem is not going to\n * be a straight forward Math.sqrt(). Instead we will be using Binary Search to\n * find the square root of a number in the most optimised way.\n *\n * <span class=\"hljs-doctag\">@author</span> sahil\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">SquareRootBinarySearch</span> {\n\n    <span class=\"hljs-comment\">/**\n     * This is the driver method.\n     *\n     * <span class=\"hljs-doctag\">@param</span> args Command line arguments\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">(String args[])</span> {\n        <span class=\"hljs-type\">Scanner</span> <span class=\"hljs-variable\">sc</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">Scanner</span>(System.in);\n        System.out.print(<span class=\"hljs-string\">&quot;Enter a number you want to calculate square root of : &quot;</span>);\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">num</span> <span class=\"hljs-operator\">=</span> sc.nextInt();\n        <span class=\"hljs-type\">long</span> <span class=\"hljs-variable\">ans</span> <span class=\"hljs-operator\">=</span> squareRoot(num);\n        System.out.println(<span class=\"hljs-string\">&quot;The square root is : &quot;</span> + ans);\n    }\n\n    <span class=\"hljs-comment\">/**\n     * This function calculates the floor of square root of a number. We use\n     * Binary Search algorithm to calculate the square root in a more optimised\n     * way.\n     *\n     * <span class=\"hljs-doctag\">@param</span> num Number\n     * <span class=\"hljs-doctag\">@return</span> answer\n     */</span>\n    <span class=\"hljs-keyword\">private</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-type\">long</span> <span class=\"hljs-title function_\">squareRoot</span><span class=\"hljs-params\">(<span class=\"hljs-type\">long</span> num)</span> {\n        <span class=\"hljs-keyword\">if</span> (num == <span class=\"hljs-number\">0</span> || num == <span class=\"hljs-number\">1</span>) {\n            <span class=\"hljs-keyword\">return</span> num;\n        }\n        <span class=\"hljs-type\">long</span> <span class=\"hljs-variable\">l</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">1</span>;\n        <span class=\"hljs-type\">long</span> <span class=\"hljs-variable\">r</span> <span class=\"hljs-operator\">=</span> num;\n        <span class=\"hljs-type\">long</span> <span class=\"hljs-variable\">ans</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>;\n        <span class=\"hljs-keyword\">while</span> (l &lt;= r) {\n            <span class=\"hljs-type\">long</span> <span class=\"hljs-variable\">mid</span> <span class=\"hljs-operator\">=</span> l + (r - l) / <span class=\"hljs-number\">2</span>;\n            <span class=\"hljs-keyword\">if</span> (mid == num / mid) {\n                <span class=\"hljs-keyword\">return</span> mid;\n            } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (mid &lt; num / mid) {\n                ans = mid;\n                l = mid + <span class=\"hljs-number\">1</span>;\n            } <span class=\"hljs-keyword\">else</span> {\n                r = mid - <span class=\"hljs-number\">1</span>;\n            }\n        }\n        <span class=\"hljs-keyword\">return</span> ans;\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "sahil-13399",
+      "email": "46062089+sahil-13399@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

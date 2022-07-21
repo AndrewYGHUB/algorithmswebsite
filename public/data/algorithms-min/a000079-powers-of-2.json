@@ -1,0 +1,12 @@
+{
+  "slug": "a000079-powers-of-2",
+  "name": "A000079 Powers of 2",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

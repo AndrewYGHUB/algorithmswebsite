@@ -1,0 +1,23 @@
+{
+  "slug": "topological",
+  "name": "Topological",
+  "categories": [
+    "graphs"
+  ],
+  "implementations": {
+    "go": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Metta Ong",
+      "email": "ongspxm@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

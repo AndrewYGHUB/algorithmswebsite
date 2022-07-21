@@ -1,0 +1,23 @@
+{
+  "slug": "quick-sort-recursive",
+  "name": "Quick Sort Recursive",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Keshav Bohra",
+      "email": "keshav2016@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "SURYAPRATAP SINGH SURYAVANSHI",
+      "email": "67123991+suryapratapsinghsuryavanshi@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

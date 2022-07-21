@@ -1,0 +1,23 @@
+{
+  "slug": "zig-zag-pattern",
+  "name": "Zig Zag Pattern",
+  "categories": [
+    "strings"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/strings/zigZagPattern/zigZagPattern.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/strings/zigZagPattern/zigZagPattern.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.strings.zigZagPattern;\n<span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">zigZagPattern</span> {\n\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> String <span class=\"hljs-title function_\">encode</span><span class=\"hljs-params\">(String s, <span class=\"hljs-type\">int</span> numRows)</span> {\n        <span class=\"hljs-keyword\">if</span> ( numRows &lt; <span class=\"hljs-number\">2</span> || s.length() &lt; numRows ) <span class=\"hljs-keyword\">return</span> s ;\n        <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">start</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span> , index = <span class=\"hljs-number\">0</span> , height = <span class=\"hljs-number\">1</span> , depth = numRows ;\n        <span class=\"hljs-type\">char</span>[] zigZagedArray = <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">char</span>[ s.length() ] ;\n        <span class=\"hljs-keyword\">while</span> ( depth != <span class=\"hljs-number\">0</span> ) {\n            <span class=\"hljs-type\">int</span> <span class=\"hljs-variable\">pointer</span> <span class=\"hljs-operator\">=</span> start , height_space = <span class=\"hljs-number\">2</span> + ( ( height - <span class=\"hljs-number\">2</span> ) * <span class=\"hljs-number\">2</span> ) , depth_space = <span class=\"hljs-number\">2</span> + ( ( depth - <span class=\"hljs-number\">2</span> ) * <span class=\"hljs-number\">2</span> ) ;\n            <span class=\"hljs-type\">boolean</span> <span class=\"hljs-variable\">bool</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-literal\">true</span> ;\n            <span class=\"hljs-keyword\">while</span> ( pointer &lt; s.length() ) {\n                zigZagedArray[index++] = s.charAt( pointer ) ;\n                <span class=\"hljs-keyword\">if</span> ( height_space == <span class=\"hljs-number\">0</span> ) pointer += depth_space ;\n                <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> ( depth_space == <span class=\"hljs-number\">0</span> ) pointer += height_space ;\n                <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> ( bool ) {\n                    pointer += depth_space ;\n                    bool = <span class=\"hljs-literal\">false</span> ;\n                } <span class=\"hljs-keyword\">else</span> {\n                    pointer += height_space ;\n                    bool = <span class=\"hljs-literal\">true</span> ;\n                }\n            }\n            height++ ;\n            depth-- ;\n            start++ ;\n        }\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-title class_\">String</span>( zigZagedArray ) ;\n    }\n\n}"
+    }
+  },
+  "contributors": [
+    {
+      "name": "SanOtaku",
+      "email": "SanOtaku098@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

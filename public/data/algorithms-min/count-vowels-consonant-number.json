@@ -1,0 +1,18 @@
+{
+  "slug": "count-vowels-consonant-number",
+  "name": "Count Vowels Consonant Number",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "php": ""
+  },
+  "contributors": [
+    {
+      "name": "Syed Nayeem Roman",
+      "email": "romansyed007@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

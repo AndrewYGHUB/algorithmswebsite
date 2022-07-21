@@ -1,0 +1,24 @@
+{
+  "slug": "generator",
+  "name": "Generator",
+  "categories": [
+    "others",
+    "password"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "other/password/generator.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/other/password/generator.go",
+      "code": "<span class=\"hljs-comment\">// This program generates a password from a list of possible chars</span>\n<span class=\"hljs-comment\">// You must provide a minimum length and a maximum length</span>\n<span class=\"hljs-comment\">// This length is not fixed if you generate multiple passwords for the same range</span>\n\n<span class=\"hljs-comment\">// Package password contains functions to help generate random passwords</span>\n<span class=\"hljs-keyword\">package</span> password\n\n<span class=\"hljs-keyword\">import</span> (\n\t<span class=\"hljs-string\">&quot;crypto/rand&quot;</span>\n\t<span class=\"hljs-string\">&quot;io&quot;</span>\n\t<span class=\"hljs-string\">&quot;math/big&quot;</span>\n)\n\n<span class=\"hljs-comment\">// Generate returns a newly generated password</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Generate</span><span class=\"hljs-params\">(minLength <span class=\"hljs-type\">int</span>, maxLength <span class=\"hljs-type\">int</span>)</span></span> <span class=\"hljs-type\">string</span> {\n\t<span class=\"hljs-keyword\">var</span> chars = []<span class=\"hljs-type\">byte</span>(<span class=\"hljs-string\">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&amp;*()-_=+,.?/:;{}[]`~&quot;</span>)\n\n\tlength, err := rand.Int(rand.Reader, big.NewInt(<span class=\"hljs-type\">int64</span>(maxLength-minLength)))\n\t<span class=\"hljs-keyword\">if</span> err != <span class=\"hljs-literal\">nil</span> {\n\t\t<span class=\"hljs-built_in\">panic</span>(err) <span class=\"hljs-comment\">// handle this gracefully</span>\n\t}\n\tlength.Add(length, big.NewInt(<span class=\"hljs-type\">int64</span>(minLength)))\n\n\tintLength := <span class=\"hljs-type\">int</span>(length.Int64())\n\n\tnewPassword := <span class=\"hljs-built_in\">make</span>([]<span class=\"hljs-type\">byte</span>, intLength)\n\trandomData := <span class=\"hljs-built_in\">make</span>([]<span class=\"hljs-type\">byte</span>, intLength+intLength/<span class=\"hljs-number\">4</span>)\n\tclen := <span class=\"hljs-type\">byte</span>(<span class=\"hljs-built_in\">len</span>(chars))\n\tmaxrb := <span class=\"hljs-type\">byte</span>(<span class=\"hljs-number\">256</span> - (<span class=\"hljs-number\">256</span> % <span class=\"hljs-built_in\">len</span>(chars)))\n\ti := <span class=\"hljs-number\">0</span>\n\t<span class=\"hljs-keyword\">for</span> {\n\t\t<span class=\"hljs-keyword\">if</span> _, err := io.ReadFull(rand.Reader, randomData); err != <span class=\"hljs-literal\">nil</span> {\n\t\t\t<span class=\"hljs-built_in\">panic</span>(err)\n\t\t}\n\t\t<span class=\"hljs-keyword\">for</span> _, c := <span class=\"hljs-keyword\">range</span> randomData {\n\t\t\t<span class=\"hljs-keyword\">if</span> c &gt;= maxrb {\n\t\t\t\t<span class=\"hljs-keyword\">continue</span>\n\t\t\t}\n\t\t\tnewPassword[i] = chars[c%clen]\n\t\t\ti++\n\t\t\t<span class=\"hljs-keyword\">if</span> i == intLength {\n\t\t\t\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-type\">string</span>(newPassword)\n\t\t\t}\n\t\t}\n\t}\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

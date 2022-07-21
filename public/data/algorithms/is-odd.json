@@ -1,0 +1,38 @@
+{
+  "slug": "is-odd",
+  "name": "Is Odd",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Maths/IsOdd.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Maths/IsOdd.js",
+      "code": "<span class=\"hljs-comment\">/*\n * Odd Number: https://simple.wikipedia.org/wiki/Odd_number\n * function to check if number is odd.\n * return true if number is odd.\n * else false\n */</span>\n\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">isOdd</span>\n * <span class=\"hljs-doctag\">@description</span> -&gt; Checking if number is odd using not divisibility by 2\n * If number is not divisible by 2 i.e remainder = 1, then it is odd\n * therefore, the function will return true\n *\n * If number is divisible by 2 i.e remainder != 1, then it is even\n * therefore, the function will return false\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} <span class=\"hljs-variable\">number</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">boolean</span>}\n */</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">isOdd</span> = (<span class=\"hljs-params\">number</span>) =&gt; <span class=\"hljs-title class_\">Boolean</span>(number % <span class=\"hljs-number\">2</span>) <span class=\"hljs-comment\">// 1 -&gt; true, 0 -&gt; false</span>\n<span class=\"hljs-comment\">/**\n * <span class=\"hljs-doctag\">@function</span> <span class=\"hljs-variable\">isOddBitwise</span>\n * <span class=\"hljs-doctag\">@description</span> -&gt; Checking if number is even using bitwise operator\n * Bitwise AND (&amp;) compares the bits of the 32\n * bit binary representations of the number and\n * returns a number after comparing each bit:\n *\n * 0 &amp; 0 -&gt; 0\n * 0 &amp; 1 -&gt; 0\n * 1 &amp; 0 -&gt; 0\n * 1 &amp; 1 -&gt; 1\n *\n * For every odd numbers, the last binary bit will be 1\n * and for even numbers, the last binary bit will be 0.\n *\n * As the number is compared with one, all the\n * other bits except the last will become 0. The\n * last bit will be 0 for even numbers and 1 for\n * odd numbers.\n * <span class=\"hljs-doctag\">@see</span> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_AND\n * <span class=\"hljs-doctag\">@param</span> {<span class=\"hljs-type\">number</span>} <span class=\"hljs-variable\">number</span>\n * <span class=\"hljs-doctag\">@returns</span> {<span class=\"hljs-type\">boolean</span>}\n*/</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">isOddBitwise</span> = (<span class=\"hljs-params\">number</span>) =&gt; <span class=\"hljs-title class_\">Boolean</span>(number &amp; <span class=\"hljs-number\">1</span>) <span class=\"hljs-comment\">// 1 -&gt; true, 0 -&gt; false</span>\n\n<span class=\"hljs-keyword\">export</span> { isOdd, isOddBitwise }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "vinayak",
+      "email": "itssvinayak@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Jake Gerber",
+      "email": "jake.j.gerber@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

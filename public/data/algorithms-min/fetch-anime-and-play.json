@@ -1,0 +1,18 @@
+{
+  "slug": "fetch-anime-and-play",
+  "name": "Fetch Anime and Play",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Saptarshi Sengupta",
+      "email": "94242536+saptarshi1996@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

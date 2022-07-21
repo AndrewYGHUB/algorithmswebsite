@@ -1,0 +1,58 @@
+{
+  "slug": "sentinel-linear-search",
+  "name": "Sentinel Linear Search",
+  "categories": [
+    "searches"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "searches/sentinel_linear_search.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/searches/sentinel_linear_search.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\nThis is pure Python implementation of sentinel linear search algorithm\n\nFor doctests run following command:\npython -m doctest -v sentinel_linear_search.py\nor\npython3 -m doctest -v sentinel_linear_search.py\n\nFor manual testing run:\npython sentinel_linear_search.py\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">sentinel_linear_search</span>(<span class=\"hljs-params\">sequence, target</span>):\n    <span class=\"hljs-string\">&quot;&quot;&quot;Pure implementation of sentinel linear search algorithm in Python\n\n    :param sequence: some sequence with comparable items\n    :param target: item value to search\n    :return: index of found item or None if item is not found\n\n    Examples:\n    &gt;&gt;&gt; sentinel_linear_search([0, 5, 7, 10, 15], 0)\n    0\n\n    &gt;&gt;&gt; sentinel_linear_search([0, 5, 7, 10, 15], 15)\n    4\n\n    &gt;&gt;&gt; sentinel_linear_search([0, 5, 7, 10, 15], 5)\n    1\n\n    &gt;&gt;&gt; sentinel_linear_search([0, 5, 7, 10, 15], 6)\n\n    &quot;&quot;&quot;</span>\n    sequence.append(target)\n\n    index = <span class=\"hljs-number\">0</span>\n    <span class=\"hljs-keyword\">while</span> sequence[index] != target:\n        index += <span class=\"hljs-number\">1</span>\n\n    sequence.pop()\n\n    <span class=\"hljs-keyword\">if</span> index == <span class=\"hljs-built_in\">len</span>(sequence):\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">None</span>\n\n    <span class=\"hljs-keyword\">return</span> index\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    user_input = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&quot;Enter numbers separated by comma:\\n&quot;</span>).strip()\n    sequence = [<span class=\"hljs-built_in\">int</span>(item) <span class=\"hljs-keyword\">for</span> item <span class=\"hljs-keyword\">in</span> user_input.split(<span class=\"hljs-string\">&quot;,&quot;</span>)]\n\n    target_input = <span class=\"hljs-built_in\">input</span>(<span class=\"hljs-string\">&quot;Enter a single number to be found in the list:\\n&quot;</span>)\n    target = <span class=\"hljs-built_in\">int</span>(target_input)\n    result = sentinel_linear_search(sequence, target)\n    <span class=\"hljs-keyword\">if</span> result <span class=\"hljs-keyword\">is</span> <span class=\"hljs-keyword\">not</span> <span class=\"hljs-literal\">None</span>:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;<span class=\"hljs-subst\">{target}</span> found at positions: <span class=\"hljs-subst\">{result}</span>&quot;</span>)\n    <span class=\"hljs-keyword\">else</span>:\n        <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">&quot;Not found&quot;</span>)\n"
+    },
+    "c": {
+      "dir": "searching/sentinel_linear_search.c",
+      "url": "https://github.com/TheAlgorithms/c/tree/master/searching/sentinel_linear_search.c",
+      "code": "<span class=\"hljs-comment\">/**\n * @file\n * @brief [Linear Search with Sentinel](https://en.wikipedia.org/wiki/Linear_search#With_a_sentinel) algorithm implementation\n * @details\n * This algorithm saves the last element of the array, \n * then replaces it with the value to be found and sets it as the sentinel. \n * When searching, compares each element with the sentinel. \n * If the same, returns the index. If the index is the index of the sentinel, it means it was not found. \n * Of course, if the value to be found is the last element, we return the index of the last element.\n * @author [Regan Yue](https://github.com/ReganYue)\n * Time Complexity: O(N)\n */</span>\n\n<span class=\"hljs-meta\">#<span class=\"hljs-keyword\">include</span> <span class=\"hljs-string\">&lt;stdio.h&gt;</span>   <span class=\"hljs-comment\">/// for IO operations</span></span>\n<span class=\"hljs-meta\">#<span class=\"hljs-keyword\">include</span> <span class=\"hljs-string\">&lt;assert.h&gt;</span>  <span class=\"hljs-comment\">/// for assert</span></span>\n\n<span class=\"hljs-comment\">/**\n * @brief Utility function to search for an element in the array and return the index of the element\n * @details \n * The so-called &quot;sentinel&quot; is to use a special value as the boundary key of the array. \n * One less judgment statement can be used. \n * The purpose is to avoid checking whether the entire array is searched at each step in the search \n * process, so as to improve the efficiency of the program.\n * We can use the last value of the array as the &quot;sentinel&quot;, the data storage index i \n * starts from 0 and ends at len-1, then the position where the index of arr is n-1 indicates \n * that there is no data temporarily, which is the &quot;sentinel&quot; key.\n * If the last element of the array is equal to the key, directly return the index of the last element. \n * Before setting the last element of the array as the key, we hand over the last element of the array to temp for temporary storage. \n * Then go to the array to find the key. If the key is found, stop the search, and then compare the found element index with len-1. \n * If it is equal, it means it was not found. If it is not equal, it is found.\n * @param arr this is an array containing elements\n * @param len this is the number of elements in the array\n * @param key the value we want to search\n * @return i if found, otherwise -1 is returned.\n */</span>\n<span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">sentinel_linear_search</span><span class=\"hljs-params\">( <span class=\"hljs-type\">int</span> arr[], <span class=\"hljs-type\">int</span> len, <span class=\"hljs-type\">int</span> key )</span>{\n\t<span class=\"hljs-keyword\">if</span>(key == arr[len<span class=\"hljs-number\">-1</span>]){\n\t\t<span class=\"hljs-keyword\">return</span> len<span class=\"hljs-number\">-1</span>;\n\t}\n\t\n\t<span class=\"hljs-type\">int</span> temp = arr[len<span class=\"hljs-number\">-1</span>]; \n\tarr[len<span class=\"hljs-number\">-1</span>] = key;\n\t\n\t<span class=\"hljs-type\">int</span> i = <span class=\"hljs-number\">0</span>;\n\t<span class=\"hljs-keyword\">while</span> (arr[len<span class=\"hljs-number\">-1</span>] != arr[i]) {\n\t\ti++;\n\t}\n\t\n\tarr[len<span class=\"hljs-number\">-1</span>] = temp;\n\t\n\t<span class=\"hljs-keyword\">return</span> i != len<span class=\"hljs-number\">-1</span> ? i : <span class=\"hljs-number\">-1</span>;\n\t \n}\n\n<span class=\"hljs-comment\">/**\n * @brief Self-test implementations\n * @returns void\n */</span>\n<span class=\"hljs-type\">static</span> <span class=\"hljs-type\">void</span> <span class=\"hljs-title function_\">test</span><span class=\"hljs-params\">()</span>{\n\t<span class=\"hljs-type\">int</span> n,i;\n\tn = <span class=\"hljs-number\">5</span>;\n\t<span class=\"hljs-comment\">/* init array */</span>\n\t<span class=\"hljs-type\">int</span> arr[] = { <span class=\"hljs-number\">1</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">2</span>, <span class=\"hljs-number\">6</span>, <span class=\"hljs-number\">99</span>, <span class=\"hljs-number\">100</span>, <span class=\"hljs-number\">999</span> };\n\n\tassert(sentinel_linear_search( arr, n, <span class=\"hljs-number\">1</span> )==<span class=\"hljs-number\">0</span>);\n\tassert(sentinel_linear_search( arr, n, <span class=\"hljs-number\">2</span> )==<span class=\"hljs-number\">1</span>);\n\tassert(sentinel_linear_search( arr, n, <span class=\"hljs-number\">6</span> )==<span class=\"hljs-number\">3</span>);\n\tassert(sentinel_linear_search( arr, n, <span class=\"hljs-number\">101</span> )==<span class=\"hljs-number\">-1</span>);\n\t<span class=\"hljs-built_in\">printf</span>(<span class=\"hljs-string\">&quot;All test cases have successfully passed!\\n&quot;</span>);\n} \n\n<span class=\"hljs-comment\">/**\n * @brief Main function\n * @returns 0 on exit\n */</span>\n<span class=\"hljs-type\">int</span> <span class=\"hljs-title function_\">main</span><span class=\"hljs-params\">()</span>{\n\ttest();  <span class=\"hljs-comment\">// run self-test implementations</span>\n\t<span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">0</span>;\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Lars Müller",
+      "email": "34514239+appgurueu@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Regan Yue",
+      "email": "1131625869@qq.com",
+      "commits": 1
+    },
+    {
+      "name": "matkosoric",
+      "email": "soric.matko@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "GeorgeChambi",
+      "email": "charalambous99@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "William Zhang",
+      "email": "39932068+WilliamHYZhang@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Kelvin Salton do Prado",
+      "email": "kelvinpfw@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

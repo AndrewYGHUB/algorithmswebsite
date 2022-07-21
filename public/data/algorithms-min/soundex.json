@@ -1,0 +1,12 @@
+{
+  "slug": "soundex",
+  "name": "Soundex",
+  "categories": [
+    "encoders"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

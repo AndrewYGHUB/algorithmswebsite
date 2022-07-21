@@ -1,0 +1,12 @@
+{
+  "slug": "check-palindrome-string",
+  "name": "Check Palindrome String",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "php": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

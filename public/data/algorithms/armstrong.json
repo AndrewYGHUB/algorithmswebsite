@@ -1,0 +1,48 @@
+{
+  "slug": "armstrong",
+  "name": "Armstrong",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "java": {
+      "dir": "src/main/java/com/thealgorithms/maths/Armstrong.java",
+      "url": "https://github.com/TheAlgorithms/java/tree/master/src/main/java/com/thealgorithms/maths/Armstrong.java",
+      "code": "<span class=\"hljs-keyword\">package</span> com.thealgorithms.maths;\n\n<span class=\"hljs-comment\">/**\n * An Armstrong number is equal to the sum of the cubes of its digits. For\n * example, 370 is an Armstrong number because 3*3*3 + 7*7*7 + 0*0*0 = 370. An\n * Armstrong number is often called Narcissistic number.\n *\n * <span class=\"hljs-doctag\">@author</span> Vivek\n */</span>\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title class_\">Armstrong</span> {\n\n    <span class=\"hljs-comment\">/**\n     * Checks whether a given number is an armstrong number or not.\n     *\n     * <span class=\"hljs-doctag\">@param</span> number number to check\n     * <span class=\"hljs-doctag\">@return</span> {<span class=\"hljs-doctag\">@code</span> true} if given number is armstrong number, {<span class=\"hljs-doctag\">@code</span> false}\n     * otherwise\n     */</span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-type\">boolean</span> <span class=\"hljs-title function_\">isArmstrong</span><span class=\"hljs-params\">(<span class=\"hljs-type\">int</span> number)</span> {\n        <span class=\"hljs-type\">long</span> <span class=\"hljs-variable\">sum</span> <span class=\"hljs-operator\">=</span> <span class=\"hljs-number\">0</span>;\n        <span class=\"hljs-type\">long</span> <span class=\"hljs-variable\">number2</span> <span class=\"hljs-operator\">=</span> number;\n        <span class=\"hljs-keyword\">while</span> (number2 &gt; <span class=\"hljs-number\">0</span>) {\n            <span class=\"hljs-type\">long</span> <span class=\"hljs-variable\">mod</span> <span class=\"hljs-operator\">=</span> number2 % <span class=\"hljs-number\">10</span>;\n            sum += Math.pow(mod, <span class=\"hljs-number\">3</span>);\n            number2 /= <span class=\"hljs-number\">10</span>;\n        }\n        <span class=\"hljs-type\">return</span> <span class=\"hljs-variable\">sum</span> <span class=\"hljs-operator\">=</span>= number;\n    }\n}"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Vivek",
+      "email": "vivektheintel@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "SunggyuLee",
+      "email": "sq0216@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Libin Yang",
+      "email": "szuyanglb@outlook.com",
+      "commits": 2
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 3
+    },
+    {
+      "name": "Mani Manasa Mylavarapu",
+      "email": "mamylava@microsoft.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

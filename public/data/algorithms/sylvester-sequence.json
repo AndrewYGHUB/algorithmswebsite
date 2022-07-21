@@ -1,0 +1,23 @@
+{
+  "slug": "sylvester-sequence",
+  "name": "Sylvester Sequence",
+  "categories": [
+    "math"
+  ],
+  "body": {},
+  "implementations": {
+    "python": {
+      "dir": "maths/sylvester_sequence.py",
+      "url": "https://github.com/TheAlgorithms/python/tree/master/maths/sylvester_sequence.py",
+      "code": "<span class=\"hljs-string\">&quot;&quot;&quot;\n\nCalculates the nth number in Sylvester&#x27;s sequence\n\nSource:\n    https://en.wikipedia.org/wiki/Sylvester%27s_sequence\n\n&quot;&quot;&quot;</span>\n\n\n<span class=\"hljs-keyword\">def</span> <span class=\"hljs-title function_\">sylvester</span>(<span class=\"hljs-params\">number: <span class=\"hljs-built_in\">int</span></span>) -&gt; <span class=\"hljs-built_in\">int</span>:\n    <span class=\"hljs-string\">&quot;&quot;&quot;\n    :param number: nth number to calculate in the sequence\n    :return: the nth number in Sylvester&#x27;s sequence\n\n    &gt;&gt;&gt; sylvester(8)\n    113423713055421844361000443\n\n    &gt;&gt;&gt; sylvester(-1)\n    Traceback (most recent call last):\n    ...\n    ValueError: The input value of [n=-1] has to be &gt; 0\n\n    &gt;&gt;&gt; sylvester(8.0)\n    Traceback (most recent call last):\n    ...\n    AssertionError: The input value of [n=8.0] is not an integer\n    &quot;&quot;&quot;</span>\n    <span class=\"hljs-keyword\">assert</span> <span class=\"hljs-built_in\">isinstance</span>(number, <span class=\"hljs-built_in\">int</span>), <span class=\"hljs-string\">f&quot;The input value of [n=<span class=\"hljs-subst\">{number}</span>] is not an integer&quot;</span>\n\n    <span class=\"hljs-keyword\">if</span> number == <span class=\"hljs-number\">1</span>:\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-number\">2</span>\n    <span class=\"hljs-keyword\">elif</span> number &lt; <span class=\"hljs-number\">1</span>:\n        <span class=\"hljs-keyword\">raise</span> ValueError(<span class=\"hljs-string\">f&quot;The input value of [n=<span class=\"hljs-subst\">{number}</span>] has to be &gt; 0&quot;</span>)\n    <span class=\"hljs-keyword\">else</span>:\n        num = sylvester(number - <span class=\"hljs-number\">1</span>)\n        lower = num - <span class=\"hljs-number\">1</span>\n        upper = num\n        <span class=\"hljs-keyword\">return</span> lower * upper + <span class=\"hljs-number\">1</span>\n\n\n<span class=\"hljs-keyword\">if</span> __name__ == <span class=\"hljs-string\">&quot;__main__&quot;</span>:\n    <span class=\"hljs-built_in\">print</span>(<span class=\"hljs-string\">f&quot;The 8th number in Sylvester&#x27;s sequence: <span class=\"hljs-subst\">{sylvester(<span class=\"hljs-number\">8</span>)}</span>&quot;</span>)\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Jordan Rinder",
+      "email": "jrinder42@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

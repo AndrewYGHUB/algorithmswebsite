@@ -1,0 +1,56 @@
+{
+  "slug": "luhn",
+  "name": "Luhn",
+  "categories": [
+    "hashing"
+  ],
+  "implementations": {
+    "python": "",
+    "java": "",
+    "go": "",
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "AlexDvorak",
+      "email": "opti.jawsome@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "QuantumNovice",
+      "email": "43876848+QuantumNovice@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "NikitaYermak",
+      "email": "50529884+NikitaYermak@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ilya Sokolov",
+      "email": "developer.sokolov@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Artem Boiarshinov",
+      "email": "54187376+Boiarshinov@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "Andrii Siriak",
+      "email": "siryaka@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

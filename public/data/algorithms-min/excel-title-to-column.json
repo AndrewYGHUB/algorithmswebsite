@@ -1,0 +1,18 @@
+{
+  "slug": "excel-title-to-column",
+  "name": "Excel Title to Column",
+  "categories": [
+    "conversions"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Luke Banicevic",
+      "email": "60857954+banaboi@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "get-user-tweets",
+  "name": "Get User Tweets",
+  "categories": [
+    "webprogramming"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Leoriem-code",
+      "email": "73761711+Leoriem-code@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Prakhar Gurunani",
+      "email": "prakhargurunani@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

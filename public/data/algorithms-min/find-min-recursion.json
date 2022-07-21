@@ -1,0 +1,30 @@
+{
+  "slug": "find-min-recursion",
+  "name": "Find Min Recursion",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "python": "",
+    "java": "",
+    "dart": ""
+  },
+  "contributors": [
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Lewis Tian",
+      "email": "taseikyo@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "shellhub",
+      "email": "shellhub.me@gmail.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

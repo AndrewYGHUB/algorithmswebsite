@@ -1,0 +1,24 @@
+{
+  "slug": "maximum-product-subarray",
+  "name": "Maximum Product Subarray",
+  "categories": [
+    "datastructures",
+    "array"
+  ],
+  "implementations": {
+    "ruby": ""
+  },
+  "contributors": [
+    {
+      "name": "sidaksohi",
+      "email": "31377210+sidaksohi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Vitor Oliveira",
+      "email": "vbrazo@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

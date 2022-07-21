@@ -1,0 +1,18 @@
+{
+  "slug": "prefix-sum-array",
+  "name": "Prefix Sum Array",
+  "categories": [
+    "rangequeries"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Paulo Vitor Lima Borges",
+      "email": "31678236+PauloVLB@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

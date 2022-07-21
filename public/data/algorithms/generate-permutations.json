@@ -1,0 +1,28 @@
+{
+  "slug": "generate-permutations",
+  "name": "Generate Permutations",
+  "categories": [
+    "backtracking"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Backtracking/GeneratePermutations.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Backtracking/GeneratePermutations.js",
+      "code": "<span class=\"hljs-comment\">/*\n * Problem Statement: Generate all distinct permutations of a an array (all permutations should be in sorted order);\n *\n * What is permutations?\n * - Permutation means possible arrangements in a set (here it is an array);\n *\n * Reference to know more about permutations:\n * - https://www.britannica.com/science/permutation\n *\n */</span>\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">swap</span> = (<span class=\"hljs-params\">arr, i, j</span>) =&gt; {\n  <span class=\"hljs-keyword\">const</span> newArray = [...arr];\n\n  [newArray[i], newArray[j]] = [newArray[j], newArray[i]] <span class=\"hljs-comment\">// Swapping elements ES6 way</span>\n\n  <span class=\"hljs-keyword\">return</span> newArray\n}\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">permutations</span> = arr =&gt; {\n  <span class=\"hljs-keyword\">const</span> P = []\n  <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">permute</span> = (<span class=\"hljs-params\">arr, low, high</span>) =&gt; {\n    <span class=\"hljs-keyword\">if</span> (low === high) {\n      P.<span class=\"hljs-title function_\">push</span>([...arr])\n      <span class=\"hljs-keyword\">return</span> P\n    }\n    <span class=\"hljs-keyword\">for</span> (<span class=\"hljs-keyword\">let</span> i = low; i &lt;= high; i++) {\n      arr = <span class=\"hljs-title function_\">swap</span>(arr, low, i)\n      <span class=\"hljs-title function_\">permute</span>(arr, low + <span class=\"hljs-number\">1</span>, high)\n    }\n    <span class=\"hljs-keyword\">return</span> P\n  }\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title function_\">permute</span>(arr, <span class=\"hljs-number\">0</span>, arr.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>)\n}\n\n<span class=\"hljs-keyword\">export</span> { permutations }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Chiranjeev",
+      "email": "6258860@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 5
+    }
+  ],
+  "explanationUrl": {}
+}

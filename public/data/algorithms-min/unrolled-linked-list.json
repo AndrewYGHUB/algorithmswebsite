@@ -1,0 +1,18 @@
+{
+  "slug": "unrolled-linked-list",
+  "name": "Unrolled linked list",
+  "categories": [
+    "datastructures"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [
+    {
+      "name": "Sergii Lischuk",
+      "email": "evertodante@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

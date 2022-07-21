@@ -1,0 +1,13 @@
+{
+  "slug": "knuthmorrispratt-search",
+  "name": "Knuth–Morris–Pratt Search",
+  "categories": [
+    "sorts",
+    "strings"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

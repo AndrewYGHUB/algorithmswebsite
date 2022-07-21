@@ -1,0 +1,18 @@
+{
+  "slug": "fraction",
+  "name": "Fraction",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "lua": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Mueller",
+      "email": "appgurulars@gmx.de",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "bifid",
+  "name": "Bifid",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Vinicius Cordeiro",
+      "email": "marcos.cordeiroal@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

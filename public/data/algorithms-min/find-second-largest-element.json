@@ -1,0 +1,28 @@
+{
+  "slug": "find-second-largest-element",
+  "name": "Find Second Largest Element",
+  "categories": [
+    "sorts"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Lars Müller",
+      "email": "34514239+appgurueu@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Ankush263",
+      "email": "86042508+Ankush263@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Matthew Palmer",
+      "email": "matthewpalmer9@outlook.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

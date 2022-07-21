@@ -1,0 +1,24 @@
+{
+  "slug": "stack-es-6",
+  "name": "Stack ES 6",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Kolotushkin Maxim",
+      "email": "58226682+Makso83@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

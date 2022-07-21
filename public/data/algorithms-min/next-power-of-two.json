@@ -1,0 +1,18 @@
+{
+  "slug": "next-power-of-two",
+  "name": "Next Power Of Two",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Indre Maksimovaite",
+      "email": "imaksimovaite@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

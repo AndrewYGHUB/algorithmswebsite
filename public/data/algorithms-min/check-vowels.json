@@ -1,0 +1,48 @@
+{
+  "slug": "check-vowels",
+  "name": "Check Vowels",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Charlie Moore",
+      "email": "58339043+charliejmoore@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Arthita Paul",
+      "email": "71807177+Arthita@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "acbin",
+      "email": "44314231+acbin@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Shravana Tirtha",
+      "email": "34398606+shravanatirtha@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Carlos Carvalho",
+      "email": "jcarloss.carvalho@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

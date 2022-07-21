@@ -1,0 +1,52 @@
+{
+  "slug": "lowest-common-ancestor",
+  "name": "Lowest Common Ancestor",
+  "categories": [
+    "datastructures",
+    "binarytree"
+  ],
+  "implementations": {
+    "python": "",
+    "c-plus-plus": "",
+    "go": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "David Leal",
+      "email": "halfpacho@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Nguyễn Tiến Đạt",
+      "email": "phongtomfapp@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Dylan Buchi",
+      "email": "devybuchi@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "kanthuc",
+      "email": "srikanthuchavali@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 2
+    },
+    {
+      "name": "Filip Hlasek",
+      "email": "fhlasek@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

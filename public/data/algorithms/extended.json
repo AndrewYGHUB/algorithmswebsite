@@ -1,0 +1,24 @@
+{
+  "slug": "extended",
+  "name": "Extended",
+  "categories": [
+    "math",
+    "gcd"
+  ],
+  "body": {},
+  "implementations": {
+    "go": {
+      "dir": "math/gcd/extended.go",
+      "url": "https://github.com/TheAlgorithms/go/tree/master/math/gcd/extended.go",
+      "code": "<span class=\"hljs-comment\">// extended.go</span>\n<span class=\"hljs-comment\">// description: Implementation of Extended GCD Algorithm</span>\n<span class=\"hljs-comment\">// details:</span>\n<span class=\"hljs-comment\">// A simple implementation of Extended GCD algorithm, that returns GCD, a and b</span>\n<span class=\"hljs-comment\">// which solves ax + by = gcd(a, b)</span>\n<span class=\"hljs-comment\">// author(s) [Taj](https://github.com/tjgurwara99)</span>\n<span class=\"hljs-comment\">// see extended_test.go</span>\n\n<span class=\"hljs-keyword\">package</span> gcd\n\n<span class=\"hljs-comment\">// Extended simple extended gcd</span>\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">func</span> <span class=\"hljs-title\">Extended</span><span class=\"hljs-params\">(a, b <span class=\"hljs-type\">int64</span>)</span></span> (<span class=\"hljs-type\">int64</span>, <span class=\"hljs-type\">int64</span>, <span class=\"hljs-type\">int64</span>) {\n\t<span class=\"hljs-keyword\">if</span> a == <span class=\"hljs-number\">0</span> {\n\t\t<span class=\"hljs-keyword\">return</span> b, <span class=\"hljs-number\">0</span>, <span class=\"hljs-number\">1</span>\n\t}\n\tgcd, xPrime, yPrime := Extended(b%a, a)\n\t<span class=\"hljs-keyword\">return</span> gcd, yPrime - (b/a)*xPrime, xPrime\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

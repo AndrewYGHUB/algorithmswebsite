@@ -1,0 +1,18 @@
+{
+  "slug": "find-min-iterator",
+  "name": "Find Min Iterator",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "TrasherDK",
+      "email": "trasherdk@fumlersoft.dk",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

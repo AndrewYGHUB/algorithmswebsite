@@ -1,0 +1,19 @@
+{
+  "slug": "fast-power",
+  "name": "Fast Power",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "c-plus-plus": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "fffzlfk",
+      "email": "44939690+fffzlfk@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

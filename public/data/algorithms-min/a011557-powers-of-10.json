@@ -1,0 +1,12 @@
+{
+  "slug": "a011557-powers-of-10",
+  "name": "A011557 Powers of 10",
+  "categories": [
+    "sequences"
+  ],
+  "implementations": {
+    "c-sharp": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "geometric-dist",
+  "name": "Geometric Dist",
+  "categories": [
+    "probability"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "Domenic Zingsheim",
+      "email": "domeniczingsheim@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Anuran Roy",
+      "email": "76481787+anuran-roy@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "kmp-pattern-searching",
+  "name": "KMP Pattern Searching",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "rahul1995",
+      "email": "jainrahul6620@gmail.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}

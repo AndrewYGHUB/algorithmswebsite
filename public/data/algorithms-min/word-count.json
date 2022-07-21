@@ -1,0 +1,24 @@
+{
+  "slug": "word-count",
+  "name": "Word Count",
+  "categories": [
+    "exercism"
+  ],
+  "implementations": {
+    "c": "",
+    "julia": ""
+  },
+  "contributors": [
+    {
+      "name": "Ihjass Thasbekha",
+      "email": "44056715+Ihjass@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Bender",
+      "email": "christianbender89@web.de",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

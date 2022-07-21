@@ -1,0 +1,23 @@
+{
+  "slug": "haversine",
+  "name": "Haversine",
+  "categories": [
+    "navigation"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Carlos Carvalho",
+      "email": "jcarloss.carvalho@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

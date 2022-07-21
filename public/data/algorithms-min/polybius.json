@@ -1,0 +1,56 @@
+{
+  "slug": "polybius",
+  "name": "Polybius",
+  "categories": [
+    "ciphers"
+  ],
+  "implementations": {
+    "python": "",
+    "java": "",
+    "go": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "GeistInDerSH",
+      "email": "39086811+GeistInDerSH@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Carlo Federico Vescovo",
+      "email": "vescovocarlofederico@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "task4233",
+      "email": "tks.m1205@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Hikmet Çakır",
+      "email": "hikmet_cakir@outlook.com",
+      "commits": 1
+    },
+    {
+      "name": "Erwin Junge",
+      "email": "erwin@junge.nl",
+      "commits": 1
+    },
+    {
+      "name": "Vinicius Cordeiro",
+      "email": "78505368+cordeirossauro@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

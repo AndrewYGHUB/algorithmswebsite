@@ -1,0 +1,23 @@
+{
+  "slug": "composite-simpson-rule",
+  "name": "Composite Simpson Rule",
+  "categories": [
+    "numericalmethods"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [
+    {
+      "name": "ggkogkou",
+      "email": "76820848+ggkogkou@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "2kindsofcs",
+      "email": "42531877+2kindsofcs@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

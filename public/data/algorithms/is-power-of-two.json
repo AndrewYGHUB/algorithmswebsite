@@ -1,0 +1,38 @@
+{
+  "slug": "is-power-of-two",
+  "name": "Is Power Of Two",
+  "categories": [
+    "bitmanipulation"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Bit-Manipulation/IsPowerOfTwo.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Bit-Manipulation/IsPowerOfTwo.js",
+      "code": "<span class=\"hljs-comment\">/*\n    author: @Aayushi-Mittal\n\n    This script will check whether the given\n    number is a power of two or not.\n\n    A number will be a power of two if only one bit is set and rest are unset.\n    This is true for all the cases except 01 because (2^0 = 1) which is not a power of 2.\n    For eg: 10 (2^1 = 2), 100 (2^2 = 4), 10000 (2^4 = 16)\n\n    Reference Link: https://www.hackerearth.com/practice/notes/round-a-number-to-the-next-power-of-2/\n\n    If we will subtract 1 from a number that is a power of 2 we will get it&#x27;s 1&#x27;s complement.\n    And we know that 1&#x27;s complement is just opp. of that number.\n    So, (n &amp; (n-1)) will be 0.\n\n    For eg:    (1000 &amp; (1000-1))\n                1 0 0 0     // Original Number (8)\n                0 1 1 1     // After Subtracting 1 (8-1 = 7)\n                _______\n                0 0 0 0     // will become 0\n\n*/</span>\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">IsPowerOfTwo</span> = (<span class=\"hljs-params\">n</span>) =&gt; {\n  <span class=\"hljs-keyword\">if</span> (n &gt; <span class=\"hljs-number\">0</span> &amp;&amp; (n &amp; (n - <span class=\"hljs-number\">1</span>)) === <span class=\"hljs-number\">0</span>) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">true</span>\n  }\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-literal\">false</span>\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "ddhira123",
+      "email": "dhana_dhira@apps.ipb.ac.id",
+      "commits": 1
+    },
+    {
+      "name": "Indre Maksimovaite",
+      "email": "imaksimovaite@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 3
+    },
+    {
+      "name": "Aayushi-Mittal",
+      "email": "aayushimittal088@gmail.com",
+      "commits": 4
+    }
+  ],
+  "explanationUrl": {}
+}

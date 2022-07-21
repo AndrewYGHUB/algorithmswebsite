@@ -1,0 +1,34 @@
+{
+  "slug": "count-vowels",
+  "name": "Count Vowels",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "javascript": "",
+    "php": ""
+  },
+  "contributors": [
+    {
+      "name": "Akshay Khale",
+      "email": "khale.akshay@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Akshay Khale",
+      "email": "khaleakshay@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Fahim Faisaal",
+      "email": "57553028+fahimfaisaal@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "YATIN KATHURIA",
+      "email": "47096348+Yatin-kathuria@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "shuf",
+  "name": "Shuf",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "javascript": ""
+  },
+  "contributors": [
+    {
+      "name": "Eric Lavault",
+      "email": "39483232+lvlte@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "MarkSFrancis",
+      "email": "mrkfrancis8@gmail.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

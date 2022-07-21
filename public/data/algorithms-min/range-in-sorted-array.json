@@ -1,0 +1,23 @@
+{
+  "slug": "range-in-sorted-array",
+  "name": "Range In Sorted Array",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Shuangchi He",
+      "email": "34329208+Yulv-git@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Aitor Fidalgo Sánchez",
+      "email": "64830228+aitorfi@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

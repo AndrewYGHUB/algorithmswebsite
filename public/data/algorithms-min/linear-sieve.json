@@ -1,0 +1,35 @@
+{
+  "slug": "linear-sieve",
+  "name": "Linear Sieve",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "javascript": "",
+    "rust": "",
+    "scala": ""
+  },
+  "contributors": [
+    {
+      "name": "Alfredo Torre",
+      "email": "alfredotorre@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Olexandr Yermilov",
+      "email": "olexandr.yermilov@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 2
+    },
+    {
+      "name": "Allen Guan",
+      "email": "me@nella17.tw",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

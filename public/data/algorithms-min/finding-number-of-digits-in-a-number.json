@@ -1,0 +1,12 @@
+{
+  "slug": "finding-number-of-digits-in-a-number",
+  "name": "Finding Number of Digits in a Number",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "c-plus-plus": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

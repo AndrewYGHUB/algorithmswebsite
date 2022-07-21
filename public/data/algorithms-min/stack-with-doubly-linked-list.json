@@ -1,0 +1,13 @@
+{
+  "slug": "stack-with-doubly-linked-list",
+  "name": "Stack with Doubly Linked List",
+  "categories": [
+    "datastructures",
+    "stacks"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [],
+  "explanationUrl": {}
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "fibonacci-2",
+  "name": "Fibonacci 2",
+  "categories": [
+    "math"
+  ],
+  "implementations": {
+    "php": ""
+  },
+  "contributors": [
+    {
+      "name": "Andrew S Erwin",
+      "email": "andrew@andrewerwin.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

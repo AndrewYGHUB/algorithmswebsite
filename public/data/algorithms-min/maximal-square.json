@@ -1,0 +1,23 @@
+{
+  "slug": "maximal-square",
+  "name": "Maximal Square",
+  "categories": [
+    "dynamicprogramming"
+  ],
+  "implementations": {
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "Erfan Khadem",
+      "email": "45465346+er888kh@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "duy quang",
+      "email": "hyouka266@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

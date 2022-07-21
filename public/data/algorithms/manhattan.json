@@ -1,0 +1,24 @@
+{
+  "slug": "manhattan",
+  "name": "Manhattan",
+  "categories": [
+    "linearalgebra",
+    "distances"
+  ],
+  "body": {},
+  "implementations": {
+    "c-sharp": {
+      "dir": "./Algorithms/LinearAlgebra/Distances/Manhattan.cs",
+      "url": "https:/github.com/TheAlgorithms/C-Sharp/tree/master/Algorithms/LinearAlgebra/Distances/Manhattan.cs",
+      "code": "<span class=\"hljs-keyword\">using</span> System;\n<span class=\"hljs-keyword\">using</span> System.Collections.Generic;\n<span class=\"hljs-keyword\">using</span> System.Linq;\n<span class=\"hljs-keyword\">using</span> System.Text;\n<span class=\"hljs-keyword\">using</span> System.Threading.Tasks;\n\n<span class=\"hljs-keyword\">namespace</span> <span class=\"hljs-title\">Algorithms.LinearAlgebra.Distances</span>\n{\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;summary&gt;</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> Implementation fo Manhattan distance.</span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> It is the sum of the lengths of the projections of the line segment between the points onto the coordinate axes.</span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> In other words, it is the sum of absolute difference between the measures in all dimensions of two points.</span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span></span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> Its commonly used in regression analysis.</span>\n    <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;/summary&gt;</span></span>\n    <span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">class</span> <span class=\"hljs-title\">Manhattan</span>\n    {\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;summary&gt;</span></span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> Calculate Manhattan distance for two N-Dimensional points.</span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;/summary&gt;</span></span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;param name=&quot;point1&quot;&gt;</span>First N-Dimensional point.<span class=\"hljs-doctag\">&lt;/param&gt;</span></span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;param name=&quot;point2&quot;&gt;</span>Second N-Dimensional point.<span class=\"hljs-doctag\">&lt;/param&gt;</span></span>\n        <span class=\"hljs-comment\"><span class=\"hljs-doctag\">///</span> <span class=\"hljs-doctag\">&lt;returns&gt;</span>Calculated Manhattan distance.<span class=\"hljs-doctag\">&lt;/returns&gt;</span></span>\n        <span class=\"hljs-function\"><span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-built_in\">double</span> <span class=\"hljs-title\">Distance</span>(<span class=\"hljs-params\"><span class=\"hljs-built_in\">double</span>[] point1, <span class=\"hljs-built_in\">double</span>[] point2</span>)</span>\n        {\n            <span class=\"hljs-keyword\">if</span> (point1.Length != point2.Length)\n            {\n                <span class=\"hljs-keyword\">throw</span> <span class=\"hljs-keyword\">new</span> ArgumentException(<span class=\"hljs-string\">&quot;Both points should have the same dimensionality&quot;</span>);\n            }\n\n            <span class=\"hljs-comment\">// distance = |x1-y1| + |x2-y2| + ... + |xn-yn|</span>\n            <span class=\"hljs-keyword\">return</span> point1.Zip(point2, (x1, x2) =&gt; Math.Abs(x1 - x2)).Sum();\n        }\n    }\n}\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Diego Delgado",
+      "email": "105917468+dideldev@users.noreply.github.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

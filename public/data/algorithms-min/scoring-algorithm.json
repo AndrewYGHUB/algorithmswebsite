@@ -1,0 +1,33 @@
+{
+  "slug": "scoring-algorithm",
+  "name": "Scoring Algorithm",
+  "categories": [
+    "others"
+  ],
+  "implementations": {
+    "python": ""
+  },
+  "contributors": [
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 1
+    },
+    {
+      "name": "Vardhaman",
+      "email": "83634399+cyai@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Andrew Grangaard",
+      "email": "granny-github@ofb.net",
+      "commits": 1
+    },
+    {
+      "name": "Mark",
+      "email": "markhappy200@gmail.com",
+      "commits": 1
+    }
+  ],
+  "explanationUrl": {}
+}

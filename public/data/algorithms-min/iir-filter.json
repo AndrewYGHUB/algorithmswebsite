@@ -1,0 +1,19 @@
+{
+  "slug": "iir-filter",
+  "name": "Iir Filter",
+  "categories": [
+    "audiofilters"
+  ],
+  "implementations": {
+    "python": "",
+    "java": ""
+  },
+  "contributors": [
+    {
+      "name": "Martmists",
+      "email": "mail@martmists.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

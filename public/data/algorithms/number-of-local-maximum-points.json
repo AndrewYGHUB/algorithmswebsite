@@ -1,0 +1,29 @@
+{
+  "slug": "number-of-local-maximum-points",
+  "name": "Number Of Local Maximum Points",
+  "categories": [
+    "datastructures",
+    "array"
+  ],
+  "body": {},
+  "implementations": {
+    "javascript": {
+      "dir": "Data-Structures/Array/NumberOfLocalMaximumPoints.js",
+      "url": "https://github.com/TheAlgorithms/javascript/tree/master/Data-Structures/Array/NumberOfLocalMaximumPoints.js",
+      "code": "<span class=\"hljs-comment\">/**\n * [NumberOfLocalMaximumPoints](https://www.geeksforgeeks.org/find-indices-of-all-local-maxima-and-local-minima-in-an-array/) is an algorithm to find relative bigger numbers compared to their neighbors\n *\n * Notes:\n * - like the other similar local maxima search function find relative maxima points in array but doesn&#x27;t stop at one but returns total point count\n * - runs on array A of size n and returns the local maxima count using divide and conquer methodology\n *\n * <span class=\"hljs-doctag\">@complexity</span>: O(n) (on average )\n * <span class=\"hljs-doctag\">@complexity</span>: O(n) (worst case)\n * <span class=\"hljs-doctag\">@flow</span>\n */</span>\n\n<span class=\"hljs-comment\">// check if returned index is a local maxima</span>\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">IsMaximumPoint</span> = (<span class=\"hljs-params\">array, index</span>) =&gt; {\n  <span class=\"hljs-comment\">// handle array bounds</span>\n  <span class=\"hljs-comment\">// array start</span>\n  <span class=\"hljs-keyword\">if</span> (index === <span class=\"hljs-number\">0</span>) {\n    <span class=\"hljs-keyword\">return</span> array[index] &gt; array[index + <span class=\"hljs-number\">1</span>]\n    <span class=\"hljs-comment\">// array end</span>\n  } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (index === array.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>) {\n    <span class=\"hljs-keyword\">return</span> array[index] &gt; array[index - <span class=\"hljs-number\">1</span>]\n    <span class=\"hljs-comment\">// handle index inside array bounds</span>\n  } <span class=\"hljs-keyword\">else</span> {\n    <span class=\"hljs-keyword\">return</span> array[index] &gt; array[index + <span class=\"hljs-number\">1</span>] &amp;&amp; array[index] &gt; array[index - <span class=\"hljs-number\">1</span>]\n  }\n}\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">CountLocalMaximumPoints</span> = (<span class=\"hljs-params\">array, startIndex, endIndex</span>) =&gt; {\n  <span class=\"hljs-comment\">// stop check in divide and conquer recursion</span>\n  <span class=\"hljs-keyword\">if</span> (startIndex === endIndex) {\n    <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title class_\">IsMaximumPoint</span>(array, startIndex) ? <span class=\"hljs-number\">1</span> : <span class=\"hljs-number\">0</span>\n  }\n\n  <span class=\"hljs-comment\">// handle the two halves</span>\n  <span class=\"hljs-keyword\">const</span> middleIndex = <span class=\"hljs-built_in\">parseInt</span>((startIndex + endIndex) / <span class=\"hljs-number\">2</span>)\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-title class_\">CountLocalMaximumPoints</span>(array, startIndex, middleIndex) +\n    <span class=\"hljs-title class_\">CountLocalMaximumPoints</span>(array, middleIndex + <span class=\"hljs-number\">1</span>, endIndex)\n}\n\n<span class=\"hljs-keyword\">const</span> <span class=\"hljs-title function_\">NumberOfLocalMaximumPoints</span> = (<span class=\"hljs-params\">A</span>) =&gt; <span class=\"hljs-title class_\">CountLocalMaximumPoints</span>(A, <span class=\"hljs-number\">0</span>, A.<span class=\"hljs-property\">length</span> - <span class=\"hljs-number\">1</span>)\n\n<span class=\"hljs-keyword\">export</span> { <span class=\"hljs-title class_\">NumberOfLocalMaximumPoints</span> }\n"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Rak Laptudirm",
+      "email": "raklaptudirm@gmail.com",
+      "commits": 2
+    },
+    {
+      "name": "jhonDoe15",
+      "email": "62393042+jhonDoe15@users.noreply.github.com",
+      "commits": 2
+    }
+  ],
+  "explanationUrl": {}
+}

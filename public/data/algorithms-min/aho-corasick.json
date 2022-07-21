@@ -1,0 +1,60 @@
+{
+  "slug": "aho-corasick",
+  "name": "Aho Corasick",
+  "categories": [
+    "strings"
+  ],
+  "implementations": {
+    "python": "",
+    "go": "",
+    "rust": ""
+  },
+  "contributors": [
+    {
+      "name": "pwygab",
+      "email": "88221256+merelymyself@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "imp",
+      "email": "imp07@qq.com",
+      "commits": 1
+    },
+    {
+      "name": "scturtle",
+      "email": "scturtle@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Taj",
+      "email": "tjgurwara99@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "onlinejudge95",
+      "email": "44158581+onlinejudge95@users.noreply.github.com",
+      "commits": 1
+    },
+    {
+      "name": "Dmytro Litvinov",
+      "email": "litvinov.dmytro.it@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Samarth Sehgal",
+      "email": "samarthsehgal97@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Aashay Shingre",
+      "email": "akshingre@gmail.com",
+      "commits": 1
+    },
+    {
+      "name": "Christian Clauss",
+      "email": "cclauss@me.com",
+      "commits": 3
+    }
+  ],
+  "explanationUrl": {}
+}
